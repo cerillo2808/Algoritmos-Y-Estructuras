@@ -11,6 +11,8 @@ class Ordenador {
     private:
     // Defina aqui los metodos auxiliares de los algoritmos de ordenamiento solamente.
     // Puede definir cuantos metodos quiera.
+    void imprimirArreglo(uint32_t *A, uint32_t n) const;
+    bool estaOrdenado(uint32_t *A, uint32_t n, const char* nombre) const;
     
     public:
     Ordenador() = default;
@@ -24,12 +26,12 @@ class Ordenador {
      - No lance excepciones para el manejo de errores.
        Ante un error, basta con que el método no modifique el arreglo original y que no cause la caída del programa.
     */ 
-    void ordenamientoPorSeleccion(int *A, int n) const;
-    void ordenamientoPorInserccion(int *A, int n) const;
-    void ordenamientoPorMezcla(int *A, int n) const;
-    void ordenamientoPorMonticulos(int *A, int n) const;
-    void ordenamientoRapido(int *A, int n) const;
-    void ordenamientoPorResiduos(int *A, int n) const;
+    void ordenamientoPorSeleccion(uint32_t *A, uint32_t n) const;
+    void ordenamientoPorInserccion(uint32_t *A, uint32_t n) const;
+    void ordenamientoPorMezcla(uint32_t *A, uint32_t n) const;
+    void ordenamientoPorMonticulos(uint32_t *A, uint32_t n) const;
+    void ordenamientoRapido(uint32_t *A, uint32_t n) const;
+    void ordenamientoPorResiduos(uint32_t *A, uint32_t n) const;
 
     /**
      * @brief Retorna un std::string con los datos de la tarea.
