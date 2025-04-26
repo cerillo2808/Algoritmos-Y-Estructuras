@@ -15,7 +15,9 @@ class Ordenador {
     bool estaOrdenado(uint32_t *A, uint32_t n, const char* nombre) const;
     void merge(uint32_t *A, uint32_t p, uint32_t q, uint32_t r) const;
     void mergeSort(uint32_t *A, uint32_t p, uint32_t r) const;
-    
+    void maxHeapify(uint32_t *A, uint32_t n, uint32_t i) const;
+    void buildMaxHeap(uint32_t *A, uint32_t n) const;
+
     public:
     Ordenador() = default;
     ~Ordenador() = default;

@@ -63,6 +63,7 @@ int main() {
     ordenador.ordenamientoPorInserccion(copia_unMillon_insertion, 1000000);
     */
 
+    /*
     // Ordenar por mezcla
     // Crear una copias de los arreglos
     uint32_t* copia_mil_merge = copiarArreglo(mil, 1000);
@@ -73,7 +74,19 @@ int main() {
     ordenador.ordenamientoPorMezcla(copia_diezMil_merge, 10000);
     ordenador.ordenamientoPorMezcla(copia_cienMil_merge, 100000);
     ordenador.ordenamientoPorMezcla(copia_unMillon_merge, 1000000);
+    */
 
+    // Ordenar por montículos
+    // Crear una copias de los arreglos
+    uint32_t* copia_mil_heap = copiarArreglo(mil, 1000);
+    uint32_t* copia_diezMil_heap = copiarArreglo(diezMil, 10000);
+    uint32_t* copia_cienMil_heap = copiarArreglo(cienMil, 100000);
+    uint32_t* copia_unMillon_heap = copiarArreglo(unMillon, 1000000);
+    ordenador.ordenamientoPorMonticulos(copia_mil_heap, 1000);
+    ordenador.ordenamientoPorMonticulos(copia_diezMil_heap, 10000);
+    ordenador.ordenamientoPorMonticulos(copia_cienMil_heap, 100000);
+    ordenador.ordenamientoPorMonticulos(copia_unMillon_heap, 1000000);
+    
     // Liberar la memoria
     delete[] mil;
     delete[] diezMil;
@@ -88,11 +101,15 @@ int main() {
     delete[] copia_diezMil_insertion;
     delete[] copia_cienMil_insertion;
     delete[] copia_unMillon_insertion;
+    delete[] copia_mil_merge;
+    delete[] copia_diezMil_merge;
+    delete[] copia_cienMil_merge;
+    delete[] copia_unMillon_merge;     
     */
-   delete[] copia_mil_merge;
-   delete[] copia_diezMil_merge;
-   delete[] copia_cienMil_merge;
-   delete[] copia_unMillon_merge;     
+    delete[] copia_mil_heap;
+    delete[] copia_diezMil_heap;
+    delete[] copia_cienMil_heap;
+    delete[] copia_unMillon_heap;
 
     return 0;
 }

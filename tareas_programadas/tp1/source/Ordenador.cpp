@@ -156,8 +156,60 @@ void Ordenador::mergeSort(uint32_t *A, uint32_t p, uint32_t r) const {
 }
 
 void Ordenador::ordenamientoPorMonticulos(uint32_t *A, uint32_t n) const{
-    //TODO
+    // Iniciar el cronómetro
+    auto inicio = std::chrono::high_resolution_clock::now();
+
+    // Construir el heap máximo
+    buildMaxHeap(A, n);
+
+    // Extraer elementos del heap uno por uno
+    for (int i = n - 1; i > 0; i--) {
+        std::swap(A[0], A[i]); // Mover la raíz actual al final
+        maxHeapify(A, i, 0); // Aplicar maxHeapify al heap reducido para asegurar que se mantenga la propiedad del heap
+    }
+
+    // Detener el cronómetro
+    auto fin = std::chrono::high_resolution_clock::now();
+
+    // Calcular la duración en milisegundos
+    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
+
+    // Imprimir el tiempo de ejecución
+    std::cout << "Ordenamiento por montículos. Tamaño: " << n << std::endl;
+    
+    estaOrdenado(A, n, "Ordenamiento por montículos");
+    std::cout << "Tiempo de ejecución: " << duracion << " milisegundos" << std::endl;
 }
+
+void Ordenador::maxHeapify(uint32_t *A, uint32_t n, uint32_t i) const {
+    uint32_t largest = i; // Inicializar el nodo más grande como la raíz
+    uint32_t left = 2 * i + 1; // Hijo izquierdo
+    uint32_t right = 2 * i + 2; // Hijo derecho
+
+    // Si el hijo izquierdo es más grande que la raíz
+    if (left < n && A[left] > A[largest]) {
+        largest = left;
+    }
+
+    // Si el hijo derecho es más grande que el más grande hasta ahora
+    if (right < n && A[right] > A[largest]) {
+        largest = right;
+    }
+
+    // Si el más grande no es la raíz
+    if (largest != i) {
+        std::swap(A[i], A[largest]); // Intercambiar
+        maxHeapify(A, n, largest); // Recursivamente aplicar maxHeapify
+    }
+}
+
+void Ordenador::buildMaxHeap(uint32_t *A, uint32_t n) const {
+    // Construir el heap máximo desde el último nodo padre hasta la raíz
+    for (int i = n / 2 - 1; i >= 0; i--) {
+        maxHeapify(A, n, i);
+    }
+}
+
 void Ordenador::ordenamientoRapido(uint32_t *A, uint32_t n) const{
     //TODO
 }
