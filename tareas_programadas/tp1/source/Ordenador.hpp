@@ -19,6 +19,7 @@ class Ordenador {
     void buildMaxHeap(uint32_t *A, uint32_t n) const;
     uint32_t partition(uint32_t *A, uint32_t p, uint32_t r) const;
     void quickSort(uint32_t *A, uint32_t n) const;
+    void countingSort(uint32_t *A, uint32_t n, uint32_t exp) const;
 
     public:
     Ordenador() = default;

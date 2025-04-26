@@ -67,7 +67,7 @@ void Ordenador::ordenamientoPorInserccion(uint32_t *A, uint32_t n) const {
     std::cout << "Ordenamiento por inserción. Tamaño: " << n << std::endl;
 
     estaOrdenado(A, n, "Ordenamiento por inserción");
-    std::cout << "Tiempo de ejecución: " << duracion << " milisegundos" << std::endl;
+    std::cout << duracion << " milisegundos" << std::endl;
 }
 
 void Ordenador::ordenamientoPorMezcla(uint32_t *A, uint32_t n) const{
@@ -89,7 +89,7 @@ void Ordenador::ordenamientoPorMezcla(uint32_t *A, uint32_t n) const{
     std::cout << "Ordenamiento por mezcla. Tamaño: " << n << std::endl;
 
     estaOrdenado(A, n, "Ordenamiento por mezcla");
-    std::cout << "Tiempo de ejecución: " << duracion << " milisegundos" << std::endl;
+    std::cout << duracion << " milisegundos" << std::endl;
 
 }
 
@@ -179,7 +179,7 @@ void Ordenador::ordenamientoPorMonticulos(uint32_t *A, uint32_t n) const{
     std::cout << "Ordenamiento por montículos. Tamaño: " << n << std::endl;
     
     estaOrdenado(A, n, "Ordenamiento por montículos");
-    std::cout << "Tiempo de ejecución: " << duracion << " milisegundos" << std::endl;
+    std::cout << duracion << " milisegundos" << std::endl;
 }
 
 void Ordenador::maxHeapify(uint32_t *A, uint32_t n, uint32_t i) const {
@@ -228,7 +228,7 @@ void Ordenador::ordenamientoRapido(uint32_t *A, uint32_t n) const{
     std::cout << "Ordenamiento rápido. Tamaño: " << n << std::endl;
     
     estaOrdenado(A, n, "Ordenamiento rápido");
-    std::cout << "Tiempo de ejecución: " << duracion << " milisegundos" << std::endl;
+    std::cout << duracion << " milisegundos" << std::endl;
 }
 
 uint32_t Ordenador::partition(uint32_t *A, uint32_t p, uint32_t r) const {
@@ -283,7 +283,63 @@ void Ordenador::quickSort(uint32_t *A, uint32_t n) const {
 }
 
 void Ordenador::ordenamientoPorResiduos(uint32_t *A, uint32_t n) const{
-    //TODO
+    // Iniciar el cronómetro
+    auto inicio = std::chrono::high_resolution_clock::now();
+
+    // Encontrar el número máximo para determinar el número de dígitos
+    uint32_t maxVal = A[0];
+    for (uint32_t i = 1; i < n; i++) {
+        if (A[i] > maxVal) {
+            maxVal = A[i];
+        }
+    }
+
+    // Aplicar Counting Sort para cada dígito (posición de los dígitos)
+    for (uint64_t exp = 1; maxVal / exp > 0; exp *= 10) {
+        countingSort(A, n, exp);
+    }
+
+    // Detener el cronómetro
+    auto fin = std::chrono::high_resolution_clock::now();
+
+    // Calcular la duración en milisegundos
+    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
+
+    // Imprimir el tiempo de ejecución
+    std::cout << "Ordenamiento por residuos. Tamaño: " << n << std::endl;
+
+    estaOrdenado(A, n, "Ordenamiento por residuos");
+    std::cout << duracion << " milisegundos" << std::endl;
+}
+
+void Ordenador::countingSort(uint32_t *A, uint32_t n, uint32_t exp) const {
+    uint32_t *B = new uint32_t[n]; // Arreglo de salida
+    uint32_t C[10] = {0};          // Contador para los dígitos (0-9)
+
+    // Contar las ocurrencias de cada dígito en la posición actual (exp)
+    for (uint32_t i = 0; i < n; i++) {
+        uint32_t digit = (A[i] / exp) % 10;
+        C[digit]++;
+    }
+
+    // Calcular las posiciones acumuladas
+    for (uint32_t i = 1; i < 10; i++) {
+        C[i] += C[i - 1];
+    }
+
+    // Construir el arreglo de salida de manera estable
+    for (int i = n - 1; i >= 0; i--) {
+        uint32_t digit = (A[i] / exp) % 10;
+        B[C[digit] - 1] = A[i];
+        C[digit]--;
+    }
+
+    // Copiar el arreglo ordenado de vuelta a A
+    for (uint32_t i = 0; i < n; i++) {
+        A[i] = B[i];
+    }
+
+    delete[] B; // Liberar memoria
 }
 
 void Ordenador::imprimirArreglo(uint32_t *A, uint32_t n) const{
@@ -300,6 +356,6 @@ bool Ordenador::estaOrdenado(uint32_t *A, uint32_t n, const char* nombre) const{
             return false;
         }
     }
-    std::cout << "Ordenó bien en " << std::endl;
+    std::cout << "Ordenó bien en ";
     return true;
 }

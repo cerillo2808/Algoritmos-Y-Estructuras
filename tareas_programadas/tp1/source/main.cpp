@@ -63,7 +63,6 @@ int main() {
     ordenador.ordenamientoPorInserccion(copia_unMillon_insertion, 1000000);
     */
 
-    /*
     // Ordenar por mezcla
     // Crear una copias de los arreglos
     uint32_t* copia_mil_merge = copiarArreglo(mil, 1000);
@@ -74,7 +73,6 @@ int main() {
     ordenador.ordenamientoPorMezcla(copia_diezMil_merge, 10000);
     ordenador.ordenamientoPorMezcla(copia_cienMil_merge, 100000);
     ordenador.ordenamientoPorMezcla(copia_unMillon_merge, 1000000);
-    */
 
     /*
     // Ordenar por montículos
@@ -89,6 +87,7 @@ int main() {
     ordenador.ordenamientoPorMonticulos(copia_unMillon_heap, 1000000);
     */
 
+    /*
     // Ordenar por rápido
     // Crear una copias de los arreglos
     uint32_t* copia_mil_quick = copiarArreglo(mil, 1000);
@@ -99,6 +98,18 @@ int main() {
     ordenador.ordenamientoRapido(copia_diezMil_quick, 10000);
     ordenador.ordenamientoRapido(copia_cienMil_quick, 100000);
     ordenador.ordenamientoRapido(copia_unMillon_quick, 1000000);
+    */
+
+    // Ordenar por residuos
+    // Crear una copias de los arreglos
+    uint32_t* copia_mil_residuos = copiarArreglo(mil, 1000);
+    uint32_t* copia_diezMil_residuos = copiarArreglo(diezMil, 10000);
+    uint32_t* copia_cienMil_residuos = copiarArreglo(cienMil, 100000);
+    uint32_t* copia_unMillon_residuos = copiarArreglo(unMillon, 1000000);
+    ordenador.ordenamientoPorResiduos(copia_mil_residuos, 1000);
+    ordenador.ordenamientoPorResiduos(copia_diezMil_residuos, 10000);
+    ordenador.ordenamientoPorResiduos(copia_cienMil_residuos, 100000);
+    ordenador.ordenamientoPorResiduos(copia_unMillon_residuos, 1000000);
     
     // Liberar la memoria
     delete[] mil;
@@ -114,19 +125,25 @@ int main() {
     delete[] copia_diezMil_insertion;
     delete[] copia_cienMil_insertion;
     delete[] copia_unMillon_insertion;
+    */
     delete[] copia_mil_merge;
     delete[] copia_diezMil_merge;
     delete[] copia_cienMil_merge;
-    delete[] copia_unMillon_merge;     
+    delete[] copia_unMillon_merge;
+    /*     
     delete[] copia_mil_heap;
     delete[] copia_diezMil_heap;
     delete[] copia_cienMil_heap;
     delete[] copia_unMillon_heap;
-    */
     delete[] copia_mil_quick;
     delete[] copia_diezMil_quick;
     delete[] copia_cienMil_quick;
     delete[] copia_unMillon_quick;
+    */
+    delete[] copia_mil_residuos;
+    delete[] copia_diezMil_residuos;
+    delete[] copia_cienMil_residuos;
+    delete[] copia_unMillon_residuos;
 
     return 0;
 }
