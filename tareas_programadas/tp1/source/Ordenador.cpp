@@ -26,13 +26,13 @@ void Ordenador::ordenamientoPorSeleccion(uint32_t *A, uint32_t n) const{
     // Detener el cronómetro
     auto fin = std::chrono::high_resolution_clock::now();
     // Calcular la duración
-    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
+    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
 
     std::cout << "Ordenamiento por seleccion. Tamaño: " << n << std::endl;
     
     estaOrdenado(A, n, "Ordenamiento por seleccion");
     // Imprimir el tiempo de ejecución
-    std::cout << duracion << " milisegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 void Ordenador::ordenamientoPorInserccion(uint32_t *A, uint32_t n) const {
@@ -61,13 +61,13 @@ void Ordenador::ordenamientoPorInserccion(uint32_t *A, uint32_t n) const {
 
     // Detener el cronómetro
     auto fin = std::chrono::high_resolution_clock::now();
-    // Calcular la duración en milisegundos
-    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
+    // Calcular la duración enmicrosegundos
+    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
 
     std::cout << "Ordenamiento por inserción. Tamaño: " << n << std::endl;
 
     estaOrdenado(A, n, "Ordenamiento por inserción");
-    std::cout << duracion << " milisegundos" << std::endl;
+    std::cout << duracion << "microsegundos" << std::endl;
 }
 
 void Ordenador::ordenamientoPorMezcla(uint32_t *A, uint32_t n) const{
@@ -83,13 +83,13 @@ void Ordenador::ordenamientoPorMezcla(uint32_t *A, uint32_t n) const{
     // Detener el cronómetro
     auto fin = std::chrono::high_resolution_clock::now();
 
-    // Calcular la duración en milisegundos
-    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
+    // Calcular la duración enmicrosegundos
+    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
     // Imprimir el tiempo de ejecución
     std::cout << "Ordenamiento por mezcla. Tamaño: " << n << std::endl;
 
     estaOrdenado(A, n, "Ordenamiento por mezcla");
-    std::cout << duracion << " milisegundos" << std::endl;
+    std::cout << duracion << "microsegundos" << std::endl;
 
 }
 
@@ -172,14 +172,14 @@ void Ordenador::ordenamientoPorMonticulos(uint32_t *A, uint32_t n) const{
     // Detener el cronómetro
     auto fin = std::chrono::high_resolution_clock::now();
 
-    // Calcular la duración en milisegundos
-    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
+    // Calcular la duración enmicrosegundos
+    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
 
     // Imprimir el tiempo de ejecución
     std::cout << "Ordenamiento por montículos. Tamaño: " << n << std::endl;
     
     estaOrdenado(A, n, "Ordenamiento por montículos");
-    std::cout << duracion << " milisegundos" << std::endl;
+    std::cout << duracion << "microsegundos" << std::endl;
 }
 
 void Ordenador::maxHeapify(uint32_t *A, uint32_t n, uint32_t i) const {
@@ -221,14 +221,14 @@ void Ordenador::ordenamientoRapido(uint32_t *A, uint32_t n) const{
     // Detener el cronómetro
     auto fin = std::chrono::high_resolution_clock::now();
 
-    // Calcular la duración en milisegundos
-    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
+    // Calcular la duración enmicrosegundos
+    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
 
     // Imprimir el tiempo de ejecución
     std::cout << "Ordenamiento rápido. Tamaño: " << n << std::endl;
     
     estaOrdenado(A, n, "Ordenamiento rápido");
-    std::cout << duracion << " milisegundos" << std::endl;
+    std::cout << duracion << "microsegundos" << std::endl;
 }
 
 uint32_t Ordenador::partition(uint32_t *A, uint32_t p, uint32_t r) const {
@@ -302,14 +302,14 @@ void Ordenador::ordenamientoPorResiduos(uint32_t *A, uint32_t n) const{
     // Detener el cronómetro
     auto fin = std::chrono::high_resolution_clock::now();
 
-    // Calcular la duración en milisegundos
-    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
+    // Calcular la duración enmicrosegundos
+    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
 
     // Imprimir el tiempo de ejecución
     std::cout << "Ordenamiento por residuos. Tamaño: " << n << std::endl;
 
     estaOrdenado(A, n, "Ordenamiento por residuos");
-    std::cout << duracion << " milisegundos" << std::endl;
+    std::cout << duracion << "microsegundos" << std::endl;
 }
 
 void Ordenador::countingSort(uint32_t *A, uint32_t n, uint32_t exp) const {

@@ -37,7 +37,6 @@ int main() {
     uint32_t* cienMil = generarArregloAleatorio(100000);
     uint32_t* unMillon = generarArregloAleatorio(1000000);
 
-    /*
     // Ordenar por selección
     // Crear una copias de los arreglos
     uint32_t* copia_mil_selection = copiarArreglo(mil, 1000);
@@ -48,9 +47,7 @@ int main() {
     ordenador.ordenamientoPorSeleccion(copia_diezMil_selection, 10000);
     ordenador.ordenamientoPorSeleccion(copia_cienMil_selection, 100000);
     ordenador.ordenamientoPorSeleccion(copia_unMillon_selection, 1000000);
-    */
 
-    /*
     // Ordenar por inserción
     // Crear una copias de los arreglos
     uint32_t* copia_mil_insertion = copiarArreglo(mil, 1000);
@@ -61,7 +58,6 @@ int main() {
     ordenador.ordenamientoPorInserccion(copia_diezMil_insertion, 10000);
     ordenador.ordenamientoPorInserccion(copia_cienMil_insertion, 100000);
     ordenador.ordenamientoPorInserccion(copia_unMillon_insertion, 1000000);
-    */
 
     // Ordenar por mezcla
     // Crear una copias de los arreglos
@@ -74,7 +70,6 @@ int main() {
     ordenador.ordenamientoPorMezcla(copia_cienMil_merge, 100000);
     ordenador.ordenamientoPorMezcla(copia_unMillon_merge, 1000000);
 
-    /*
     // Ordenar por montículos
     // Crear una copias de los arreglos
     uint32_t* copia_mil_heap = copiarArreglo(mil, 1000);
@@ -85,9 +80,7 @@ int main() {
     ordenador.ordenamientoPorMonticulos(copia_diezMil_heap, 10000);
     ordenador.ordenamientoPorMonticulos(copia_cienMil_heap, 100000);
     ordenador.ordenamientoPorMonticulos(copia_unMillon_heap, 1000000);
-    */
 
-    /*
     // Ordenar por rápido
     // Crear una copias de los arreglos
     uint32_t* copia_mil_quick = copiarArreglo(mil, 1000);
@@ -98,7 +91,6 @@ int main() {
     ordenador.ordenamientoRapido(copia_diezMil_quick, 10000);
     ordenador.ordenamientoRapido(copia_cienMil_quick, 100000);
     ordenador.ordenamientoRapido(copia_unMillon_quick, 1000000);
-    */
 
     // Ordenar por residuos
     // Crear una copias de los arreglos
@@ -110,27 +102,24 @@ int main() {
     ordenador.ordenamientoPorResiduos(copia_diezMil_residuos, 10000);
     ordenador.ordenamientoPorResiduos(copia_cienMil_residuos, 100000);
     ordenador.ordenamientoPorResiduos(copia_unMillon_residuos, 1000000);
-    
+
     // Liberar la memoria
     delete[] mil;
     delete[] diezMil;
     delete[] cienMil;
     delete[] unMillon;
-    /*
-    delete[] copia_mil_selection
-    delete[] copia_diezMil_selection
-    delete[] copia_cienMil_selection
-    delete[] copia_unMillon_selection
+    delete[] copia_mil_selection;
+    delete[] copia_diezMil_selection;
+    delete[] copia_cienMil_selection;
+    delete[] copia_unMillon_selection;
     delete[] copia_mil_insertion;
     delete[] copia_diezMil_insertion;
     delete[] copia_cienMil_insertion;
     delete[] copia_unMillon_insertion;
-    */
     delete[] copia_mil_merge;
     delete[] copia_diezMil_merge;
     delete[] copia_cienMil_merge;
     delete[] copia_unMillon_merge;
-    /*     
     delete[] copia_mil_heap;
     delete[] copia_diezMil_heap;
     delete[] copia_cienMil_heap;
@@ -139,7 +128,6 @@ int main() {
     delete[] copia_diezMil_quick;
     delete[] copia_cienMil_quick;
     delete[] copia_unMillon_quick;
-    */
     delete[] copia_mil_residuos;
     delete[] copia_diezMil_residuos;
     delete[] copia_cienMil_residuos;
