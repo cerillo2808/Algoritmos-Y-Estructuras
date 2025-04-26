@@ -70,8 +70,91 @@ void Ordenador::ordenamientoPorInserccion(uint32_t *A, uint32_t n) const {
 }
 
 void Ordenador::ordenamientoPorMezcla(uint32_t *A, uint32_t n) const{
-    //TODO
+
+    // Divide el arreglo en dos mitades, ordena cada mitad y luego mezcla las dos mitades
+
+    // Iniciar el cronómetro
+    auto inicio = std::chrono::high_resolution_clock::now();
+
+    // Método que separa las dos mitades y llama a otro método para mezclar
+    mergeSort(A, 0, n - 1);
+
+    // Detener el cronómetro
+    auto fin = std::chrono::high_resolution_clock::now();
+
+    // Calcular la duración en milisegundos
+    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
+    // Imprimir el tiempo de ejecución
+    std::cout << "Ordenamiento por mezcla. Tamaño: " << n << std::endl;
+
+    estaOrdenado(A, n, "Ordenamiento por mezcla");
+    std::cout << "Tiempo de ejecución: " << duracion << " milisegundos" << std::endl;
+
 }
+
+void Ordenador::merge(uint32_t *A, uint32_t p, uint32_t q, uint32_t r) const {
+    // Tamaño de la sublista izquierda
+    uint32_t nL = q - p + 1;
+    // Tamaño de la sublista derecha
+    uint32_t nR = r - q;
+
+    // Crear subarreglos temporales
+    uint32_t *L = new uint32_t[nL];
+    uint32_t *R = new uint32_t[nR];
+
+    // Copiar datos a los subarreglos
+    for (uint32_t i = 0; i < nL; i++) {
+        L[i] = A[p + i];
+    }
+    for (uint32_t j = 0; j < nR; j++) {
+        R[j] = A[q + 1 + j];
+    }
+
+    // Mezclar los subarreglos en A[p..r]
+    uint32_t i = 0, j = 0, k = p;
+    while (i < nL && j < nR) {
+        if (L[i] <= R[j]) {
+            A[k] = L[i];
+            i++;
+        } else {
+            A[k] = R[j];
+            j++;
+        }
+        k++;
+    }
+
+    // Copiar los elementos restantes de L[], si los hay
+    while (i < nL) {
+        A[k] = L[i];
+        i++;
+        k++;
+    }
+
+    // Copiar los elementos restantes de R[], si los hay
+    while (j < nR) {
+        A[k] = R[j];
+        j++;
+        k++;
+    }
+
+    // Liberar memoria de los subarreglos
+    delete[] L;
+    delete[] R;
+}
+
+void Ordenador::mergeSort(uint32_t *A, uint32_t p, uint32_t r) const {
+    if (p < r) {
+        uint32_t q = p + (r - p) / 2; // Punto medio
+
+        // Ordenar recursivamente las dos mitades
+        mergeSort(A, p, q);
+        mergeSort(A, q + 1, r);
+
+        // Combinar las dos mitades ordenadas
+        merge(A, p, q, r);
+    }
+}
+
 void Ordenador::ordenamientoPorMonticulos(uint32_t *A, uint32_t n) const{
     //TODO
 }

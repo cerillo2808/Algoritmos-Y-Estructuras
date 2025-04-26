@@ -13,6 +13,8 @@ class Ordenador {
     // Puede definir cuantos metodos quiera.
     void imprimirArreglo(uint32_t *A, uint32_t n) const;
     bool estaOrdenado(uint32_t *A, uint32_t n, const char* nombre) const;
+    void merge(uint32_t *A, uint32_t p, uint32_t q, uint32_t r) const;
+    void mergeSort(uint32_t *A, uint32_t p, uint32_t r) const;
     
     public:
     Ordenador() = default;
