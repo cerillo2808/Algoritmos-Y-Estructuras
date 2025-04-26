@@ -34,9 +34,41 @@ void Ordenador::ordenamientoPorSeleccion(uint32_t *A, uint32_t n) const{
     std::cout << duracion << " milisegundos" << std::endl;
 }
 
-void Ordenador::ordenamientoPorInserccion(uint32_t *A, uint32_t n) const{
-    //TODO
+void Ordenador::ordenamientoPorInserccion(uint32_t *A, uint32_t n) const {
+
+    // Inserta los elementos en su posición correcta
+
+    // Empieza a contar la duración
+    auto inicio = std::chrono::high_resolution_clock::now();
+
+    // Recorre el arreglo A
+    // i es 1 porque el elemento A[0] como es uno sólo, ya está ordenado
+    for (uint32_t i = 1; i < n; i++) {
+        // key es el elemento a insertar
+        uint32_t key = A[i];
+        int j = i - 1;
+
+        // Mueve los elementos mayores que key una posición adelante
+        while (j >= 0 && A[j] > key) {
+            A[j + 1] = A[j];
+            j--;
+        }
+
+        // Inserta key en su posición correcta
+        A[j + 1] = key;
+    }
+
+    // Detener el cronómetro
+    auto fin = std::chrono::high_resolution_clock::now();
+    // Calcular la duración en milisegundos
+    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
+
+    std::cout << "Ordenamiento por inserción. Tamaño: " << n << std::endl;
+
+    estaOrdenado(A, n, "Ordenamiento por inserción");
+    std::cout << "Tiempo de ejecución: " << duracion << " milisegundos" << std::endl;
 }
+
 void Ordenador::ordenamientoPorMezcla(uint32_t *A, uint32_t n) const{
     //TODO
 }

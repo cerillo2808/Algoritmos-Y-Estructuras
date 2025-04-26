@@ -37,27 +37,45 @@ int main() {
     uint32_t* cienMil = generarArregloAleatorio(100000);
     uint32_t* unMillon = generarArregloAleatorio(1000000);
 
-    // Crear una copias de los arreglos
-    uint32_t* copia_mil = copiarArreglo(mil, 1000);
-    uint32_t* copia_diezMil = copiarArreglo(diezMil, 10000);
-    uint32_t* copia_cienMil = copiarArreglo(cienMil, 100000);
-    uint32_t* copia_unMillon = copiarArreglo(unMillon, 1000000);
-
+    /*
     // Ordenar por selección
-    ordenador.ordenamientoPorSeleccion(copia_mil, 1000);
-    ordenador.ordenamientoPorSeleccion(copia_diezMil, 10000);
-    ordenador.ordenamientoPorSeleccion(copia_cienMil, 100000);
-    ordenador.ordenamientoPorSeleccion(copia_unMillon, 1000000);
+    // Crear una copias de los arreglos
+    uint32_t* copia_mil_selection = copiarArreglo(mil, 1000);
+    uint32_t* copia_diezMil_selection = copiarArreglo(diezMil, 10000);
+    uint32_t* copia_cienMil_selection = copiarArreglo(cienMil, 100000);
+    uint32_t* copia_unMillon_selection = copiarArreglo(unMillon, 1000000);
+    ordenador.ordenamientoPorSeleccion(copia_mil_selection, 1000);
+    ordenador.ordenamientoPorSeleccion(copia_diezMil_selection, 10000);
+    ordenador.ordenamientoPorSeleccion(copia_cienMil_selection, 100000);
+    ordenador.ordenamientoPorSeleccion(copia_unMillon_selection, 1000000);
+    */
 
+    // Ordenar por inserción
+    // Crear una copias de los arreglos
+    uint32_t* copia_mil_insertion = copiarArreglo(mil, 1000);
+    uint32_t* copia_diezMil_insertion = copiarArreglo(diezMil, 10000);
+    uint32_t* copia_cienMil_insertion = copiarArreglo(cienMil, 100000);
+    uint32_t* copia_unMillon_insertion = copiarArreglo(unMillon, 1000000);
+    ordenador.ordenamientoPorInserccion(copia_mil_insertion, 1000);
+    ordenador.ordenamientoPorInserccion(copia_diezMil_insertion, 10000);
+    ordenador.ordenamientoPorInserccion(copia_cienMil_insertion, 100000);
+    ordenador.ordenamientoPorInserccion(copia_unMillon_insertion, 1000000);
+    
     // Liberar la memoria
     delete[] mil;
     delete[] diezMil;
     delete[] cienMil;
     delete[] unMillon;
-    delete[] copia_mil;
-    delete[] copia_diezMil;
-    delete[] copia_cienMil;
-    delete[] copia_unMillon;     
+    /*
+    delete[] copia_mil_selection
+    delete[] copia_diezMil_selection
+    delete[] copia_cienMil_selection
+    delete[] copia_unMillon_selection
+    */
+    delete[] copia_mil_insertion;
+    delete[] copia_diezMil_insertion;
+    delete[] copia_cienMil_insertion;
+    delete[] copia_unMillon_insertion;     
 
     return 0;
 }
