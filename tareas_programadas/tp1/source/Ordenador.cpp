@@ -67,7 +67,7 @@ void Ordenador::ordenamientoPorInserccion(uint32_t *A, uint32_t n) const {
     std::cout << "Ordenamiento por inserción. Tamaño: " << n << std::endl;
 
     estaOrdenado(A, n, "Ordenamiento por inserción");
-    std::cout << duracion << "microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 void Ordenador::ordenamientoPorMezcla(uint32_t *A, uint32_t n) const{
@@ -89,7 +89,7 @@ void Ordenador::ordenamientoPorMezcla(uint32_t *A, uint32_t n) const{
     std::cout << "Ordenamiento por mezcla. Tamaño: " << n << std::endl;
 
     estaOrdenado(A, n, "Ordenamiento por mezcla");
-    std::cout << duracion << "microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 
 }
 
@@ -179,7 +179,7 @@ void Ordenador::ordenamientoPorMonticulos(uint32_t *A, uint32_t n) const{
     std::cout << "Ordenamiento por montículos. Tamaño: " << n << std::endl;
     
     estaOrdenado(A, n, "Ordenamiento por montículos");
-    std::cout << duracion << "microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 void Ordenador::maxHeapify(uint32_t *A, uint32_t n, uint32_t i) const {
@@ -228,7 +228,7 @@ void Ordenador::ordenamientoRapido(uint32_t *A, uint32_t n) const{
     std::cout << "Ordenamiento rápido. Tamaño: " << n << std::endl;
     
     estaOrdenado(A, n, "Ordenamiento rápido");
-    std::cout << duracion << "microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 uint32_t Ordenador::partition(uint32_t *A, uint32_t p, uint32_t r) const {
@@ -309,7 +309,7 @@ void Ordenador::ordenamientoPorResiduos(uint32_t *A, uint32_t n) const{
     std::cout << "Ordenamiento por residuos. Tamaño: " << n << std::endl;
 
     estaOrdenado(A, n, "Ordenamiento por residuos");
-    std::cout << duracion << "microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 void Ordenador::countingSort(uint32_t *A, uint32_t n, uint32_t exp) const {
