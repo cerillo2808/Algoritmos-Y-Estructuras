@@ -1,5 +1,6 @@
 #include <iostream>
 #include <chrono>
+#include <stack>
 #include "Ordenador.hpp"
 
 void Ordenador::ordenamientoPorSeleccion(uint32_t *A, uint32_t n) const{
@@ -211,8 +212,76 @@ void Ordenador::buildMaxHeap(uint32_t *A, uint32_t n) const {
 }
 
 void Ordenador::ordenamientoRapido(uint32_t *A, uint32_t n) const{
-    //TODO
+    // Iniciar el cronómetro
+    auto inicio = std::chrono::high_resolution_clock::now();
+
+    // Llamar a la función quickSort que es recursiva
+    quickSort(A, n);
+
+    // Detener el cronómetro
+    auto fin = std::chrono::high_resolution_clock::now();
+
+    // Calcular la duración en milisegundos
+    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
+
+    // Imprimir el tiempo de ejecución
+    std::cout << "Ordenamiento rápido. Tamaño: " << n << std::endl;
+    
+    estaOrdenado(A, n, "Ordenamiento rápido");
+    std::cout << "Tiempo de ejecución: " << duracion << " milisegundos" << std::endl;
 }
+
+uint32_t Ordenador::partition(uint32_t *A, uint32_t p, uint32_t r) const {
+    // Seleccionar el mediano de tres como pivote
+    uint32_t mid = p + (r - p) / 2;
+    if (A[p] > A[mid]) std::swap(A[p], A[mid]);
+    if (A[p] > A[r]) std::swap(A[p], A[r]);
+    if (A[mid] > A[r]) std::swap(A[mid], A[r]);
+
+    // El pivote es el elemento medio después de ordenar los tres
+    std::swap(A[mid], A[r]);
+    uint32_t pivot = A[r];
+
+    int i = p - 1;
+    for (uint32_t j = p; j < r; j++) {
+        if (A[j] <= pivot) {
+            i++;
+            std::swap(A[i], A[j]);
+        }
+    }
+
+    std::swap(A[i + 1], A[r]);
+    return i + 1;
+}
+
+void Ordenador::quickSort(uint32_t *A, uint32_t n) const {
+    if (n <= 1) return; // Si el arreglo tiene 1 o 0 elementos, ya está ordenado
+
+    // Crear una pila para almacenar los límites de los subarreglos
+    std::stack<std::pair<uint32_t, uint32_t>> pila;
+
+    // Empujar los límites iniciales del arreglo completo
+    pila.push({0, n - 1});
+
+    while (!pila.empty()) {
+        // Obtener los límites del subarreglo actual
+        uint32_t p = pila.top().first;
+        uint32_t r = pila.top().second;
+        pila.pop();
+
+        // Particionar el subarreglo y obtener el índice del pivote
+        uint32_t q = partition(A, p, r);
+
+        // Empujar los límites de los subarreglos izquierdo y derecho
+        if (q > p + 1) { // Subarreglo izquierdo
+            pila.push({p, q - 1});
+        }
+        if (q + 1 < r) { // Subarreglo derecho
+            pila.push({q + 1, r});
+        }
+    }
+}
+
 void Ordenador::ordenamientoPorResiduos(uint32_t *A, uint32_t n) const{
     //TODO
 }

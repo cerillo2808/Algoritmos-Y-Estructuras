@@ -17,6 +17,8 @@ class Ordenador {
     void mergeSort(uint32_t *A, uint32_t p, uint32_t r) const;
     void maxHeapify(uint32_t *A, uint32_t n, uint32_t i) const;
     void buildMaxHeap(uint32_t *A, uint32_t n) const;
+    uint32_t partition(uint32_t *A, uint32_t p, uint32_t r) const;
+    void quickSort(uint32_t *A, uint32_t n) const;
 
     public:
     Ordenador() = default;
