@@ -211,22 +211,22 @@ void Ordenador::buildMaxHeap(uint32_t *A, uint32_t n) const {
     }
 }
 
-void Ordenador::ordenamientoRapido(uint32_t *A, uint32_t n) const{
+void Ordenador::ordenamientoRapido(uint32_t *A, uint32_t n) const {
     // Iniciar el cronómetro
     auto inicio = std::chrono::high_resolution_clock::now();
 
-    // Llamar a la función quickSort que es recursiva
-    quickSort(A, n);
+    // Llamar a la función recursiva quickSort
+    quickSort(A, 0, n - 1);
 
     // Detener el cronómetro
     auto fin = std::chrono::high_resolution_clock::now();
 
-    // Calcular la duración enmicrosegundos
+    // Calcular la duración en microsegundos
     auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
 
     // Imprimir el tiempo de ejecución
     std::cout << "Ordenamiento rápido. Tamaño: " << n << std::endl;
-    
+
     estaOrdenado(A, n, "Ordenamiento rápido");
     std::cout << duracion << " microsegundos" << std::endl;
 }
@@ -234,51 +234,56 @@ void Ordenador::ordenamientoRapido(uint32_t *A, uint32_t n) const{
 uint32_t Ordenador::partition(uint32_t *A, uint32_t p, uint32_t r) const {
     // Seleccionar el mediano de tres como pivote
     uint32_t mid = p + (r - p) / 2;
-    if (A[p] > A[mid]) std::swap(A[p], A[mid]);
-    if (A[p] > A[r]) std::swap(A[p], A[r]);
-    if (A[mid] > A[r]) std::swap(A[mid], A[r]);
+    if (A[p] > A[mid]) {
+        uint32_t *temp = new uint32_t(A[p]);
+        A[p] = A[mid];
+        A[mid] = *temp;
+        delete temp;
+    }
+    if (A[p] > A[r]) {
+        uint32_t *temp = new uint32_t(A[p]);
+        A[p] = A[r];
+        A[r] = *temp;
+        delete temp;
+    }
+    if (A[mid] > A[r]) {
+        uint32_t *temp = new uint32_t(A[mid]);
+        A[mid] = A[r];
+        A[r] = *temp;
+        delete temp;
+    }
 
     // El pivote es el elemento medio después de ordenar los tres
-    std::swap(A[mid], A[r]);
-    uint32_t pivot = A[r];
-
+    uint32_t *pivot = new uint32_t(A[r]);
     int i = p - 1;
     for (uint32_t j = p; j < r; j++) {
-        if (A[j] <= pivot) {
+        if (A[j] <= *pivot) {
             i++;
-            std::swap(A[i], A[j]);
+            uint32_t *temp = new uint32_t(A[i]);
+            A[i] = A[j];
+            A[j] = *temp;
+            delete temp;
         }
     }
 
-    std::swap(A[i + 1], A[r]);
-    return i + 1;
+    uint32_t *temp = new uint32_t(A[i + 1]);
+    A[i + 1] = A[r];
+    A[r] = *temp;
+    delete temp;
+
+    uint32_t pivotIndex = i + 1;
+    delete pivot;
+    return pivotIndex;
 }
 
-void Ordenador::quickSort(uint32_t *A, uint32_t n) const {
-    if (n <= 1) return; // Si el arreglo tiene 1 o 0 elementos, ya está ordenado
-
-    // Crear una pila para almacenar los límites de los subarreglos
-    std::stack<std::pair<uint32_t, uint32_t>> pila;
-
-    // Empujar los límites iniciales del arreglo completo
-    pila.push({0, n - 1});
-
-    while (!pila.empty()) {
-        // Obtener los límites del subarreglo actual
-        uint32_t p = pila.top().first;
-        uint32_t r = pila.top().second;
-        pila.pop();
-
+void Ordenador::quickSort(uint32_t *A, uint32_t p, uint32_t r) const {
+    if (p < r) {
         // Particionar el subarreglo y obtener el índice del pivote
         uint32_t q = partition(A, p, r);
 
-        // Empujar los límites de los subarreglos izquierdo y derecho
-        if (q > p + 1) { // Subarreglo izquierdo
-            pila.push({p, q - 1});
-        }
-        if (q + 1 < r) { // Subarreglo derecho
-            pila.push({q + 1, r});
-        }
+        // Ordenar recursivamente las dos mitades
+        quickSort(A, p, q - 1); // Subarreglo izquierdo
+        quickSort(A, q + 1, r); // Subarreglo derecho
     }
 }
 
