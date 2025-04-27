@@ -1,3 +1,5 @@
+// Copyright [2025] <Liqing Yosery Zheng Lu>
+
 #include <iostream>
 #include <chrono>
 #include <stack>
@@ -9,8 +11,7 @@
  * @param A El arreglo a ordenar.
  * @param n El tamaño del arreglo.
  */
-void Ordenador::ordenamientoPorSeleccion(uint32_t *A, uint32_t n) const{
-
+void Ordenador::ordenamientoPorSeleccion(uint32_t *A, uint32_t n) const {
     // Empieza a contar la duración
     auto inicio = std::chrono::high_resolution_clock::now();
 
@@ -38,7 +39,7 @@ void Ordenador::ordenamientoPorSeleccion(uint32_t *A, uint32_t n) const{
     auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
 
     std::cout << "Ordenamiento por seleccion. Tamaño: " << n << std::endl;
-    
+
     estaOrdenado(A, n, "Ordenamiento por seleccion");
     // Imprimir el tiempo de ejecución
     std::cout << duracion << " microsegundos" << std::endl;
@@ -51,7 +52,6 @@ void Ordenador::ordenamientoPorSeleccion(uint32_t *A, uint32_t n) const{
  * @param n El tamaño del arreglo.
  */
 void Ordenador::ordenamientoPorInserccion(uint32_t *A, uint32_t n) const {
-
     // Empieza a contar la duración
     auto inicio = std::chrono::high_resolution_clock::now();
 
@@ -90,8 +90,7 @@ void Ordenador::ordenamientoPorInserccion(uint32_t *A, uint32_t n) const {
  * @param A El arreglo a ordenar.
  * @param n El tamaño del arreglo.
  */
-void Ordenador::ordenamientoPorMezcla(uint32_t *A, uint32_t n) const{
-
+void Ordenador::ordenamientoPorMezcla(uint32_t *A, uint32_t n) const {
     // Iniciar el cronómetro
     auto inicio = std::chrono::high_resolution_clock::now();
 
@@ -108,7 +107,6 @@ void Ordenador::ordenamientoPorMezcla(uint32_t *A, uint32_t n) const{
 
     estaOrdenado(A, n, "Ordenamiento por mezcla");
     std::cout << duracion << " microsegundos" << std::endl;
-
 }
 
 /**
@@ -200,7 +198,7 @@ void Ordenador::mergeSort(uint32_t *A, uint32_t p, uint32_t r) const {
  * @param A El arreglo a ordenar.
  * @param n El tamaño del arreglo.
  */
-void Ordenador::ordenamientoPorMonticulos(uint32_t *A, uint32_t n) const{
+void Ordenador::ordenamientoPorMonticulos(uint32_t *A, uint32_t n) const {
     // Iniciar el cronómetro
     auto inicio = std::chrono::high_resolution_clock::now();
 
@@ -228,7 +226,7 @@ void Ordenador::ordenamientoPorMonticulos(uint32_t *A, uint32_t n) const{
 
     // Imprimir el tiempo de ejecución
     std::cout << "Ordenamiento por montículos. Tamaño: " << n << std::endl;
-    
+
     estaOrdenado(A, n, "Ordenamiento por montículos");
     std::cout << duracion << " microsegundos" << std::endl;
 }
@@ -382,8 +380,8 @@ void Ordenador::quickSort(uint32_t *A, uint32_t p, uint32_t r) const {
         uint32_t q = partition(A, p, r);
 
         // Ordenar recursivamente las dos mitades
-        quickSort(A, p, q - 1); // Subarreglo izquierdo
-        quickSort(A, q + 1, r); // Subarreglo derecho
+        quickSort(A, p, q - 1);  // Subarreglo izquierdo
+        quickSort(A, q + 1, r);  // Subarreglo derecho
     }
 }
 
@@ -393,7 +391,7 @@ void Ordenador::quickSort(uint32_t *A, uint32_t p, uint32_t r) const {
  * @param A El arreglo a ordenar.
  * @param n El tamaño del arreglo.
  */
-void Ordenador::ordenamientoPorResiduos(uint32_t *A, uint32_t n) const{
+void Ordenador::ordenamientoPorResiduos(uint32_t *A, uint32_t n) const {
     // Iniciar el cronómetro
     auto inicio = std::chrono::high_resolution_clock::now();
 
@@ -459,7 +457,8 @@ void Ordenador::countingSort(uint32_t *A, uint32_t n, uint32_t exp) const {
         A[i] = B[i];
     }
 
-    delete[] B; // Liberar memoria
+    // Liberar memoria del arreglo de salida
+    delete[] B;
 }
 
 /**
@@ -470,7 +469,7 @@ void Ordenador::countingSort(uint32_t *A, uint32_t n, uint32_t exp) const {
  * @param nombre El nombre del algoritmo utilizado para ordenar el arreglo.
  * @return true si el arreglo está ordenado, false en caso contrario.
  */
-bool Ordenador::estaOrdenado(uint32_t *A, uint32_t n, const char* nombre) const{
+bool Ordenador::estaOrdenado(uint32_t *A, uint32_t n, const char* nombre) const {
     for (uint32_t i = 1; i < n; i++) {
         if (A[i] < A[i - 1]) {
             std::cout << "No ordenó en " << std::endl;

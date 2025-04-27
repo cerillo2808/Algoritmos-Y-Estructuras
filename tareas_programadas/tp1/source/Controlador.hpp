@@ -1,3 +1,5 @@
+// Copyright [2025] <Liqing Yosery Zheng Lu>
+
 #pragma once
 #include "Ordenador.hpp"
 

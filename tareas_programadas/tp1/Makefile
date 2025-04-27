@@ -15,7 +15,7 @@ all: $(EXECUTABLE)
 
 # Regla para compilar el ejecutable
 $(EXECUTABLE): $(SOURCES)
-	mkdir -p $(BIN_DIR) # Crear la carpeta bin si no existe
+	mkdir -p $(BIN_DIR)
 	$(CC) $(CFLAGS) -o $(EXECUTABLE) $(SOURCES)
 
 # Regla para ejecutar el programa
