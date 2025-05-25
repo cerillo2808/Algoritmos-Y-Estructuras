@@ -3,6 +3,7 @@
 #include <iostream>
 #include <chrono>
 #include <stack>
+#include <cstdint>
 #include "Ordenador.hpp"
 
 /**

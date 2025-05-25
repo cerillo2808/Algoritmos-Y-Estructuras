@@ -1,6 +1,7 @@
 // Copyright [2025] <Liqing Yosery Zheng Lu>
 
 #pragma once
+#include <cstdint>
 #include "Ordenador.hpp"
 
 class Controlador {
