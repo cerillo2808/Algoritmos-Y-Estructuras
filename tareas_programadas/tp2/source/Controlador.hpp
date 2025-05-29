@@ -2,6 +2,7 @@
 
 #pragma once
 #include <cstdint>
+#include <chrono>
 #include "BinarySearchTree.hpp"
 #include "ChainedHashTable.hpp"
 #include "DoublyLinkedList.hpp"
@@ -12,12 +13,13 @@ class Controlador {
     private:
     /**
      * @brief Arreglos de enteros sin signo de 32 bits.
-     * Estos arreglos se utilizan para almacenar los números aleatorios generados.
+     * El diezMilEliminar es para almacenar los números que se eliminan.
+     * El diezMilBuscar es para almacenar los números que se buscan.
+     * El millonRandom es para llenar los árboles y la tabla hash con números aleatorios.
      */
-    uint32_t* mil;
-    uint32_t* diezMil;
-    uint32_t* cienMil;
-    uint32_t* unMillon;
+    uint32_t* diezMilEliminar;
+    uint32_t* diezMilBuscar;
+    uint32_t* millonRandom;
 
     public:
     Controlador() = default;
@@ -54,4 +56,12 @@ class Controlador {
      * Usa el método generarArregloAleatorio para crear los arreglos y los almacena en los punteros correspondientes.
      */
     void iniciarArreglos();
+
+    void insertarEnListaEnlazadaRandom(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
+    void buscarEnListaEnlazadaRandom(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
+    void eliminarEnListaEnlazadaRandom(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
+
+    void insertarEnListaEnlazadaOrdenada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
+    void buscarEnListaEnlazadaOrdenada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
+    void eliminarEnListaEnlazadaOrdenada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
 };

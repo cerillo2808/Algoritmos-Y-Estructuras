@@ -7,7 +7,7 @@ int main() {
     Controlador controlador;
 
     std::cout << "Iniciando el controlador..." << std::endl;
-    // controlador.run();
+    controlador.run();
 
     return 0;
 }

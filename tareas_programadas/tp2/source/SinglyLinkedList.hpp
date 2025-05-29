@@ -67,7 +67,7 @@ void SLListNode<DataType>::setNext(SLListNode<DataType>* newNode) {
 template <typename DataType>
 class SLList {
  public:
-  SLList() = default;
+  SLList();
 
   ~SLList() {};
 
@@ -78,27 +78,85 @@ class SLList {
   void remove(const DataType& value);
 
   SLListNode<DataType>* getNil() const;
-  
+
  private:
   SLListNode<DataType>* nil;
 
 };
 
 // Implementación de SLList
+/**
+ * @brief Constructor de la lista enlazada simple. Inicializa nil a nullptr.
+ */
+template <typename DataType>
+SLList<DataType>::SLList() : nil(nullptr) {}
+
 template <typename DataType>
 void SLList<DataType>::insert(const DataType& value) {
-  //TODO
+  SLListNode<DataType>* nuevoNodo = new SLListNode<DataType>(value, nullptr);
+  if (nil == nullptr) {
+    // Si la lista está vacía, nil es el nuevo nodo
+    nil = nuevoNodo;
+  } else {
+    // Si la lista no está vacía, buscamos el último nodo
+    SLListNode<DataType>* anterior = nil;
+    while (anterior->getNext() != nullptr) {
+      anterior = anterior->getNext();
+    }
+    anterior->setNext(nuevoNodo);
+  }
 }
 
 template <typename DataType>
 SLListNode<DataType>* SLList<DataType>::search(const DataType& value) const {
-  //TODO
+  SLListNode<DataType>* actual = nil;
+  // Se empieza buscando desde la cabeza
+  while (actual != nullptr) {
+    if (actual->getKey() == value) {
+      return actual;
+    }
+    // Se avanza al siguiente nodo
+    actual = actual->getNext();
+  }
+  // Si llega hasta acá, no se encontró el valor
   return nullptr;
 }
 
 template <typename DataType>
 void SLList<DataType>::remove(const DataType& value) {
-  //TODO
+
+  if (nil == nullptr){
+    // La lista está vacía, no hay nada que eliminar
+    return;
+  }
+
+  SLListNode<DataType>* actual = nil;
+
+  // Verificar si el nodo a eliminar es nil
+  if (nil->getKey() == value) {
+    // Se actualiza nil al siguiente nodo
+    nil = nil->getNext();
+    // Liberar memoria del nodo eliminado
+    delete actual; 
+    return;
+  }
+
+  // Se ocupa una referencia al nodo anterior porque hay que modificar su siguiente
+  SLListNode<DataType>* anterior = nullptr;
+
+  // Se busca el nodo a eliminar
+  while (actual != nullptr && actual->getKey() != value) {
+    anterior = actual;
+    actual = actual->getNext();
+  }
+
+  // Si se encontró el nodo
+  if (actual != nullptr) {
+    // Se salta el nodo a eliminar
+    anterior->setNext(actual->getNext());
+    // Liberar memoria del nodo eliminado
+    delete actual;
+  }
 }
 
 template <typename DataType>
