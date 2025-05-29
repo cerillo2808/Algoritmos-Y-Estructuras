@@ -33,6 +33,37 @@ class SLListNode {
   SLListNode<DataType>* next;
 };
 
+// Implementación de SLListNode
+template <typename DataType>
+SLListNode<DataType>::SLListNode() : key(), next(nullptr) {}
+
+template <typename DataType>
+SLListNode<DataType>::SLListNode(const DataType& value, SLListNode<DataType>* next)
+  : key(value), next(next) {}
+
+template <typename DataType>
+SLListNode<DataType>::~SLListNode() {}
+
+template <typename DataType>
+DataType SLListNode<DataType>::getKey() const {
+  return key;
+}
+
+template <typename DataType>
+SLListNode<DataType>* SLListNode<DataType>::getNext() const {
+  return next;
+}
+
+template <typename DataType>
+void SLListNode<DataType>::setKey(DataType key) {
+  this->key = key;
+}
+
+template <typename DataType>
+void SLListNode<DataType>::setNext(SLListNode<DataType>* newNode) {
+  next = newNode;
+}
+
 template <typename DataType>
 class SLList {
  public:
@@ -52,3 +83,25 @@ class SLList {
   SLListNode<DataType>* nil;
 
 };
+
+// Implementación de SLList
+template <typename DataType>
+void SLList<DataType>::insert(const DataType& value) {
+  //TODO
+}
+
+template <typename DataType>
+SLListNode<DataType>* SLList<DataType>::search(const DataType& value) const {
+  //TODO
+  return nullptr;
+}
+
+template <typename DataType>
+void SLList<DataType>::remove(const DataType& value) {
+  //TODO
+}
+
+template <typename DataType>
+SLListNode<DataType>* SLList<DataType>::getNil() const {
+  return nil;
+}
