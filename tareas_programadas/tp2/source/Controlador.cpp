@@ -20,30 +20,31 @@ void Controlador::run() {
     SLList<uint32_t> listaRandom;
 
     // Insertar un millón de nodos random.
-    insertarEnListaEnlazadaRandom(listaRandom, millonRandom, 1000000);
+    std::cout << "Insertando en lista random" << std::endl;
+    insertarEnListaEnlazada(listaRandom, millonRandom, 1000000);
 
     // Lista enlazada buscar diez mil elementos random. Tomar tiempo.
-    
+    std::cout << "Buscando en lista random" << std::endl;
+    buscarEnListaEnlazada(listaRandom, diezMilBuscar, 10000);
 
     // Lista enlazada eliminar diez mil elementos random. Tomar tiempo.
-    inicio = std::chrono::high_resolution_clock::now();
-    for (uint32_t i = 0; i < 10000; i++) {
-        listaRandom.remove(diezMilEliminar[i]);
-    }
-    // Detener el cronómetro
-    fin = std::chrono::high_resolution_clock::now();
-    // Calcular la duración
-    duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
-    std::cout << "Lista enlazada eliminar diez mil elementos random: " << duracion << " microsegundos" << std::endl;
+    std::cout << "Eliminando en lista random" << std::endl;
+    eliminarEnListaEnlazada(listaRandom, diezMilEliminar, 10000);
 
     // Lista enlazada insertar llaves 0, 1, ..., 999999 (un millón de nodos).
+    std::cout << "Insertando en lista ordenada" << std::endl;
     SLList<uint32_t> listaOrdenada;
     for (uint32_t i = 0; i < 1000000; i++) {
         listaOrdenada.insert(i);
     }
 
-    // TODO: Lista enlazada ordenada, buscar diez mil elementos random. Tomar tiempo
-    // TODO: Lista enlazada ordenada, eliminar diez mil elementos random. Tomar tiempo.
+    // Lista enlazada ordenada, buscar diez mil elementos random. Tomar tiempo
+    std::cout << "Buscando en lista ordenada" << std::endl;
+    buscarEnListaEnlazada(listaOrdenada, diezMilBuscar, 10000);
+
+    // Lista enlazada ordenada, eliminar diez mil elementos random. Tomar tiempo.
+    std::cout << "Eliminando en lista ordenada" << std::endl;
+    eliminarEnListaEnlazada(listaOrdenada, diezMilEliminar, 10000);
 
     // TODO: Árbol búsqueda binaria insertar un millón de nodos random.
     // TODO: Árbol búsqueda binaria buscar diez mil elementos random. Tomar tiempo.
@@ -67,10 +68,10 @@ void Controlador::run() {
     // TODO: Hash table ordenado, eliminar diez mil elementos random. Tomar tiempo.
 
     // Liberar la memoria
-    // delete[] mil;
-    // delete[] diezMil;
-    // delete[] cienMil;
-    // delete[] unMillon;
+    delete [] millonRandom;
+    delete [] diezMilEliminar;
+    delete [] diezMilBuscar;
+    std::cout << "Fin del programa." << std::endl;
 }
 
 uint32_t* Controlador::copiarArreglo(uint32_t *A, uint32_t n) {
@@ -105,14 +106,14 @@ void Controlador::iniciarArreglos() {
     diezMilBuscar = generarArregloAleatorio(10000);
 }
 
-void Controlador::insertarEnListaEnlazadaOrdenada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n) {
+void Controlador::insertarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n) {
     for (uint32_t i = 0; i < n; i++) {
         lista.insert(arreglo[i]);
     }
 
 }
 
-void Controlador::buscarEnListaEnlazadaRandom(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n) {
+void Controlador::buscarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n) {
     auto inicio = std::chrono::high_resolution_clock::now();
     for (uint32_t i = 0; i < n; i++) {
         lista.search(arreglo[i]);
@@ -122,5 +123,18 @@ void Controlador::buscarEnListaEnlazadaRandom(SLList<uint32_t>& lista, uint32_t*
     // Calcular la duración
     auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
     
-    std::cout << "Lista enlazada buscar diez mil elementos random: " << duracion << " microsegundos" << std::endl;
+    std::cout << "Duración buscar en lista enlazada: " << duracion << " microsegundos" << std::endl;
+}
+
+void Controlador::eliminarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n) {
+    auto inicio = std::chrono::high_resolution_clock::now();
+    for (uint32_t i = 0; i < n; i++) {
+        lista.remove(arreglo[i]);
+    }
+    // Detener el cronómetro
+    auto fin = std::chrono::high_resolution_clock::now();
+    // Calcular la duración
+    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
+    
+    std::cout << "Duración eliminar en lista enlazada: " << duracion << " microsegundos" << std::endl;
 }

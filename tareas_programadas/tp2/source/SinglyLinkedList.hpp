@@ -98,12 +98,10 @@ void SLList<DataType>::insert(const DataType& value) {
     // Si la lista está vacía, nil es el nuevo nodo
     nil = nuevoNodo;
   } else {
-    // Si la lista no está vacía, buscamos el último nodo
-    SLListNode<DataType>* anterior = nil;
-    while (anterior->getNext() != nullptr) {
-      anterior = anterior->getNext();
-    }
-    anterior->setNext(nuevoNodo);
+    // Si la lista no está vacía, el nuevo nodo se vuelve nil y apunta al antiguo nil
+    SLListNode<DataType>* temp = nil;
+    nil = nuevoNodo;
+    nil->setNext(temp);
   }
 }
 

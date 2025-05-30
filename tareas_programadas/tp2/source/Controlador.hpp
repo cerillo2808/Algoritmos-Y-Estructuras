@@ -57,11 +57,27 @@ class Controlador {
      */
     void iniciarArreglos();
 
-    void insertarEnListaEnlazadaRandom(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
-    void buscarEnListaEnlazadaRandom(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
-    void eliminarEnListaEnlazadaRandom(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
+    /**
+     * @brief Inserta elementos en una lista enlazada simple.
+     * @param lista La lista enlazada simple donde se insertan los elementos.
+     * @param arreglo El arreglo de los elementos a insertar.
+     * @param n El número de elementos a insertar, o el tamaño del arreglo.
+     */
+    void insertarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
 
-    void insertarEnListaEnlazadaOrdenada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
-    void buscarEnListaEnlazadaOrdenada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
-    void eliminarEnListaEnlazadaOrdenada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
+    /**
+     * @brief Busca elementos en una lista enlazada simple.
+     * @param lista La lista enlazada simple donde se buscan los elementos.
+     * @param arreglo El arreglo de los elementos a buscar.
+     * @param n El número de elementos a buscar, o el tamaño del arreglo.
+     */
+    void buscarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
+
+    /**
+     * @brief Elimina elementos de una lista enlazada simple.
+     * @param lista La lista enlazada simple de donde se eliminan los elementos.
+     * @param arreglo El arreglo de los elementos a eliminar.
+     * @param n El número de elementos a eliminar, o el tamaño del arreglo.
+     */
+    void eliminarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
 };
