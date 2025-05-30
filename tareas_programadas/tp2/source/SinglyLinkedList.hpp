@@ -34,31 +34,55 @@ class SLListNode {
 };
 
 // Implementación de SLListNode
+/**
+ * @brief Constructor de un nodo de la lista enlazada simple.
+ * Inicializa el nodo con una clave nula y el siguiente nodo como nullptr.
+ */
 template <typename DataType>
 SLListNode<DataType>::SLListNode() : key(), next(nullptr) {}
 
+/**
+ * @brief Constructor de un nodo de la lista enlazada simple.
+ * @param value El valor a almacenar en el nodo.
+ * @param next El siguiente nodo en la lista (por defecto es nullptr).
+ */
 template <typename DataType>
 SLListNode<DataType>::SLListNode(const DataType& value, SLListNode<DataType>* next)
   : key(value), next(next) {}
 
+/**
+ * @brief Destructor de un nodo de la lista enlazada simple.
+ */
 template <typename DataType>
 SLListNode<DataType>::~SLListNode() {}
 
+/**
+ * @brief Getter para la key del nodo.
+ */
 template <typename DataType>
 DataType SLListNode<DataType>::getKey() const {
   return key;
 }
 
+/**
+ * @brief Getter para el siguiente nodo en la lista.
+ */
 template <typename DataType>
 SLListNode<DataType>* SLListNode<DataType>::getNext() const {
   return next;
 }
 
+/**
+ * @brief Setter para la key del nodo.
+ */
 template <typename DataType>
 void SLListNode<DataType>::setKey(DataType key) {
   this->key = key;
 }
 
+/**
+ * @brief Setter para el siguiente nodo en la lista.
+ */
 template <typename DataType>
 void SLListNode<DataType>::setNext(SLListNode<DataType>* newNode) {
   next = newNode;
@@ -91,6 +115,12 @@ class SLList {
 template <typename DataType>
 SLList<DataType>::SLList() : nil(nullptr) {}
 
+/**
+ * @brief Inserta un nuevo nodo con el valor dado al inicio de la lista.
+ * Crea un nuevo nodo y lo convierte en el nuevo nil si la lista está vacía.
+ * Si la lista no está vacía, agrega el nuevo nodo al inicio de la lista.
+ * @param value El valor a insertar en la lista.
+ */
 template <typename DataType>
 void SLList<DataType>::insert(const DataType& value) {
   SLListNode<DataType>* nuevoNodo = new SLListNode<DataType>(value, nullptr);
@@ -105,6 +135,12 @@ void SLList<DataType>::insert(const DataType& value) {
   }
 }
 
+/**
+ * @brief Busca un nodo con el valor dado en la lista.
+ * Recorre la lista desde nil hasta encontrar el nodo con la misma clave.
+ * Si llega al final de la lista sin encontrar el valor, retorna nullptr.
+ * @param value El valor a buscar en la lista.
+ */
 template <typename DataType>
 SLListNode<DataType>* SLList<DataType>::search(const DataType& value) const {
   SLListNode<DataType>* actual = nil;
@@ -120,6 +156,12 @@ SLListNode<DataType>* SLList<DataType>::search(const DataType& value) const {
   return nullptr;
 }
 
+/**
+ * @brief Elimina el primer nodo con el valor dado de la lista.
+ * Si el nodo a eliminar es nil, se actualiza nil al siguiente nodo.
+ * Si no se encuentra el nodo, no se hace nada.
+ * @param value El valor del nodo a eliminar de la lista.
+ */
 template <typename DataType>
 void SLList<DataType>::remove(const DataType& value) {
 
@@ -128,6 +170,7 @@ void SLList<DataType>::remove(const DataType& value) {
     return;
   }
 
+  // Se empieza buscando desde nil
   SLListNode<DataType>* actual = nil;
 
   // Verificar si el nodo a eliminar es nil
@@ -157,6 +200,9 @@ void SLList<DataType>::remove(const DataType& value) {
   }
 }
 
+/**
+ * @brief Getter para nil de la lista.
+ */
 template <typename DataType>
 SLListNode<DataType>* SLList<DataType>::getNil() const {
   return nil;
