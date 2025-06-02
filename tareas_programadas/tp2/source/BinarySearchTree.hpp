@@ -47,6 +47,35 @@ class BSTreeNode {
   BSTreeNode<DataType> *right = nullptr;
 };
 
+// Implementación de BSTreeNode
+template <typename DataType>
+BSTreeNode<DataType>::BSTreeNode(const DataType &value, BSTreeNode<DataType> *parent,
+                                   BSTreeNode<DataType> *left, BSTreeNode<DataType> *right)
+    : key(value), parent(parent), left(left), right(right) {}
+
+template <typename DataType>
+BSTreeNode<DataType>::~BSTreeNode() {}
+
+template <typename DataType>
+DataType BSTreeNode<DataType>::getKey() const {
+  return key;
+}
+
+template <typename DataType>
+BSTreeNode<DataType> *BSTreeNode<DataType>::getParent() const {
+  return parent;
+}
+
+template <typename DataType>
+BSTreeNode<DataType> *BSTreeNode<DataType>::getLeft() const {
+  return left;
+}
+
+template <typename DataType>
+BSTreeNode<DataType> *BSTreeNode<DataType>::getRight() const {
+  return right;
+}
+
 template <typename DataType>
 class BSTree {
  public:
@@ -82,3 +111,167 @@ class BSTree {
  private:
   BSTreeNode<DataType> *root;
 };
+
+// Implementación de BSTree
+template <typename DataType>
+void BSTree<DataType>::insert(const DataType &value) {
+  BSTreeNode<DataType> *newNode = new BSTreeNode<DataType>(value);
+  if (root == nullptr) {
+    root = newNode;
+    return;
+  }
+
+  BSTreeNode<DataType> *current = root;
+  BSTreeNode<DataType> *parent = nullptr;
+
+  while (current != nullptr) {
+    parent = current;
+    if (value < current->getKey()) {
+      current = current->getLeft();
+    } else {
+      current = current->getRight();
+    }
+  }
+
+  newNode->setParent(parent);
+  if (value < parent->getKey()) {
+    parent->setLeft(newNode);
+  } else {
+    parent->setRight(newNode);
+  }
+}
+
+template <typename DataType>
+void BSTree<DataType>::remove(const DataType &value) {
+  BSTreeNode<DataType> *nodeToRemove = search(root, value);
+  if (nodeToRemove == nullptr) {
+    return; // El valor no se encuentra en el árbol
+  }
+
+  if (nodeToRemove->getLeft() == nullptr && nodeToRemove->getRight() == nullptr) {
+    // Caso 1: Nodo hoja
+    if (nodeToRemove->getParent() == nullptr) {
+      root = nullptr; // Árbol vacío
+    } else if (nodeToRemove->getParent()->getLeft() == nodeToRemove) {
+      nodeToRemove->getParent()->setLeft(nullptr);
+    } else {
+      nodeToRemove->getParent()->setRight(nullptr);
+    }
+  } else if (nodeToRemove->getLeft() == nullptr || nodeToRemove->getRight() == nullptr) {
+    // Caso 2: Nodo con un solo hijo
+    BSTreeNode<DataType> *child = (nodeToRemove->getLeft() != nullptr) ? nodeToRemove->getLeft() : nodeToRemove->getRight();
+    if (nodeToRemove->getParent() == nullptr) {
+      root = child; // Actualizar la raíz del árbol
+      child->setParent(nullptr);
+    } else if (nodeToRemove->getParent()->getLeft() == nodeToRemove) {
+      nodeToRemove->getParent()->setLeft(child);
+    } else {
+      nodeToRemove->getParent()->setRight(child);
+    }
+    child->setParent(nodeToRemove->getParent());
+  } else {
+    // Caso 3: Nodo con dos hijos
+    BSTreeNode<DataType> *successor = getSuccessor(nodeToRemove);
+    DataType successorValue = successor->getKey();
+    remove(successorValue); // Eliminar el sucesor
+    nodeToRemove->key = successorValue; // Reemplazar el valor del nodo a eliminar
+  }
+
+  delete nodeToRemove;
+}
+
+template <typename DataType>
+void BSTree<DataType>::inorderWalk(BSTreeNode<DataType> *rootOfSubtree) const {
+  if (rootOfSubtree != nullptr) {
+    inorderWalk(rootOfSubtree->getLeft());
+    std::cout << rootOfSubtree->getKey() << " ";
+    inorderWalk(rootOfSubtree->getRight());
+  }
+}
+
+template <typename DataType>
+void BSTree<DataType>::preorderWalk(BSTreeNode<DataType> *rootOfSubtree) const {
+  if (rootOfSubtree != nullptr) {
+    std::cout << rootOfSubtree->getKey() << " ";
+    preorderWalk(rootOfSubtree->getLeft());
+    preorderWalk(rootOfSubtree->getRight());
+  }
+}
+
+template <typename DataType>
+void BSTree<DataType>::postorderWalk(BSTreeNode<DataType> *rootOfSubtree) const {
+  if (rootOfSubtree != nullptr) {
+    postorderWalk(rootOfSubtree->getLeft());
+    postorderWalk(rootOfSubtree->getRight());
+    std::cout << rootOfSubtree->getKey() << " ";
+  }
+}
+
+template <typename DataType>
+BSTreeNode<DataType> *BSTree<DataType>::search(const BSTreeNode<DataType> *rootOfSubtree,
+                                                  const DataType &value) const {
+  BSTreeNode<DataType> *current = rootOfSubtree;
+  while (current != nullptr) {
+    if (value == current->getKey()) {
+      return const_cast<BSTreeNode<DataType> *>(current);
+    } else if (value < current->getKey()) {
+      current = current->getLeft();
+    } else {
+      current = current->getRight();
+    }
+  }
+  return nullptr; // No se encontró el valor
+}
+
+template <typename DataType>
+BSTreeNode<DataType> *BSTree<DataType>::getMinimum(
+    const BSTreeNode<DataType> *rootOfSubtree) const {
+  if (rootOfSubtree == nullptr) {
+    return nullptr;
+  }
+  const BSTreeNode<DataType> *current = rootOfSubtree;
+  while (current->getLeft() != nullptr) {
+    current = current->getLeft();
+  }
+  return const_cast<BSTreeNode<DataType> *>(current);
+}
+
+template <typename DataType>
+BSTreeNode<DataType> *BSTree<DataType>::getMaximum(
+    const BSTreeNode<DataType> *rootOfSubtree) const {
+  if (rootOfSubtree == nullptr) {
+    return nullptr;
+  }
+  const BSTreeNode<DataType> *current = rootOfSubtree;
+  while (current->getRight() != nullptr) {
+    current = current->getRight();
+  }
+  return const_cast<BSTreeNode<DataType> *>(current);
+}
+
+template <typename DataType>
+BSTreeNode<DataType> *BSTree<DataType>::getSuccessor(
+    const BSTreeNode<DataType> *node) const {
+  if (node->getRight() != nullptr) {
+    return getMinimum(node->getRight());
+  }
+
+  BSTreeNode<DataType> *current = node->getParent();
+  while (current != nullptr && node == current->getRight()) {
+    node = current;
+    current = current->getParent();
+  }
+  return current; // Puede ser nullptr si no hay sucesor
+}
+
+template <typename DataType>
+BSTreeNode<DataType> *BSTree<DataType>::getRoot() const {
+  return root;
+}
+
+template <typename DataType>
+void BSTree<DataType>::fastInsert(size_t n) {
+  for (size_t i = 0; i < n; ++i) {
+    insert(static_cast<DataType>(i));
+  }
+}
