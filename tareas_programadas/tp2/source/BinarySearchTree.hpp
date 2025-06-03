@@ -77,9 +77,24 @@ BSTreeNode<DataType> *BSTreeNode<DataType>::getRight() const {
 }
 
 template <typename DataType>
+void BSTreeNode<DataType>::setParent(BSTreeNode<DataType>* parent) {
+    this->parent = parent;
+}
+
+template <typename DataType>
+void BSTreeNode<DataType>::setLeft(BSTreeNode<DataType>* left) {
+    this->left = left;
+}
+
+template <typename DataType>
+void BSTreeNode<DataType>::setRight(BSTreeNode<DataType>* right) {
+    this->right = right;
+}
+
+template <typename DataType>
 class BSTree {
  public:
-  BSTree() = default;
+  BSTree();
 
   ~BSTree() {};
 
@@ -113,6 +128,10 @@ class BSTree {
 };
 
 // Implementación de BSTree
+
+template <typename DataType>
+BSTree<DataType>::BSTree() : root(nullptr) {}
+
 template <typename DataType>
 void BSTree<DataType>::insert(const DataType &value) {
   BSTreeNode<DataType> *newNode = new BSTreeNode<DataType>(value);
