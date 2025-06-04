@@ -125,6 +125,7 @@ class BSTree {
   
  private:
   BSTreeNode<DataType> *root;
+  void buildBalanced(DataType left, DataType right);
 };
 
 // Implementación de BSTree
@@ -284,13 +285,21 @@ BSTreeNode<DataType> *BSTree<DataType>::getSuccessor(
 }
 
 template <typename DataType>
-BSTreeNode<DataType> *BSTree<DataType>::getRoot() const {
-  return root;
+BSTreeNode<DataType>* BSTree<DataType>::getRoot() const {
+    return root;
 }
 
 template <typename DataType>
 void BSTree<DataType>::fastInsert(size_t n) {
-  for (size_t i = 0; i < n; ++i) {
-    insert(static_cast<DataType>(i));
-  }
+  if (n == 0) return;
+  buildBalanced(0, static_cast<DataType>(n - 1));
+}
+
+template <typename DataType>
+void BSTree<DataType>::buildBalanced(DataType left, DataType right) {
+  if (left > right) return;
+  DataType mid = left + (right - left) / 2;
+  insert(mid);  // inserta el valor medio
+  buildBalanced(left, mid - 1);   // lado izquierdo
+  buildBalanced(mid + 1, right);  // lado derecho
 }
