@@ -84,4 +84,42 @@ class Controlador {
      * @param n El número de elementos a eliminar, o el tamaño del arreglo.
      */
     void eliminarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n);
+
+    /**
+     * @brief Realiza operaciones en una lista simplemente enlazada.
+     * Este método ejecuta una serie de operaciones de inserción, búsqueda y eliminación
+     * en listas simplemente enlazadas, tanto con números aleatorios como con números ordenados.
+     */
+    void operacionesListaSimplementeEnlazada();
+
+    /**
+     * @brief Inserta elementos en un árbol de búsqueda binaria.
+     * @param arbol El árbol de búsqueda binaria donde se insertan los elementos.
+     * @param arreglo El arreglo de los elementos a insertar.
+     * @param n El número de elementos a insertar, o el tamaño del arreglo.
+     */
+    void insertarEnArbolBusquedaBinaria(BSTree<uint32_t>& arbol, uint32_t* arreglo, uint32_t n);
+
+    /**
+     * @brief Busca elementos en un árbol de búsqueda binaria.
+     * @param arbol El árbol de búsqueda binaria donde se buscan los elementos.
+     * @param arreglo El arreglo de los elementos a buscar.
+     * @param n El número de elementos a buscar, o el tamaño del arreglo.
+     */
+    void buscarEnArbolBusquedaBinaria(BSTree<uint32_t>& arbol, uint32_t* arreglo, uint32_t n);
+
+    /**
+     * @brief Elimina elementos en un árbol de búsqueda binaria.
+     * @param arbol El árbol de búsqueda binaria donde se buscan los elementos.
+     * @param arreglo El arreglo de los elementos a buscar.
+     * @param n El número de elementos a buscar, o el tamaño del arreglo.
+     */
+    void eliminarEnArbolBusquedaBinaria(BSTree<uint32_t>& arbol, uint32_t* arreglo, uint32_t n);
+
+    /**
+     * @brief Realiza operaciones en un árbol de búsqueda binaria.
+     * Este método ejecuta una serie de operaciones de inserción, búsqueda y eliminación
+     * en árboles de búsqueda binaria, tanto con números aleatorios como con números ordenados.
+     */
+    void operacionesArbolBusquedaBinaria();
 };
