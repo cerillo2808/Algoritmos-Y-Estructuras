@@ -19,7 +19,8 @@ class Controlador {
      */
     uint32_t* diezMilEliminar;
     uint32_t* diezMilBuscar;
-    uint32_t* millonRandom;
+    uint32_t* millonRandomSinRepetir;
+    uint32_t* millonRandomConRepetidos;
 
     public:
     Controlador() = default;
@@ -35,11 +36,21 @@ class Controlador {
 
     /**
      * @brief Genera un arreglo de enteros sin signo de 32 bits con números aleatorios.
-     * Este método utiliza la biblioteca <random> para generar números aleatorios en el rango [0, 1000000).
+     * Este método utiliza la biblioteca <random> para generar números aleatorios en el rango [0, 3000000).
+     * El arerglo generado puede tener valores repetidos.
      * @param n El tamaño del arreglo a generar.
      * @return Un puntero al arreglo generado.
      */
-    uint32_t* generarArregloAleatorio(uint32_t n);
+    uint32_t* generarArregloAleatorioRepetidos(uint32_t n);
+
+    /**
+     * @brief Genera un arreglo de enteros sin signo de 32 bits con números aleatorios.
+     * Este método genera un arreglo de enteros que van desde 0 hasta 2999999 sin repetidos.
+     * Este método utiliza la biblioteca <random> para barajar todos los elementos posibles.
+     * Toma los primeros n elementos del universo barajado.
+     * El arreglo generado no contiene valores repetidos.
+     */
+    uint32_t* generarArregloAleatorioSinRepetidos(uint32_t n);
 
     /**
      * @brief Copia un arreglo de enteros sin signo de 32 bits.
@@ -49,13 +60,6 @@ class Controlador {
      * @return Un puntero al nuevo arreglo copiado.
      */
     uint32_t* copiarArreglo(uint32_t *A, uint32_t n);
-
-    /**
-     * @brief Inicializa los arreglos de enteros sin signo de 32 bits.
-     * Este método genera arreglos aleatorios de diferentes tamaños (1000, 10000, 100000 y 1000000).
-     * Usa el método generarArregloAleatorio para crear los arreglos y los almacena en los punteros correspondientes.
-     */
-    void iniciarArreglos();
 
     /**
      * @brief Inserta elementos en una lista enlazada simple.

@@ -2,6 +2,8 @@
 
 #include <iostream>
 #include <random>
+#include <vector>
+#include <algorithm>
 #include "BinarySearchTree.hpp"
 #include "ChainedHashTable.hpp"
 #include "DoublyLinkedList.hpp"
@@ -12,16 +14,22 @@
 void Controlador::run() {
 
     // Generar arreglos aleatorios
-    millonRandom = generarArregloAleatorio(1000000);
-    diezMilEliminar = generarArregloAleatorio(10000);
-    diezMilBuscar = generarArregloAleatorio(10000);
+    millonRandomSinRepetir = generarArregloAleatorioSinRepetidos(1000000);
+    millonRandomConRepetidos = generarArregloAleatorioRepetidos(1000000);
+    diezMilEliminar = generarArregloAleatorioRepetidos(10000);
+    diezMilBuscar = generarArregloAleatorioRepetidos(10000);
+
+    // PRUEBAS
+    BSTree<uint32_t> arbol;
+    arbol.fastInsert(10);
+    arbol.inorderWalk(arbol.getRoot());
 
     // Lista enlazada orden random
     SLList<uint32_t> listaRandom;
 
     // Insertar un millón de nodos random.
     std::cout << "Insertando en lista random" << std::endl;
-    insertarEnListaEnlazada(listaRandom, millonRandom, 1000000);
+    insertarEnListaEnlazada(listaRandom, millonRandomConRepetidos, 1000000);
 
     // Lista enlazada buscar diez mil elementos random. Tomar tiempo.
     std::cout << "Buscando en lista random" << std::endl;
@@ -68,7 +76,8 @@ void Controlador::run() {
     // TODO: Hash table ordenado, eliminar diez mil elementos random. Tomar tiempo.
 
     // Liberar la memoria
-    delete [] millonRandom;
+    delete [] millonRandomSinRepetir;
+    delete [] millonRandomConRepetidos;
     delete [] diezMilEliminar;
     delete [] diezMilBuscar;
     std::cout << "Fin del programa." << std::endl;
@@ -82,7 +91,7 @@ uint32_t* Controlador::copiarArreglo(uint32_t *A, uint32_t n) {
     return B;
 }
 
-uint32_t* Controlador::generarArregloAleatorio(uint32_t n) {
+uint32_t* Controlador::generarArregloAleatorioRepetidos(uint32_t n) {
     uint32_t* arreglo = new uint32_t[n];
 
     // Configurar el generador de números aleatorios
@@ -99,11 +108,24 @@ uint32_t* Controlador::generarArregloAleatorio(uint32_t n) {
     return arreglo;
 }
 
-void Controlador::iniciarArreglos() {
-    // TODO: revisar cuántos arreglos se ocupan y de qué tamaño
-    millonRandom = generarArregloAleatorio(1000000);
-    diezMilEliminar = generarArregloAleatorio(10000);
-    diezMilBuscar = generarArregloAleatorio(10000);
+uint32_t* Controlador::generarArregloAleatorioSinRepetidos(uint32_t n) {
+    const uint32_t rango = 3000000; // 0 a 2999999
+    std::vector<uint32_t> universo(rango);
+    for (uint32_t i = 0; i < rango; ++i) {
+        universo[i] = i;
+    }
+
+    // Barajar el universo
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::shuffle(universo.begin(), universo.end(), gen);
+
+    // Tomar los primeros n elementos
+    uint32_t* arreglo = new uint32_t[n];
+    for (uint32_t i = 0; i < n; ++i) {
+        arreglo[i] = universo[i];
+    }
+    return arreglo;
 }
 
 void Controlador::insertarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n) {
