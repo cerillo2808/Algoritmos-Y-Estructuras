@@ -22,7 +22,7 @@ void Controlador::run() {
     // PRUEBAS
 
     // operacionesListaSimplementeEnlazada();
-    // operacioesnesArbolBusquedaBinaria();
+    // operacionesArbolBusquedaBinaria();
 
     // TODO: Árbol rojinegro insertar un millón de nodos random.
     // TODO: Árbol rojinegro buscar diez mil elementos random. Tomar tiempo.

@@ -262,12 +262,24 @@ void BSTree<DataType>::remove(const DataType &value) {
     // Caso 3: Nodo con dos hijos
     // Encuentra el sucesor (el mínimo del subárbol derecho)
     BSTreeNode<DataType> *successor = getSuccessor(nodeToRemove);
-    // Reemplaza el valor del nodo a eliminar con el del sucesor
-    DataType successorValue = successor->getKey();
-    // Elimina el sucesor
-    remove(successorValue);
-    // Reemplazar el valor del nodo a eliminar
-    nodeToRemove->key = successorValue;
+    // Intercambiar claves
+    nodeToRemove->key = successor->getKey();
+
+    // Eliminar el sucesor físicamente (que tendrá a lo sumo un hijo)
+    if (successor->getParent()->getLeft() == successor) {
+      // Si el sucesor es el hijo izquierdo del padre, se conecta el hijo derecho del sucesor al padre del sucesor
+      successor->getParent()->setLeft(successor->getRight());
+      // Si el sucesor tiene un hijo derecho, se actualiza su padre
+      if (successor->getRight()) successor->getRight()->setParent(successor->getParent());
+    } else {
+      // Si el sucesor es el hijo derecho del padre, se conecta el hijo derecho del sucesor al padre del sucesor
+      successor->getParent()->setRight(successor->getRight());
+      // Si el sucesor tiene un hijo derecho, se actualiza su padre
+      if (successor->getRight()) successor->getRight()->setParent(successor->getParent());
+    }
+
+    delete successor;
+    return;
   }
 
   delete nodeToRemove;
