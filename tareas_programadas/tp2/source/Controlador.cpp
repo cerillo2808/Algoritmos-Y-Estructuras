@@ -153,9 +153,9 @@ void Controlador::buscarEnArbolBusquedaBinaria(BSTree<uint32_t>& arbol, uint32_t
     // Detener el cronómetro
     auto fin = std::chrono::high_resolution_clock::now();
     // Calcular la duración
-    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
+    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
     
-    std::cout << duracion << " microsegundos" << std::endl;
+    std::cout << duracion << " milisegundos" << std::endl;
 }
 
 void Controlador::eliminarEnArbolBusquedaBinaria(BSTree<uint32_t>& arbol, uint32_t* arreglo, uint32_t n) {
@@ -166,9 +166,9 @@ void Controlador::eliminarEnArbolBusquedaBinaria(BSTree<uint32_t>& arbol, uint32
     // Detener el cronómetro
     auto fin = std::chrono::high_resolution_clock::now();
     // Calcular la duración
-    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
+    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
     
-    std::cout << duracion << " microsegundos" << std::endl;
+    std::cout << duracion << " milisegundos" << std::endl;
 }
 
 void Controlador::operacionesArbolBusquedaBinaria() {
