@@ -40,7 +40,6 @@ class ChainedHashTable {
 template <typename DataType>
 ChainedHashTable<DataType>::ChainedHashTable(size_t size)
   : size(size), table(size) {
-    std::cout << "Inicializada tabla con " << size << " buckets\n";
   }
 
 template <typename DataType>

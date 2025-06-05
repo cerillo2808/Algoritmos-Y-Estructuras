@@ -6,7 +6,6 @@
 #include <algorithm>
 #include "BinarySearchTree.hpp"
 #include "ChainedHashTable.hpp"
-#include "DoublyLinkedList.hpp"
 #include "RedBlackTree.hpp"
 #include "SinglyLinkedList.hpp"
 #include "Controlador.hpp"
@@ -19,7 +18,7 @@ void Controlador::run() {
     diezMilEliminar = generarArregloAleatorioRepetidos(10000);
     diezMilBuscar = generarArregloAleatorioRepetidos(10000);
 
-    operacionesListaSimplementeEnlazada();
+    // operacionesListaSimplementeEnlazada();
     operacionesArbolBusquedaBinaria();
     operacionesArbolRojinegro();
     operacionesTablaHashEncadenada();
@@ -29,7 +28,6 @@ void Controlador::run() {
     delete [] millonRandomConRepetidos;
     delete [] diezMilEliminar;
     delete [] diezMilBuscar;
-    std::cout << "Fin del programa." << std::endl;
 }
 
 uint32_t* Controlador::copiarArreglo(uint32_t *A, uint32_t n) {
@@ -93,7 +91,7 @@ void Controlador::buscarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreg
     // Calcular la duración
     auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
     
-    std::cout << "Duración buscar en lista enlazada: " << duracion << " microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 void Controlador::eliminarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n) {
@@ -106,7 +104,7 @@ void Controlador::eliminarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arr
     // Calcular la duración
     auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
     
-    std::cout << "Duración eliminar en lista enlazada: " << duracion << " microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 void Controlador::operacionesListaSimplementeEnlazada() {
@@ -114,30 +112,30 @@ void Controlador::operacionesListaSimplementeEnlazada() {
     SLList<uint32_t> listaRandom;
 
     // Insertar un millón de nodos random.
-    std::cout << "Insertando en lista random" << std::endl;
+    std::cout << "\nInsertando en lista random" << std::endl;
     insertarEnListaEnlazada(listaRandom, millonRandomConRepetidos, 1000000);
 
     // Lista enlazada buscar diez mil elementos random. Tomar tiempo.
-    std::cout << "Buscando en lista random" << std::endl;
+    std::cout << "Buscando en lista random: ";
     buscarEnListaEnlazada(listaRandom, diezMilBuscar, 10000);
 
     // Lista enlazada eliminar diez mil elementos random. Tomar tiempo.
-    std::cout << "Eliminando en lista random" << std::endl;
+    std::cout << "Eliminando en lista random: ";
     eliminarEnListaEnlazada(listaRandom, diezMilEliminar, 10000);
 
     // Lista enlazada insertar llaves 0, 1, ..., 999999 (un millón de nodos).
-    std::cout << "Insertando en lista ordenada" << std::endl;
+    std::cout << "\nInsertando en lista ordenada" << std::endl;
     SLList<uint32_t> listaOrdenada;
     for (uint32_t i = 0; i < 1000000; i++) {
         listaOrdenada.insert(i);
     }
 
     // Lista enlazada ordenada, buscar diez mil elementos random. Tomar tiempo
-    std::cout << "Buscando en lista ordenada" << std::endl;
+    std::cout << "Buscando en lista ordenada: ";
     buscarEnListaEnlazada(listaOrdenada, diezMilBuscar, 10000);
 
     // Lista enlazada ordenada, eliminar diez mil elementos random. Tomar tiempo.
-    std::cout << "Eliminando en lista ordenada" << std::endl;
+    std::cout << "Eliminando en lista ordenada: ";
     eliminarEnListaEnlazada(listaOrdenada, diezMilEliminar, 10000);
 }
 
@@ -157,7 +155,7 @@ void Controlador::buscarEnArbolBusquedaBinaria(BSTree<uint32_t>& arbol, uint32_t
     // Calcular la duración
     auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
     
-    std::cout << "Duración buscar en árbol binario: " << duracion << " microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 void Controlador::eliminarEnArbolBusquedaBinaria(BSTree<uint32_t>& arbol, uint32_t* arreglo, uint32_t n) {
@@ -170,7 +168,7 @@ void Controlador::eliminarEnArbolBusquedaBinaria(BSTree<uint32_t>& arbol, uint32
     // Calcular la duración
     auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
     
-    std::cout << "Duración eliminar en árbol binario: " << duracion << " microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 void Controlador::operacionesArbolBusquedaBinaria() {
@@ -178,30 +176,30 @@ void Controlador::operacionesArbolBusquedaBinaria() {
     BSTree<uint32_t> arbolBinarioRandom;
 
     // Árbol búsqueda binaria insertar un millón de nodos random.
-    std::cout << "Insertando en arbol binario random" << std::endl;
+    std::cout << "\nInsertando en arbol binario random" << std::endl;
     insertarEnArbolBusquedaBinaria(arbolBinarioRandom, millonRandomSinRepetir, 1000000);
 
     // Árbol búsqueda binaria buscar diez mil elementos random. Tomar tiempo.
-    std::cout << "Buscando en arbol binario random" << std::endl;
+    std::cout << "Buscando en arbol binario random: ";
     buscarEnArbolBusquedaBinaria(arbolBinarioRandom, diezMilBuscar, 10000);
     
     // Árbol búsqueda binaria eliminar diez mil elementos random. Tomar tiempo.
-    std::cout << "Eliminando en arbol binario random" << std::endl;
+    std::cout << "Eliminando en arbol binario random: ";
     eliminarEnArbolBusquedaBinaria(arbolBinarioRandom, diezMilEliminar, 10000);
 
     // Árbol búsqueda binaria ordenada
     BSTree<uint32_t> arbolBinarioOrdenado;
 
     // Árbol búsqueda binaria insertar llaves 0, 1, ..., 999999 (un millón de nodos).
-    std::cout << "Insertando en arbol binario ordenado" << std::endl;
+    std::cout << "\nInsertando en arbol binario ordenado" << std::endl;
     arbolBinarioOrdenado.fastInsert(1000000);
 
     // Árbol búsqueda binaria ordenado, buscar diez mil elementos random. Tomar tiempo.
-    std::cout << "Buscando en arbol binario ordenado" << std::endl;
+    std::cout << "Buscando en arbol binario ordenado: ";
     buscarEnArbolBusquedaBinaria(arbolBinarioOrdenado, diezMilBuscar, 10000);
 
     // Árbol búsqueda binaria ordenado, eliminar diez mil elementos random. Tomar tiempo.
-    std::cout << "Eliminando en arbol binario ordenado" << std::endl;
+    std::cout << "Eliminando en arbol binario ordenado: ";
     eliminarEnArbolBusquedaBinaria(arbolBinarioOrdenado, diezMilEliminar, 10000);
 }
 
@@ -221,7 +219,7 @@ void Controlador::buscarEnArbolRojinegro(RBTree<uint32_t>& arbol, uint32_t* arre
     // Calcular la duración
     auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
     
-    std::cout << "Duración buscar en árbol rojinegro: " << duracion << " microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 void Controlador::eliminarEnArbolRojinegro(RBTree<uint32_t>& arbol, uint32_t* arreglo, uint32_t n) {
@@ -234,7 +232,7 @@ void Controlador::eliminarEnArbolRojinegro(RBTree<uint32_t>& arbol, uint32_t* ar
     // Calcular la duración
     auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
     
-    std::cout << "Duración eliminar en árbol rojinegro: " << duracion << " microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 void Controlador::operacionesArbolRojinegro() {
@@ -242,32 +240,32 @@ void Controlador::operacionesArbolRojinegro() {
     RBTree<uint32_t> arbolRojinegroRandom;
 
     // Árbol rojinegro insertar un millón de nodos random.
-    std::cout << "Insertando en árbol rojinegro random" << std::endl;
+    std::cout << "\nInsertando en árbol rojinegro random" << std::endl;
     insertarEnArbolRojinegro(arbolRojinegroRandom, millonRandomSinRepetir, 1000000);
 
     // Árbol rojinegro buscar diez mil elementos random. Tomar tiempo.
-    std::cout << "Buscando en árbol rojinegro random" << std::endl;
+    std::cout << "Buscando en árbol rojinegro random: ";
     buscarEnArbolRojinegro(arbolRojinegroRandom, diezMilBuscar, 10000);
     
     // Árbol rojinegro eliminar diez mil elementos random. Tomar tiempo.
-    std::cout << "Eliminando en árbol rojinegro random" << std::endl;
+    std::cout << "Eliminando en árbol rojinegro random: ";
     eliminarEnArbolRojinegro(arbolRojinegroRandom, diezMilEliminar, 10000);
 
     // Árbol rojinegro ordenado
     RBTree<uint32_t> arbolRojinegroOrdenado;
 
     // Árbol rojinegro insertar llaves 0, 1, ..., 999999 (un millón de nodos).
-    std::cout << "Insertando en árbol rojinegro ordenado" << std::endl;
+    std::cout << "\nInsertando en árbol rojinegro ordenado" << std::endl;
     for (u_int32_t i = 0; i < 1000000; i++) {
         arbolRojinegroOrdenado.insert(i);
     }
 
     // Árbol rojinegro ordenado, buscar diez mil elementos random. Tomar tiempo.
-    std::cout << "Buscando en árbol rojinegro ordenado" << std::endl;
+    std::cout << "Buscando en árbol rojinegro ordenado: ";
     buscarEnArbolRojinegro(arbolRojinegroOrdenado, diezMilBuscar, 10000);
 
     // Árbol rojinegro ordenado, eliminar diez mil elementos random. Tomar tiempo.
-    std::cout << "Eliminando en árbol rojinegro ordenado" << std::endl;
+    std::cout << "Eliminando en árbol rojinegro ordenado: ";
     eliminarEnArbolRojinegro(arbolRojinegroOrdenado, diezMilEliminar, 10000);
 }
 
@@ -287,7 +285,7 @@ void Controlador::buscarEnTablaHashEncadenada(ChainedHashTable<uint32_t>& tabla,
     // Calcular la duración
     auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
     
-    std::cout << "Duración buscar en tabla hash encadenada: " << duracion << " microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 void Controlador::eliminarEnTablaHashEncadenada(ChainedHashTable<uint32_t>& tabla, uint32_t* arreglo, uint32_t n) {
@@ -300,7 +298,7 @@ void Controlador::eliminarEnTablaHashEncadenada(ChainedHashTable<uint32_t>& tabl
     // Calcular la duración
     auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
     
-    std::cout << "Duración eliminar en tabla hash encadenada: " << duracion << " microsegundos" << std::endl;
+    std::cout << duracion << " microsegundos" << std::endl;
 }
 
 void Controlador::operacionesTablaHashEncadenada() {
@@ -308,31 +306,31 @@ void Controlador::operacionesTablaHashEncadenada() {
     ChainedHashTable<uint32_t> tablaHashRandom(1000000);
 
     // Hash table insertar un millón de nodos random.
-    std::cout << "Insertando en tabla hash random" << std::endl;
+    std::cout << "\nInsertando en tabla hash random" << std::endl;
     insertarEnTablaHashEncadenada(tablaHashRandom, millonRandomSinRepetir, 1000000);
 
     // Hash table buscar diez mil elementos random. Tomar tiempo.
-    std::cout << "Buscando en tabla hash random" << std::endl;
+    std::cout << "Buscando en tabla hash random: ";
     buscarEnTablaHashEncadenada(tablaHashRandom, diezMilBuscar, 10000);
 
     // Hash table eliminar diez mil elementos random. Tomar tiempo.
-    std::cout << "Eliminando en tabla hash random" << std::endl;
+    std::cout << "Eliminando en tabla hash random: ";
     eliminarEnTablaHashEncadenada(tablaHashRandom, diezMilEliminar, 10000);
 
     // Hash table encadenada ordenada
     ChainedHashTable<uint32_t> tablaHashOrdenada(1000000);
 
     // Hash table insertar llaves 0, 1, ..., 999999 (un millón de nodos).
-    std::cout << "Insertando en tabla hash ordenada" << std::endl;
+    std::cout << "\nInsertando en tabla hash ordenada" << std::endl;
     for (uint32_t i = 0; i < 1000000; i++) {
         tablaHashOrdenada.insert(i);
     }
 
     // Hash table ordenado, buscar diez mil elementos random. Tomar tiempo.
-    std::cout << "Buscando en tabla hash ordenada" << std::endl;
+    std::cout << "Buscando en tabla hash ordenada: ";
     buscarEnTablaHashEncadenada(tablaHashOrdenada, diezMilBuscar, 10000);
 
     // Hash table ordenado, eliminar diez mil elementos random. Tomar tiempo.
-    std::cout << "Eliminando en tabla hash ordenada" << std::endl;
+    std::cout << "Eliminando en tabla hash ordenada: ";
     eliminarEnTablaHashEncadenada(tablaHashOrdenada, diezMilEliminar, 10000);
 }
