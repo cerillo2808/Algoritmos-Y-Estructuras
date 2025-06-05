@@ -18,7 +18,7 @@ void Controlador::run() {
     diezMilEliminar = generarArregloAleatorioRepetidos(10000);
     diezMilBuscar = generarArregloAleatorioRepetidos(10000);
 
-    // operacionesListaSimplementeEnlazada();
+    operacionesListaSimplementeEnlazada();
     operacionesArbolBusquedaBinaria();
     operacionesArbolRojinegro();
     operacionesTablaHashEncadenada();
