@@ -1,107 +1,110 @@
+// Corrida #1
 Inicio del programa
 
 Insertando en lista random
-Buscando en lista random: 13921 milisegundos
-Eliminando en lista random: 15361 milisegundos
+Buscando en lista random: 12340 milisegundos
+Eliminando en lista random: 16224 milisegundos
 
 Insertando en lista ordenada
-Buscando en lista ordenada: 13837 milisegundos
-Eliminando en lista ordenada: 15296 milisegundos
+Buscando en lista ordenada: 12604 milisegundos
+Eliminando en lista ordenada: 16847 milisegundos
 
 Insertando en arbol binario random
-Buscando en arbol binario random: 3518 microsegundos
-Eliminando en arbol binario random: 4711 microsegundos
+Buscando en arbol binario random: 5 milisegundos
+Eliminando en arbol binario random: 6 milisegundos
 
 Insertando en arbol binario ordenado
-Buscando en arbol binario ordenado: 1975 microsegundos
-Eliminando en arbol binario ordenado: 1926 microsegundos
+Buscando en arbol binario ordenado: 21051 milisegundos
+Eliminando en arbol binario ordenado: 20581 milisegundos
 
 Insertando en árbol rojinegro random
-Buscando en árbol rojinegro random: 4046 microsegundos
-Eliminando en árbol rojinegro random: 4697 microsegundos
+Buscando en árbol rojinegro random: 3330 microsegundos
+Eliminando en árbol rojinegro random: 3780 microsegundos
 
 Insertando en árbol rojinegro ordenado
-Buscando en árbol rojinegro ordenado: 2548 microsegundos
-Eliminando en árbol rojinegro ordenado: 2929 microsegundos
+Buscando en árbol rojinegro ordenado: 1729 microsegundos
+Eliminando en árbol rojinegro ordenado: 2250 microsegundos
 
 Insertando en tabla hash random
-Buscando en tabla hash random: 574 microsegundos
-Eliminando en tabla hash random: 836 microsegundos
+Buscando en tabla hash random: 571 microsegundos
+Eliminando en tabla hash random: 859 microsegundos
 
 Insertando en tabla hash ordenada
-Buscando en tabla hash ordenada: 649 microsegundos
-Eliminando en tabla hash ordenada: 825 microsegundos
+Buscando en tabla hash ordenada: 647 microsegundos
+Eliminando en tabla hash ordenada: 845 microsegundos
 
 Fin del programa
 
+// Corrida #2
 Inicio del programa
 
 Insertando en lista random
-Buscando en lista random: 13813 milisegundos
-Eliminando en lista random: 15242 milisegundos
+Buscando en lista random: 12437 milisegundos
+Eliminando en lista random: 16316 milisegundos
 
 Insertando en lista ordenada
-Buscando en lista ordenada: 14037 milisegundos
-Eliminando en lista ordenada: 15293 milisegundos
+Buscando en lista ordenada: 12464 milisegundos
+Eliminando en lista ordenada: 16459 milisegundos
 
 Insertando en arbol binario random
-Buscando en arbol binario random: 4653 microsegundos
-Eliminando en arbol binario random: 4962 microsegundos
+Buscando en arbol binario random: 4 milisegundos
+Eliminando en arbol binario random: 4 milisegundos
 
 Insertando en arbol binario ordenado
-Buscando en arbol binario ordenado: 1947 microsegundos
-Eliminando en arbol binario ordenado: 1919 microsegundos
+Buscando en arbol binario ordenado: 20168 milisegundos
+Eliminando en arbol binario ordenado: 20109 milisegundos
 
 Insertando en árbol rojinegro random
-Buscando en árbol rojinegro random: 3508 microsegundos
-Eliminando en árbol rojinegro random: 3961 microsegundos
+Buscando en árbol rojinegro random: 3207 microsegundos
+Eliminando en árbol rojinegro random: 3585 microsegundos
 
 Insertando en árbol rojinegro ordenado
-Buscando en árbol rojinegro ordenado: 2275 microsegundos
-Eliminando en árbol rojinegro ordenado: 2585 microsegundos
+Buscando en árbol rojinegro ordenado: 1912 microsegundos
+Eliminando en árbol rojinegro ordenado: 2391 microsegundos
 
 Insertando en tabla hash random
-Buscando en tabla hash random: 601 microsegundos
-Eliminando en tabla hash random: 853 microsegundos
+Buscando en tabla hash random: 552 microsegundos
+Eliminando en tabla hash random: 826 microsegundos
 
 Insertando en tabla hash ordenada
-Buscando en tabla hash ordenada: 689 microsegundos
-Eliminando en tabla hash ordenada: 879 microsegundos
+Buscando en tabla hash ordenada: 781 microsegundos
+Eliminando en tabla hash ordenada: 950 microsegundos
 
 Fin del programa
 
+// Corrida #3
 Inicio del programa
 
 Insertando en lista random
-Buscando en lista random: 13712 milisegundos
-Eliminando en lista random: 16530 milisegundos
+Buscando en lista random: 12382 milisegundos
+Eliminando en lista random: 16221 milisegundos
 
 Insertando en lista ordenada
-Buscando en lista ordenada: 13982 milisegundos
-Eliminando en lista ordenada: 15468 milisegundos
+Buscando en lista ordenada: 12567 milisegundos
+Eliminando en lista ordenada: 16567 milisegundos
 
 Insertando en arbol binario random
-Buscando en arbol binario random: 4187 microsegundos
-Eliminando en arbol binario random: 4570 microsegundos
+Buscando en arbol binario random: 3 milisegundos
+Eliminando en arbol binario random: 4 milisegundos
 
 Insertando en arbol binario ordenado
-Buscando en arbol binario ordenado: 2106 microsegundos
-Eliminando en arbol binario ordenado: 2000 microsegundos
+Buscando en arbol binario ordenado: 20483 milisegundos
+Eliminando en arbol binario ordenado: 20382 milisegundos
 
 Insertando en árbol rojinegro random
-Buscando en árbol rojinegro random: 3611 microsegundos
-Eliminando en árbol rojinegro random: 4025 microsegundos
+Buscando en árbol rojinegro random: 3322 microsegundos
+Eliminando en árbol rojinegro random: 3730 microsegundos
 
 Insertando en árbol rojinegro ordenado
-Buscando en árbol rojinegro ordenado: 2622 microsegundos
-Eliminando en árbol rojinegro ordenado: 2977 microsegundos
+Buscando en árbol rojinegro ordenado: 2504 microsegundos
+Eliminando en árbol rojinegro ordenado: 2896 microsegundos
 
 Insertando en tabla hash random
-Buscando en tabla hash random: 581 microsegundos
-Eliminando en tabla hash random: 843 microsegundos
+Buscando en tabla hash random: 619 microsegundos
+Eliminando en tabla hash random: 880 microsegundos
 
 Insertando en tabla hash ordenada
-Buscando en tabla hash ordenada: 784 microsegundos
-Eliminando en tabla hash ordenada: 970 microsegundos
+Buscando en tabla hash ordenada: 757 microsegundos
+Eliminando en tabla hash ordenada: 971 microsegundos
 
 Fin del programa
