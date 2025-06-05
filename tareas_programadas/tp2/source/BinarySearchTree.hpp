@@ -153,7 +153,6 @@ class BSTree {
   
  private:
   BSTreeNode<DataType> *root;
-  void destroyRecursive(BSTreeNode<DataType>* node);
 };
 
 // Implementación de BSTree
@@ -170,22 +169,20 @@ BSTree<DataType>::BSTree() : root(nullptr) {}
  */
 template <typename DataType>
 BSTree<DataType>::~BSTree() {
-  destroyRecursive(root);
+  std::stack<BSTreeNode<DataType>*> pila;
+  pila.push(root);
+
+  while (!pila.empty()) {
+    BSTreeNode<DataType>* actual = pila.top();
+    pila.pop();
+
+    if (actual->getRight()) pila.push(actual->getRight());
+    if (actual->getLeft()) pila.push(actual->getLeft());
+
+    delete actual;
+  }
   // Después de destruir, se asegura que root sea nullptr
   root = nullptr;
-}
-
-/**
- * @brief Método recursivo para destruir el árbol.
- * Recorre el árbol en postorden y elimina cada nodo.
- */
-template <typename DataType>
-void BSTree<DataType>::destroyRecursive(BSTreeNode<DataType>* node) {
-  if (node == nullptr) return;
-
-  destroyRecursive(node->getLeft());
-  destroyRecursive(node->getRight());
-  delete node;
 }
 
 /**
@@ -483,7 +480,9 @@ void BSTree<DataType>::fastInsert(size_t n) {
 
   // Construir la cadena de nodos a la derecha
   for (DataType i = 1; i < static_cast<DataType>(n); ++i) {
-    actual->right = new BSTreeNode<DataType>(i, actual);
-    actual = actual->right;
+    BSTreeNode<DataType>* nuevo = new BSTreeNode<DataType>(i);
+    nuevo->setParent(actual);
+    actual->setRight(nuevo);
+    actual = nuevo;
   }
 }
