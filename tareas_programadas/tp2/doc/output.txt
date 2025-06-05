@@ -1,0 +1,107 @@
+Inicio del programa
+
+Insertando en lista random
+Buscando en lista random: 13921359 microsegundos
+Eliminando en lista random: 15363617 microsegundos
+
+Insertando en lista ordenada
+Buscando en lista ordenada: 13917819 microsegundos
+Eliminando en lista ordenada: 15382475 microsegundos
+
+Insertando en arbol binario random
+Buscando en arbol binario random: 3752 microsegundos
+Eliminando en arbol binario random: 4066 microsegundos
+
+Insertando en arbol binario ordenado
+Buscando en arbol binario ordenado: 1793 microsegundos
+Eliminando en arbol binario ordenado: 1748 microsegundos
+
+Insertando en árbol rojinegro random
+Buscando en árbol rojinegro random: 3439 microsegundos
+Eliminando en árbol rojinegro random: 3917 microsegundos
+
+Insertando en árbol rojinegro ordenado
+Buscando en árbol rojinegro ordenado: 2417 microsegundos
+Eliminando en árbol rojinegro ordenado: 2677 microsegundos
+
+Insertando en tabla hash random
+Buscando en tabla hash random: 601 microsegundos
+Eliminando en tabla hash random: 859 microsegundos
+
+Insertando en tabla hash ordenada
+Buscando en tabla hash ordenada: 751 microsegundos
+Eliminando en tabla hash ordenada: 958 microsegundos
+
+Fin del programa
+
+Inicio del programa
+
+Insertando en lista random
+Buscando en lista random: 13653006 microsegundos
+Eliminando en lista random: 16341867 microsegundos
+
+Insertando en lista ordenada
+Buscando en lista ordenada: 14307257 microsegundos
+Eliminando en lista ordenada: 15379818 microsegundos
+
+Insertando en arbol binario random
+Buscando en arbol binario random: 3467 microsegundos
+Eliminando en arbol binario random: 3771 microsegundos
+
+Insertando en arbol binario ordenado
+Buscando en arbol binario ordenado: 1517 microsegundos
+Eliminando en arbol binario ordenado: 1542 microsegundos
+
+Insertando en árbol rojinegro random
+Buscando en árbol rojinegro random: 3865 microsegundos
+Eliminando en árbol rojinegro random: 7810 microsegundos
+
+Insertando en árbol rojinegro ordenado
+Buscando en árbol rojinegro ordenado: 2304 microsegundos
+Eliminando en árbol rojinegro ordenado: 2517 microsegundos
+
+Insertando en tabla hash random
+Buscando en tabla hash random: 560 microsegundos
+Eliminando en tabla hash random: 834 microsegundos
+
+Insertando en tabla hash ordenada
+Buscando en tabla hash ordenada: 684 microsegundos
+Eliminando en tabla hash ordenada: 853 microsegundos
+
+Fin del programa
+
+Inicio del programa
+
+Insertando en lista random
+Buscando en lista random: 13866953 microsegundos
+Eliminando en lista random: 15439390 microsegundos
+
+Insertando en lista ordenada
+Buscando en lista ordenada: 13901552 microsegundos
+Eliminando en lista ordenada: 15566280 microsegundos
+
+Insertando en arbol binario random
+Buscando en arbol binario random: 3616 microsegundos
+Eliminando en arbol binario random: 3956 microsegundos
+
+Insertando en arbol binario ordenado
+Buscando en arbol binario ordenado: 1785 microsegundos
+Eliminando en arbol binario ordenado: 1809 microsegundos
+
+Insertando en árbol rojinegro random
+Buscando en árbol rojinegro random: 4887 microsegundos
+Eliminando en árbol rojinegro random: 5578 microsegundos
+
+Insertando en árbol rojinegro ordenado
+Buscando en árbol rojinegro ordenado: 2816 microsegundos
+Eliminando en árbol rojinegro ordenado: 2929 microsegundos
+
+Insertando en tabla hash random
+Buscando en tabla hash random: 726 microsegundos
+Eliminando en tabla hash random: 1007 microsegundos
+
+Insertando en tabla hash ordenada
+Buscando en tabla hash ordenada: 866 microsegundos
+Eliminando en tabla hash ordenada: 1099 microsegundos
+
+Fin del programa
