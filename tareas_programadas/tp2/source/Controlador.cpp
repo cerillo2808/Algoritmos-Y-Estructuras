@@ -89,9 +89,9 @@ void Controlador::buscarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreg
     // Detener el cronómetro
     auto fin = std::chrono::high_resolution_clock::now();
     // Calcular la duración
-    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
+    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
     
-    std::cout << duracion << " microsegundos" << std::endl;
+    std::cout << duracion << " milisegundos" << std::endl;
 }
 
 void Controlador::eliminarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n) {
@@ -102,9 +102,9 @@ void Controlador::eliminarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arr
     // Detener el cronómetro
     auto fin = std::chrono::high_resolution_clock::now();
     // Calcular la duración
-    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
+    auto duracion = std::chrono::duration_cast<std::chrono::milliseconds>(fin - inicio).count();
     
-    std::cout << duracion << " microsegundos" << std::endl;
+    std::cout << duracion << " milisegundos" << std::endl;
 }
 
 void Controlador::operacionesListaSimplementeEnlazada() {
