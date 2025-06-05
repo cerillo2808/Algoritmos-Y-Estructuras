@@ -122,4 +122,35 @@ class Controlador {
      * en árboles de búsqueda binaria, tanto con números aleatorios como con números ordenados.
      */
     void operacionesArbolBusquedaBinaria();
+
+    /**
+     * @brief Inserta elementos en un árbol rojinegro.
+     * @param arbol El árbol rojinegro donde se insertan los elementos.
+     * @param arreglo El arreglo de los elementos a insertar.
+     * @param n El número de elementos a insertar, o el tamaño del arreglo.
+     */
+    void insertarEnArbolRojinegro(RBTree<uint32_t>& arbol, uint32_t* arreglo, uint32_t n);
+
+    /**
+     * @brief Busca elementos en un árbol rojinegro.
+     * @param arbol El árbol rojinegro donde se buscan los elementos.
+     * @param arreglo El arreglo de los elementos a buscar.
+     * @param n El número de elementos a buscar, o el tamaño del arreglo.
+     */
+    void buscarEnArbolRojinegro(RBTree<uint32_t>& arbol, uint32_t* arreglo, uint32_t n);
+
+    /**
+     * @brief Elimina elementos en un árbol rojinegro.
+     * @param arbol El árbol rojinegro donde se buscan los elementos.
+     * @param arreglo El arreglo de los elementos a buscar.
+     * @param n El número de elementos a buscar, o el tamaño del arreglo.
+     */
+    void eliminarEnArbolRojinegro(RBTree<uint32_t>& arbol, uint32_t* arreglo, uint32_t n);
+    
+    /**
+     * @brief Realiza operaciones en un árbol rojinegro.
+     * Este método ejecuta una serie de operaciones de inserción, búsqueda y eliminación
+     * en árboles rojinegros, tanto con números aleatorios como con números ordenados.
+     */
+    void operacionesArbolRojinegro();
 };

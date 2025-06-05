@@ -23,13 +23,9 @@ void Controlador::run() {
 
     // operacionesListaSimplementeEnlazada();
     // operacionesArbolBusquedaBinaria();
+    // operacionesArbolRojinegro();
 
-    // TODO: Árbol rojinegro insertar un millón de nodos random.
-    // TODO: Árbol rojinegro buscar diez mil elementos random. Tomar tiempo.
-    // TODO: Árbol rojinegro eliminar diez mil elementos random. Tomar tiempo.
-    // TODO: Árbol rojinegro insertar llaves 0, 1, ..., 999999 (un millón de nodos).
-    // TODO: Árbol rojinegro ordenado, buscar diez mil elementos random. Tomar tiempo.
-    // TODO: Árbol rojinegro ordenado, eliminar diez mil elementos random. Tomar tiempo.
+    
 
     // TODO: Hash table insertar un millón de nodos random.
     // TODO: Hash table buscar diez mil elementos random. Tomar tiempo.
@@ -95,7 +91,6 @@ void Controlador::insertarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arr
     for (uint32_t i = 0; i < n; i++) {
         lista.insert(arreglo[i]);
     }
-
 }
 
 void Controlador::buscarEnListaEnlazada(SLList<uint32_t>& lista, uint32_t* arreglo, uint32_t n) {
@@ -209,28 +204,79 @@ void Controlador::operacionesArbolBusquedaBinaria() {
 
     // Árbol búsqueda binaria insertar llaves 0, 1, ..., 999999 (un millón de nodos).
     std::cout << "Insertando en arbol binario ordenado" << std::endl;
-    insertarEnArbolBusquedaBinaria(arbolBinarioOrdenado, millonRandomSinRepetir, 1000000);
+    arbolBinarioOrdenado.fastInsert(1000000);
 
     // Árbol búsqueda binaria ordenado, buscar diez mil elementos random. Tomar tiempo.
     std::cout << "Buscando en arbol binario ordenado" << std::endl;
     buscarEnArbolBusquedaBinaria(arbolBinarioOrdenado, diezMilBuscar, 10000);
 
     // Árbol búsqueda binaria ordenado, eliminar diez mil elementos random. Tomar tiempo.
-    std::cout << "Insertando en arbol binario ordenado" << std::endl;
+    std::cout << "Eliminando en arbol binario ordenado" << std::endl;
     eliminarEnArbolBusquedaBinaria(arbolBinarioOrdenado, diezMilEliminar, 10000);
+}
 
-    // Árbol búsqueda binaria fast insert
-    BSTree<uint32_t> arbolBinarioFastInsert;
+void Controlador::insertarEnArbolRojinegro(RBTree<uint32_t>& arbol, uint32_t* arreglo, uint32_t n) {
+    for (uint32_t i = 0; i < n; i++) {
+        arbol.insert(arreglo[i]);
+    }
+}
 
-    // Árbol búsqueda binaria insertar un millón de nodos de manera balanceada.
-    std::cout << "Insertando en arbol binario fast insert" << std::endl;
-    arbolBinarioFastInsert.fastInsert(1000000);
+void Controlador::buscarEnArbolRojinegro(RBTree<uint32_t>& arbol, uint32_t* arreglo, uint32_t n) {
+    auto inicio = std::chrono::high_resolution_clock::now();
+    for (uint32_t i = 0; i < n; i++) {
+        arbol.search(arbol.getRoot(), arreglo[i]);
+    }
+    // Detener el cronómetro
+    auto fin = std::chrono::high_resolution_clock::now();
+    // Calcular la duración
+    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
+    
+    std::cout << "Duración buscar en árbol rojinegro: " << duracion << " microsegundos" << std::endl;
+}
 
-    // Árbol búsqueda binaria buscar diez mil elementos random. Tomar tiempo.
-    std::cout << "Buscando en arbol binario fast insert" << std::endl;
-    buscarEnArbolBusquedaBinaria(arbolBinarioFastInsert, diezMilBuscar, 10000);
+void Controlador::eliminarEnArbolRojinegro(RBTree<uint32_t>& arbol, uint32_t* arreglo, uint32_t n) {
+    auto inicio = std::chrono::high_resolution_clock::now();
+    for (uint32_t i = 0; i < n; i++) {
+        arbol.remove(arreglo[i]);
+    }
+    // Detener el cronómetro
+    auto fin = std::chrono::high_resolution_clock::now();
+    // Calcular la duración
+    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
+    
+    std::cout << "Duración eliminar en árbol rojinegro: " << duracion << " microsegundos" << std::endl;
+}
 
-    // Árbol búsqueda binaria eliminar diez mil elementos random. Tomar tiempo.
-    std::cout << "Eliminando en arbol binario fast insert" << std::endl;
-    eliminarEnArbolBusquedaBinaria(arbolBinarioFastInsert, diezMilEliminar, 10000);
+void Controlador::operacionesArbolRojinegro() {
+    // Árbol rojinegro random
+    RBTree<uint32_t> arbolRojinegroRandom;
+
+    // Árbol rojinegro insertar un millón de nodos random.
+    std::cout << "Insertando en árbol rojinegro random" << std::endl;
+    insertarEnArbolRojinegro(arbolRojinegroRandom, millonRandomSinRepetir, 1000000);
+
+    // Árbol rojinegro buscar diez mil elementos random. Tomar tiempo.
+    std::cout << "Buscando en árbol rojinegro random" << std::endl;
+    buscarEnArbolRojinegro(arbolRojinegroRandom, diezMilBuscar, 10000);
+    
+    // Árbol rojinegro eliminar diez mil elementos random. Tomar tiempo.
+    std::cout << "Eliminando en árbol rojinegro random" << std::endl;
+    eliminarEnArbolRojinegro(arbolRojinegroRandom, diezMilEliminar, 10000);
+
+    // Árbol rojinegro ordenado
+    RBTree<uint32_t> arbolRojinegroOrdenado;
+
+    // Árbol rojinegro insertar llaves 0, 1, ..., 999999 (un millón de nodos).
+    std::cout << "Insertando en árbol rojinegro ordenado" << std::endl;
+    for (u_int32_t i = 0; i < 1000000; i++) {
+        arbolRojinegroOrdenado.insert(i);
+    }
+
+    // Árbol rojinegro ordenado, buscar diez mil elementos random. Tomar tiempo.
+    std::cout << "Buscando en árbol rojinegro ordenado" << std::endl;
+    buscarEnArbolRojinegro(arbolRojinegroOrdenado, diezMilBuscar, 10000);
+
+    // Árbol rojinegro ordenado, eliminar diez mil elementos random. Tomar tiempo.
+    std::cout << "Eliminando en árbol rojinegro ordenado" << std::endl;
+    eliminarEnArbolRojinegro(arbolRojinegroOrdenado, diezMilEliminar, 10000);
 }
