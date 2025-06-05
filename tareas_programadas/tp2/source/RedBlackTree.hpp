@@ -223,6 +223,7 @@ void RBTree<DataType>::destroyRecursive(RBTreeNode<DataType>* node) {
  * Crea un nuevo nodo con el valor dado, lo inserta en el árbol como un nodo rojo
  * siguiendo el procedimiento estándar de inserción en un árbol binario de búsqueda
  * Luego llama a un proceso de corrección para mantener las propiedades del árbol rojinegro
+ * No se permiten duplicados, si el valor ya existe, no se inserta
  */
 template <typename DataType>
 void RBTree<DataType>::insert(const DataType& value) {
@@ -250,9 +251,13 @@ void RBTree<DataType>::insert(const DataType& value) {
     // Si z es menor que y, se inserta a la izquierda
     y->left = z;
 
-  } else {
-    // Si z es mayor o igual que y, se inserta a la derecha
+  } else if (z->key > y->key) {
+    // Si z es mayor que y, se inserta a la derecha
     y->right = z;
+  } else {
+    // Si z ya existe, no se inserta (no se permiten duplicados)
+    delete z;
+    return;
   }
 
   // Inicializa los hijos izquierdo y derecho de z como nil

@@ -53,10 +53,15 @@ ChainedHashTable<DataType>::ChainedHashTable(size_t size)
  * @brief Inserta el valor @param value en la tabla hash encadenada.
  * Calcula el índice usando h(k) = k mód m, m siendo el tamaño de la tabla.
  * Luego, inserta el valor en la lista doblemente enlazada correspondiente a ese índice.
+ * No soporta duplicados, si el valor ya existe, no lo inserta.
  */
 template <typename DataType>
 void ChainedHashTable<DataType>::insert(const DataType& value) {
   size_t index = static_cast<size_t>(value) % size;
+  if (table[index].search(value) != nullptr) {
+    // Si el valor ya existe, no lo inserta
+    return;
+  }
   table[index].insert(value);
 }
 
