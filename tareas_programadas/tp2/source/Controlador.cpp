@@ -19,20 +19,10 @@ void Controlador::run() {
     diezMilEliminar = generarArregloAleatorioRepetidos(10000);
     diezMilBuscar = generarArregloAleatorioRepetidos(10000);
 
-    // PRUEBAS
-
-    // operacionesListaSimplementeEnlazada();
-    // operacionesArbolBusquedaBinaria();
-    // operacionesArbolRojinegro();
-
-    
-
-    // TODO: Hash table insertar un millón de nodos random.
-    // TODO: Hash table buscar diez mil elementos random. Tomar tiempo.
-    // TODO: Hash table eliminar diez mil elementos random. Tomar tiempo.
-    // TODO: Hash table insertar llaves 0, 1, ..., 999999 (un millón de nodos).
-    // TODO: Hash table ordenado, buscar diez mil elementos random. Tomar tiempo.
-    // TODO: Hash table ordenado, eliminar diez mil elementos random. Tomar tiempo.
+    operacionesListaSimplementeEnlazada();
+    operacionesArbolBusquedaBinaria();
+    operacionesArbolRojinegro();
+    operacionesTablaHashEncadenada();
 
     // Liberar la memoria
     delete [] millonRandomSinRepetir;
@@ -279,4 +269,70 @@ void Controlador::operacionesArbolRojinegro() {
     // Árbol rojinegro ordenado, eliminar diez mil elementos random. Tomar tiempo.
     std::cout << "Eliminando en árbol rojinegro ordenado" << std::endl;
     eliminarEnArbolRojinegro(arbolRojinegroOrdenado, diezMilEliminar, 10000);
+}
+
+void Controlador::insertarEnTablaHashEncadenada(ChainedHashTable<uint32_t>& tabla, uint32_t* arreglo, uint32_t n) {
+    for (uint32_t i = 0; i < n; i++) {
+        tabla.insert(arreglo[i]);
+    }
+}
+
+void Controlador::buscarEnTablaHashEncadenada(ChainedHashTable<uint32_t>& tabla, uint32_t* arreglo, uint32_t n) {
+    auto inicio = std::chrono::high_resolution_clock::now();
+    for (uint32_t i = 0; i < n; i++) {
+        tabla.search(arreglo[i]);
+    }
+    // Detener el cronómetro
+    auto fin = std::chrono::high_resolution_clock::now();
+    // Calcular la duración
+    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
+    
+    std::cout << "Duración buscar en tabla hash encadenada: " << duracion << " microsegundos" << std::endl;
+}
+
+void Controlador::eliminarEnTablaHashEncadenada(ChainedHashTable<uint32_t>& tabla, uint32_t* arreglo, uint32_t n) {
+    auto inicio = std::chrono::high_resolution_clock::now();
+    for (uint32_t i = 0; i < n; i++) {
+        tabla.remove(arreglo[i]);
+    }
+    // Detener el cronómetro
+    auto fin = std::chrono::high_resolution_clock::now();
+    // Calcular la duración
+    auto duracion = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count();
+    
+    std::cout << "Duración eliminar en tabla hash encadenada: " << duracion << " microsegundos" << std::endl;
+}
+
+void Controlador::operacionesTablaHashEncadenada() {
+    // Hash table encadenada random
+    ChainedHashTable<uint32_t> tablaHashRandom(1000000);
+
+    // Hash table insertar un millón de nodos random.
+    std::cout << "Insertando en tabla hash random" << std::endl;
+    insertarEnTablaHashEncadenada(tablaHashRandom, millonRandomSinRepetir, 1000000);
+
+    // Hash table buscar diez mil elementos random. Tomar tiempo.
+    std::cout << "Buscando en tabla hash random" << std::endl;
+    buscarEnTablaHashEncadenada(tablaHashRandom, diezMilBuscar, 10000);
+
+    // Hash table eliminar diez mil elementos random. Tomar tiempo.
+    std::cout << "Eliminando en tabla hash random" << std::endl;
+    eliminarEnTablaHashEncadenada(tablaHashRandom, diezMilEliminar, 10000);
+
+    // Hash table encadenada ordenada
+    ChainedHashTable<uint32_t> tablaHashOrdenada(1000000);
+
+    // Hash table insertar llaves 0, 1, ..., 999999 (un millón de nodos).
+    std::cout << "Insertando en tabla hash ordenada" << std::endl;
+    for (uint32_t i = 0; i < 1000000; i++) {
+        tablaHashOrdenada.insert(i);
+    }
+
+    // Hash table ordenado, buscar diez mil elementos random. Tomar tiempo.
+    std::cout << "Buscando en tabla hash ordenada" << std::endl;
+    buscarEnTablaHashEncadenada(tablaHashOrdenada, diezMilBuscar, 10000);
+
+    // Hash table ordenado, eliminar diez mil elementos random. Tomar tiempo.
+    std::cout << "Eliminando en tabla hash ordenada" << std::endl;
+    eliminarEnTablaHashEncadenada(tablaHashOrdenada, diezMilEliminar, 10000);
 }

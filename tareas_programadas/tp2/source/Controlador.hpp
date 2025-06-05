@@ -153,4 +153,35 @@ class Controlador {
      * en árboles rojinegros, tanto con números aleatorios como con números ordenados.
      */
     void operacionesArbolRojinegro();
+
+    /**
+     * @brief Inserta elementos en una tabla hash encadenada.
+     * @param tabla La tabla hash encadenada donde se insertan los elementos.
+     * @param arreglo El arreglo de los elementos a insertar.
+     * @param n El número de elementos a insertar, o el tamaño del arreglo.
+     */
+    void insertarEnTablaHashEncadenada(ChainedHashTable<uint32_t>& tabla, uint32_t* arreglo, uint32_t n);
+
+    /**
+     * @brief Busca elementos en una tabla hash encadenada.
+     * @param tabla La tabla hash encadenada donde se buscan los elementos.
+     * @param arreglo El arreglo de los elementos a buscar.
+     * @param n El número de elementos a buscar, o el tamaño del arreglo.
+     */
+    void buscarEnTablaHashEncadenada(ChainedHashTable<uint32_t>& tabla, uint32_t* arreglo, uint32_t n);
+
+    /**
+     * @brief Elimina elementos en una tabla hash encadenada.
+     * @param tabla La tabla hash encadenada donde se buscan los elementos.
+     * @param arreglo El arreglo de los elementos a buscar.
+     * @param n El número de elementos a buscar, o el tamaño del arreglo.
+     */
+    void eliminarEnTablaHashEncadenada(ChainedHashTable<uint32_t>& tabla, uint32_t* arreglo, uint32_t n);
+
+    /**
+     * @brief Realiza operaciones en una tabla hash encadenada.
+     * Este método ejecuta una serie de operaciones de inserción, búsqueda y eliminación
+     * en tablas hash encadenadas, tanto con números aleatorios como con números ordenados.
+     */
+    void operacionesTablaHashEncadenada();
 };

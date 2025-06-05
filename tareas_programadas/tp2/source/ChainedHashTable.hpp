@@ -14,7 +14,7 @@ template <typename DataType>
 
 class ChainedHashTable {
  public:
-  ChainedHashTable(size_t size) {};
+  ChainedHashTable(size_t size);
 
   ~ChainedHashTable() {};
 
@@ -35,3 +35,44 @@ class ChainedHashTable {
 
   std::vector<DLList<DataType>> table;
 };
+
+// Implementación de tabla hash encadenada
+template <typename DataType>
+ChainedHashTable<DataType>::ChainedHashTable(size_t size)
+  : size(size), table(size) {
+    std::cout << "Inicializada tabla con " << size << " buckets\n";
+  }
+
+template <typename DataType>
+void ChainedHashTable<DataType>::insert(const DataType& value) {
+  size_t index = static_cast<size_t>(value) % size;
+  table[index].insert(value);
+}
+
+template <typename DataType>
+DLListNode<DataType>* ChainedHashTable<DataType>::search(const DataType& value) const {
+  size_t index = static_cast<size_t>(value) % size;
+  return table[index].search(value);
+}
+
+template <typename DataType>
+void ChainedHashTable<DataType>::remove(const DataType& value) {
+  size_t index = static_cast<size_t>(value) % size;
+  table[index].remove(value);
+}
+
+template <typename DataType>
+size_t ChainedHashTable<DataType>::getSize() const {
+  return size;
+}
+
+template <typename DataType>
+std::vector<DLList<DataType>> ChainedHashTable<DataType>::getTable() const {
+  return table;
+}
+
+template <typename DataType>
+void ChainedHashTable<DataType>::setTable(std::vector<DLList<DataType>> newTable) {
+  table = std::move(newTable);
+  size = table.size();
+}
