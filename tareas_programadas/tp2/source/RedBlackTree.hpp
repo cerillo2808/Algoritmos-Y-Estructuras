@@ -136,7 +136,7 @@ class RBTree {
  public:
   RBTree();
 
-  ~RBTree() {}
+  ~RBTree();
 
   void insert(const DataType &value);
 
@@ -168,6 +168,7 @@ class RBTree {
   void transplant(RBTreeNode<DataType> *u, RBTreeNode<DataType> *v);
   void insertFixup(RBTreeNode<DataType> *z);
   void removeFixup(RBTreeNode<DataType> *x);
+  void destroyRecursive(RBTreeNode<DataType>* node);
 };
 
 // Implementación de RBTree
@@ -181,6 +182,40 @@ RBTree<DataType>::RBTree() {
   nil = new RBTreeNode<DataType>();
   nil->color = BLACK;
   root = nil;
+}
+
+/**
+ * @brief Destructor del árbol rojinegro
+ * Destruye recursivamente todos los nodos del árbol
+ * El nodo centinela se elimina al final
+ */
+template <typename DataType>
+RBTree<DataType>::~RBTree() {
+  if (root != nil) {
+    destroyRecursive(root);
+  }
+  // El centinela nil se elimina al final
+  delete nil;
+  root = nullptr;
+  nil = nullptr;
+}
+
+/**
+ * @brief Destruye recursivamente los nodos del árbol
+ * @param node El nodo actual a destruir
+ * Recorre el árbol en postorden y elimina cada nodo
+ * No destruye el nodo centinela nil, ya que es un nodo especial
+ */
+template <typename DataType>
+void RBTree<DataType>::destroyRecursive(RBTreeNode<DataType>* node) {
+  if (node == nil) {
+    // Es el nodo centinela nil, no se destruye
+    return;
+  }
+
+  destroyRecursive(node->left);
+  destroyRecursive(node->right);
+  delete node;
 }
 
 /**

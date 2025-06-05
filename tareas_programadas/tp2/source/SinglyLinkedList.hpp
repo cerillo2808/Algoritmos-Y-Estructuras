@@ -93,7 +93,7 @@ class SLList {
  public:
   SLList();
 
-  ~SLList() {};
+  ~SLList();
 
   void insert(const DataType& value);
 
@@ -110,41 +110,55 @@ class SLList {
 
 // Implementación de SLList
 /**
- * @brief Constructor de la lista enlazada simple. Inicializa nil a nullptr.
+ * @brief Constructor de la lista enlazada simple. Inicializa el nodo centinela.
  */
 template <typename DataType>
-SLList<DataType>::SLList() : nil(nullptr) {}
-
-/**
- * @brief Inserta un nuevo nodo con el valor dado al inicio de la lista.
- * Crea un nuevo nodo y lo convierte en el nuevo nil si la lista está vacía.
- * Si la lista no está vacía, agrega el nuevo nodo al inicio de la lista.
- * @param value El valor a insertar en la lista.
- */
-template <typename DataType>
-void SLList<DataType>::insert(const DataType& value) {
-  SLListNode<DataType>* nuevoNodo = new SLListNode<DataType>(value, nullptr);
-  if (nil == nullptr) {
-    // Si la lista está vacía, nil es el nuevo nodo
-    nil = nuevoNodo;
-  } else {
-    // Si la lista no está vacía, el nuevo nodo se vuelve nil y apunta al antiguo nil
-    SLListNode<DataType>* temp = nil;
-    nil = nuevoNodo;
-    nil->setNext(temp);
-  }
+SLList<DataType>::SLList() {
+  nil = new SLListNode<DataType>();
+  nil->setNext(nullptr);
 }
 
 /**
- * @brief Busca un nodo con el valor dado en la lista.
+ * @brief Destructor de la lista enlazada simple. Elimina todos los nodos.
+ * Recorre la lista desde el nodo centinela y elimina cada nodo hasta llegar al final.
+ */
+template <typename DataType>
+SLList<DataType>::~SLList() {
+  SLListNode<DataType>* actual = nil->getNext();
+  SLListNode<DataType>* siguiente;
+
+  // Recorre la lista y elimina cada nodo
+  while (actual != nullptr) {
+    siguiente = actual->getNext();
+    delete actual;
+    actual = siguiente;
+  }
+  // Elimina el nodo centinela
+  delete nil;
+}
+
+/**
+ * @brief Inserta un nuevo nodo con @param value al inicio de la lista.
+ * Si la lista no está vacía, agrega el nuevo nodo al inicio de la lista.
+ */
+template <typename DataType>
+void SLList<DataType>::insert(const DataType& value) {
+  SLListNode<DataType>* nuevo = new SLListNode<DataType>(value);
+  nuevo->setNext(nil->getNext());
+  // Se inserta después del nodo centinela
+  nil->setNext(nuevo);
+}
+
+/**
+ * @brief Busca un nodo con el valor @param value en la lista.
  * Recorre la lista desde nil hasta encontrar el nodo con la misma clave.
  * Si llega al final de la lista sin encontrar el valor, retorna nullptr.
- * @param value El valor a buscar en la lista.
  */
 template <typename DataType>
 SLListNode<DataType>* SLList<DataType>::search(const DataType& value) const {
-  SLListNode<DataType>* actual = nil;
-  // Se empieza buscando desde la cabeza
+
+  SLListNode<DataType>* actual = nil->getNext();
+  // Se empieza buscando después de la centinela
   while (actual != nullptr) {
     if (actual->getKey() == value) {
       return actual;
@@ -157,46 +171,36 @@ SLListNode<DataType>* SLList<DataType>::search(const DataType& value) const {
 }
 
 /**
- * @brief Elimina el primer nodo con el valor dado de la lista.
- * Si el nodo a eliminar es nil, se actualiza nil al siguiente nodo.
- * Si no se encuentra el nodo, no se hace nada.
- * @param value El valor del nodo a eliminar de la lista.
+ * @brief Elimina todos los nodos con el valor @param value de la lista.
+ * Recorre la lista desde nil hasta encontrar el nodo con la misma clave.
+ * Si lo encuentra, lo elimina y actualiza el puntero del nodo anterior.
+ * Sigue recorriendo la lista hasta el final para eliminar todos los nodos con ese valor.
  */
 template <typename DataType>
 void SLList<DataType>::remove(const DataType& value) {
 
-  if (nil == nullptr){
-    // La lista está vacía, no hay nada que eliminar
+  if (!nil) {
+    // Si la lista está vacía, no hay nada que eliminar
     return;
   }
 
-  // Se empieza buscando desde nil
-  SLListNode<DataType>* actual = nil;
+  SLListNode<DataType>* anterior = nil;
+  SLListNode<DataType>* actual = nil->getNext();
 
-  // Verificar si el nodo a eliminar es nil
-  if (nil->getKey() == value) {
-    // Se actualiza nil al siguiente nodo
-    nil = nil->getNext();
-    // Liberar memoria del nodo eliminado
-    delete actual; 
-    return;
-  }
-
-  // Se ocupa una referencia al nodo anterior porque hay que modificar su siguiente
-  SLListNode<DataType>* anterior = nullptr;
-
-  // Se busca el nodo a eliminar
-  while (actual != nullptr && actual->getKey() != value) {
-    anterior = actual;
-    actual = actual->getNext();
-  }
-
-  // Si se encontró el nodo
-  if (actual != nullptr) {
-    // Se salta el nodo a eliminar
-    anterior->setNext(actual->getNext());
-    // Liberar memoria del nodo eliminado
-    delete actual;
+  // Se empieza buscando después de la centinela
+  // Recorre la lista hasta el final
+  while (actual != nullptr) {
+    if (actual->getKey() == value) {
+      // Si se encuentra el nodo a eliminar, se actualiza el puntero del nodo anterior
+      anterior->setNext(actual->getNext());
+      delete actual;
+      // Se mantiene para seguir recorriendo la lista
+      actual = anterior->getNext();
+    } else {
+      // Si no se encuentra el nodo a eliminar, se avanza al siguiente nodo
+      anterior = actual;
+      actual = actual->getNext();
+    }
   }
 }
 

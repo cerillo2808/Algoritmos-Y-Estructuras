@@ -105,15 +105,7 @@ class DLList {
  public:
   DLList();
 
-  ~DLList() {
-    DLListNode<DataType>* current = nil->getNext();
-    while (current != nil) {
-      DLListNode<DataType>* toDelete = current;
-      current = current->getNext();
-      delete toDelete;
-    }
-    delete nil;
-  };
+  ~DLList();
 
   void insert(const DataType& value);
 
@@ -139,6 +131,22 @@ DLList<DataType>::DLList() {
   nil = new DLListNode<DataType>();
   nil->setNext(nil);
   nil->setPrev(nil);
+}
+
+/**
+ * @brief Destructor de la lista doblemente enlazada.
+ * Elimina todos los nodos de la lista, comenzando desde el nodo nil.
+ * El nodo nil se elimina al final.
+ */
+template <typename DataType>
+DLList<DataType>::~DLList() {
+  DLListNode<DataType>* current = nil->getNext();
+  while (current != nil) {
+    DLListNode<DataType>* toDelete = current;
+    current = current->getNext();
+    delete toDelete;
+  }
+  delete nil; // Elimina el nodo nil al final
 }
 
 /**

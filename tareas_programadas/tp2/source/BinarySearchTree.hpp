@@ -6,6 +6,7 @@
 
 #pragma once
 #include <cstddef>
+#include <stack>
 
 template <typename DataType>
 class BSTree;
@@ -123,7 +124,7 @@ class BSTree {
  public:
   BSTree();
 
-  ~BSTree() {};
+  ~BSTree();
 
   void insert(const DataType &value);
 
@@ -152,7 +153,7 @@ class BSTree {
   
  private:
   BSTreeNode<DataType> *root;
-  void buildBalanced(std::make_signed_t<DataType> left, std::make_signed_t<DataType> right);
+  void destroyRecursive(BSTreeNode<DataType>* node);
 };
 
 // Implementación de BSTree
@@ -162,6 +163,30 @@ class BSTree {
  */
 template <typename DataType>
 BSTree<DataType>::BSTree() : root(nullptr) {}
+
+/**
+ * @brief Destructor del árbol de búsqueda binaria.
+ * Llama a destroyRecursive para eliminar todos los nodos del árbol.
+ */
+template <typename DataType>
+BSTree<DataType>::~BSTree() {
+  destroyRecursive(root);
+  // Después de destruir, se asegura que root sea nullptr
+  root = nullptr;
+}
+
+/**
+ * @brief Método recursivo para destruir el árbol.
+ * Recorre el árbol en postorden y elimina cada nodo.
+ */
+template <typename DataType>
+void BSTree<DataType>::destroyRecursive(BSTreeNode<DataType>* node) {
+  if (node == nullptr) return;
+
+  destroyRecursive(node->getLeft());
+  destroyRecursive(node->getRight());
+  delete node;
+}
 
 /**
  * @brief inserta un nuevo nodo con el @param value
@@ -287,13 +312,28 @@ void BSTree<DataType>::remove(const DataType &value) {
 
 /**
  * @brief Recorre el árbol en inorden e imprime los valores de los nodos.
+ * Lo hace de manera iterativa.
  */
 template <typename DataType>
 void BSTree<DataType>::inorderWalk(BSTreeNode<DataType> *rootOfSubtree) const {
-  if (rootOfSubtree != nullptr) {
-    inorderWalk(rootOfSubtree->getLeft());
-    std::cout << rootOfSubtree->getKey() << " ";
-    inorderWalk(rootOfSubtree->getRight());
+  std::stack<BSTreeNode<DataType>*> pila;
+  BSTreeNode<DataType>* actual = rootOfSubtree;
+
+  while (actual != nullptr || !pila.empty()) {
+    // Avanzar lo más a la izquierda posible
+    while (actual != nullptr) {
+      pila.push(actual);
+      actual = actual->getLeft();
+    }
+
+    // Regresar al último nodo y procesarlo
+    actual = pila.top();
+    pila.pop();
+
+    std::cout << actual->getKey() << " ";
+
+    // Moverse al subárbol derecho
+    actual = actual->getRight();
   }
 }
 
@@ -427,36 +467,23 @@ BSTreeNode<DataType>* BSTree<DataType>::getRoot() const {
 
 /**
  * @brief Inserta @param n cantidad de nodos al árbol.
- * Inserta los valores desde 0 hasta n-1 de manera balanceada.
+ * Inserta los valores desde 0 hasta n-1 de forma rápida.
+ * Crea un árbol desbalanceado con todos los nodos a la derecha.
  */
 template <typename DataType>
 void BSTree<DataType>::fastInsert(size_t n) {
-  if (n == 0){
-    // Si n es 0, no hay nada que insertar
+  if (n == 0) {
+    // Si n es 0, no hay nodos que insertar
     return;
   }
-  // Utiliza signed para manejar correctamente los índices negativos
-  using Signed = std::make_signed_t<DataType>;
-  // Llama a la función recursiva para construir el árbol balanceado
-  buildBalanced(static_cast<Signed>(0), static_cast<Signed>(n - 1));
-}
 
-/**
- * @brief Construye un árbol balanceado insertando valores desde @param left hasta @param right.
- * Divide el rango en dos mitades, inserta el valor del medio y luego construye recursivamente.
- */
-template <typename DataType>
-void BSTree<DataType>::buildBalanced(std::make_signed_t<DataType> left, std::make_signed_t<DataType> right) {
-  if (left > right) {
-    // Si el rango es inválido, no hay más nodos que insertar
-    return;
+  // Crear el primer nodo
+  this->root = new BSTreeNode<DataType>(0);
+  BSTreeNode<DataType>* actual = this->root;
+
+  // Construir la cadena de nodos a la derecha
+  for (DataType i = 1; i < static_cast<DataType>(n); ++i) {
+    actual->right = new BSTreeNode<DataType>(i, actual);
+    actual = actual->right;
   }
-  
-  // Calcula el valor medio y lo inserta en el árbol
-  auto mid = left + (right - left) / 2;
-  insert(static_cast<DataType>(mid));
-
-  // Hace lo mismo para las mitades izquierda y derecha
-  buildBalanced(left, mid - 1);
-  buildBalanced(mid + 1, right);
 }
