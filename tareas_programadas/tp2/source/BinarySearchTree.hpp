@@ -191,7 +191,7 @@ BSTree<DataType>::~BSTree() {
  * Recorre el árbol para encontrar la posición adecuada.
  * Si el valor es menor que el nodo actual, se inserta a la izquierda.
  * Si el valor es mayor, se inserta a la derecha.
- * Por defecto, si el valor es igual, se inserta a la derecha.
+ * Si el valor es igual, no se inserta.
  */
 template <typename DataType>
 void BSTree<DataType>::insert(const DataType &value) {
@@ -219,8 +219,11 @@ void BSTree<DataType>::insert(const DataType &value) {
   newNode->setParent(parent);
   if (value < parent->getKey()) {
     parent->setLeft(newNode);
-  } else {
+  } else if (value > parent->getKey()) {
     parent->setRight(newNode);
+  } else{
+    // Si el valor ya existe, no se inserta
+    delete newNode;
   }
 }
 
