@@ -2,7 +2,12 @@
 
 #include <iostream>
 
+#include "menu.hpp"
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << "¡Bienvenid@ al sistema de consultas del SiNTiEmPo!" << std::endl;
+    menu m;
+    m.run();
+    std::cout << "¡Gracias por usar el sistema de consultas del SiNTiEmPo!" << std::endl;
     return 0;
 }

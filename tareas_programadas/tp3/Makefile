@@ -7,7 +7,7 @@ CC = g++
 CFLAGS = -g -Wall
 
 # Archivos fuente y ejecutable
-SOURCES = $(SRC_DIR)/main.cpp
+SOURCES = $(SRC_DIR)/main.cpp $(SRC_DIR)/menu.cpp
 EXECUTABLE = $(BIN_DIR)/main
 
 # Regla principal
