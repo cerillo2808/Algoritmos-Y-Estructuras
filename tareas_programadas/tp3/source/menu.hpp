@@ -5,19 +5,24 @@
 class menu {
  public:
   /**
-   * @brief Runs the menu and returns an integer value.
+   * @brief Ejecuta el menú y retorna un valor entero.
    * 
-   * @return int Returns 0 on success.
+   * @return int Retorna 0 en caso de éxito.
    */
   int run();
-  
+
   /**
-   * @brief Displays the menu options to the user.
+   * @brief Muestra las opciones de archivo al usuario.
+   */
+  void displayArchivo();
+
+  /**
+   * @brief Muestra las opciones del menú al usuario.
    */
   void displayMenu();
   
   /**
-   * @brief Handles user input and executes the corresponding action.
+   * @brief Maneja la entrada del usuario y ejecuta la acción correspondiente.
    */
   void handleInput();
 };

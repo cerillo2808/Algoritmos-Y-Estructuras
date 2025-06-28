@@ -6,6 +6,7 @@
 
 int menu::run() {
     std::cout << "Por favor, ingrese el archivo CSV que contiene el grafo a consultar." << std::endl;
+    displayArchivo();
     // TODO: Pedir csv
     std::cout << "Cargando grafo..." << std::endl;
     // TODO: Tomar tiempo de carga
@@ -17,6 +18,14 @@ int menu::run() {
     // TODO: Permitir salir o agregar otro archivo
     // TODO: Menú de ayuda
     return 0;
+}
+
+void menu::displayArchivo() {
+    std::cout << "Elija el archivo CSV que contiene el grafo a consultar:" << std::endl;
+    std::cout << "[1] input_small.csv" << std::endl;
+    std::cout << "[2] input_medium.csv" << std::endl;
+    std::cout << "[3] input_large.csv" << std::endl;
+    std::cout << "Ingrese uno personalizado." << std::endl;
 }
 
 void menu::displayMenu() {
