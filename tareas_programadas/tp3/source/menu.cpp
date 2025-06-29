@@ -12,15 +12,38 @@
 #include "menu.hpp"
 
 int menu::run() {
-    // TODO: Wiki help
-    std::cout << "Por favor, ingrese el archivo CSV que contiene el grafo a consultar." << std::endl;
-    displayArchivo();
-    bool correrFloydWarshall = handleArchivo(pedirArchivo());
-    // TODO: Pedir csv personalizado
+
+    bool correrFloydWarshall = true;
+
+    while (true) {
+        // TODO: Wiki help
+        
+        displayArchivo();
+
+        char opcion = pedirArchivo();
+
+        if (opcion == 'X') {
+            // Si se seleccionó salir, termina el programa
+            return 0;
+        }
+
+        // Es un 0 si no se ocupa correr Floyd-Warshall, es un 0 si ocupa correrlo
+        // Si no hay un archivo válido, es un -1 
+        int condicion = handleArchivo(opcion);
+        if (condicion < 0) {
+            continue;
+        } else {
+            correrFloydWarshall = condicion;
+            break;
+        }
+    }
+
     auto start = std::chrono::high_resolution_clock::now();
+
     if (correrFloydWarshall) {
         // TODO: Floyd-Warshall
     }
+    
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
     std::cout << "Grafo analizado exitosamente en " << duration << " milisegundos." << std::endl;
@@ -161,17 +184,17 @@ char menu::pedirArchivo() {
     return opcion;
 }
 
-bool menu::handleArchivo(char opcion) {
+int menu::handleArchivo(char opcion) {
 
     if (opcion == 'X') {
         // Sale del menu
         // No corre Floyd-Warshall
-        return false;
+        return 0;
 
     } else if (opcion == '1') {
         if (small) {
             std::cout << "El archivo 'input_small.csv' ya ha sido cargado anteriormente." << std::endl;
-            return false;
+            return 0;
         }
         cargarCSV("files/input_small.csv", small_matriz, small_nombreCiudad);
         small = true;
@@ -179,7 +202,7 @@ bool menu::handleArchivo(char opcion) {
     } else if (opcion == '2') {
         if (medium) {
             std::cout << "El archivo 'input_medium.csv' ya ha sido cargado anteriormente." << std::endl;
-            return false;
+            return 0;
         }
         cargarCSV("files/input_medium.csv", medium_matriz, medium_nombreCiudad);
         medium = true;
@@ -187,7 +210,7 @@ bool menu::handleArchivo(char opcion) {
     } else if (opcion == '3') {
         if (large) {
             std::cout << "El archivo 'input_large.csv' ya ha sido cargado anteriormente." << std::endl;
-            return false;
+            return 0;
         }
         cargarCSV("files/input_large.csv", large_matriz, large_nombreCiudad);
         large = true;
@@ -198,7 +221,8 @@ bool menu::handleArchivo(char opcion) {
             std::cout << "Por favor, ingrese el nombre del archivo CSV personalizado (con extensión .csv) o 'X' para regresar: ";
             std::cin >> nombreArchivo;
             if (nombreArchivo == "X" || nombreArchivo == "x") {
-                return false; // Regresa al menú anterior
+                // Regresa al menú anterior
+                return -1;
             }
             if (!std::filesystem::exists(nombreArchivo)) {
                 std::cerr << "El archivo no existe. Intente de nuevo." << std::endl;
@@ -210,5 +234,5 @@ bool menu::handleArchivo(char opcion) {
     }
 
     // Indica que no ha sido cargado anteriormente y ocupa Floyd-Warshall
-    return true;
+    return 1;
 }

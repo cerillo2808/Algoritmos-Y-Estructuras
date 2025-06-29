@@ -105,7 +105,7 @@ class menu {
    * Sirve para indicar si se debe correr el algoritmo de Floyd-Warshall.
    * @param opcion Opción seleccionada por el usuario.
    */
-  bool handleArchivo(char opcion);
+  int handleArchivo(char opcion);
 
   /**
    * @brief Maneja la acción seleccionada por el usuario.
