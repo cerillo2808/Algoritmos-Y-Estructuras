@@ -112,5 +112,5 @@ class menu {
    * 
    * @param opcion Opción seleccionada por el usuario.
    */
-  void handleAccion(char opcion);
+  int handleAccion(char opcion);
 };

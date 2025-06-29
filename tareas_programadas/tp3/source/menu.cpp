@@ -13,45 +13,64 @@
 
 int menu::run() {
 
-    bool correrFloydWarshall = true;
-
     while (true) {
-        // TODO: Wiki help
+
+        bool correrFloydWarshall = true;
+
+        while (true) {
+            // TODO: Wiki help
+
+            displayArchivo();
+
+            char opcion = pedirArchivo();
+
+            if (opcion == 'X') {
+                // Si se seleccionó salir, termina el programa
+                return 0;
+            }
+
+            // Es un 0 si no se ocupa correr Floyd-Warshall, es un 0 si ocupa correrlo
+            // Si no hay un archivo válido, es un -1 
+            int condicion = handleArchivo(opcion);
+            if (condicion < 0) {
+                continue;
+            } else {
+                correrFloydWarshall = condicion;
+                break;
+            }
+        }
+
+        auto start = std::chrono::high_resolution_clock::now();
+
+        if (correrFloydWarshall) {
+            // TODO: Floyd-Warshall
+        }
         
-        displayArchivo();
+        auto end = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+        std::cout << "Grafo analizado exitosamente en " << duration << " milisegundos." << std::endl;
+        
+        while (true) {
+            // TODO: Wiki help
 
-        char opcion = pedirArchivo();
+            displayMenu();
 
-        if (opcion == 'X') {
-            // Si se seleccionó salir, termina el programa
-            return 0;
-        }
+            char opcion = pedirAccion();
 
-        // Es un 0 si no se ocupa correr Floyd-Warshall, es un 0 si ocupa correrlo
-        // Si no hay un archivo válido, es un -1 
-        int condicion = handleArchivo(opcion);
-        if (condicion < 0) {
-            continue;
-        } else {
-            correrFloydWarshall = condicion;
-            break;
+            if (opcion == 'X') {
+                break;
+            }
+
+            // Si es un 0 si ocupa volver a seleccionar el archivo.
+            // Es un 1 si ocupa volver a preguntar por una acción.
+            int condicion = handleAccion(opcion);
+            if (condicion < 0) {
+                // TODO: Manejar error
+            } else {
+                continue;
+            }
         }
     }
-
-    auto start = std::chrono::high_resolution_clock::now();
-
-    if (correrFloydWarshall) {
-        // TODO: Floyd-Warshall
-    }
-    
-    auto end = std::chrono::high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
-    std::cout << "Grafo analizado exitosamente en " << duration << " milisegundos." << std::endl;
-    displayMenu(); 
-    // TODO: Handle user input
-    // TODO: Permitir salir o agregar otro archivo
-    // TODO: Menú de ayuda
-    return 0;
 }
 
 void menu::displayArchivo() {
@@ -186,12 +205,7 @@ char menu::pedirArchivo() {
 
 int menu::handleArchivo(char opcion) {
 
-    if (opcion == 'X') {
-        // Sale del menu
-        // No corre Floyd-Warshall
-        return 0;
-
-    } else if (opcion == '1') {
+    if (opcion == '1') {
         if (small) {
             std::cout << "El archivo 'input_small.csv' ya ha sido cargado anteriormente." << std::endl;
             return 0;
@@ -234,5 +248,43 @@ int menu::handleArchivo(char opcion) {
     }
 
     // Indica que no ha sido cargado anteriormente y ocupa Floyd-Warshall
+    return 1;
+}
+
+char menu::pedirAccion() {
+    char opcion = '0';
+    while (true) {
+        std::cin >> opcion;
+        opcion = std::toupper(opcion);
+
+        if (opcion == '1' || opcion == '2' || opcion == '3' || opcion == '4' || opcion == '5' || opcion == 'X') {
+            break;
+        } else {
+            std::cout << "Opción inválida. Intente de nuevo." << std::endl;
+            displayMenu();
+        }
+    }
+    return opcion;
+}
+
+int menu::handleAccion(char opcion) {
+
+    if (opcion == '1') {
+        std::cout << "Acción 1: Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo." << std::endl;
+
+    } else if (opcion == '2') {
+        std::cout << "Acción 2: Ciudad más efectiva para despachar mayor capacidad de equipo." << std::endl;
+
+    } else if (opcion == '3') {
+        std::cout << "Acción 3: Par de ciudades más distantes." << std::endl;
+
+    } else if (opcion == '4') {
+        std::cout << "Acción 4: Par de ciudades menos distantes." << std::endl;
+
+    } else if (opcion == '5') {
+        std::cout << "Acción 5: Ciudades ordenadas por tiempo de viaje promedio." << std::endl;
+    }
+
+    // Indica que puede preguntar por otra acción
     return 1;
 }
