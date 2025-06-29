@@ -12,12 +12,19 @@ class menu {
   /**
    * @brief Indica si se ha cargado algún archivo CSV.
    */
- bool small, medium, large = false;
+    bool small = false;
+    bool medium = false;
+    bool large = false;
 
   /**
   * @brief Matriz que almacena los tiempos de viaje entre las ciudades de input_small.csv.
   */
  std::vector<std::vector<uint64_t>> small_matriz;
+
+   /**
+  * @brief Matriz padres input_small.csv.
+  */
+ std::vector<std::vector<uint64_t>> small_matriz_padres;
 
   /**
     * @brief Vector que almacena los nombres de las ciudades de input_small.csv.
@@ -30,6 +37,11 @@ class menu {
   std::vector<std::vector<uint64_t>> medium_matriz;
 
   /**
+   * @brief Matriz padres input_medium.csv.
+   */
+  std::vector<std::vector<uint64_t>> medium_matriz_padres;
+
+  /**
    * @brief Vector que almacena los nombres de las ciudades de input_medium.csv.
    */
   std::vector<std::string> medium_nombreCiudad;
@@ -40,6 +52,11 @@ class menu {
   std::vector<std::vector<uint64_t>> large_matriz;
 
   /**
+   * @brief Matriz padres input_large.csv.
+   */
+  std::vector<std::vector<uint64_t>> large_matriz_padres;
+
+  /**
    * @brief Vector que almacena los nombres de las ciudades de input_large.csv.
    */
   std::vector<std::string> large_nombreCiudad;
@@ -48,6 +65,11 @@ class menu {
    * @brief Matriz que almacena los tiempos de viaje entre las ciudades de input personalizado.
    */
   std::vector<std::vector<uint64_t>> personalized_matriz;
+
+  /**
+   * @brief Matriz padres input personalizado.
+   */
+  std::vector<std::vector<uint64_t>> personalized_matriz_padres;
 
   /**
    * @brief Vector que almacena los nombres de las ciudades de input personalizado.
@@ -85,7 +107,7 @@ class menu {
    * @param nombreArchivo Nombre del archivo CSV a cargar.
    * @param matriz Matriz donde se almacenarán los datos del archivo.
    */
-  void cargarCSV(const std::string& nombreArchivo, std::vector<std::vector<uint64_t>>& matriz, std::vector<std::string>& nombreCiudad);
+  void cargarCSV(const std::string& nombreArchivo, std::vector<std::vector<uint64_t>>& matriz, std::vector<std::vector<uint64_t>>& matrizPadres, std::vector<std::string>& nombreCiudad);
 
   /**
    * @brief Pide al usuario que seleccione un archivo CSV.

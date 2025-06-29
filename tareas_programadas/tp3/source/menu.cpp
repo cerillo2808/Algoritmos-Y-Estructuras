@@ -8,8 +8,11 @@
 #include <cstdint>
 #include <chrono>
 #include <filesystem>
+#include <limits>
 
 #include "menu.hpp"
+
+const uint64_t UINT64_MAXIMO = std::numeric_limits<uint64_t>::max();
 
 int menu::run() {
 
@@ -126,7 +129,7 @@ void menu::displayMenu() {
     */
 }
 
-void menu::cargarCSV(const std::string& nombreArchivo, std::vector<std::vector<uint64_t>>& matriz, std::vector<std::string>& nombreCiudad) {
+void menu::cargarCSV(const std::string& nombreArchivo, std::vector<std::vector<uint64_t>>& matriz, std::vector<std::vector<uint64_t>>& matrizPadres, std::vector<std::string>& nombreCiudad) {
     std::ifstream archivo(nombreArchivo);
     std::string linea;
 
@@ -174,14 +177,20 @@ void menu::cargarCSV(const std::string& nombreArchivo, std::vector<std::vector<u
     }
 
     // Inicializar la matriz con tamaño adecuado (cuadrada)
-    matriz.assign(max_id + 1, std::vector<uint64_t>(max_id + 1, 0));
+    matriz.assign(max_id + 1, std::vector<uint64_t>(max_id + 1, UINT64_MAXIMO));
+    matrizPadres.assign(max_id + 1, std::vector<uint64_t>(max_id + 1, UINT64_MAXIMO));
+
+    // Configurar condiciones iniciales
+    for (size_t i = 0; i <= max_id; ++i) {
+        matriz[i][i] = 0;      // peso 0 en la diagonal
+    }
 
     // Llenar la matriz con los pesos
     for (const auto& d : datos) {
         uint64_t sourceId, targetId, weight;
         std::tie(sourceId, std::ignore, targetId, std::ignore, weight) = d;
         matriz[sourceId][targetId] = weight;
-
+        matrizPadres[sourceId][targetId] = static_cast<int64_t>(sourceId);
     }
 }
 
@@ -210,7 +219,7 @@ int menu::handleArchivo(char opcion) {
             std::cout << "El archivo 'input_small.csv' ya ha sido cargado anteriormente." << std::endl;
             return 0;
         }
-        cargarCSV("files/input_small.csv", small_matriz, small_nombreCiudad);
+        cargarCSV("files/input_small.csv", small_matriz, small_matriz_padres, small_nombreCiudad);
         small = true;
 
     } else if (opcion == '2') {
@@ -218,7 +227,7 @@ int menu::handleArchivo(char opcion) {
             std::cout << "El archivo 'input_medium.csv' ya ha sido cargado anteriormente." << std::endl;
             return 0;
         }
-        cargarCSV("files/input_medium.csv", medium_matriz, medium_nombreCiudad);
+        cargarCSV("files/input_medium.csv", medium_matriz, medium_matriz_padres, medium_nombreCiudad);
         medium = true;
 
     } else if (opcion == '3') {
@@ -226,7 +235,7 @@ int menu::handleArchivo(char opcion) {
             std::cout << "El archivo 'input_large.csv' ya ha sido cargado anteriormente." << std::endl;
             return 0;
         }
-        cargarCSV("files/input_large.csv", large_matriz, large_nombreCiudad);
+        cargarCSV("files/input_large.csv", large_matriz, large_matriz_padres, large_nombreCiudad);
         large = true;
 
     } else if (opcion == '4') {
@@ -241,7 +250,7 @@ int menu::handleArchivo(char opcion) {
             if (!std::filesystem::exists(nombreArchivo)) {
                 std::cerr << "El archivo no existe. Intente de nuevo." << std::endl;
             } else {
-                cargarCSV(nombreArchivo, personalized_matriz, personalized_nombreCiudad);
+                cargarCSV(nombreArchivo, personalized_matriz, personalized_matriz_padres, personalized_nombreCiudad);
                 break;
             }
         }
