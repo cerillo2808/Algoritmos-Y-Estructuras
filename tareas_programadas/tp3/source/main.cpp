@@ -5,6 +5,8 @@
 #include "menu.hpp"
 
 int main() {
+    std::vector<std::vector<uint64_t>> prueba;
+    std::vector<std::string> nombreCiudad;
     std::cout << "¡Bienvenid@ al sistema de consultas del SiNTiEmPo!" << std::endl;
     menu m;
     m.run();
