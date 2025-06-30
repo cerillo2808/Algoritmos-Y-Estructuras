@@ -42,16 +42,6 @@ int menu::run() {
                 break;
             }
         }
-
-        auto start = std::chrono::high_resolution_clock::now();
-
-        if (correrFloydWarshall) {
-            // TODO: Floyd-Warshall
-        }
-        
-        auto end = std::chrono::high_resolution_clock::now();
-        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
-        std::cout << "Grafo analizado exitosamente en " << duration << " milisegundos." << std::endl;
         
         while (true) {
             // TODO: Wiki help
@@ -192,6 +182,31 @@ void menu::cargarCSV(const std::string& nombreArchivo, std::vector<std::vector<u
         matriz[sourceId][targetId] = weight;
         matrizPadres[sourceId][targetId] = static_cast<int64_t>(sourceId);
     }
+
+    std::cout << "Iniciales:" << std::endl;
+    std::cout << "Matriz de pesos:" << std::endl;
+    for (const auto& fila : matriz) {
+    for (const auto& valor : fila) {
+        if (valor == UINT64_MAXIMO) {
+            std::cout << "M ";
+        } else {
+            std::cout << valor << " ";
+        }
+    }
+    std::cout << std::endl;
+    }
+
+    std::cout << "Matriz de padres:" << std::endl;
+    for (const auto& fila : matrizPadres) {
+    for (const auto& valor : fila) {
+        if (valor == UINT64_MAXIMO) {
+            std::cout << "M ";
+        } else {
+            std::cout << valor << " ";
+        }
+    }
+    std::cout << std::endl;
+    }
 }
 
 char menu::pedirArchivo() {
@@ -219,7 +234,12 @@ int menu::handleArchivo(char opcion) {
             std::cout << "El archivo 'input_small.csv' ya ha sido cargado anteriormente." << std::endl;
             return 0;
         }
+        auto start = std::chrono::high_resolution_clock::now();
         cargarCSV("files/input_small.csv", small_matriz, small_matriz_padres, small_nombreCiudad);
+        FloydWarshall(small_matriz, small_matriz_padres);
+        auto end = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+        std::cout << "Grafo analizado exitosamente en " << duration << " milisegundos." << std::endl;
         small = true;
 
     } else if (opcion == '2') {
@@ -227,7 +247,12 @@ int menu::handleArchivo(char opcion) {
             std::cout << "El archivo 'input_medium.csv' ya ha sido cargado anteriormente." << std::endl;
             return 0;
         }
+        auto start = std::chrono::high_resolution_clock::now();
         cargarCSV("files/input_medium.csv", medium_matriz, medium_matriz_padres, medium_nombreCiudad);
+        FloydWarshall(medium_matriz, medium_matriz_padres);
+        auto end = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+        std::cout << "Grafo analizado exitosamente en " << duration << " milisegundos." << std::endl;
         medium = true;
 
     } else if (opcion == '3') {
@@ -235,7 +260,12 @@ int menu::handleArchivo(char opcion) {
             std::cout << "El archivo 'input_large.csv' ya ha sido cargado anteriormente." << std::endl;
             return 0;
         }
+        auto start = std::chrono::high_resolution_clock::now();
         cargarCSV("files/input_large.csv", large_matriz, large_matriz_padres, large_nombreCiudad);
+        FloydWarshall(large_matriz, large_matriz_padres);
+        auto end = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+        std::cout << "Grafo analizado exitosamente en " << duration << " milisegundos." << std::endl;
         large = true;
 
     } else if (opcion == '4') {
@@ -250,7 +280,12 @@ int menu::handleArchivo(char opcion) {
             if (!std::filesystem::exists(nombreArchivo)) {
                 std::cerr << "El archivo no existe. Intente de nuevo." << std::endl;
             } else {
+                auto start = std::chrono::high_resolution_clock::now();
                 cargarCSV(nombreArchivo, personalized_matriz, personalized_matriz_padres, personalized_nombreCiudad);
+                FloydWarshall(personalized_matriz, personalized_matriz_padres);
+                auto end = std::chrono::high_resolution_clock::now();
+                auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+                std::cout << "Grafo analizado exitosamente en " << duration << " milisegundos." << std::endl;
                 break;
             }
         }
@@ -296,4 +331,46 @@ int menu::handleAccion(char opcion) {
 
     // Indica que puede preguntar por otra acción
     return 1;
+}
+
+void menu::FloydWarshall(std::vector<std::vector<uint64_t>>& matriz, std::vector<std::vector<uint64_t>>& matrizPadres) {
+    size_t n = matriz.size();
+
+    // Implementación del algoritmo de Floyd-Warshall
+    for (size_t k = 0; k < n; ++k) {
+        for (size_t i = 0; i < n; ++i) {
+            for (size_t j = 0; j < n; ++j) {
+                if (matriz[i][k] != UINT64_MAXIMO && matriz[k][j] != UINT64_MAXIMO &&
+                    matriz[i][j] > matriz[i][k] + matriz[k][j]) {
+                    matriz[i][j] = matriz[i][k] + matriz[k][j];
+                    matrizPadres[i][j] = static_cast<int64_t>(k);
+                }
+            }
+        }
+    }
+
+    std::cout << "Resultado del algoritmo de Floyd-Warshall:" << std::endl;
+    std::cout << "Matriz de pesos:" << std::endl;
+    for (const auto& fila : matriz) {
+        for (const auto& valor : fila) {
+            if (valor == UINT64_MAXIMO) {
+                std::cout << "M ";
+            } else {
+                std::cout << valor << " ";
+            }
+        }
+        std::cout << std::endl;
+    }
+
+    std::cout << "Matriz de padres:" << std::endl;
+    for (const auto& fila : matrizPadres) {
+        for (const auto& valor : fila) {
+            if (valor == UINT64_MAXIMO) {
+                std::cout << "M ";
+            } else {
+                std::cout << valor << " ";
+            }
+        }
+        std::cout << std::endl;
+    }
 }
