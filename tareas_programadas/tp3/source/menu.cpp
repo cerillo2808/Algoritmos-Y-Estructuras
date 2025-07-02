@@ -18,11 +18,8 @@
 const uint64_t UINT64_MAXIMO = std::numeric_limits<uint64_t>::max();
 
 int menu::run() {
-
     while (true) {
-
         while (true) {
-
             displayArchivo();
 
             char opcion = pedirArchivo();
@@ -33,7 +30,7 @@ int menu::run() {
             }
 
             // Es un 0 si no se ocupa correr Floyd-Warshall, es un 0 si ocupa correrlo
-            // Si no hay un archivo válido, es un -1 
+            // Si no hay un archivo válido, es un -1
             int condicion = handleArchivo(opcion);
             if (condicion < 0) {
                 continue;
@@ -41,24 +38,14 @@ int menu::run() {
                 break;
             }
         }
-        
-        while (true) {
 
+        while (true) {
             displayMenu();
 
             char opcion = pedirAccion();
 
             if (opcion == 'X') {
                 break;
-            }
-
-            // Si es un 0 si ocupa volver a seleccionar el archivo.
-            // Es un 1 si ocupa volver a preguntar por una acción.
-            int condicion = handleAccion(opcion);
-            if (condicion < 0) {
-                // TODO: Manejar error
-            } else {
-                continue;
             }
         }
     }
@@ -134,7 +121,6 @@ char menu::pedirArchivo() {
 }
 
 int menu::handleArchivo(char opcion) {
-
     if (opcion == '1') {
         archivoEscogido = 1;
         if (small) {
@@ -222,17 +208,16 @@ char menu::pedirAccion() {
 }
 
 int menu::handleAccion(char opcion) {
-
     if (opcion == '1') {
         // Obtener las matrices correspondientes al archivo escogido
         auto* matriz = getMatriz(archivoEscogido);
         auto* nombres = getNombreCiudad(archivoEscogido);
-        
+
         if (!matriz || !nombres) {
             std::cout << "Error: No se ha cargado ningún grafo." << std::endl;
             return 1;
         }
-        
+
         operador_instancia.accionUno(*matriz, *nombres);
 
     } else if (opcion == '2') {
@@ -240,7 +225,7 @@ int menu::handleAccion(char opcion) {
         auto* matriz = getMatriz(archivoEscogido);
         auto* matrizPadres = getMatrizPadres(archivoEscogido);
         auto* nombres = getNombreCiudad(archivoEscogido);
-        
+
         if (!matriz || !matrizPadres || !nombres) {
             std::cout << "Error: No se ha cargado ningún grafo." << std::endl;
             return 1;
@@ -253,7 +238,7 @@ int menu::handleAccion(char opcion) {
         auto* matriz = getMatriz(archivoEscogido);
         auto* matrizPadres = getMatrizPadres(archivoEscogido);
         auto* nombres = getNombreCiudad(archivoEscogido);
-        
+
         if (!matriz || !matrizPadres || !nombres) {
             std::cout << "Error: No se ha cargado ningún grafo." << std::endl;
             return 1;
@@ -266,7 +251,7 @@ int menu::handleAccion(char opcion) {
         auto* matriz = getMatriz(archivoEscogido);
         auto* matrizPadres = getMatrizPadres(archivoEscogido);
         auto* nombres = getNombreCiudad(archivoEscogido);
-        
+
         if (!matriz || !matrizPadres || !nombres) {
             std::cout << "Error: No se ha cargado ningún grafo." << std::endl;
             return 1;
@@ -277,22 +262,19 @@ int menu::handleAccion(char opcion) {
     } else if (opcion == '5') {
         // Obtener las matrices correspondientes al archivo escogido
         auto* matriz = getMatriz(archivoEscogido);
-        auto* matrizPadres = getMatrizPadres(archivoEscogido);
         auto* nombres = getNombreCiudad(archivoEscogido);
-        
-        if (!matriz || !matrizPadres || !nombres) {
+
+        if (!matriz || !nombres) {
             std::cout << "Error: No se ha cargado ningún grafo." << std::endl;
             return 1;
         }
 
-        operador_instancia.accionCinco(*matriz, *matrizPadres, *nombres);
+        operador_instancia.accionCinco(*matriz, *nombres);
     }
 
     // Indica que puede preguntar por otra acción
     return 1;
 }
-
-
 
 std::vector<std::vector<uint64_t>>* menu::getMatriz(int opcion) {
     switch (opcion) {

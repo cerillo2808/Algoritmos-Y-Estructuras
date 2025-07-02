@@ -4,13 +4,12 @@
 
 #include <vector>
 #include <cstdint>
+#include <string>
 
 #include "operador.hpp"
 
 class menu {
-
  private:
-
   /**
    * @brief Indica si se ha cargado algún archivo CSV.
    */
@@ -32,17 +31,17 @@ class menu {
   /**
   * @brief Matriz que almacena los tiempos de viaje entre las ciudades de input_small.csv.
   */
- std::vector<std::vector<uint64_t>> small_matriz;
-
-   /**
-  * @brief Matriz padres input_small.csv.
-  */
- std::vector<std::vector<uint64_t>> small_matriz_padres;
+  std::vector<std::vector<uint64_t>> small_matriz;
 
   /**
-    * @brief Vector que almacena los nombres de las ciudades de input_small.csv.
-    */
- std::vector<std::string> small_nombreCiudad;
+  * @brief Matriz padres input_small.csv.
+  */
+  std::vector<std::vector<uint64_t>> small_matriz_padres;
+
+  /**
+  * @brief Vector que almacena los nombres de las ciudades de input_small.csv.
+  */
+  std::vector<std::string> small_nombreCiudad;
 
   /**
    * @brief Matriz que almacena los tiempos de viaje entre las ciudades de input_medium.csv.
@@ -91,7 +90,6 @@ class menu {
 
 
  public:
-
   /**
    * @brief Ejecuta el menú y retorna un valor entero.
    * 
@@ -108,7 +106,7 @@ class menu {
    * @brief Muestra las opciones del menú al usuario.
    */
   void displayMenu();
-  
+
   /**
    * @brief Maneja la entrada del usuario y ejecuta la acción correspondiente.
    */
@@ -164,6 +162,4 @@ std::vector<std::vector<uint64_t>>* getMatrizPadres(int opcion);
  * @return std::vector<std::string>* Puntero al vector de nombres correspondiente, nullptr si la opción es inválida.
  */
 std::vector<std::string>* getNombreCiudad(int opcion);
-
-
 };
