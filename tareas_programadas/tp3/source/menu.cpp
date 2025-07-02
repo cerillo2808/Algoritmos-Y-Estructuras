@@ -13,6 +13,7 @@
 #include <iomanip>
 
 #include "menu.hpp"
+#include "operador.hpp"
 
 const uint64_t UINT64_MAXIMO = std::numeric_limits<uint64_t>::max();
 
@@ -211,7 +212,7 @@ int menu::handleArchivo(char opcion) {
         }
         auto start = std::chrono::high_resolution_clock::now();
         cargarCSV("files/input_small.csv", small_matriz, small_matriz_padres, small_nombreCiudad);
-        FloydWarshall(small_matriz, small_matriz_padres);
+        operador_instancia.FloydWarshall(small_matriz, small_matriz_padres);
         auto end = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
         std::cout << "Grafo analizado exitosamente en " << duration << " milisegundos." << std::endl;
@@ -225,7 +226,7 @@ int menu::handleArchivo(char opcion) {
         }
         auto start = std::chrono::high_resolution_clock::now();
         cargarCSV("files/input_medium.csv", medium_matriz, medium_matriz_padres, medium_nombreCiudad);
-        FloydWarshall(medium_matriz, medium_matriz_padres);
+        operador_instancia.FloydWarshall(medium_matriz, medium_matriz_padres);
         auto end = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
         std::cout << "Grafo analizado exitosamente en " << duration << " milisegundos." << std::endl;
@@ -239,7 +240,7 @@ int menu::handleArchivo(char opcion) {
         }
         auto start = std::chrono::high_resolution_clock::now();
         cargarCSV("files/input_large.csv", large_matriz, large_matriz_padres, large_nombreCiudad);
-        FloydWarshall(large_matriz, large_matriz_padres);
+        operador_instancia.FloydWarshall(large_matriz, large_matriz_padres);
         auto end = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
         std::cout << "Grafo analizado exitosamente en " << duration << " milisegundos." << std::endl;
@@ -260,7 +261,7 @@ int menu::handleArchivo(char opcion) {
             } else {
                 auto start = std::chrono::high_resolution_clock::now();
                 cargarCSV(nombreArchivo, personalized_matriz, personalized_matriz_padres, personalized_nombreCiudad);
-                FloydWarshall(personalized_matriz, personalized_matriz_padres);
+                operador_instancia.FloydWarshall(personalized_matriz, personalized_matriz_padres);
                 auto end = std::chrono::high_resolution_clock::now();
                 auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
                 std::cout << "Grafo analizado exitosamente en " << duration << " milisegundos." << std::endl;
@@ -360,22 +361,7 @@ int menu::handleAccion(char opcion) {
     return 1;
 }
 
-void menu::FloydWarshall(std::vector<std::vector<uint64_t>>& matriz, std::vector<std::vector<uint64_t>>& matrizPadres) {
-    size_t n = matriz.size();
 
-    // Implementación del algoritmo de Floyd-Warshall
-    for (size_t k = 0; k < n; ++k) {
-        for (size_t i = 0; i < n; ++i) {
-            for (size_t j = 0; j < n; ++j) {
-                if (matriz[i][k] != UINT64_MAXIMO && matriz[k][j] != UINT64_MAXIMO &&
-                    matriz[i][j] > matriz[i][k] + matriz[k][j]) {
-                    matriz[i][j] = matriz[i][k] + matriz[k][j];
-                    matrizPadres[i][j] = static_cast<int64_t>(k);
-                }
-            }
-        }
-    }
-}
 
 std::vector<std::vector<uint64_t>>* menu::getMatriz(int opcion) {
     switch (opcion) {

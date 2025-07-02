@@ -5,6 +5,8 @@
 #include <vector>
 #include <cstdint>
 
+#include "operador.hpp"
+
 class menu {
 
  private:
@@ -15,6 +17,8 @@ class menu {
     bool small = false;
     bool medium = false;
     bool large = false;
+
+    operador operador_instancia;
 
   /**
    * @brief Indica el archivo escogido por el usuario.
@@ -144,14 +148,6 @@ class menu {
    * @param opcion Opción seleccionada por el usuario.
    */
   int handleAccion(char opcion);
-
-  /**
-   * @brief Implementa el algoritmo de Floyd-Warshall para encontrar los caminos más cortos entre todas las ciudades.
-   * 
-   * @param matriz Matriz de adyacencia que representa el grafo de las ciudades.
-   * @param matrizPadres Matriz que almacena los padres de cada nodo en el camino más corto.
-   */
-  void FloydWarshall(std::vector<std::vector<uint64_t>>& matriz, std::vector<std::vector<uint64_t>>& matrizPadres);
 
   /**
  * @brief Devuelve un puntero a la matriz correspondiente según la opción seleccionada.

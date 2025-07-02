@@ -11,5 +11,6 @@ int main() {
     menu m;
     m.run();
     std::cout << "¡Gracias por usar el sistema de consultas del SiNTiEmPo!" << std::endl;
+    std::cout << "Liqing Yosery Zheng Lu C38680" << std::endl;
     return 0;
 }
