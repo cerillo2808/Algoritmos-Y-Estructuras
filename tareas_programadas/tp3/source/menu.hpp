@@ -17,6 +17,15 @@ class menu {
     bool large = false;
 
   /**
+   * @brief Indica el archivo escogido por el usuario.
+   * Es 1 si se ha escogido input_small.csv,
+   * Es 2 si se ha escogido input_medium.csv,
+   * Es 3 si se ha escogido input_large.csv,
+   * Es 4 si se ha escogido un archivo personalizado.
+   */
+    int archivoEscogido = 0;
+
+  /**
   * @brief Matriz que almacena los tiempos de viaje entre las ciudades de input_small.csv.
   */
  std::vector<std::vector<uint64_t>> small_matriz;
@@ -143,4 +152,47 @@ class menu {
    * @param matrizPadres Matriz que almacena los padres de cada nodo en el camino más corto.
    */
   void FloydWarshall(std::vector<std::vector<uint64_t>>& matriz, std::vector<std::vector<uint64_t>>& matrizPadres);
+
+  /**
+ * @brief Devuelve un puntero a la matriz correspondiente según la opción seleccionada.
+ * 
+ * @param opcion Opción que indica qué matriz retornar (1=small, 2=medium, 3=large, 4=personalized).
+ * @return std::vector<std::vector<uint64_t>>* Puntero a la matriz correspondiente, nullptr si la opción es inválida.
+ */
+std::vector<std::vector<uint64_t>>* getMatriz(int opcion);
+
+/**
+ * @brief Devuelve un puntero a la matriz de padres correspondiente según la opción seleccionada.
+ * 
+ * @param opcion Opción que indica qué matriz de padres retornar (1=small, 2=medium, 3=large, 4=personalized).
+ * @return std::vector<std::vector<uint64_t>>* Puntero a la matriz de padres correspondiente, nullptr si la opción es inválida.
+ */
+std::vector<std::vector<uint64_t>>* getMatrizPadres(int opcion);
+
+/**
+ * @brief Devuelve un puntero al vector de nombres de ciudades correspondiente según la opción seleccionada.
+ * 
+ * @param opcion Opción que indica qué vector retornar (1=small, 2=medium, 3=large, 4=personalized).
+ * @return std::vector<std::string>* Puntero al vector de nombres correspondiente, nullptr si la opción es inválida.
+ */
+std::vector<std::string>* getNombreCiudad(int opcion);
+
+void accionUno(std::vector<std::vector<uint64_t>>& matriz, std::vector<std::string>& nombres);
+
+int accionDos(std::vector<std::vector<uint64_t>>& matriz, std::vector<std::vector<uint64_t>>& matrizPadres, std::vector<std::string>& nombres);
+
+void accionTres(std::vector<std::vector<uint64_t>>& matriz, std::vector<std::vector<uint64_t>>& matrizPadres, std::vector<std::string>& nombres);
+
+void accionCuatro(std::vector<std::vector<uint64_t>>& matriz, std::vector<std::vector<uint64_t>>& matrizPadres, std::vector<std::string>& nombres);
+
+void accionCinco(std::vector<std::vector<uint64_t>>& matriz, std::vector<std::vector<uint64_t>>& matrizPadres, std::vector<std::string>& nombres);
+
+/**
+ * @brief Convierte una cadena a minúsculas.
+ * 
+ * @param str Cadena a convertir.
+ * @return std::string Cadena convertida a minúsculas.
+ */
+  static std::string toLowercase(const std::string& str);
+
 };
