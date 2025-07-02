@@ -182,31 +182,6 @@ void menu::cargarCSV(const std::string& nombreArchivo, std::vector<std::vector<u
         matriz[sourceId][targetId] = weight;
         matrizPadres[sourceId][targetId] = static_cast<int64_t>(sourceId);
     }
-
-    std::cout << "Iniciales:" << std::endl;
-    std::cout << "Matriz de pesos:" << std::endl;
-    for (const auto& fila : matriz) {
-    for (const auto& valor : fila) {
-        if (valor == UINT64_MAXIMO) {
-            std::cout << "M ";
-        } else {
-            std::cout << valor << " ";
-        }
-    }
-    std::cout << std::endl;
-    }
-
-    std::cout << "Matriz de padres:" << std::endl;
-    for (const auto& fila : matrizPadres) {
-    for (const auto& valor : fila) {
-        if (valor == UINT64_MAXIMO) {
-            std::cout << "M ";
-        } else {
-            std::cout << valor << " ";
-        }
-    }
-    std::cout << std::endl;
-    }
 }
 
 char menu::pedirArchivo() {
@@ -347,30 +322,5 @@ void menu::FloydWarshall(std::vector<std::vector<uint64_t>>& matriz, std::vector
                 }
             }
         }
-    }
-
-    std::cout << "Resultado del algoritmo de Floyd-Warshall:" << std::endl;
-    std::cout << "Matriz de pesos:" << std::endl;
-    for (const auto& fila : matriz) {
-        for (const auto& valor : fila) {
-            if (valor == UINT64_MAXIMO) {
-                std::cout << "M ";
-            } else {
-                std::cout << valor << " ";
-            }
-        }
-        std::cout << std::endl;
-    }
-
-    std::cout << "Matriz de padres:" << std::endl;
-    for (const auto& fila : matrizPadres) {
-        for (const auto& valor : fila) {
-            if (valor == UINT64_MAXIMO) {
-                std::cout << "M ";
-            } else {
-                std::cout << valor << " ";
-            }
-        }
-        std::cout << std::endl;
     }
 }
