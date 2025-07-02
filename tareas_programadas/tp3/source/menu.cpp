@@ -18,8 +18,6 @@ int menu::run() {
 
     while (true) {
 
-        bool correrFloydWarshall = true;
-
         while (true) {
             // TODO: Wiki help
 
@@ -38,7 +36,6 @@ int menu::run() {
             if (condicion < 0) {
                 continue;
             } else {
-                correrFloydWarshall = condicion;
                 break;
             }
         }
