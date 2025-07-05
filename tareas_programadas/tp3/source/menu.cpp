@@ -47,6 +47,8 @@ int menu::run() {
             if (opcion == 'X') {
                 break;
             }
+
+            handleAccion(opcion);
         }
     }
 }
