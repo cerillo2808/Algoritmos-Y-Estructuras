@@ -11,7 +11,7 @@ El Sistema Nacional de Tipificación de Emergencias Potenciales (SiNTiEmPo) admi
 5. Seguir las instrucciones que aparecen en pantalla para interactuar con el programa.
 
 
-# Manual de Uso
+# Manual de uso
 
 Al iniciar el programa, se presenta un menú principal donde se puede elegir el archivo que contiene el grafo a analizar. Para seleccionar una opción, basta con ingresar el número correspondiente en la consola.
 
