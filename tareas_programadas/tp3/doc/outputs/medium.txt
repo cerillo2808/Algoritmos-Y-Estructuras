@@ -1,0 +1,7459 @@
+¡Bienvenid@ al sistema de consultas del SiNTiEmPo!
+Elija el archivo CSV que contiene el grafo a consultar:
+[1] input_small.csv
+[2] input_medium.csv
+[3] input_large.csv
+[4] Ingrese uno personalizado.
+[X] Salir.
+Grafo analizado exitosamente en 144 milisegundos.
+Seleccione una opción:
+[1] Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo.
+[2] Ciudad más efectiva para despachar mayor capacidad de equipo.
+[3] Par de ciudades más distantes.
+[4] Par de ciudades menos distantes.
+[5] Ciudades ordenadas por tiempo de viaje promedio.
+[X] Regresar.
+Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo:
+- Paquera
+Tiempo total mínimo: 611 unidades.
+Seleccione una opción:
+[1] Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo.
+[2] Ciudad más efectiva para despachar mayor capacidad de equipo.
+[3] Par de ciudades más distantes.
+[4] Par de ciudades menos distantes.
+[5] Ciudades ordenadas por tiempo de viaje promedio.
+[X] Regresar.
+Ciudades disponibles:
+[0] Pocora
+[1] Hojancha
+[2] Golfito
+[3] Bahía Ballena
+[4] Tambor
+[5] Patio de Agua
+[6] San Rafael Piedades
+[7] San Rafael Parrita
+[8] San Miguel Viejo
+[9] San Juan Arriba
+[10] Cañas Dulces
+[11] Turrúcares
+[12] Isla del Coco
+[13] Monte Romo
+[14] Río Blanco
+[15] Grifo Alto
+[16] Acapulco
+[17] Hacienda Vieja
+[18] Dos Ríos
+[19] Tobosi
+[20] Candelaria
+[21] Zapotal
+[22] Duacarí
+[23] Sarapiquí
+[24] Bolsón
+[25] Pavas
+[26] Rancho Redondo
+[27] Atenas
+[28] Quebrada Honda
+[29] Bijagua
+[30] Los Guido
+[31] Patarrá
+[32] Granadilla
+[33] Santiago Poás
+[34] Catedral
+[35] Piedras Negras
+[36] Santa Rosa Viejo
+[37] Nosara
+[38] Chomes
+[39] Garita
+[40] San José Norte
+[41] Santa Rosa Abajo
+[42] Veintisiete de Abril
+[43] Florida
+[44] Jesús Piedad
+[45] San Rafael Viejo
+[46] Daniel Flores
+[47] Palmitos
+[48] Patalillo
+[49] Sabalito
+[50] San Isidro Labrador
+[51] Guacimal
+[52] Matambú
+[53] San Isidro de El General
+[54] Germania
+[55] Llanuras del Gaspar
+[56] Manzanillo
+[57] Aguas Claras
+[58] Cabo Velas
+[59] Santiago Nuevo
+[60] Río Azul
+[61] San Jerónimo Arriba
+[62] Bebedero
+[63] Limón
+[64] Palmares
+[65] Cartagena
+[66] Chirripó
+[67] Puerto Carrillo
+[68] Capellades
+[69] San Marcos
+[70] Lagunillas
+[71] La Unión
+[72] Las Horquetas
+[73] Santiago
+[74] La Suiza
+[75] Palmiralito
+[76] Cutris
+[77] Tres Equis
+[78] Santiago Puriscal
+[79] Reventazón
+[80] Buenavista
+[81] Dulce Nombre de Jesús
+[82] San Francisco Abajo
+[83] Guácimo
+[84] Cirrí Sur
+[85] Volcán
+[86] Tempate
+[87] Pitahaya
+[88] Peñas Blancas
+[89] Los Chiles
+[90] Cabeceras
+[91] El Ángel
+[92] San Pedro Sur
+[93] Bolívar
+[94] La Trinidad
+[95] Juan Viñas
+[96] Río Cuarto
+[97] Palmira
+[98] San Isidro Abajo
+[99] Laguna
+[100] San Pablo Arriba
+[101] Roxana
+[102] Pará
+[103] Mercedes Abajo
+[104] San Pedro Antiguo
+[105] Dulce Nombre Oeste
+[106] Santa Cruz
+[107] Los Ángeles
+[108] Biolley
+[109] Naranjo
+[110] Mata Redonda
+[111] Santa Rosa Nuevo
+[112] Quepos
+[113] Telire
+[114] Colorado
+[115] Tirrases
+[116] Canalete
+[117] Desamparados Sur
+[118] Puntarenas
+[119] Heredia
+[120] Pilas
+[121] Picagres
+[122] Frailes
+[123] Barranca
+[124] Varablanca
+[125] San Felipe
+[126] Chira
+[127] Tucurrique
+[128] San Pablo Este
+[129] Tures
+[130] El Roble
+[131] Ulloa
+[132] Oriental
+[133] San Gabriel
+[134] Santo Domingo
+[135] Delicias
+[136] Savegre
+[137] El Cairo
+[138] Porvenir
+[139] Paquera
+[140] San Carlos
+[141] Candelarita
+[142] San Roque
+[143] Monterrey Abajo
+[144] Caldera
+[145] Esquipulas
+[146] Mayorga
+[147] Pavón
+[148] Tabarcia
+[149] Carrillos
+[150] Palmar
+[151] Yolillal
+[152] Matama
+[153] Labrador
+[154] Cuajiniquil
+[155] Santa Isabel
+[156] Pejibayes
+[157] San Rafael Nuevo
+[158] Liberia
+[159] Barbacoas
+[160] San José Este
+[161] Quesada
+[162] Legua
+[163] Buenos Aires
+[164] Turrialba
+[165] San Vicente Norte
+[166] San Nicolás
+[167] La Buenavista
+[168] La Asunción
+[169] San Ignacio
+[170] Guadalupe Este
+[171] Chires
+[172] Pacuarito
+[173] Birrisito
+[174] San Juan Norte
+[175] Uruca
+[176] Zapote
+[177] San Francisco de Dos Ríos
+[178] Escazú
+[179] Aserrí
+[180] San Lorenzo
+[181] Sabana Redonda
+[182] Paracito
+[183] Santa Bárbara
+[184] Zapote Norte
+[185] Pittier
+[186] La Victoria
+[187] Río Jiménez
+[188] Sierpe
+[189] San Sebastián
+[190] Jesús
+[191] Jesús María
+[192] Limoncito
+[193] Tarbaca
+[194] Salitral
+[195] Santa Cruz Sur
+[196] San Rafael Oeste
+[197] Santa Elena
+[198] Santo Tomás
+[199] Venado
+[200] Rivas
+[201] San Isidro Este
+[202] San Juan Grande
+[203] Concepción Este
+[204] San Rafael Norte
+[205] Batán
+[206] San Francisco Arriba
+[207] Cinco Esquinas
+[208] Aguas Zarcas
+[209] Puerto Jiménez
+[210] Aguabuena
+[211] Laurel
+[212] Florencia
+[213] Dulce Nombre Este
+[214] Brisas
+[215] Siquirres
+[216] Tuis
+[217] Rita
+[218] San Rafael Abajo
+[219] La Cuesta
+[220] Corralillo
+[221] Concepción Arriba
+[222] Guadalupe Oeste
+[223] Sabanillal
+[224] Diriá
+[225] Santiago Oeste
+[226] Puerto Viejo
+[227] Aguacaliente
+[228] San Rafael Sur
+[229] Piedades Norte
+[230] San Vicente
+[231] Zaragoza
+[232] Pocosol
+[233] Sarchí Norte
+[234] San Rafael Arriba
+[235] Monte Verde
+[236] La Colonia
+[237] San Francisco Norte
+[238] El Mastate
+[239] Rincón de Sabanilla
+[240] Monterrey Arriba
+[241] San José Abajo
+[242] Tacares
+[243] Matina
+Ingrese el número de la ciudad destino o el nombre: Mejor(es) ciudad(es) para despachar hacia Biolley:
+- Las Horquetas
+  Tiempo: 1 unidades
+  Ruta: Las Horquetas -> Biolley
+
+- Quepos
+  Tiempo: 1 unidades
+  Ruta: Quepos -> Biolley
+
+- Colorado
+  Tiempo: 1 unidades
+  Ruta: Colorado -> Biolley
+
+- Oriental
+  Tiempo: 1 unidades
+  Ruta: Oriental -> Biolley
+
+Seleccione una opción:
+[1] Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo.
+[2] Ciudad más efectiva para despachar mayor capacidad de equipo.
+[3] Par de ciudades más distantes.
+[4] Par de ciudades menos distantes.
+[5] Ciudades ordenadas por tiempo de viaje promedio.
+[X] Regresar.
+Par(es) de ciudades más distantes:
+Distancia máxima: 12 unidades
+
+De Matina a Pocora
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Santiago Nuevo -> Pocora
+
+De Matina a Bahía Ballena
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Pavas -> Veintisiete de Abril -> Barbacoas -> Bahía Ballena
+
+De Matina a Turrúcares
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> San Rafael Viejo -> Turrúcares
+
+De Matina a Duacarí
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Río Blanco -> Sarapiquí -> Santa Rosa Viejo -> Duacarí
+
+De Matina a San Isidro Labrador
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Santiago Nuevo -> San Isidro Labrador
+
+De Matina a Germania
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Pejibayes -> Germania
+
+De Matina a Cabo Velas
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Santiago Puriscal -> Santa Rosa Nuevo -> Cabo Velas
+
+De Matina a Las Horquetas
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Pavas -> Veintisiete de Abril -> Las Horquetas
+
+De Matina a Tres Equis
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Santiago Nuevo -> San Jerónimo Arriba -> Tres Equis
+
+De Matina a Volcán
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Guacimal -> Volcán
+
+De Matina a Puntarenas
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Santiago Puriscal -> Puntarenas
+
+De Matina a Varablanca
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Pavas -> La Suiza -> Varablanca
+
+De Matina a Santo Domingo
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Pavas -> Veintisiete de Abril -> Santo Domingo
+
+De Matina a El Cairo
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Pavas -> Veintisiete de Abril -> El Cairo
+
+De Matina a Porvenir
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Santiago Nuevo -> San Jerónimo Arriba -> Porvenir
+
+De Matina a Paquera
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Pavas -> Paquera
+
+De Matina a San Carlos
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Pavas -> San Carlos
+
+De Matina a Legua
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Pavas -> Veintisiete de Abril -> Santiago -> Legua
+
+De Matina a Chires
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Santiago Nuevo -> Río Azul -> Chires
+
+De Matina a La Victoria
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Río Blanco -> Granadilla -> La Victoria
+
+De Matina a San Rafael Oeste
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Río Blanco -> Los Guido -> Chomes -> San Rafael Oeste
+
+De Matina a Venado
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Pavas -> Puerto Carrillo -> Venado
+
+De Matina a San Rafael Norte
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Hacienda Vieja -> San Rafael Norte
+
+De Matina a Aguas Zarcas
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Santiago Nuevo -> Aguas Zarcas
+
+De Matina a Siquirres
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Santiago Nuevo -> Palmiralito -> Cirrí Sur -> Siquirres
+
+De Matina a Diriá
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Santiago Nuevo -> Laguna -> Diriá
+
+De Matina a San Rafael Sur
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Río Blanco -> Los Guido -> San Rafael Sur
+
+De Matina a Pocosol
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Río Blanco -> Canalete -> Pocosol
+
+De Matina a La Colonia
+Tiempo de viaje: 12 unidades
+Ruta: Matina -> Hojancha -> Río Blanco -> La Colonia
+
+Seleccione una opción:
+[1] Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo.
+[2] Ciudad más efectiva para despachar mayor capacidad de equipo.
+[3] Par de ciudades más distantes.
+[4] Par de ciudades menos distantes.
+[5] Ciudades ordenadas por tiempo de viaje promedio.
+[X] Regresar.
+Par(es) de ciudades menos distantes:
+Distancia mínima: 1 unidades
+
+De Pocora a Hojancha
+Tiempo de viaje: 1 unidades
+Ruta: Pocora -> Hojancha
+
+De Pocora a Isla del Coco
+Tiempo de viaje: 1 unidades
+Ruta: Pocora -> Isla del Coco
+
+De Pocora a Garita
+Tiempo de viaje: 1 unidades
+Ruta: Pocora -> Garita
+
+De Pocora a Daniel Flores
+Tiempo de viaje: 1 unidades
+Ruta: Pocora -> Daniel Flores
+
+De Pocora a Juan Viñas
+Tiempo de viaje: 1 unidades
+Ruta: Pocora -> Juan Viñas
+
+De Pocora a Savegre
+Tiempo de viaje: 1 unidades
+Ruta: Pocora -> Savegre
+
+De Pocora a Barbacoas
+Tiempo de viaje: 1 unidades
+Ruta: Pocora -> Barbacoas
+
+De Pocora a San Ignacio
+Tiempo de viaje: 1 unidades
+Ruta: Pocora -> San Ignacio
+
+De Hojancha a Río Blanco
+Tiempo de viaje: 1 unidades
+Ruta: Hojancha -> Río Blanco
+
+De Hojancha a Pavas
+Tiempo de viaje: 1 unidades
+Ruta: Hojancha -> Pavas
+
+De Hojancha a Santiago Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Hojancha -> Santiago Nuevo
+
+De Hojancha a Santiago Puriscal
+Tiempo de viaje: 1 unidades
+Ruta: Hojancha -> Santiago Puriscal
+
+De Hojancha a Tabarcia
+Tiempo de viaje: 1 unidades
+Ruta: Hojancha -> Tabarcia
+
+De Hojancha a Pejibayes
+Tiempo de viaje: 1 unidades
+Ruta: Hojancha -> Pejibayes
+
+De Hojancha a Liberia
+Tiempo de viaje: 1 unidades
+Ruta: Hojancha -> Liberia
+
+De Hojancha a Río Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: Hojancha -> Río Jiménez
+
+De Golfito a Isla del Coco
+Tiempo de viaje: 1 unidades
+Ruta: Golfito -> Isla del Coco
+
+De Golfito a Palmares
+Tiempo de viaje: 1 unidades
+Ruta: Golfito -> Palmares
+
+De Golfito a Frailes
+Tiempo de viaje: 1 unidades
+Ruta: Golfito -> Frailes
+
+De Golfito a Tuis
+Tiempo de viaje: 1 unidades
+Ruta: Golfito -> Tuis
+
+De Golfito a Tacares
+Tiempo de viaje: 1 unidades
+Ruta: Golfito -> Tacares
+
+De Bahía Ballena a Dos Ríos
+Tiempo de viaje: 1 unidades
+Ruta: Bahía Ballena -> Dos Ríos
+
+De Bahía Ballena a Santiago Poás
+Tiempo de viaje: 1 unidades
+Ruta: Bahía Ballena -> Santiago Poás
+
+De Bahía Ballena a Matambú
+Tiempo de viaje: 1 unidades
+Ruta: Bahía Ballena -> Matambú
+
+De Bahía Ballena a Manzanillo
+Tiempo de viaje: 1 unidades
+Ruta: Bahía Ballena -> Manzanillo
+
+De Bahía Ballena a Quepos
+Tiempo de viaje: 1 unidades
+Ruta: Bahía Ballena -> Quepos
+
+De Bahía Ballena a El Cairo
+Tiempo de viaje: 1 unidades
+Ruta: Bahía Ballena -> El Cairo
+
+De Bahía Ballena a Rincón de Sabanilla
+Tiempo de viaje: 1 unidades
+Ruta: Bahía Ballena -> Rincón de Sabanilla
+
+De Tambor a Monte Romo
+Tiempo de viaje: 1 unidades
+Ruta: Tambor -> Monte Romo
+
+De Tambor a Bolsón
+Tiempo de viaje: 1 unidades
+Ruta: Tambor -> Bolsón
+
+De Tambor a Sabalito
+Tiempo de viaje: 1 unidades
+Ruta: Tambor -> Sabalito
+
+De Tambor a Cartagena
+Tiempo de viaje: 1 unidades
+Ruta: Tambor -> Cartagena
+
+De Tambor a San Isidro Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Tambor -> San Isidro Abajo
+
+De Tambor a Puntarenas
+Tiempo de viaje: 1 unidades
+Ruta: Tambor -> Puntarenas
+
+De Tambor a Legua
+Tiempo de viaje: 1 unidades
+Ruta: Tambor -> Legua
+
+De Tambor a Aguacaliente
+Tiempo de viaje: 1 unidades
+Ruta: Tambor -> Aguacaliente
+
+De Patio de Agua a Monte Romo
+Tiempo de viaje: 1 unidades
+Ruta: Patio de Agua -> Monte Romo
+
+De Patio de Agua a Juan Viñas
+Tiempo de viaje: 1 unidades
+Ruta: Patio de Agua -> Juan Viñas
+
+De Patio de Agua a Heredia
+Tiempo de viaje: 1 unidades
+Ruta: Patio de Agua -> Heredia
+
+De San Rafael Piedades a Tobosi
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Piedades -> Tobosi
+
+De San Rafael Piedades a Palmitos
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Piedades -> Palmitos
+
+De San Rafael Piedades a Aguas Claras
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Piedades -> Aguas Claras
+
+De San Rafael Piedades a Santiago Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Piedades -> Santiago Nuevo
+
+De San Rafael Piedades a Telire
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Piedades -> Telire
+
+De San Rafael Piedades a San Ignacio
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Piedades -> San Ignacio
+
+De San Rafael Piedades a San Juan Norte
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Piedades -> San Juan Norte
+
+De San Rafael Piedades a Dulce Nombre Este
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Piedades -> Dulce Nombre Este
+
+De San Rafael Parrita a La Unión
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Parrita -> La Unión
+
+De San Rafael Parrita a Palmiralito
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Parrita -> Palmiralito
+
+De San Rafael Parrita a Volcán
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Parrita -> Volcán
+
+De San Rafael Parrita a Barranca
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Parrita -> Barranca
+
+De San Rafael Parrita a Cuajiniquil
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Parrita -> Cuajiniquil
+
+De San Rafael Parrita a Río Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Parrita -> Río Jiménez
+
+De San Rafael Parrita a San Juan Grande
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Parrita -> San Juan Grande
+
+De San Rafael Parrita a Florencia
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Parrita -> Florencia
+
+De San Rafael Parrita a Santiago Oeste
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Parrita -> Santiago Oeste
+
+De San Rafael Parrita a Tacares
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Parrita -> Tacares
+
+De San Miguel Viejo a Dulce Nombre de Jesús
+Tiempo de viaje: 1 unidades
+Ruta: San Miguel Viejo -> Dulce Nombre de Jesús
+
+De San Miguel Viejo a Bolívar
+Tiempo de viaje: 1 unidades
+Ruta: San Miguel Viejo -> Bolívar
+
+De San Miguel Viejo a Mercedes Abajo
+Tiempo de viaje: 1 unidades
+Ruta: San Miguel Viejo -> Mercedes Abajo
+
+De San Miguel Viejo a San Felipe
+Tiempo de viaje: 1 unidades
+Ruta: San Miguel Viejo -> San Felipe
+
+De San Miguel Viejo a Paracito
+Tiempo de viaje: 1 unidades
+Ruta: San Miguel Viejo -> Paracito
+
+De San Miguel Viejo a San Isidro Este
+Tiempo de viaje: 1 unidades
+Ruta: San Miguel Viejo -> San Isidro Este
+
+De San Miguel Viejo a Santiago Oeste
+Tiempo de viaje: 1 unidades
+Ruta: San Miguel Viejo -> Santiago Oeste
+
+De San Miguel Viejo a Piedades Norte
+Tiempo de viaje: 1 unidades
+Ruta: San Miguel Viejo -> Piedades Norte
+
+De San Miguel Viejo a Monte Verde
+Tiempo de viaje: 1 unidades
+Ruta: San Miguel Viejo -> Monte Verde
+
+De San Juan Arriba a Pocora
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Arriba -> Pocora
+
+De San Juan Arriba a San Rafael Parrita
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Arriba -> San Rafael Parrita
+
+De San Juan Arriba a Patarrá
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Arriba -> Patarrá
+
+De San Juan Arriba a Chomes
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Arriba -> Chomes
+
+De San Juan Arriba a Mercedes Abajo
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Arriba -> Mercedes Abajo
+
+De San Juan Arriba a Barbacoas
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Arriba -> Barbacoas
+
+De San Juan Arriba a La Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Arriba -> La Buenavista
+
+De San Juan Arriba a San Rafael Norte
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Arriba -> San Rafael Norte
+
+De San Juan Arriba a Aguas Zarcas
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Arriba -> Aguas Zarcas
+
+De Cañas Dulces a San Rafael Parrita
+Tiempo de viaje: 1 unidades
+Ruta: Cañas Dulces -> San Rafael Parrita
+
+De Cañas Dulces a Cirrí Sur
+Tiempo de viaje: 1 unidades
+Ruta: Cañas Dulces -> Cirrí Sur
+
+De Cañas Dulces a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Cañas Dulces -> San Pablo Arriba
+
+De Cañas Dulces a Guadalupe Este
+Tiempo de viaje: 1 unidades
+Ruta: Cañas Dulces -> Guadalupe Este
+
+De Cañas Dulces a Santa Elena
+Tiempo de viaje: 1 unidades
+Ruta: Cañas Dulces -> Santa Elena
+
+De Cañas Dulces a Sarchí Norte
+Tiempo de viaje: 1 unidades
+Ruta: Cañas Dulces -> Sarchí Norte
+
+De Turrúcares a Isla del Coco
+Tiempo de viaje: 1 unidades
+Ruta: Turrúcares -> Isla del Coco
+
+De Turrúcares a Monte Romo
+Tiempo de viaje: 1 unidades
+Ruta: Turrúcares -> Monte Romo
+
+De Turrúcares a Jesús Piedad
+Tiempo de viaje: 1 unidades
+Ruta: Turrúcares -> Jesús Piedad
+
+De Turrúcares a Llanuras del Gaspar
+Tiempo de viaje: 1 unidades
+Ruta: Turrúcares -> Llanuras del Gaspar
+
+De Turrúcares a Dulce Nombre de Jesús
+Tiempo de viaje: 1 unidades
+Ruta: Turrúcares -> Dulce Nombre de Jesús
+
+De Turrúcares a Paquera
+Tiempo de viaje: 1 unidades
+Ruta: Turrúcares -> Paquera
+
+De Turrúcares a San Isidro Este
+Tiempo de viaje: 1 unidades
+Ruta: Turrúcares -> San Isidro Este
+
+De Turrúcares a La Cuesta
+Tiempo de viaje: 1 unidades
+Ruta: Turrúcares -> La Cuesta
+
+De Turrúcares a Piedades Norte
+Tiempo de viaje: 1 unidades
+Ruta: Turrúcares -> Piedades Norte
+
+De Isla del Coco a Puerto Carrillo
+Tiempo de viaje: 1 unidades
+Ruta: Isla del Coco -> Puerto Carrillo
+
+De Isla del Coco a La Suiza
+Tiempo de viaje: 1 unidades
+Ruta: Isla del Coco -> La Suiza
+
+De Isla del Coco a Colorado
+Tiempo de viaje: 1 unidades
+Ruta: Isla del Coco -> Colorado
+
+De Isla del Coco a San José Este
+Tiempo de viaje: 1 unidades
+Ruta: Isla del Coco -> San José Este
+
+De Isla del Coco a San Francisco Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Isla del Coco -> San Francisco Arriba
+
+De Isla del Coco a Corralillo
+Tiempo de viaje: 1 unidades
+Ruta: Isla del Coco -> Corralillo
+
+De Monte Romo a Golfito
+Tiempo de viaje: 1 unidades
+Ruta: Monte Romo -> Golfito
+
+De Monte Romo a Tambor
+Tiempo de viaje: 1 unidades
+Ruta: Monte Romo -> Tambor
+
+De Monte Romo a Atenas
+Tiempo de viaje: 1 unidades
+Ruta: Monte Romo -> Atenas
+
+De Monte Romo a Heredia
+Tiempo de viaje: 1 unidades
+Ruta: Monte Romo -> Heredia
+
+De Monte Romo a Tabarcia
+Tiempo de viaje: 1 unidades
+Ruta: Monte Romo -> Tabarcia
+
+De Monte Romo a Cuajiniquil
+Tiempo de viaje: 1 unidades
+Ruta: Monte Romo -> Cuajiniquil
+
+De Monte Romo a Sierpe
+Tiempo de viaje: 1 unidades
+Ruta: Monte Romo -> Sierpe
+
+De Río Blanco a San Rafael Piedades
+Tiempo de viaje: 1 unidades
+Ruta: Río Blanco -> San Rafael Piedades
+
+De Río Blanco a Grifo Alto
+Tiempo de viaje: 1 unidades
+Ruta: Río Blanco -> Grifo Alto
+
+De Río Blanco a Sarapiquí
+Tiempo de viaje: 1 unidades
+Ruta: Río Blanco -> Sarapiquí
+
+De Río Blanco a Los Guido
+Tiempo de viaje: 1 unidades
+Ruta: Río Blanco -> Los Guido
+
+De Río Blanco a Dulce Nombre de Jesús
+Tiempo de viaje: 1 unidades
+Ruta: Río Blanco -> Dulce Nombre de Jesús
+
+De Río Blanco a Canalete
+Tiempo de viaje: 1 unidades
+Ruta: Río Blanco -> Canalete
+
+De Río Blanco a Tures
+Tiempo de viaje: 1 unidades
+Ruta: Río Blanco -> Tures
+
+De Río Blanco a Delicias
+Tiempo de viaje: 1 unidades
+Ruta: Río Blanco -> Delicias
+
+De Río Blanco a Santa Isabel
+Tiempo de viaje: 1 unidades
+Ruta: Río Blanco -> Santa Isabel
+
+De Río Blanco a Piedades Norte
+Tiempo de viaje: 1 unidades
+Ruta: Río Blanco -> Piedades Norte
+
+De Grifo Alto a Hojancha
+Tiempo de viaje: 1 unidades
+Ruta: Grifo Alto -> Hojancha
+
+De Grifo Alto a Santiago Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Grifo Alto -> Santiago Oeste
+
+De Grifo Alto a San Rafael Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Grifo Alto -> San Rafael Arriba
+
+De Acapulco a San Juan Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Acapulco -> San Juan Arriba
+
+De Acapulco a San Pedro Antiguo
+Tiempo de viaje: 1 unidades
+Ruta: Acapulco -> San Pedro Antiguo
+
+De Acapulco a Mayorga
+Tiempo de viaje: 1 unidades
+Ruta: Acapulco -> Mayorga
+
+De Hacienda Vieja a Santiago Puriscal
+Tiempo de viaje: 1 unidades
+Ruta: Hacienda Vieja -> Santiago Puriscal
+
+De Hacienda Vieja a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Hacienda Vieja -> Dulce Nombre Oeste
+
+De Hacienda Vieja a Mayorga
+Tiempo de viaje: 1 unidades
+Ruta: Hacienda Vieja -> Mayorga
+
+De Hacienda Vieja a Pittier
+Tiempo de viaje: 1 unidades
+Ruta: Hacienda Vieja -> Pittier
+
+De Hacienda Vieja a Santa Cruz Sur
+Tiempo de viaje: 1 unidades
+Ruta: Hacienda Vieja -> Santa Cruz Sur
+
+De Hacienda Vieja a Florencia
+Tiempo de viaje: 1 unidades
+Ruta: Hacienda Vieja -> Florencia
+
+De Hacienda Vieja a Monterrey Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Hacienda Vieja -> Monterrey Arriba
+
+De Dos Ríos a Golfito
+Tiempo de viaje: 1 unidades
+Ruta: Dos Ríos -> Golfito
+
+De Dos Ríos a Catedral
+Tiempo de viaje: 1 unidades
+Ruta: Dos Ríos -> Catedral
+
+De Dos Ríos a Santa Rosa Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Dos Ríos -> Santa Rosa Nuevo
+
+De Dos Ríos a San Roque
+Tiempo de viaje: 1 unidades
+Ruta: Dos Ríos -> San Roque
+
+De Dos Ríos a La Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: Dos Ríos -> La Buenavista
+
+De Dos Ríos a Guadalupe Este
+Tiempo de viaje: 1 unidades
+Ruta: Dos Ríos -> Guadalupe Este
+
+De Dos Ríos a Siquirres
+Tiempo de viaje: 1 unidades
+Ruta: Dos Ríos -> Siquirres
+
+De Tobosi a Cabeceras
+Tiempo de viaje: 1 unidades
+Ruta: Tobosi -> Cabeceras
+
+De Tobosi a San Isidro Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Tobosi -> San Isidro Abajo
+
+De Tobosi a Pilas
+Tiempo de viaje: 1 unidades
+Ruta: Tobosi -> Pilas
+
+De Tobosi a Delicias
+Tiempo de viaje: 1 unidades
+Ruta: Tobosi -> Delicias
+
+De Tobosi a Savegre
+Tiempo de viaje: 1 unidades
+Ruta: Tobosi -> Savegre
+
+De Candelaria a San Rafael Piedades
+Tiempo de viaje: 1 unidades
+Ruta: Candelaria -> San Rafael Piedades
+
+De Candelaria a Chomes
+Tiempo de viaje: 1 unidades
+Ruta: Candelaria -> Chomes
+
+De Candelaria a Quepos
+Tiempo de viaje: 1 unidades
+Ruta: Candelaria -> Quepos
+
+De Candelaria a Tabarcia
+Tiempo de viaje: 1 unidades
+Ruta: Candelaria -> Tabarcia
+
+De Candelaria a San Rafael Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Candelaria -> San Rafael Nuevo
+
+De Candelaria a Santa Bárbara
+Tiempo de viaje: 1 unidades
+Ruta: Candelaria -> Santa Bárbara
+
+De Candelaria a Cinco Esquinas
+Tiempo de viaje: 1 unidades
+Ruta: Candelaria -> Cinco Esquinas
+
+De Candelaria a Corralillo
+Tiempo de viaje: 1 unidades
+Ruta: Candelaria -> Corralillo
+
+De Zapotal a Pavas
+Tiempo de viaje: 1 unidades
+Ruta: Zapotal -> Pavas
+
+De Zapotal a Bijagua
+Tiempo de viaje: 1 unidades
+Ruta: Zapotal -> Bijagua
+
+De Zapotal a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Zapotal -> San Pablo Arriba
+
+De Zapotal a Mayorga
+Tiempo de viaje: 1 unidades
+Ruta: Zapotal -> Mayorga
+
+De Zapotal a Cuajiniquil
+Tiempo de viaje: 1 unidades
+Ruta: Zapotal -> Cuajiniquil
+
+De Zapotal a Santa Elena
+Tiempo de viaje: 1 unidades
+Ruta: Zapotal -> Santa Elena
+
+De Zapotal a Monte Verde
+Tiempo de viaje: 1 unidades
+Ruta: Zapotal -> Monte Verde
+
+De Duacarí a Cañas Dulces
+Tiempo de viaje: 1 unidades
+Ruta: Duacarí -> Cañas Dulces
+
+De Duacarí a Rancho Redondo
+Tiempo de viaje: 1 unidades
+Ruta: Duacarí -> Rancho Redondo
+
+De Duacarí a San Isidro de El General
+Tiempo de viaje: 1 unidades
+Ruta: Duacarí -> San Isidro de El General
+
+De Duacarí a Santiago Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Duacarí -> Santiago Nuevo
+
+De Duacarí a Río Azul
+Tiempo de viaje: 1 unidades
+Ruta: Duacarí -> Río Azul
+
+De Duacarí a Esquipulas
+Tiempo de viaje: 1 unidades
+Ruta: Duacarí -> Esquipulas
+
+De Duacarí a Santa Isabel
+Tiempo de viaje: 1 unidades
+Ruta: Duacarí -> Santa Isabel
+
+De Duacarí a San Francisco de Dos Ríos
+Tiempo de viaje: 1 unidades
+Ruta: Duacarí -> San Francisco de Dos Ríos
+
+De Duacarí a Laurel
+Tiempo de viaje: 1 unidades
+Ruta: Duacarí -> Laurel
+
+De Duacarí a Dulce Nombre Este
+Tiempo de viaje: 1 unidades
+Ruta: Duacarí -> Dulce Nombre Este
+
+De Duacarí a Monterrey Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Duacarí -> Monterrey Arriba
+
+De Sarapiquí a Cañas Dulces
+Tiempo de viaje: 1 unidades
+Ruta: Sarapiquí -> Cañas Dulces
+
+De Sarapiquí a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Sarapiquí -> Santa Rosa Viejo
+
+De Sarapiquí a Tempate
+Tiempo de viaje: 1 unidades
+Ruta: Sarapiquí -> Tempate
+
+De Sarapiquí a La Trinidad
+Tiempo de viaje: 1 unidades
+Ruta: Sarapiquí -> La Trinidad
+
+De Sarapiquí a Mercedes Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Sarapiquí -> Mercedes Abajo
+
+De Sarapiquí a Frailes
+Tiempo de viaje: 1 unidades
+Ruta: Sarapiquí -> Frailes
+
+De Sarapiquí a Tucurrique
+Tiempo de viaje: 1 unidades
+Ruta: Sarapiquí -> Tucurrique
+
+De Sarapiquí a Laurel
+Tiempo de viaje: 1 unidades
+Ruta: Sarapiquí -> Laurel
+
+De Sarapiquí a Rita
+Tiempo de viaje: 1 unidades
+Ruta: Sarapiquí -> Rita
+
+De Sarapiquí a Zaragoza
+Tiempo de viaje: 1 unidades
+Ruta: Sarapiquí -> Zaragoza
+
+De Bolsón a Santiago Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Bolsón -> Santiago Nuevo
+
+De Bolsón a Chirripó
+Tiempo de viaje: 1 unidades
+Ruta: Bolsón -> Chirripó
+
+De Bolsón a Juan Viñas
+Tiempo de viaje: 1 unidades
+Ruta: Bolsón -> Juan Viñas
+
+De Bolsón a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Bolsón -> Dulce Nombre Oeste
+
+De Bolsón a La Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: Bolsón -> La Buenavista
+
+De Pavas a Isla del Coco
+Tiempo de viaje: 1 unidades
+Ruta: Pavas -> Isla del Coco
+
+De Pavas a Veintisiete de Abril
+Tiempo de viaje: 1 unidades
+Ruta: Pavas -> Veintisiete de Abril
+
+De Pavas a Pará
+Tiempo de viaje: 1 unidades
+Ruta: Pavas -> Pará
+
+De Pavas a El Mastate
+Tiempo de viaje: 1 unidades
+Ruta: Pavas -> El Mastate
+
+De Rancho Redondo a San Rafael Piedades
+Tiempo de viaje: 1 unidades
+Ruta: Rancho Redondo -> San Rafael Piedades
+
+De Rancho Redondo a Acapulco
+Tiempo de viaje: 1 unidades
+Ruta: Rancho Redondo -> Acapulco
+
+De Rancho Redondo a Matama
+Tiempo de viaje: 1 unidades
+Ruta: Rancho Redondo -> Matama
+
+De Rancho Redondo a San Rafael Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Rancho Redondo -> San Rafael Nuevo
+
+De Rancho Redondo a La Victoria
+Tiempo de viaje: 1 unidades
+Ruta: Rancho Redondo -> La Victoria
+
+De Rancho Redondo a Concepción Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Rancho Redondo -> Concepción Arriba
+
+De Atenas a Bebedero
+Tiempo de viaje: 1 unidades
+Ruta: Atenas -> Bebedero
+
+De Atenas a Lagunillas
+Tiempo de viaje: 1 unidades
+Ruta: Atenas -> Lagunillas
+
+De Atenas a Paquera
+Tiempo de viaje: 1 unidades
+Ruta: Atenas -> Paquera
+
+De Atenas a La Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: Atenas -> La Buenavista
+
+De Quebrada Honda a Tobosi
+Tiempo de viaje: 1 unidades
+Ruta: Quebrada Honda -> Tobosi
+
+De Bijagua a Pavas
+Tiempo de viaje: 1 unidades
+Ruta: Bijagua -> Pavas
+
+De Bijagua a Germania
+Tiempo de viaje: 1 unidades
+Ruta: Bijagua -> Germania
+
+De Bijagua a Santiago Puriscal
+Tiempo de viaje: 1 unidades
+Ruta: Bijagua -> Santiago Puriscal
+
+De Bijagua a Guácimo
+Tiempo de viaje: 1 unidades
+Ruta: Bijagua -> Guácimo
+
+De Bijagua a Puntarenas
+Tiempo de viaje: 1 unidades
+Ruta: Bijagua -> Puntarenas
+
+De Bijagua a San Rafael Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Bijagua -> San Rafael Nuevo
+
+De Bijagua a Chires
+Tiempo de viaje: 1 unidades
+Ruta: Bijagua -> Chires
+
+De Bijagua a San Sebastián
+Tiempo de viaje: 1 unidades
+Ruta: Bijagua -> San Sebastián
+
+De Los Guido a Chomes
+Tiempo de viaje: 1 unidades
+Ruta: Los Guido -> Chomes
+
+De Los Guido a La Trinidad
+Tiempo de viaje: 1 unidades
+Ruta: Los Guido -> La Trinidad
+
+De Los Guido a Escazú
+Tiempo de viaje: 1 unidades
+Ruta: Los Guido -> Escazú
+
+De Los Guido a Santa Bárbara
+Tiempo de viaje: 1 unidades
+Ruta: Los Guido -> Santa Bárbara
+
+De Patarrá a Aguas Claras
+Tiempo de viaje: 1 unidades
+Ruta: Patarrá -> Aguas Claras
+
+De Patarrá a San Pablo Este
+Tiempo de viaje: 1 unidades
+Ruta: Patarrá -> San Pablo Este
+
+De Patarrá a Puerto Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: Patarrá -> Puerto Jiménez
+
+De Granadilla a Dos Ríos
+Tiempo de viaje: 1 unidades
+Ruta: Granadilla -> Dos Ríos
+
+De Granadilla a Buenos Aires
+Tiempo de viaje: 1 unidades
+Ruta: Granadilla -> Buenos Aires
+
+De Granadilla a La Victoria
+Tiempo de viaje: 1 unidades
+Ruta: Granadilla -> La Victoria
+
+De Santiago Poás a Atenas
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Poás -> Atenas
+
+De Santiago Poás a Santa Rosa Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Poás -> Santa Rosa Abajo
+
+De Santiago Poás a Palmares
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Poás -> Palmares
+
+De Santiago Poás a Dulce Nombre de Jesús
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Poás -> Dulce Nombre de Jesús
+
+De Santiago Poás a Naranjo
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Poás -> Naranjo
+
+De Santiago Poás a Esquipulas
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Poás -> Esquipulas
+
+De Santiago Poás a Birrisito
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Poás -> Birrisito
+
+De Santiago Poás a Florencia
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Poás -> Florencia
+
+De Santiago Poás a La Cuesta
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Poás -> La Cuesta
+
+De Santiago Poás a Monterrey Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Poás -> Monterrey Arriba
+
+De Catedral a Patalillo
+Tiempo de viaje: 1 unidades
+Ruta: Catedral -> Patalillo
+
+De Catedral a Bebedero
+Tiempo de viaje: 1 unidades
+Ruta: Catedral -> Bebedero
+
+De Catedral a Buenos Aires
+Tiempo de viaje: 1 unidades
+Ruta: Catedral -> Buenos Aires
+
+De Catedral a San Ignacio
+Tiempo de viaje: 1 unidades
+Ruta: Catedral -> San Ignacio
+
+De Piedras Negras a Atenas
+Tiempo de viaje: 1 unidades
+Ruta: Piedras Negras -> Atenas
+
+De Piedras Negras a Guacimal
+Tiempo de viaje: 1 unidades
+Ruta: Piedras Negras -> Guacimal
+
+De Piedras Negras a San Isidro de El General
+Tiempo de viaje: 1 unidades
+Ruta: Piedras Negras -> San Isidro de El General
+
+De Piedras Negras a Los Ángeles
+Tiempo de viaje: 1 unidades
+Ruta: Piedras Negras -> Los Ángeles
+
+De Santa Rosa Viejo a Duacarí
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Viejo -> Duacarí
+
+De Santa Rosa Viejo a Granadilla
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Viejo -> Granadilla
+
+De Santa Rosa Viejo a Tucurrique
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Viejo -> Tucurrique
+
+De Santa Rosa Viejo a Uruca
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Viejo -> Uruca
+
+De Santa Rosa Viejo a Zapote
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Viejo -> Zapote
+
+De Santa Rosa Viejo a Limoncito
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Viejo -> Limoncito
+
+De Santa Rosa Viejo a Laurel
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Viejo -> Laurel
+
+De Santa Rosa Viejo a Sarchí Norte
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Viejo -> Sarchí Norte
+
+De Santa Rosa Viejo a San Rafael Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Viejo -> San Rafael Arriba
+
+De Nosara a Isla del Coco
+Tiempo de viaje: 1 unidades
+Ruta: Nosara -> Isla del Coco
+
+De Nosara a Candelaria
+Tiempo de viaje: 1 unidades
+Ruta: Nosara -> Candelaria
+
+De Nosara a Palmares
+Tiempo de viaje: 1 unidades
+Ruta: Nosara -> Palmares
+
+De Nosara a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Nosara -> Dulce Nombre Oeste
+
+De Nosara a Varablanca
+Tiempo de viaje: 1 unidades
+Ruta: Nosara -> Varablanca
+
+De Nosara a El Roble
+Tiempo de viaje: 1 unidades
+Ruta: Nosara -> El Roble
+
+De Nosara a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: Nosara -> San Nicolás
+
+De Nosara a Pacuarito
+Tiempo de viaje: 1 unidades
+Ruta: Nosara -> Pacuarito
+
+De Nosara a Diriá
+Tiempo de viaje: 1 unidades
+Ruta: Nosara -> Diriá
+
+De Nosara a San Rafael Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Nosara -> San Rafael Arriba
+
+De Chomes a Aguas Claras
+Tiempo de viaje: 1 unidades
+Ruta: Chomes -> Aguas Claras
+
+De Chomes a Santa Cruz
+Tiempo de viaje: 1 unidades
+Ruta: Chomes -> Santa Cruz
+
+De Chomes a La Asunción
+Tiempo de viaje: 1 unidades
+Ruta: Chomes -> La Asunción
+
+De Chomes a Guadalupe Este
+Tiempo de viaje: 1 unidades
+Ruta: Chomes -> Guadalupe Este
+
+De Chomes a San Rafael Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Chomes -> San Rafael Oeste
+
+De Garita a Duacarí
+Tiempo de viaje: 1 unidades
+Ruta: Garita -> Duacarí
+
+De Garita a Palmitos
+Tiempo de viaje: 1 unidades
+Ruta: Garita -> Palmitos
+
+De Garita a Chirripó
+Tiempo de viaje: 1 unidades
+Ruta: Garita -> Chirripó
+
+De Garita a Canalete
+Tiempo de viaje: 1 unidades
+Ruta: Garita -> Canalete
+
+De Garita a La Victoria
+Tiempo de viaje: 1 unidades
+Ruta: Garita -> La Victoria
+
+De San José Norte a San Rafael Parrita
+Tiempo de viaje: 1 unidades
+Ruta: San José Norte -> San Rafael Parrita
+
+De San José Norte a Veintisiete de Abril
+Tiempo de viaje: 1 unidades
+Ruta: San José Norte -> Veintisiete de Abril
+
+De San José Norte a Río Azul
+Tiempo de viaje: 1 unidades
+Ruta: San José Norte -> Río Azul
+
+De San José Norte a Tres Equis
+Tiempo de viaje: 1 unidades
+Ruta: San José Norte -> Tres Equis
+
+De San José Norte a Porvenir
+Tiempo de viaje: 1 unidades
+Ruta: San José Norte -> Porvenir
+
+De San José Norte a La Asunción
+Tiempo de viaje: 1 unidades
+Ruta: San José Norte -> La Asunción
+
+De San José Norte a Puerto Viejo
+Tiempo de viaje: 1 unidades
+Ruta: San José Norte -> Puerto Viejo
+
+De Santa Rosa Abajo a Hacienda Vieja
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Abajo -> Hacienda Vieja
+
+De Santa Rosa Abajo a Veintisiete de Abril
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Abajo -> Veintisiete de Abril
+
+De Santa Rosa Abajo a Guacimal
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Abajo -> Guacimal
+
+De Santa Rosa Abajo a Las Horquetas
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Abajo -> Las Horquetas
+
+De Santa Rosa Abajo a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Abajo -> San Pablo Arriba
+
+De Santa Rosa Abajo a Santa Rosa Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Abajo -> Santa Rosa Nuevo
+
+De Santa Rosa Abajo a El Cairo
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Abajo -> El Cairo
+
+De Santa Rosa Abajo a Pacuarito
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Abajo -> Pacuarito
+
+De Santa Rosa Abajo a Jesús
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Abajo -> Jesús
+
+De Santa Rosa Abajo a Sabanillal
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Abajo -> Sabanillal
+
+De Santa Rosa Abajo a San Vicente
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Abajo -> San Vicente
+
+De Veintisiete de Abril a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Veintisiete de Abril -> Santa Rosa Viejo
+
+De Veintisiete de Abril a Santa Rosa Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Veintisiete de Abril -> Santa Rosa Abajo
+
+De Veintisiete de Abril a Santiago
+Tiempo de viaje: 1 unidades
+Ruta: Veintisiete de Abril -> Santiago
+
+De Veintisiete de Abril a La Suiza
+Tiempo de viaje: 1 unidades
+Ruta: Veintisiete de Abril -> La Suiza
+
+De Veintisiete de Abril a Roxana
+Tiempo de viaje: 1 unidades
+Ruta: Veintisiete de Abril -> Roxana
+
+De Veintisiete de Abril a Barbacoas
+Tiempo de viaje: 1 unidades
+Ruta: Veintisiete de Abril -> Barbacoas
+
+De Florida a Ulloa
+Tiempo de viaje: 1 unidades
+Ruta: Florida -> Ulloa
+
+De Florida a San Gabriel
+Tiempo de viaje: 1 unidades
+Ruta: Florida -> San Gabriel
+
+De Florida a Santa Isabel
+Tiempo de viaje: 1 unidades
+Ruta: Florida -> Santa Isabel
+
+De Florida a San Vicente Norte
+Tiempo de viaje: 1 unidades
+Ruta: Florida -> San Vicente Norte
+
+De Florida a Sierpe
+Tiempo de viaje: 1 unidades
+Ruta: Florida -> Sierpe
+
+De Florida a Venado
+Tiempo de viaje: 1 unidades
+Ruta: Florida -> Venado
+
+De Florida a Siquirres
+Tiempo de viaje: 1 unidades
+Ruta: Florida -> Siquirres
+
+De Jesús Piedad a San Miguel Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Jesús Piedad -> San Miguel Viejo
+
+De Jesús Piedad a Sabalito
+Tiempo de viaje: 1 unidades
+Ruta: Jesús Piedad -> Sabalito
+
+De Jesús Piedad a Guácimo
+Tiempo de viaje: 1 unidades
+Ruta: Jesús Piedad -> Guácimo
+
+De Jesús Piedad a Ulloa
+Tiempo de viaje: 1 unidades
+Ruta: Jesús Piedad -> Ulloa
+
+De San Rafael Viejo a Hojancha
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Viejo -> Hojancha
+
+De San Rafael Viejo a Golfito
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Viejo -> Golfito
+
+De San Rafael Viejo a Turrúcares
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Viejo -> Turrúcares
+
+De San Rafael Viejo a Patarrá
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Viejo -> Patarrá
+
+De San Rafael Viejo a Bolívar
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Viejo -> Bolívar
+
+De San Rafael Viejo a San Rafael Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Viejo -> San Rafael Nuevo
+
+De Daniel Flores a Patio de Agua
+Tiempo de viaje: 1 unidades
+Ruta: Daniel Flores -> Patio de Agua
+
+De Daniel Flores a Isla del Coco
+Tiempo de viaje: 1 unidades
+Ruta: Daniel Flores -> Isla del Coco
+
+De Daniel Flores a El Ángel
+Tiempo de viaje: 1 unidades
+Ruta: Daniel Flores -> El Ángel
+
+De Daniel Flores a San Pablo Este
+Tiempo de viaje: 1 unidades
+Ruta: Daniel Flores -> San Pablo Este
+
+De Daniel Flores a San Ignacio
+Tiempo de viaje: 1 unidades
+Ruta: Daniel Flores -> San Ignacio
+
+De Daniel Flores a Guadalupe Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Daniel Flores -> Guadalupe Oeste
+
+De Palmitos a Caldera
+Tiempo de viaje: 1 unidades
+Ruta: Palmitos -> Caldera
+
+De Palmitos a Sierpe
+Tiempo de viaje: 1 unidades
+Ruta: Palmitos -> Sierpe
+
+De Patalillo a San Rafael Parrita
+Tiempo de viaje: 1 unidades
+Ruta: Patalillo -> San Rafael Parrita
+
+De Patalillo a Santiago Puriscal
+Tiempo de viaje: 1 unidades
+Ruta: Patalillo -> Santiago Puriscal
+
+De Patalillo a Juan Viñas
+Tiempo de viaje: 1 unidades
+Ruta: Patalillo -> Juan Viñas
+
+De Patalillo a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: Patalillo -> San Nicolás
+
+De Patalillo a Santa Elena
+Tiempo de viaje: 1 unidades
+Ruta: Patalillo -> Santa Elena
+
+De Patalillo a Puerto Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Patalillo -> Puerto Viejo
+
+De Sabalito a Yolillal
+Tiempo de viaje: 1 unidades
+Ruta: Sabalito -> Yolillal
+
+De Sabalito a Laurel
+Tiempo de viaje: 1 unidades
+Ruta: Sabalito -> Laurel
+
+De Sabalito a Siquirres
+Tiempo de viaje: 1 unidades
+Ruta: Sabalito -> Siquirres
+
+De Sabalito a Aguacaliente
+Tiempo de viaje: 1 unidades
+Ruta: Sabalito -> Aguacaliente
+
+De San Isidro Labrador a Duacarí
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Labrador -> Duacarí
+
+De San Isidro Labrador a Atenas
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Labrador -> Atenas
+
+De San Isidro Labrador a Quebrada Honda
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Labrador -> Quebrada Honda
+
+De San Isidro Labrador a Nosara
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Labrador -> Nosara
+
+De San Isidro Labrador a Guacimal
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Labrador -> Guacimal
+
+De San Isidro Labrador a Tres Equis
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Labrador -> Tres Equis
+
+De San Isidro Labrador a Frailes
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Labrador -> Frailes
+
+De San Isidro Labrador a San Felipe
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Labrador -> San Felipe
+
+De San Isidro Labrador a Palmar
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Labrador -> Palmar
+
+De San Isidro Labrador a Buenos Aires
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Labrador -> Buenos Aires
+
+De San Isidro Labrador a Sierpe
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Labrador -> Sierpe
+
+De San Isidro Labrador a Santo Tomás
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Labrador -> Santo Tomás
+
+De Guacimal a San Rafael Parrita
+Tiempo de viaje: 1 unidades
+Ruta: Guacimal -> San Rafael Parrita
+
+De Guacimal a Zapotal
+Tiempo de viaje: 1 unidades
+Ruta: Guacimal -> Zapotal
+
+De Guacimal a San Isidro Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Guacimal -> San Isidro Abajo
+
+De Guacimal a Pará
+Tiempo de viaje: 1 unidades
+Ruta: Guacimal -> Pará
+
+De Guacimal a San Pablo Este
+Tiempo de viaje: 1 unidades
+Ruta: Guacimal -> San Pablo Este
+
+De Guacimal a Candelarita
+Tiempo de viaje: 1 unidades
+Ruta: Guacimal -> Candelarita
+
+De Guacimal a Turrialba
+Tiempo de viaje: 1 unidades
+Ruta: Guacimal -> Turrialba
+
+De Guacimal a Limoncito
+Tiempo de viaje: 1 unidades
+Ruta: Guacimal -> Limoncito
+
+De Guacimal a Tarbaca
+Tiempo de viaje: 1 unidades
+Ruta: Guacimal -> Tarbaca
+
+De Guacimal a Rivas
+Tiempo de viaje: 1 unidades
+Ruta: Guacimal -> Rivas
+
+De Guacimal a San Francisco Norte
+Tiempo de viaje: 1 unidades
+Ruta: Guacimal -> San Francisco Norte
+
+De Matambú a Piedras Negras
+Tiempo de viaje: 1 unidades
+Ruta: Matambú -> Piedras Negras
+
+De Matambú a Santa Rosa Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Matambú -> Santa Rosa Abajo
+
+De Matambú a La Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: Matambú -> La Buenavista
+
+De Matambú a Paracito
+Tiempo de viaje: 1 unidades
+Ruta: Matambú -> Paracito
+
+De Matambú a San Rafael Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Matambú -> San Rafael Abajo
+
+De San Isidro de El General a Quebrada Honda
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro de El General -> Quebrada Honda
+
+De San Isidro de El General a Daniel Flores
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro de El General -> Daniel Flores
+
+De San Isidro de El General a La Unión
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro de El General -> La Unión
+
+De San Isidro de El General a Cutris
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro de El General -> Cutris
+
+De San Isidro de El General a Palmira
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro de El General -> Palmira
+
+De San Isidro de El General a Sarchí Norte
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro de El General -> Sarchí Norte
+
+De San Isidro de El General a San Rafael Arriba
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro de El General -> San Rafael Arriba
+
+De Germania a Laguna
+Tiempo de viaje: 1 unidades
+Ruta: Germania -> Laguna
+
+De Germania a Escazú
+Tiempo de viaje: 1 unidades
+Ruta: Germania -> Escazú
+
+De Germania a Sierpe
+Tiempo de viaje: 1 unidades
+Ruta: Germania -> Sierpe
+
+De Germania a Florencia
+Tiempo de viaje: 1 unidades
+Ruta: Germania -> Florencia
+
+De Germania a Tuis
+Tiempo de viaje: 1 unidades
+Ruta: Germania -> Tuis
+
+De Llanuras del Gaspar a San Juan Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Llanuras del Gaspar -> San Juan Arriba
+
+De Llanuras del Gaspar a Garita
+Tiempo de viaje: 1 unidades
+Ruta: Llanuras del Gaspar -> Garita
+
+De Llanuras del Gaspar a Bebedero
+Tiempo de viaje: 1 unidades
+Ruta: Llanuras del Gaspar -> Bebedero
+
+De Llanuras del Gaspar a Pitahaya
+Tiempo de viaje: 1 unidades
+Ruta: Llanuras del Gaspar -> Pitahaya
+
+De Llanuras del Gaspar a San Vicente Norte
+Tiempo de viaje: 1 unidades
+Ruta: Llanuras del Gaspar -> San Vicente Norte
+
+De Llanuras del Gaspar a San Lorenzo
+Tiempo de viaje: 1 unidades
+Ruta: Llanuras del Gaspar -> San Lorenzo
+
+De Llanuras del Gaspar a Santa Cruz Sur
+Tiempo de viaje: 1 unidades
+Ruta: Llanuras del Gaspar -> Santa Cruz Sur
+
+De Llanuras del Gaspar a Rita
+Tiempo de viaje: 1 unidades
+Ruta: Llanuras del Gaspar -> Rita
+
+De Llanuras del Gaspar a Guadalupe Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Llanuras del Gaspar -> Guadalupe Oeste
+
+De Llanuras del Gaspar a Sarchí Norte
+Tiempo de viaje: 1 unidades
+Ruta: Llanuras del Gaspar -> Sarchí Norte
+
+De Llanuras del Gaspar a San José Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Llanuras del Gaspar -> San José Abajo
+
+De Manzanillo a Río Cuarto
+Tiempo de viaje: 1 unidades
+Ruta: Manzanillo -> Río Cuarto
+
+De Manzanillo a Tuis
+Tiempo de viaje: 1 unidades
+Ruta: Manzanillo -> Tuis
+
+De Manzanillo a El Mastate
+Tiempo de viaje: 1 unidades
+Ruta: Manzanillo -> El Mastate
+
+De Aguas Claras a Catedral
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Claras -> Catedral
+
+De Aguas Claras a Manzanillo
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Claras -> Manzanillo
+
+De Aguas Claras a Río Azul
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Claras -> Río Azul
+
+De Aguas Claras a Pitahaya
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Claras -> Pitahaya
+
+De Aguas Claras a El Roble
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Claras -> El Roble
+
+De Aguas Claras a Labrador
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Claras -> Labrador
+
+De Aguas Claras a Brisas
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Claras -> Brisas
+
+De Cabo Velas a Esquipulas
+Tiempo de viaje: 1 unidades
+Ruta: Cabo Velas -> Esquipulas
+
+De Cabo Velas a Corralillo
+Tiempo de viaje: 1 unidades
+Ruta: Cabo Velas -> Corralillo
+
+De Cabo Velas a Monterrey Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Cabo Velas -> Monterrey Arriba
+
+De Santiago Nuevo a Acapulco
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Nuevo -> Acapulco
+
+De Santiago Nuevo a Patalillo
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Nuevo -> Patalillo
+
+De Santiago Nuevo a Aguas Claras
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Nuevo -> Aguas Claras
+
+De Santiago Nuevo a San Jerónimo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Nuevo -> San Jerónimo Arriba
+
+De Santiago Nuevo a Palmiralito
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Nuevo -> Palmiralito
+
+De Santiago Nuevo a Cutris
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Nuevo -> Cutris
+
+De Santiago Nuevo a Laguna
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Nuevo -> Laguna
+
+De Santiago Nuevo a Salitral
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Nuevo -> Salitral
+
+De Santiago Nuevo a San Rafael Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Nuevo -> San Rafael Abajo
+
+De Río Azul a Zapotal
+Tiempo de viaje: 1 unidades
+Ruta: Río Azul -> Zapotal
+
+De Río Azul a San Marcos
+Tiempo de viaje: 1 unidades
+Ruta: Río Azul -> San Marcos
+
+De Río Azul a La Trinidad
+Tiempo de viaje: 1 unidades
+Ruta: Río Azul -> La Trinidad
+
+De Río Azul a Telire
+Tiempo de viaje: 1 unidades
+Ruta: Río Azul -> Telire
+
+De Río Azul a Matama
+Tiempo de viaje: 1 unidades
+Ruta: Río Azul -> Matama
+
+De Río Azul a San Rafael Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Río Azul -> San Rafael Nuevo
+
+De Río Azul a Chires
+Tiempo de viaje: 1 unidades
+Ruta: Río Azul -> Chires
+
+De Río Azul a Escazú
+Tiempo de viaje: 1 unidades
+Ruta: Río Azul -> Escazú
+
+De Río Azul a Paracito
+Tiempo de viaje: 1 unidades
+Ruta: Río Azul -> Paracito
+
+De Río Azul a San Rafael Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Río Azul -> San Rafael Arriba
+
+De Río Azul a Monterrey Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Río Azul -> Monterrey Arriba
+
+De San Jerónimo Arriba a Candelaria
+Tiempo de viaje: 1 unidades
+Ruta: San Jerónimo Arriba -> Candelaria
+
+De San Jerónimo Arriba a Santiago Poás
+Tiempo de viaje: 1 unidades
+Ruta: San Jerónimo Arriba -> Santiago Poás
+
+De San Jerónimo Arriba a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: San Jerónimo Arriba -> Santa Rosa Viejo
+
+De San Jerónimo Arriba a San José Norte
+Tiempo de viaje: 1 unidades
+Ruta: San Jerónimo Arriba -> San José Norte
+
+De San Jerónimo Arriba a Cartagena
+Tiempo de viaje: 1 unidades
+Ruta: San Jerónimo Arriba -> Cartagena
+
+De San Jerónimo Arriba a Los Chiles
+Tiempo de viaje: 1 unidades
+Ruta: San Jerónimo Arriba -> Los Chiles
+
+De San Jerónimo Arriba a San Roque
+Tiempo de viaje: 1 unidades
+Ruta: San Jerónimo Arriba -> San Roque
+
+De San Jerónimo Arriba a Carrillos
+Tiempo de viaje: 1 unidades
+Ruta: San Jerónimo Arriba -> Carrillos
+
+De San Jerónimo Arriba a Tarbaca
+Tiempo de viaje: 1 unidades
+Ruta: San Jerónimo Arriba -> Tarbaca
+
+De Bebedero a Tres Equis
+Tiempo de viaje: 1 unidades
+Ruta: Bebedero -> Tres Equis
+
+De Bebedero a Cuajiniquil
+Tiempo de viaje: 1 unidades
+Ruta: Bebedero -> Cuajiniquil
+
+De Bebedero a Rita
+Tiempo de viaje: 1 unidades
+Ruta: Bebedero -> Rita
+
+De Limón a Pavas
+Tiempo de viaje: 1 unidades
+Ruta: Limón -> Pavas
+
+De Limón a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Limón -> Santa Rosa Viejo
+
+De Limón a Matambú
+Tiempo de viaje: 1 unidades
+Ruta: Limón -> Matambú
+
+De Limón a Cartagena
+Tiempo de viaje: 1 unidades
+Ruta: Limón -> Cartagena
+
+De Limón a Cirrí Sur
+Tiempo de viaje: 1 unidades
+Ruta: Limón -> Cirrí Sur
+
+De Limón a Pitahaya
+Tiempo de viaje: 1 unidades
+Ruta: Limón -> Pitahaya
+
+De Limón a Santo Domingo
+Tiempo de viaje: 1 unidades
+Ruta: Limón -> Santo Domingo
+
+De Limón a Aguacaliente
+Tiempo de viaje: 1 unidades
+Ruta: Limón -> Aguacaliente
+
+De Palmares a Santiago Poás
+Tiempo de viaje: 1 unidades
+Ruta: Palmares -> Santiago Poás
+
+De Palmares a San Ignacio
+Tiempo de viaje: 1 unidades
+Ruta: Palmares -> San Ignacio
+
+De Palmares a Jesús María
+Tiempo de viaje: 1 unidades
+Ruta: Palmares -> Jesús María
+
+De Cartagena a San Juan Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Cartagena -> San Juan Arriba
+
+De Cartagena a Río Cuarto
+Tiempo de viaje: 1 unidades
+Ruta: Cartagena -> Río Cuarto
+
+De Cartagena a Los Ángeles
+Tiempo de viaje: 1 unidades
+Ruta: Cartagena -> Los Ángeles
+
+De Cartagena a Zapote
+Tiempo de viaje: 1 unidades
+Ruta: Cartagena -> Zapote
+
+De Cartagena a Aguacaliente
+Tiempo de viaje: 1 unidades
+Ruta: Cartagena -> Aguacaliente
+
+De Chirripó a Patio de Agua
+Tiempo de viaje: 1 unidades
+Ruta: Chirripó -> Patio de Agua
+
+De Chirripó a Zapotal
+Tiempo de viaje: 1 unidades
+Ruta: Chirripó -> Zapotal
+
+De Chirripó a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Chirripó -> Dulce Nombre Oeste
+
+De Chirripó a Labrador
+Tiempo de viaje: 1 unidades
+Ruta: Chirripó -> Labrador
+
+De Chirripó a Santa Isabel
+Tiempo de viaje: 1 unidades
+Ruta: Chirripó -> Santa Isabel
+
+De Chirripó a Jesús
+Tiempo de viaje: 1 unidades
+Ruta: Chirripó -> Jesús
+
+De Chirripó a La Colonia
+Tiempo de viaje: 1 unidades
+Ruta: Chirripó -> La Colonia
+
+De Puerto Carrillo a Grifo Alto
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Carrillo -> Grifo Alto
+
+De Puerto Carrillo a Daniel Flores
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Carrillo -> Daniel Flores
+
+De Puerto Carrillo a Quepos
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Carrillo -> Quepos
+
+De Puerto Carrillo a Venado
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Carrillo -> Venado
+
+De Puerto Carrillo a Puerto Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Carrillo -> Puerto Viejo
+
+De Capellades a Tambor
+Tiempo de viaje: 1 unidades
+Ruta: Capellades -> Tambor
+
+De Capellades a Chomes
+Tiempo de viaje: 1 unidades
+Ruta: Capellades -> Chomes
+
+De Capellades a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: Capellades -> San Nicolás
+
+De Capellades a Pittier
+Tiempo de viaje: 1 unidades
+Ruta: Capellades -> Pittier
+
+De Capellades a Puerto Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: Capellades -> Puerto Jiménez
+
+De Capellades a Rita
+Tiempo de viaje: 1 unidades
+Ruta: Capellades -> Rita
+
+De San Marcos a Sabalito
+Tiempo de viaje: 1 unidades
+Ruta: San Marcos -> Sabalito
+
+De San Marcos a Laguna
+Tiempo de viaje: 1 unidades
+Ruta: San Marcos -> Laguna
+
+De San Marcos a Mata Redonda
+Tiempo de viaje: 1 unidades
+Ruta: San Marcos -> Mata Redonda
+
+De San Marcos a Picagres
+Tiempo de viaje: 1 unidades
+Ruta: San Marcos -> Picagres
+
+De San Marcos a San Rafael Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: San Marcos -> San Rafael Nuevo
+
+De San Marcos a Liberia
+Tiempo de viaje: 1 unidades
+Ruta: San Marcos -> Liberia
+
+De San Marcos a Zapote
+Tiempo de viaje: 1 unidades
+Ruta: San Marcos -> Zapote
+
+De San Marcos a Concepción Este
+Tiempo de viaje: 1 unidades
+Ruta: San Marcos -> Concepción Este
+
+De San Marcos a Rita
+Tiempo de viaje: 1 unidades
+Ruta: San Marcos -> Rita
+
+De San Marcos a Zaragoza
+Tiempo de viaje: 1 unidades
+Ruta: San Marcos -> Zaragoza
+
+De Lagunillas a San Pedro Sur
+Tiempo de viaje: 1 unidades
+Ruta: Lagunillas -> San Pedro Sur
+
+De Lagunillas a Quesada
+Tiempo de viaje: 1 unidades
+Ruta: Lagunillas -> Quesada
+
+De Lagunillas a La Victoria
+Tiempo de viaje: 1 unidades
+Ruta: Lagunillas -> La Victoria
+
+De Lagunillas a Santa Elena
+Tiempo de viaje: 1 unidades
+Ruta: Lagunillas -> Santa Elena
+
+De La Unión a Zapotal
+Tiempo de viaje: 1 unidades
+Ruta: La Unión -> Zapotal
+
+De La Unión a Limón
+Tiempo de viaje: 1 unidades
+Ruta: La Unión -> Limón
+
+De La Unión a Mercedes Abajo
+Tiempo de viaje: 1 unidades
+Ruta: La Unión -> Mercedes Abajo
+
+De La Unión a Chira
+Tiempo de viaje: 1 unidades
+Ruta: La Unión -> Chira
+
+De La Unión a Jesús
+Tiempo de viaje: 1 unidades
+Ruta: La Unión -> Jesús
+
+De Las Horquetas a San Rafael Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Las Horquetas -> San Rafael Viejo
+
+De Las Horquetas a Cabo Velas
+Tiempo de viaje: 1 unidades
+Ruta: Las Horquetas -> Cabo Velas
+
+De Las Horquetas a Juan Viñas
+Tiempo de viaje: 1 unidades
+Ruta: Las Horquetas -> Juan Viñas
+
+De Las Horquetas a Biolley
+Tiempo de viaje: 1 unidades
+Ruta: Las Horquetas -> Biolley
+
+De Las Horquetas a San Francisco Norte
+Tiempo de viaje: 1 unidades
+Ruta: Las Horquetas -> San Francisco Norte
+
+De Santiago a San Miguel Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Santiago -> San Miguel Viejo
+
+De Santiago a Llanuras del Gaspar
+Tiempo de viaje: 1 unidades
+Ruta: Santiago -> Llanuras del Gaspar
+
+De Santiago a Capellades
+Tiempo de viaje: 1 unidades
+Ruta: Santiago -> Capellades
+
+De Santiago a Juan Viñas
+Tiempo de viaje: 1 unidades
+Ruta: Santiago -> Juan Viñas
+
+De Santiago a Santo Domingo
+Tiempo de viaje: 1 unidades
+Ruta: Santiago -> Santo Domingo
+
+De Santiago a Legua
+Tiempo de viaje: 1 unidades
+Ruta: Santiago -> Legua
+
+De La Suiza a Santiago Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: La Suiza -> Santiago Nuevo
+
+De La Suiza a Varablanca
+Tiempo de viaje: 1 unidades
+Ruta: La Suiza -> Varablanca
+
+De La Suiza a Concepción Arriba
+Tiempo de viaje: 1 unidades
+Ruta: La Suiza -> Concepción Arriba
+
+De La Suiza a Sabanillal
+Tiempo de viaje: 1 unidades
+Ruta: La Suiza -> Sabanillal
+
+De La Suiza a La Colonia
+Tiempo de viaje: 1 unidades
+Ruta: La Suiza -> La Colonia
+
+De Palmiralito a Monte Romo
+Tiempo de viaje: 1 unidades
+Ruta: Palmiralito -> Monte Romo
+
+De Palmiralito a Candelaria
+Tiempo de viaje: 1 unidades
+Ruta: Palmiralito -> Candelaria
+
+De Palmiralito a Cirrí Sur
+Tiempo de viaje: 1 unidades
+Ruta: Palmiralito -> Cirrí Sur
+
+De Palmiralito a Tucurrique
+Tiempo de viaje: 1 unidades
+Ruta: Palmiralito -> Tucurrique
+
+De Palmiralito a El Roble
+Tiempo de viaje: 1 unidades
+Ruta: Palmiralito -> El Roble
+
+De Palmiralito a San Gabriel
+Tiempo de viaje: 1 unidades
+Ruta: Palmiralito -> San Gabriel
+
+De Palmiralito a Pittier
+Tiempo de viaje: 1 unidades
+Ruta: Palmiralito -> Pittier
+
+De Cutris a Tobosi
+Tiempo de viaje: 1 unidades
+Ruta: Cutris -> Tobosi
+
+De Cutris a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Cutris -> Santa Rosa Viejo
+
+De Cutris a Jesús Piedad
+Tiempo de viaje: 1 unidades
+Ruta: Cutris -> Jesús Piedad
+
+De Cutris a Manzanillo
+Tiempo de viaje: 1 unidades
+Ruta: Cutris -> Manzanillo
+
+De Cutris a Santiago Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Cutris -> Santiago Nuevo
+
+De Cutris a Lagunillas
+Tiempo de viaje: 1 unidades
+Ruta: Cutris -> Lagunillas
+
+De Cutris a Pilas
+Tiempo de viaje: 1 unidades
+Ruta: Cutris -> Pilas
+
+De Cutris a La Asunción
+Tiempo de viaje: 1 unidades
+Ruta: Cutris -> La Asunción
+
+De Cutris a Santa Bárbara
+Tiempo de viaje: 1 unidades
+Ruta: Cutris -> Santa Bárbara
+
+De Tres Equis a San Rafael Parrita
+Tiempo de viaje: 1 unidades
+Ruta: Tres Equis -> San Rafael Parrita
+
+De Tres Equis a Turrúcares
+Tiempo de viaje: 1 unidades
+Ruta: Tres Equis -> Turrúcares
+
+De Tres Equis a Germania
+Tiempo de viaje: 1 unidades
+Ruta: Tres Equis -> Germania
+
+De Tres Equis a Cartagena
+Tiempo de viaje: 1 unidades
+Ruta: Tres Equis -> Cartagena
+
+De Tres Equis a San Rafael Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Tres Equis -> San Rafael Nuevo
+
+De Tres Equis a San Vicente
+Tiempo de viaje: 1 unidades
+Ruta: Tres Equis -> San Vicente
+
+De Santiago Puriscal a Tobosi
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Puriscal -> Tobosi
+
+De Santiago Puriscal a Cartagena
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Puriscal -> Cartagena
+
+De Santiago Puriscal a Desamparados Sur
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Puriscal -> Desamparados Sur
+
+De Santiago Puriscal a Palmar
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Puriscal -> Palmar
+
+De Santiago Puriscal a Yolillal
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Puriscal -> Yolillal
+
+De Santiago Puriscal a San Rafael Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Puriscal -> San Rafael Nuevo
+
+De Reventazón a Monte Romo
+Tiempo de viaje: 1 unidades
+Ruta: Reventazón -> Monte Romo
+
+De Reventazón a San Rafael Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Reventazón -> San Rafael Viejo
+
+De Reventazón a Daniel Flores
+Tiempo de viaje: 1 unidades
+Ruta: Reventazón -> Daniel Flores
+
+De Reventazón a Tirrases
+Tiempo de viaje: 1 unidades
+Ruta: Reventazón -> Tirrases
+
+De Reventazón a Venado
+Tiempo de viaje: 1 unidades
+Ruta: Reventazón -> Venado
+
+De Buenavista a Rancho Redondo
+Tiempo de viaje: 1 unidades
+Ruta: Buenavista -> Rancho Redondo
+
+De Buenavista a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Buenavista -> Santa Rosa Viejo
+
+De Buenavista a Santa Rosa Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Buenavista -> Santa Rosa Abajo
+
+De Buenavista a Santiago
+Tiempo de viaje: 1 unidades
+Ruta: Buenavista -> Santiago
+
+De Buenavista a San Pablo Este
+Tiempo de viaje: 1 unidades
+Ruta: Buenavista -> San Pablo Este
+
+De Buenavista a Carrillos
+Tiempo de viaje: 1 unidades
+Ruta: Buenavista -> Carrillos
+
+De Buenavista a San Rafael Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Buenavista -> San Rafael Nuevo
+
+De Buenavista a Rivas
+Tiempo de viaje: 1 unidades
+Ruta: Buenavista -> Rivas
+
+De Buenavista a Concepción Este
+Tiempo de viaje: 1 unidades
+Ruta: Buenavista -> Concepción Este
+
+De Buenavista a Piedades Norte
+Tiempo de viaje: 1 unidades
+Ruta: Buenavista -> Piedades Norte
+
+De Buenavista a Monterrey Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Buenavista -> Monterrey Arriba
+
+De Dulce Nombre de Jesús a Palmitos
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre de Jesús -> Palmitos
+
+De Dulce Nombre de Jesús a San Pablo Este
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre de Jesús -> San Pablo Este
+
+De Dulce Nombre de Jesús a Labrador
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre de Jesús -> Labrador
+
+De Dulce Nombre de Jesús a La Cuesta
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre de Jesús -> La Cuesta
+
+De San Francisco Abajo a Golfito
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Abajo -> Golfito
+
+De San Francisco Abajo a Río Blanco
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Abajo -> Río Blanco
+
+De San Francisco Abajo a Granadilla
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Abajo -> Granadilla
+
+De San Francisco Abajo a Cutris
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Abajo -> Cutris
+
+De San Francisco Abajo a Tempate
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Abajo -> Tempate
+
+De San Francisco Abajo a El Ángel
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Abajo -> El Ángel
+
+De San Francisco Abajo a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Abajo -> San Nicolás
+
+De San Francisco Abajo a Aserrí
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Abajo -> Aserrí
+
+De San Francisco Abajo a Dulce Nombre Este
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Abajo -> Dulce Nombre Este
+
+De Guácimo a San Rafael Piedades
+Tiempo de viaje: 1 unidades
+Ruta: Guácimo -> San Rafael Piedades
+
+De Guácimo a Laguna
+Tiempo de viaje: 1 unidades
+Ruta: Guácimo -> Laguna
+
+De Guácimo a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: Guácimo -> San Nicolás
+
+De Guácimo a San Juan Norte
+Tiempo de viaje: 1 unidades
+Ruta: Guácimo -> San Juan Norte
+
+De Guácimo a San Rafael Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Guácimo -> San Rafael Oeste
+
+De Guácimo a Laurel
+Tiempo de viaje: 1 unidades
+Ruta: Guácimo -> Laurel
+
+De Cirrí Sur a Zapotal
+Tiempo de viaje: 1 unidades
+Ruta: Cirrí Sur -> Zapotal
+
+De Cirrí Sur a Los Chiles
+Tiempo de viaje: 1 unidades
+Ruta: Cirrí Sur -> Los Chiles
+
+De Cirrí Sur a Delicias
+Tiempo de viaje: 1 unidades
+Ruta: Cirrí Sur -> Delicias
+
+De Cirrí Sur a Liberia
+Tiempo de viaje: 1 unidades
+Ruta: Cirrí Sur -> Liberia
+
+De Cirrí Sur a Barbacoas
+Tiempo de viaje: 1 unidades
+Ruta: Cirrí Sur -> Barbacoas
+
+De Cirrí Sur a Jesús
+Tiempo de viaje: 1 unidades
+Ruta: Cirrí Sur -> Jesús
+
+De Cirrí Sur a Siquirres
+Tiempo de viaje: 1 unidades
+Ruta: Cirrí Sur -> Siquirres
+
+De Volcán a Pocora
+Tiempo de viaje: 1 unidades
+Ruta: Volcán -> Pocora
+
+De Volcán a Santiago Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Volcán -> Santiago Nuevo
+
+De Volcán a Quepos
+Tiempo de viaje: 1 unidades
+Ruta: Volcán -> Quepos
+
+De Volcán a Canalete
+Tiempo de viaje: 1 unidades
+Ruta: Volcán -> Canalete
+
+De Volcán a Caldera
+Tiempo de viaje: 1 unidades
+Ruta: Volcán -> Caldera
+
+De Volcán a Pavón
+Tiempo de viaje: 1 unidades
+Ruta: Volcán -> Pavón
+
+De Volcán a Barbacoas
+Tiempo de viaje: 1 unidades
+Ruta: Volcán -> Barbacoas
+
+De Volcán a La Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: Volcán -> La Buenavista
+
+De Volcán a Monte Verde
+Tiempo de viaje: 1 unidades
+Ruta: Volcán -> Monte Verde
+
+De Tempate a Cañas Dulces
+Tiempo de viaje: 1 unidades
+Ruta: Tempate -> Cañas Dulces
+
+De Tempate a Palmiralito
+Tiempo de viaje: 1 unidades
+Ruta: Tempate -> Palmiralito
+
+De Tempate a San Isidro Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Tempate -> San Isidro Abajo
+
+De Tempate a Salitral
+Tiempo de viaje: 1 unidades
+Ruta: Tempate -> Salitral
+
+De Tempate a San Rafael Sur
+Tiempo de viaje: 1 unidades
+Ruta: Tempate -> San Rafael Sur
+
+De Tempate a Zaragoza
+Tiempo de viaje: 1 unidades
+Ruta: Tempate -> Zaragoza
+
+De Pitahaya a Santa Rosa Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Pitahaya -> Santa Rosa Abajo
+
+De Pitahaya a Sabalito
+Tiempo de viaje: 1 unidades
+Ruta: Pitahaya -> Sabalito
+
+De Pitahaya a San Isidro de El General
+Tiempo de viaje: 1 unidades
+Ruta: Pitahaya -> San Isidro de El General
+
+De Pitahaya a Los Ángeles
+Tiempo de viaje: 1 unidades
+Ruta: Pitahaya -> Los Ángeles
+
+De Pitahaya a San Gabriel
+Tiempo de viaje: 1 unidades
+Ruta: Pitahaya -> San Gabriel
+
+De Peñas Blancas a Manzanillo
+Tiempo de viaje: 1 unidades
+Ruta: Peñas Blancas -> Manzanillo
+
+De Peñas Blancas a Mata Redonda
+Tiempo de viaje: 1 unidades
+Ruta: Peñas Blancas -> Mata Redonda
+
+De Peñas Blancas a Caldera
+Tiempo de viaje: 1 unidades
+Ruta: Peñas Blancas -> Caldera
+
+De Peñas Blancas a San Ignacio
+Tiempo de viaje: 1 unidades
+Ruta: Peñas Blancas -> San Ignacio
+
+De Peñas Blancas a Jesús
+Tiempo de viaje: 1 unidades
+Ruta: Peñas Blancas -> Jesús
+
+De Peñas Blancas a Brisas
+Tiempo de viaje: 1 unidades
+Ruta: Peñas Blancas -> Brisas
+
+De Los Chiles a Lagunillas
+Tiempo de viaje: 1 unidades
+Ruta: Los Chiles -> Lagunillas
+
+De Los Chiles a Palmira
+Tiempo de viaje: 1 unidades
+Ruta: Los Chiles -> Palmira
+
+De Los Chiles a Santa Rosa Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Los Chiles -> Santa Rosa Nuevo
+
+De Los Chiles a Barranca
+Tiempo de viaje: 1 unidades
+Ruta: Los Chiles -> Barranca
+
+De Los Chiles a Tures
+Tiempo de viaje: 1 unidades
+Ruta: Los Chiles -> Tures
+
+De Los Chiles a Labrador
+Tiempo de viaje: 1 unidades
+Ruta: Los Chiles -> Labrador
+
+De Los Chiles a Jesús María
+Tiempo de viaje: 1 unidades
+Ruta: Los Chiles -> Jesús María
+
+De Los Chiles a San Rafael Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Los Chiles -> San Rafael Abajo
+
+De Cabeceras a Bolsón
+Tiempo de viaje: 1 unidades
+Ruta: Cabeceras -> Bolsón
+
+De Cabeceras a Santiago Poás
+Tiempo de viaje: 1 unidades
+Ruta: Cabeceras -> Santiago Poás
+
+De Cabeceras a Veintisiete de Abril
+Tiempo de viaje: 1 unidades
+Ruta: Cabeceras -> Veintisiete de Abril
+
+De Cabeceras a Guacimal
+Tiempo de viaje: 1 unidades
+Ruta: Cabeceras -> Guacimal
+
+De Cabeceras a Palmiralito
+Tiempo de viaje: 1 unidades
+Ruta: Cabeceras -> Palmiralito
+
+De Cabeceras a Telire
+Tiempo de viaje: 1 unidades
+Ruta: Cabeceras -> Telire
+
+De Cabeceras a Tirrases
+Tiempo de viaje: 1 unidades
+Ruta: Cabeceras -> Tirrases
+
+De Cabeceras a Birrisito
+Tiempo de viaje: 1 unidades
+Ruta: Cabeceras -> Birrisito
+
+De Cabeceras a San Sebastián
+Tiempo de viaje: 1 unidades
+Ruta: Cabeceras -> San Sebastián
+
+De Cabeceras a Limoncito
+Tiempo de viaje: 1 unidades
+Ruta: Cabeceras -> Limoncito
+
+De El Ángel a Pitahaya
+Tiempo de viaje: 1 unidades
+Ruta: El Ángel -> Pitahaya
+
+De El Ángel a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: El Ángel -> Dulce Nombre Oeste
+
+De El Ángel a Carrillos
+Tiempo de viaje: 1 unidades
+Ruta: El Ángel -> Carrillos
+
+De El Ángel a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: El Ángel -> San Nicolás
+
+De El Ángel a La Victoria
+Tiempo de viaje: 1 unidades
+Ruta: El Ángel -> La Victoria
+
+De El Ángel a Jesús
+Tiempo de viaje: 1 unidades
+Ruta: El Ángel -> Jesús
+
+De El Ángel a San Juan Grande
+Tiempo de viaje: 1 unidades
+Ruta: El Ángel -> San Juan Grande
+
+De San Pedro Sur a Daniel Flores
+Tiempo de viaje: 1 unidades
+Ruta: San Pedro Sur -> Daniel Flores
+
+De San Pedro Sur a La Suiza
+Tiempo de viaje: 1 unidades
+Ruta: San Pedro Sur -> La Suiza
+
+De Bolívar a Golfito
+Tiempo de viaje: 1 unidades
+Ruta: Bolívar -> Golfito
+
+De Bolívar a Catedral
+Tiempo de viaje: 1 unidades
+Ruta: Bolívar -> Catedral
+
+De Bolívar a San José Norte
+Tiempo de viaje: 1 unidades
+Ruta: Bolívar -> San José Norte
+
+De Bolívar a Yolillal
+Tiempo de viaje: 1 unidades
+Ruta: Bolívar -> Yolillal
+
+De Bolívar a Pejibayes
+Tiempo de viaje: 1 unidades
+Ruta: Bolívar -> Pejibayes
+
+De Bolívar a Batán
+Tiempo de viaje: 1 unidades
+Ruta: Bolívar -> Batán
+
+De La Trinidad a Isla del Coco
+Tiempo de viaje: 1 unidades
+Ruta: La Trinidad -> Isla del Coco
+
+De La Trinidad a Piedras Negras
+Tiempo de viaje: 1 unidades
+Ruta: La Trinidad -> Piedras Negras
+
+De La Trinidad a Florida
+Tiempo de viaje: 1 unidades
+Ruta: La Trinidad -> Florida
+
+De La Trinidad a La Unión
+Tiempo de viaje: 1 unidades
+Ruta: La Trinidad -> La Unión
+
+De La Trinidad a Frailes
+Tiempo de viaje: 1 unidades
+Ruta: La Trinidad -> Frailes
+
+De La Trinidad a Mayorga
+Tiempo de viaje: 1 unidades
+Ruta: La Trinidad -> Mayorga
+
+De La Trinidad a Buenos Aires
+Tiempo de viaje: 1 unidades
+Ruta: La Trinidad -> Buenos Aires
+
+De La Trinidad a Aserrí
+Tiempo de viaje: 1 unidades
+Ruta: La Trinidad -> Aserrí
+
+De La Trinidad a San Sebastián
+Tiempo de viaje: 1 unidades
+Ruta: La Trinidad -> San Sebastián
+
+De La Trinidad a Batán
+Tiempo de viaje: 1 unidades
+Ruta: La Trinidad -> Batán
+
+De La Trinidad a El Mastate
+Tiempo de viaje: 1 unidades
+Ruta: La Trinidad -> El Mastate
+
+De Juan Viñas a Limón
+Tiempo de viaje: 1 unidades
+Ruta: Juan Viñas -> Limón
+
+De Juan Viñas a Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: Juan Viñas -> Buenavista
+
+De Juan Viñas a Río Cuarto
+Tiempo de viaje: 1 unidades
+Ruta: Juan Viñas -> Río Cuarto
+
+De Juan Viñas a San Roque
+Tiempo de viaje: 1 unidades
+Ruta: Juan Viñas -> San Roque
+
+De Juan Viñas a Birrisito
+Tiempo de viaje: 1 unidades
+Ruta: Juan Viñas -> Birrisito
+
+De Río Cuarto a San José Norte
+Tiempo de viaje: 1 unidades
+Ruta: Río Cuarto -> San José Norte
+
+De Río Cuarto a Patalillo
+Tiempo de viaje: 1 unidades
+Ruta: Río Cuarto -> Patalillo
+
+De Río Cuarto a San Isidro de El General
+Tiempo de viaje: 1 unidades
+Ruta: Río Cuarto -> San Isidro de El General
+
+De Río Cuarto a Canalete
+Tiempo de viaje: 1 unidades
+Ruta: Río Cuarto -> Canalete
+
+De Río Cuarto a Picagres
+Tiempo de viaje: 1 unidades
+Ruta: Río Cuarto -> Picagres
+
+De Río Cuarto a Palmar
+Tiempo de viaje: 1 unidades
+Ruta: Río Cuarto -> Palmar
+
+De Río Cuarto a San Juan Norte
+Tiempo de viaje: 1 unidades
+Ruta: Río Cuarto -> San Juan Norte
+
+De Palmira a San Rafael Parrita
+Tiempo de viaje: 1 unidades
+Ruta: Palmira -> San Rafael Parrita
+
+De Palmira a Río Azul
+Tiempo de viaje: 1 unidades
+Ruta: Palmira -> Río Azul
+
+De Palmira a El Roble
+Tiempo de viaje: 1 unidades
+Ruta: Palmira -> El Roble
+
+De Palmira a Santo Domingo
+Tiempo de viaje: 1 unidades
+Ruta: Palmira -> Santo Domingo
+
+De Palmira a Zapote
+Tiempo de viaje: 1 unidades
+Ruta: Palmira -> Zapote
+
+De Palmira a Santo Tomás
+Tiempo de viaje: 1 unidades
+Ruta: Palmira -> Santo Tomás
+
+De Palmira a Rita
+Tiempo de viaje: 1 unidades
+Ruta: Palmira -> Rita
+
+De Palmira a San José Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Palmira -> San José Abajo
+
+De San Isidro Abajo a Matambú
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Abajo -> Matambú
+
+De San Isidro Abajo a San Pedro Antiguo
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Abajo -> San Pedro Antiguo
+
+De San Isidro Abajo a Ulloa
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Abajo -> Ulloa
+
+De San Isidro Abajo a Santa Isabel
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Abajo -> Santa Isabel
+
+De San Isidro Abajo a La Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Abajo -> La Buenavista
+
+De Laguna a Nosara
+Tiempo de viaje: 1 unidades
+Ruta: Laguna -> Nosara
+
+De Laguna a Los Ángeles
+Tiempo de viaje: 1 unidades
+Ruta: Laguna -> Los Ángeles
+
+De Laguna a Pilas
+Tiempo de viaje: 1 unidades
+Ruta: Laguna -> Pilas
+
+De Laguna a Frailes
+Tiempo de viaje: 1 unidades
+Ruta: Laguna -> Frailes
+
+De Laguna a San Vicente Norte
+Tiempo de viaje: 1 unidades
+Ruta: Laguna -> San Vicente Norte
+
+De Laguna a San Isidro Este
+Tiempo de viaje: 1 unidades
+Ruta: Laguna -> San Isidro Este
+
+De San Pablo Arriba a San Juan Arriba
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Arriba -> San Juan Arriba
+
+De San Pablo Arriba a Dos Ríos
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Arriba -> Dos Ríos
+
+De San Pablo Arriba a Cartagena
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Arriba -> Cartagena
+
+De San Pablo Arriba a Cutris
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Arriba -> Cutris
+
+De San Pablo Arriba a Santa Bárbara
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Arriba -> Santa Bárbara
+
+De San Pablo Arriba a Santa Elena
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Arriba -> Santa Elena
+
+De San Pablo Arriba a San Rafael Arriba
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Arriba -> San Rafael Arriba
+
+De Roxana a San Pablo Este
+Tiempo de viaje: 1 unidades
+Ruta: Roxana -> San Pablo Este
+
+De Roxana a Guadalupe Este
+Tiempo de viaje: 1 unidades
+Ruta: Roxana -> Guadalupe Este
+
+De Roxana a Santiago Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Roxana -> Santiago Oeste
+
+De Pará a Veintisiete de Abril
+Tiempo de viaje: 1 unidades
+Ruta: Pará -> Veintisiete de Abril
+
+De Pará a Santiago
+Tiempo de viaje: 1 unidades
+Ruta: Pará -> Santiago
+
+De Pará a Mercedes Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Pará -> Mercedes Abajo
+
+De Pará a San Roque
+Tiempo de viaje: 1 unidades
+Ruta: Pará -> San Roque
+
+De Pará a Guadalupe Este
+Tiempo de viaje: 1 unidades
+Ruta: Pará -> Guadalupe Este
+
+De Mercedes Abajo a Grifo Alto
+Tiempo de viaje: 1 unidades
+Ruta: Mercedes Abajo -> Grifo Alto
+
+De Mercedes Abajo a Piedras Negras
+Tiempo de viaje: 1 unidades
+Ruta: Mercedes Abajo -> Piedras Negras
+
+De Mercedes Abajo a San Isidro de El General
+Tiempo de viaje: 1 unidades
+Ruta: Mercedes Abajo -> San Isidro de El General
+
+De Mercedes Abajo a Manzanillo
+Tiempo de viaje: 1 unidades
+Ruta: Mercedes Abajo -> Manzanillo
+
+De Mercedes Abajo a San Pedro Antiguo
+Tiempo de viaje: 1 unidades
+Ruta: Mercedes Abajo -> San Pedro Antiguo
+
+De Mercedes Abajo a Pacuarito
+Tiempo de viaje: 1 unidades
+Ruta: Mercedes Abajo -> Pacuarito
+
+De Mercedes Abajo a Cinco Esquinas
+Tiempo de viaje: 1 unidades
+Ruta: Mercedes Abajo -> Cinco Esquinas
+
+De Mercedes Abajo a La Cuesta
+Tiempo de viaje: 1 unidades
+Ruta: Mercedes Abajo -> La Cuesta
+
+De San Pedro Antiguo a Patarrá
+Tiempo de viaje: 1 unidades
+Ruta: San Pedro Antiguo -> Patarrá
+
+De San Pedro Antiguo a Santiago Poás
+Tiempo de viaje: 1 unidades
+Ruta: San Pedro Antiguo -> Santiago Poás
+
+De San Pedro Antiguo a Veintisiete de Abril
+Tiempo de viaje: 1 unidades
+Ruta: San Pedro Antiguo -> Veintisiete de Abril
+
+De San Pedro Antiguo a Río Cuarto
+Tiempo de viaje: 1 unidades
+Ruta: San Pedro Antiguo -> Río Cuarto
+
+De San Pedro Antiguo a La Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: San Pedro Antiguo -> La Buenavista
+
+De San Pedro Antiguo a Sierpe
+Tiempo de viaje: 1 unidades
+Ruta: San Pedro Antiguo -> Sierpe
+
+De San Pedro Antiguo a Rita
+Tiempo de viaje: 1 unidades
+Ruta: San Pedro Antiguo -> Rita
+
+De Dulce Nombre Oeste a Cañas Dulces
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Oeste -> Cañas Dulces
+
+De Dulce Nombre Oeste a San Francisco Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Oeste -> San Francisco Abajo
+
+De Dulce Nombre Oeste a Oriental
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Oeste -> Oriental
+
+De Dulce Nombre Oeste a Savegre
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Oeste -> Savegre
+
+De Dulce Nombre Oeste a Mayorga
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Oeste -> Mayorga
+
+De Dulce Nombre Oeste a Santa Isabel
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Oeste -> Santa Isabel
+
+De Dulce Nombre Oeste a Escazú
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Oeste -> Escazú
+
+De Dulce Nombre Oeste a La Colonia
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Oeste -> La Colonia
+
+De Dulce Nombre Oeste a El Mastate
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Oeste -> El Mastate
+
+De Santa Cruz a San Juan Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz -> San Juan Arriba
+
+De Santa Cruz a Rancho Redondo
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz -> Rancho Redondo
+
+De Santa Cruz a Santiago Poás
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz -> Santiago Poás
+
+De Santa Cruz a Desamparados Sur
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz -> Desamparados Sur
+
+De Santa Cruz a Frailes
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz -> Frailes
+
+De Santa Cruz a Esquipulas
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz -> Esquipulas
+
+De Santa Cruz a San Vicente Norte
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz -> San Vicente Norte
+
+De Santa Cruz a Rita
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz -> Rita
+
+De Santa Cruz a Guadalupe Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz -> Guadalupe Oeste
+
+De Santa Cruz a Monte Verde
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz -> Monte Verde
+
+De Los Ángeles a Santa Rosa Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Los Ángeles -> Santa Rosa Abajo
+
+De Los Ángeles a Frailes
+Tiempo de viaje: 1 unidades
+Ruta: Los Ángeles -> Frailes
+
+De Los Ángeles a Sabana Redonda
+Tiempo de viaje: 1 unidades
+Ruta: Los Ángeles -> Sabana Redonda
+
+De Los Ángeles a Jesús María
+Tiempo de viaje: 1 unidades
+Ruta: Los Ángeles -> Jesús María
+
+De Los Ángeles a Cinco Esquinas
+Tiempo de viaje: 1 unidades
+Ruta: Los Ángeles -> Cinco Esquinas
+
+De Biolley a Cabeceras
+Tiempo de viaje: 1 unidades
+Ruta: Biolley -> Cabeceras
+
+De Biolley a Desamparados Sur
+Tiempo de viaje: 1 unidades
+Ruta: Biolley -> Desamparados Sur
+
+De Biolley a Matama
+Tiempo de viaje: 1 unidades
+Ruta: Biolley -> Matama
+
+De Biolley a Quesada
+Tiempo de viaje: 1 unidades
+Ruta: Biolley -> Quesada
+
+De Biolley a Jesús
+Tiempo de viaje: 1 unidades
+Ruta: Biolley -> Jesús
+
+De Biolley a San Juan Grande
+Tiempo de viaje: 1 unidades
+Ruta: Biolley -> San Juan Grande
+
+De Biolley a Concepción Este
+Tiempo de viaje: 1 unidades
+Ruta: Biolley -> Concepción Este
+
+De Biolley a Tacares
+Tiempo de viaje: 1 unidades
+Ruta: Biolley -> Tacares
+
+De Naranjo a Santiago Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Naranjo -> Santiago Nuevo
+
+De Naranjo a Cirrí Sur
+Tiempo de viaje: 1 unidades
+Ruta: Naranjo -> Cirrí Sur
+
+De Naranjo a Telire
+Tiempo de viaje: 1 unidades
+Ruta: Naranjo -> Telire
+
+De Naranjo a Buenos Aires
+Tiempo de viaje: 1 unidades
+Ruta: Naranjo -> Buenos Aires
+
+De Naranjo a San Sebastián
+Tiempo de viaje: 1 unidades
+Ruta: Naranjo -> San Sebastián
+
+De Naranjo a Concepción Este
+Tiempo de viaje: 1 unidades
+Ruta: Naranjo -> Concepción Este
+
+De Mata Redonda a La Suiza
+Tiempo de viaje: 1 unidades
+Ruta: Mata Redonda -> La Suiza
+
+De Mata Redonda a Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: Mata Redonda -> Buenavista
+
+De Mata Redonda a San Francisco Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Mata Redonda -> San Francisco Abajo
+
+De Mata Redonda a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Mata Redonda -> San Pablo Arriba
+
+De Mata Redonda a Barranca
+Tiempo de viaje: 1 unidades
+Ruta: Mata Redonda -> Barranca
+
+De Mata Redonda a Santa Bárbara
+Tiempo de viaje: 1 unidades
+Ruta: Mata Redonda -> Santa Bárbara
+
+De Santa Rosa Nuevo a San Miguel Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Nuevo -> San Miguel Viejo
+
+De Santa Rosa Nuevo a Cabo Velas
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Nuevo -> Cabo Velas
+
+De Santa Rosa Nuevo a Lagunillas
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Nuevo -> Lagunillas
+
+De Santa Rosa Nuevo a El Ángel
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Nuevo -> El Ángel
+
+De Santa Rosa Nuevo a San Pedro Antiguo
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Nuevo -> San Pedro Antiguo
+
+De Santa Rosa Nuevo a Ulloa
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Nuevo -> Ulloa
+
+De Santa Rosa Nuevo a San Carlos
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Nuevo -> San Carlos
+
+De Santa Rosa Nuevo a Monterrey Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Nuevo -> Monterrey Abajo
+
+De Santa Rosa Nuevo a La Victoria
+Tiempo de viaje: 1 unidades
+Ruta: Santa Rosa Nuevo -> La Victoria
+
+De Quepos a Río Azul
+Tiempo de viaje: 1 unidades
+Ruta: Quepos -> Río Azul
+
+De Quepos a Lagunillas
+Tiempo de viaje: 1 unidades
+Ruta: Quepos -> Lagunillas
+
+De Quepos a Biolley
+Tiempo de viaje: 1 unidades
+Ruta: Quepos -> Biolley
+
+De Quepos a Oriental
+Tiempo de viaje: 1 unidades
+Ruta: Quepos -> Oriental
+
+De Quepos a Labrador
+Tiempo de viaje: 1 unidades
+Ruta: Quepos -> Labrador
+
+De Quepos a Santa Isabel
+Tiempo de viaje: 1 unidades
+Ruta: Quepos -> Santa Isabel
+
+De Quepos a El Mastate
+Tiempo de viaje: 1 unidades
+Ruta: Quepos -> El Mastate
+
+De Telire a San Rafael Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Telire -> San Rafael Viejo
+
+De Telire a Limón
+Tiempo de viaje: 1 unidades
+Ruta: Telire -> Limón
+
+De Telire a San Pedro Sur
+Tiempo de viaje: 1 unidades
+Ruta: Telire -> San Pedro Sur
+
+De Telire a Tures
+Tiempo de viaje: 1 unidades
+Ruta: Telire -> Tures
+
+De Telire a Esquipulas
+Tiempo de viaje: 1 unidades
+Ruta: Telire -> Esquipulas
+
+De Telire a San Rafael Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Telire -> San Rafael Abajo
+
+De Colorado a Pocora
+Tiempo de viaje: 1 unidades
+Ruta: Colorado -> Pocora
+
+De Colorado a San Miguel Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Colorado -> San Miguel Viejo
+
+De Colorado a Bijagua
+Tiempo de viaje: 1 unidades
+Ruta: Colorado -> Bijagua
+
+De Colorado a Río Cuarto
+Tiempo de viaje: 1 unidades
+Ruta: Colorado -> Río Cuarto
+
+De Colorado a Biolley
+Tiempo de viaje: 1 unidades
+Ruta: Colorado -> Biolley
+
+De Colorado a Mayorga
+Tiempo de viaje: 1 unidades
+Ruta: Colorado -> Mayorga
+
+De Colorado a Jesús María
+Tiempo de viaje: 1 unidades
+Ruta: Colorado -> Jesús María
+
+De Colorado a Puerto Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: Colorado -> Puerto Jiménez
+
+De Colorado a Dulce Nombre Este
+Tiempo de viaje: 1 unidades
+Ruta: Colorado -> Dulce Nombre Este
+
+De Colorado a San Francisco Norte
+Tiempo de viaje: 1 unidades
+Ruta: Colorado -> San Francisco Norte
+
+De Tirrases a Hojancha
+Tiempo de viaje: 1 unidades
+Ruta: Tirrases -> Hojancha
+
+De Tirrases a Patarrá
+Tiempo de viaje: 1 unidades
+Ruta: Tirrases -> Patarrá
+
+De Tirrases a Catedral
+Tiempo de viaje: 1 unidades
+Ruta: Tirrases -> Catedral
+
+De Tirrases a Santiago Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Tirrases -> Santiago Nuevo
+
+De Tirrases a Bolívar
+Tiempo de viaje: 1 unidades
+Ruta: Tirrases -> Bolívar
+
+De Tirrases a San Pedro Antiguo
+Tiempo de viaje: 1 unidades
+Ruta: Tirrases -> San Pedro Antiguo
+
+De Tirrases a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: Tirrases -> San Nicolás
+
+De Tirrases a Rivas
+Tiempo de viaje: 1 unidades
+Ruta: Tirrases -> Rivas
+
+De Canalete a Piedras Negras
+Tiempo de viaje: 1 unidades
+Ruta: Canalete -> Piedras Negras
+
+De Canalete a Quepos
+Tiempo de viaje: 1 unidades
+Ruta: Canalete -> Quepos
+
+De Canalete a Caldera
+Tiempo de viaje: 1 unidades
+Ruta: Canalete -> Caldera
+
+De Canalete a Santa Elena
+Tiempo de viaje: 1 unidades
+Ruta: Canalete -> Santa Elena
+
+De Canalete a Santiago Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Canalete -> Santiago Oeste
+
+De Desamparados Sur a Naranjo
+Tiempo de viaje: 1 unidades
+Ruta: Desamparados Sur -> Naranjo
+
+De Desamparados Sur a Savegre
+Tiempo de viaje: 1 unidades
+Ruta: Desamparados Sur -> Savegre
+
+De Desamparados Sur a San José Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Desamparados Sur -> San José Abajo
+
+De Puntarenas a Turrúcares
+Tiempo de viaje: 1 unidades
+Ruta: Puntarenas -> Turrúcares
+
+De Puntarenas a Tobosi
+Tiempo de viaje: 1 unidades
+Ruta: Puntarenas -> Tobosi
+
+De Puntarenas a Caldera
+Tiempo de viaje: 1 unidades
+Ruta: Puntarenas -> Caldera
+
+De Puntarenas a Pocosol
+Tiempo de viaje: 1 unidades
+Ruta: Puntarenas -> Pocosol
+
+De Heredia a Llanuras del Gaspar
+Tiempo de viaje: 1 unidades
+Ruta: Heredia -> Llanuras del Gaspar
+
+De Pilas a Río Azul
+Tiempo de viaje: 1 unidades
+Ruta: Pilas -> Río Azul
+
+De Pilas a Capellades
+Tiempo de viaje: 1 unidades
+Ruta: Pilas -> Capellades
+
+De Pilas a Colorado
+Tiempo de viaje: 1 unidades
+Ruta: Pilas -> Colorado
+
+De Pilas a El Cairo
+Tiempo de viaje: 1 unidades
+Ruta: Pilas -> El Cairo
+
+De Pilas a San Lorenzo
+Tiempo de viaje: 1 unidades
+Ruta: Pilas -> San Lorenzo
+
+De Pilas a Río Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: Pilas -> Río Jiménez
+
+De Pilas a San José Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Pilas -> San José Abajo
+
+De Picagres a San Jerónimo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Picagres -> San Jerónimo Arriba
+
+De Picagres a Barbacoas
+Tiempo de viaje: 1 unidades
+Ruta: Picagres -> Barbacoas
+
+De Picagres a Jesús María
+Tiempo de viaje: 1 unidades
+Ruta: Picagres -> Jesús María
+
+De Frailes a Quepos
+Tiempo de viaje: 1 unidades
+Ruta: Frailes -> Quepos
+
+De Frailes a Pittier
+Tiempo de viaje: 1 unidades
+Ruta: Frailes -> Pittier
+
+De Frailes a Aguabuena
+Tiempo de viaje: 1 unidades
+Ruta: Frailes -> Aguabuena
+
+De Frailes a Laurel
+Tiempo de viaje: 1 unidades
+Ruta: Frailes -> Laurel
+
+De Barranca a Lagunillas
+Tiempo de viaje: 1 unidades
+Ruta: Barranca -> Lagunillas
+
+De Barranca a La Unión
+Tiempo de viaje: 1 unidades
+Ruta: Barranca -> La Unión
+
+De Barranca a San Rafael Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Barranca -> San Rafael Nuevo
+
+De Barranca a Santa Bárbara
+Tiempo de viaje: 1 unidades
+Ruta: Barranca -> Santa Bárbara
+
+De Varablanca a Dulce Nombre de Jesús
+Tiempo de viaje: 1 unidades
+Ruta: Varablanca -> Dulce Nombre de Jesús
+
+De Varablanca a Telire
+Tiempo de viaje: 1 unidades
+Ruta: Varablanca -> Telire
+
+De Varablanca a Porvenir
+Tiempo de viaje: 1 unidades
+Ruta: Varablanca -> Porvenir
+
+De Varablanca a Santiago Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Varablanca -> Santiago Oeste
+
+De San Felipe a Patio de Agua
+Tiempo de viaje: 1 unidades
+Ruta: San Felipe -> Patio de Agua
+
+De San Felipe a Sabalito
+Tiempo de viaje: 1 unidades
+Ruta: San Felipe -> Sabalito
+
+De San Felipe a Cirrí Sur
+Tiempo de viaje: 1 unidades
+Ruta: San Felipe -> Cirrí Sur
+
+De San Felipe a San Vicente Norte
+Tiempo de viaje: 1 unidades
+Ruta: San Felipe -> San Vicente Norte
+
+De San Felipe a Piedades Norte
+Tiempo de viaje: 1 unidades
+Ruta: San Felipe -> Piedades Norte
+
+De Chira a Bijagua
+Tiempo de viaje: 1 unidades
+Ruta: Chira -> Bijagua
+
+De Chira a Garita
+Tiempo de viaje: 1 unidades
+Ruta: Chira -> Garita
+
+De Chira a Palmares
+Tiempo de viaje: 1 unidades
+Ruta: Chira -> Palmares
+
+De Chira a Caldera
+Tiempo de viaje: 1 unidades
+Ruta: Chira -> Caldera
+
+De Chira a San José Este
+Tiempo de viaje: 1 unidades
+Ruta: Chira -> San José Este
+
+De Chira a Paracito
+Tiempo de viaje: 1 unidades
+Ruta: Chira -> Paracito
+
+De Chira a Zapote Norte
+Tiempo de viaje: 1 unidades
+Ruta: Chira -> Zapote Norte
+
+De Chira a Sierpe
+Tiempo de viaje: 1 unidades
+Ruta: Chira -> Sierpe
+
+De Chira a Batán
+Tiempo de viaje: 1 unidades
+Ruta: Chira -> Batán
+
+De Chira a Piedades Norte
+Tiempo de viaje: 1 unidades
+Ruta: Chira -> Piedades Norte
+
+De Tucurrique a San Marcos
+Tiempo de viaje: 1 unidades
+Ruta: Tucurrique -> San Marcos
+
+De Tucurrique a Lagunillas
+Tiempo de viaje: 1 unidades
+Ruta: Tucurrique -> Lagunillas
+
+De Tucurrique a La Suiza
+Tiempo de viaje: 1 unidades
+Ruta: Tucurrique -> La Suiza
+
+De Tucurrique a Quesada
+Tiempo de viaje: 1 unidades
+Ruta: Tucurrique -> Quesada
+
+De San Pablo Este a San Rafael Viejo
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Este -> San Rafael Viejo
+
+De San Pablo Este a Naranjo
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Este -> Naranjo
+
+De San Pablo Este a Barranca
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Este -> Barranca
+
+De San Pablo Este a San Gabriel
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Este -> San Gabriel
+
+De San Pablo Este a Santo Domingo
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Este -> Santo Domingo
+
+De San Pablo Este a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Este -> San Nicolás
+
+De San Pablo Este a Santa Bárbara
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Este -> Santa Bárbara
+
+De San Pablo Este a Pocosol
+Tiempo de viaje: 1 unidades
+Ruta: San Pablo Este -> Pocosol
+
+De Tures a Santiago Puriscal
+Tiempo de viaje: 1 unidades
+Ruta: Tures -> Santiago Puriscal
+
+De Tures a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: Tures -> San Nicolás
+
+De Tures a Aserrí
+Tiempo de viaje: 1 unidades
+Ruta: Tures -> Aserrí
+
+De Tures a Concepción Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Tures -> Concepción Arriba
+
+De Tures a Puerto Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Tures -> Puerto Viejo
+
+De El Roble a Patio de Agua
+Tiempo de viaje: 1 unidades
+Ruta: El Roble -> Patio de Agua
+
+De El Roble a Santiago Poás
+Tiempo de viaje: 1 unidades
+Ruta: El Roble -> Santiago Poás
+
+De El Roble a Varablanca
+Tiempo de viaje: 1 unidades
+Ruta: El Roble -> Varablanca
+
+De El Roble a Escazú
+Tiempo de viaje: 1 unidades
+Ruta: El Roble -> Escazú
+
+De El Roble a Paracito
+Tiempo de viaje: 1 unidades
+Ruta: El Roble -> Paracito
+
+De El Roble a Brisas
+Tiempo de viaje: 1 unidades
+Ruta: El Roble -> Brisas
+
+De Ulloa a Quebrada Honda
+Tiempo de viaje: 1 unidades
+Ruta: Ulloa -> Quebrada Honda
+
+De Ulloa a Daniel Flores
+Tiempo de viaje: 1 unidades
+Ruta: Ulloa -> Daniel Flores
+
+De Ulloa a Germania
+Tiempo de viaje: 1 unidades
+Ruta: Ulloa -> Germania
+
+De Ulloa a Pitahaya
+Tiempo de viaje: 1 unidades
+Ruta: Ulloa -> Pitahaya
+
+De Ulloa a Esquipulas
+Tiempo de viaje: 1 unidades
+Ruta: Ulloa -> Esquipulas
+
+De Ulloa a Mayorga
+Tiempo de viaje: 1 unidades
+Ruta: Ulloa -> Mayorga
+
+De Ulloa a Pejibayes
+Tiempo de viaje: 1 unidades
+Ruta: Ulloa -> Pejibayes
+
+De Ulloa a Siquirres
+Tiempo de viaje: 1 unidades
+Ruta: Ulloa -> Siquirres
+
+De Oriental a Hojancha
+Tiempo de viaje: 1 unidades
+Ruta: Oriental -> Hojancha
+
+De Oriental a Isla del Coco
+Tiempo de viaje: 1 unidades
+Ruta: Oriental -> Isla del Coco
+
+De Oriental a Cabo Velas
+Tiempo de viaje: 1 unidades
+Ruta: Oriental -> Cabo Velas
+
+De Oriental a Palmiralito
+Tiempo de viaje: 1 unidades
+Ruta: Oriental -> Palmiralito
+
+De Oriental a Los Ángeles
+Tiempo de viaje: 1 unidades
+Ruta: Oriental -> Los Ángeles
+
+De Oriental a Biolley
+Tiempo de viaje: 1 unidades
+Ruta: Oriental -> Biolley
+
+De Oriental a Buenos Aires
+Tiempo de viaje: 1 unidades
+Ruta: Oriental -> Buenos Aires
+
+De Oriental a Santo Tomás
+Tiempo de viaje: 1 unidades
+Ruta: Oriental -> Santo Tomás
+
+De Oriental a Rincón de Sabanilla
+Tiempo de viaje: 1 unidades
+Ruta: Oriental -> Rincón de Sabanilla
+
+De San Gabriel a San Rafael Viejo
+Tiempo de viaje: 1 unidades
+Ruta: San Gabriel -> San Rafael Viejo
+
+De San Gabriel a Río Cuarto
+Tiempo de viaje: 1 unidades
+Ruta: San Gabriel -> Río Cuarto
+
+De San Gabriel a Picagres
+Tiempo de viaje: 1 unidades
+Ruta: San Gabriel -> Picagres
+
+De San Gabriel a San Pablo Este
+Tiempo de viaje: 1 unidades
+Ruta: San Gabriel -> San Pablo Este
+
+De San Gabriel a Santo Domingo
+Tiempo de viaje: 1 unidades
+Ruta: San Gabriel -> Santo Domingo
+
+De San Gabriel a Palmar
+Tiempo de viaje: 1 unidades
+Ruta: San Gabriel -> Palmar
+
+De San Gabriel a Aserrí
+Tiempo de viaje: 1 unidades
+Ruta: San Gabriel -> Aserrí
+
+De Santo Domingo a Guácimo
+Tiempo de viaje: 1 unidades
+Ruta: Santo Domingo -> Guácimo
+
+De Santo Domingo a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Santo Domingo -> San Pablo Arriba
+
+De Santo Domingo a Savegre
+Tiempo de viaje: 1 unidades
+Ruta: Santo Domingo -> Savegre
+
+De Santo Domingo a San Rafael Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Santo Domingo -> San Rafael Arriba
+
+De Delicias a Piedras Negras
+Tiempo de viaje: 1 unidades
+Ruta: Delicias -> Piedras Negras
+
+De Delicias a San Vicente
+Tiempo de viaje: 1 unidades
+Ruta: Delicias -> San Vicente
+
+De Savegre a Los Chiles
+Tiempo de viaje: 1 unidades
+Ruta: Savegre -> Los Chiles
+
+De Savegre a Pilas
+Tiempo de viaje: 1 unidades
+Ruta: Savegre -> Pilas
+
+De Savegre a Concepción Este
+Tiempo de viaje: 1 unidades
+Ruta: Savegre -> Concepción Este
+
+De Savegre a San Vicente
+Tiempo de viaje: 1 unidades
+Ruta: Savegre -> San Vicente
+
+De Savegre a La Colonia
+Tiempo de viaje: 1 unidades
+Ruta: Savegre -> La Colonia
+
+De El Cairo a Grifo Alto
+Tiempo de viaje: 1 unidades
+Ruta: El Cairo -> Grifo Alto
+
+De El Cairo a Piedras Negras
+Tiempo de viaje: 1 unidades
+Ruta: El Cairo -> Piedras Negras
+
+De El Cairo a Tempate
+Tiempo de viaje: 1 unidades
+Ruta: El Cairo -> Tempate
+
+De El Cairo a San Isidro Abajo
+Tiempo de viaje: 1 unidades
+Ruta: El Cairo -> San Isidro Abajo
+
+De El Cairo a Tirrases
+Tiempo de viaje: 1 unidades
+Ruta: El Cairo -> Tirrases
+
+De El Cairo a Heredia
+Tiempo de viaje: 1 unidades
+Ruta: El Cairo -> Heredia
+
+De Porvenir a Manzanillo
+Tiempo de viaje: 1 unidades
+Ruta: Porvenir -> Manzanillo
+
+De Porvenir a Cabo Velas
+Tiempo de viaje: 1 unidades
+Ruta: Porvenir -> Cabo Velas
+
+De Porvenir a Yolillal
+Tiempo de viaje: 1 unidades
+Ruta: Porvenir -> Yolillal
+
+De Porvenir a Limoncito
+Tiempo de viaje: 1 unidades
+Ruta: Porvenir -> Limoncito
+
+De Paquera a Isla del Coco
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Isla del Coco
+
+De Paquera a Duacarí
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Duacarí
+
+De Paquera a Florida
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Florida
+
+De Paquera a Guacimal
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Guacimal
+
+De Paquera a Bebedero
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Bebedero
+
+De Paquera a Capellades
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Capellades
+
+De Paquera a Cutris
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Cutris
+
+De Paquera a Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Buenavista
+
+De Paquera a Tempate
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Tempate
+
+De Paquera a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Dulce Nombre Oeste
+
+De Paquera a Desamparados Sur
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Desamparados Sur
+
+De Paquera a Caldera
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Caldera
+
+De Paquera a Escazú
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Escazú
+
+De Paquera a San Rafael Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> San Rafael Oeste
+
+De Paquera a Venado
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Venado
+
+De Paquera a Tuis
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> Tuis
+
+De Paquera a La Cuesta
+Tiempo de viaje: 1 unidades
+Ruta: Paquera -> La Cuesta
+
+De San Carlos a San José Norte
+Tiempo de viaje: 1 unidades
+Ruta: San Carlos -> San José Norte
+
+De San Carlos a Río Azul
+Tiempo de viaje: 1 unidades
+Ruta: San Carlos -> Río Azul
+
+De San Carlos a San Francisco Abajo
+Tiempo de viaje: 1 unidades
+Ruta: San Carlos -> San Francisco Abajo
+
+De San Carlos a Barranca
+Tiempo de viaje: 1 unidades
+Ruta: San Carlos -> Barranca
+
+De San Carlos a Chires
+Tiempo de viaje: 1 unidades
+Ruta: San Carlos -> Chires
+
+De San Carlos a San Juan Norte
+Tiempo de viaje: 1 unidades
+Ruta: San Carlos -> San Juan Norte
+
+De San Carlos a Escazú
+Tiempo de viaje: 1 unidades
+Ruta: San Carlos -> Escazú
+
+De San Carlos a Paracito
+Tiempo de viaje: 1 unidades
+Ruta: San Carlos -> Paracito
+
+De San Carlos a La Colonia
+Tiempo de viaje: 1 unidades
+Ruta: San Carlos -> La Colonia
+
+De Candelarita a Tambor
+Tiempo de viaje: 1 unidades
+Ruta: Candelarita -> Tambor
+
+De Candelarita a Cañas Dulces
+Tiempo de viaje: 1 unidades
+Ruta: Candelarita -> Cañas Dulces
+
+De Candelarita a San Isidro Labrador
+Tiempo de viaje: 1 unidades
+Ruta: Candelarita -> San Isidro Labrador
+
+De Candelarita a Tempate
+Tiempo de viaje: 1 unidades
+Ruta: Candelarita -> Tempate
+
+De Candelarita a Quepos
+Tiempo de viaje: 1 unidades
+Ruta: Candelarita -> Quepos
+
+De Candelarita a Porvenir
+Tiempo de viaje: 1 unidades
+Ruta: Candelarita -> Porvenir
+
+De San Roque a Tres Equis
+Tiempo de viaje: 1 unidades
+Ruta: San Roque -> Tres Equis
+
+De San Roque a Santa Rosa Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: San Roque -> Santa Rosa Nuevo
+
+De San Roque a Jesús
+Tiempo de viaje: 1 unidades
+Ruta: San Roque -> Jesús
+
+De San Roque a Venado
+Tiempo de viaje: 1 unidades
+Ruta: San Roque -> Venado
+
+De San Roque a Siquirres
+Tiempo de viaje: 1 unidades
+Ruta: San Roque -> Siquirres
+
+De Monterrey Abajo a Santa Rosa Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Abajo -> Santa Rosa Abajo
+
+De Monterrey Abajo a Mata Redonda
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Abajo -> Mata Redonda
+
+De Monterrey Abajo a Quepos
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Abajo -> Quepos
+
+De Monterrey Abajo a Chira
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Abajo -> Chira
+
+De Monterrey Abajo a Porvenir
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Abajo -> Porvenir
+
+De Monterrey Abajo a Uruca
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Abajo -> Uruca
+
+De Monterrey Abajo a Santiago Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Abajo -> Santiago Oeste
+
+De Caldera a Rancho Redondo
+Tiempo de viaje: 1 unidades
+Ruta: Caldera -> Rancho Redondo
+
+De Caldera a Santa Rosa Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Caldera -> Santa Rosa Abajo
+
+De Caldera a San Rafael Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Caldera -> San Rafael Viejo
+
+De Caldera a Yolillal
+Tiempo de viaje: 1 unidades
+Ruta: Caldera -> Yolillal
+
+De Caldera a Cuajiniquil
+Tiempo de viaje: 1 unidades
+Ruta: Caldera -> Cuajiniquil
+
+De Caldera a Pejibayes
+Tiempo de viaje: 1 unidades
+Ruta: Caldera -> Pejibayes
+
+De Caldera a Sabanillal
+Tiempo de viaje: 1 unidades
+Ruta: Caldera -> Sabanillal
+
+De Caldera a La Colonia
+Tiempo de viaje: 1 unidades
+Ruta: Caldera -> La Colonia
+
+De Esquipulas a Rancho Redondo
+Tiempo de viaje: 1 unidades
+Ruta: Esquipulas -> Rancho Redondo
+
+De Esquipulas a Garita
+Tiempo de viaje: 1 unidades
+Ruta: Esquipulas -> Garita
+
+De Esquipulas a Puerto Carrillo
+Tiempo de viaje: 1 unidades
+Ruta: Esquipulas -> Puerto Carrillo
+
+De Esquipulas a Cuajiniquil
+Tiempo de viaje: 1 unidades
+Ruta: Esquipulas -> Cuajiniquil
+
+De Esquipulas a San Juan Grande
+Tiempo de viaje: 1 unidades
+Ruta: Esquipulas -> San Juan Grande
+
+De Esquipulas a Tuis
+Tiempo de viaje: 1 unidades
+Ruta: Esquipulas -> Tuis
+
+De Esquipulas a Monte Verde
+Tiempo de viaje: 1 unidades
+Ruta: Esquipulas -> Monte Verde
+
+De Mayorga a Quebrada Honda
+Tiempo de viaje: 1 unidades
+Ruta: Mayorga -> Quebrada Honda
+
+De Mayorga a Garita
+Tiempo de viaje: 1 unidades
+Ruta: Mayorga -> Garita
+
+De Mayorga a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Mayorga -> San Pablo Arriba
+
+De Mayorga a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Mayorga -> Dulce Nombre Oeste
+
+De Mayorga a Santiago Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Mayorga -> Santiago Oeste
+
+De Pavón a Grifo Alto
+Tiempo de viaje: 1 unidades
+Ruta: Pavón -> Grifo Alto
+
+De Pavón a Chomes
+Tiempo de viaje: 1 unidades
+Ruta: Pavón -> Chomes
+
+De Pavón a Quepos
+Tiempo de viaje: 1 unidades
+Ruta: Pavón -> Quepos
+
+De Pavón a La Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: Pavón -> La Buenavista
+
+De Pavón a Paracito
+Tiempo de viaje: 1 unidades
+Ruta: Pavón -> Paracito
+
+De Pavón a Santo Tomás
+Tiempo de viaje: 1 unidades
+Ruta: Pavón -> Santo Tomás
+
+De Tabarcia a Palmares
+Tiempo de viaje: 1 unidades
+Ruta: Tabarcia -> Palmares
+
+De Tabarcia a Capellades
+Tiempo de viaje: 1 unidades
+Ruta: Tabarcia -> Capellades
+
+De Tabarcia a Cabeceras
+Tiempo de viaje: 1 unidades
+Ruta: Tabarcia -> Cabeceras
+
+De Tabarcia a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Tabarcia -> San Pablo Arriba
+
+De Tabarcia a San Felipe
+Tiempo de viaje: 1 unidades
+Ruta: Tabarcia -> San Felipe
+
+De Tabarcia a Mayorga
+Tiempo de viaje: 1 unidades
+Ruta: Tabarcia -> Mayorga
+
+De Tabarcia a Pejibayes
+Tiempo de viaje: 1 unidades
+Ruta: Tabarcia -> Pejibayes
+
+De Tabarcia a Liberia
+Tiempo de viaje: 1 unidades
+Ruta: Tabarcia -> Liberia
+
+De Tabarcia a Dulce Nombre Este
+Tiempo de viaje: 1 unidades
+Ruta: Tabarcia -> Dulce Nombre Este
+
+De Carrillos a Hacienda Vieja
+Tiempo de viaje: 1 unidades
+Ruta: Carrillos -> Hacienda Vieja
+
+De Carrillos a Guácimo
+Tiempo de viaje: 1 unidades
+Ruta: Carrillos -> Guácimo
+
+De Carrillos a Los Ángeles
+Tiempo de viaje: 1 unidades
+Ruta: Carrillos -> Los Ángeles
+
+De Carrillos a Heredia
+Tiempo de viaje: 1 unidades
+Ruta: Carrillos -> Heredia
+
+De Carrillos a Savegre
+Tiempo de viaje: 1 unidades
+Ruta: Carrillos -> Savegre
+
+De Carrillos a Pittier
+Tiempo de viaje: 1 unidades
+Ruta: Carrillos -> Pittier
+
+De Carrillos a Rivas
+Tiempo de viaje: 1 unidades
+Ruta: Carrillos -> Rivas
+
+De Palmar a Bebedero
+Tiempo de viaje: 1 unidades
+Ruta: Palmar -> Bebedero
+
+De Palmar a La Suiza
+Tiempo de viaje: 1 unidades
+Ruta: Palmar -> La Suiza
+
+De Palmar a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Palmar -> Dulce Nombre Oeste
+
+De Palmar a Santa Cruz
+Tiempo de viaje: 1 unidades
+Ruta: Palmar -> Santa Cruz
+
+De Palmar a Chira
+Tiempo de viaje: 1 unidades
+Ruta: Palmar -> Chira
+
+De Palmar a San Francisco de Dos Ríos
+Tiempo de viaje: 1 unidades
+Ruta: Palmar -> San Francisco de Dos Ríos
+
+De Yolillal a Tambor
+Tiempo de viaje: 1 unidades
+Ruta: Yolillal -> Tambor
+
+De Yolillal a San Miguel Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Yolillal -> San Miguel Viejo
+
+De Yolillal a Llanuras del Gaspar
+Tiempo de viaje: 1 unidades
+Ruta: Yolillal -> Llanuras del Gaspar
+
+De Yolillal a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Yolillal -> Dulce Nombre Oeste
+
+De Yolillal a Escazú
+Tiempo de viaje: 1 unidades
+Ruta: Yolillal -> Escazú
+
+De Yolillal a Pittier
+Tiempo de viaje: 1 unidades
+Ruta: Yolillal -> Pittier
+
+De Yolillal a Rivas
+Tiempo de viaje: 1 unidades
+Ruta: Yolillal -> Rivas
+
+De Yolillal a Brisas
+Tiempo de viaje: 1 unidades
+Ruta: Yolillal -> Brisas
+
+De Yolillal a Monterrey Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Yolillal -> Monterrey Arriba
+
+De Matama a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Matama -> Santa Rosa Viejo
+
+De Matama a Manzanillo
+Tiempo de viaje: 1 unidades
+Ruta: Matama -> Manzanillo
+
+De Matama a Chira
+Tiempo de viaje: 1 unidades
+Ruta: Matama -> Chira
+
+De Matama a Oriental
+Tiempo de viaje: 1 unidades
+Ruta: Matama -> Oriental
+
+De Matama a Santa Cruz Sur
+Tiempo de viaje: 1 unidades
+Ruta: Matama -> Santa Cruz Sur
+
+De Matama a San Isidro Este
+Tiempo de viaje: 1 unidades
+Ruta: Matama -> San Isidro Este
+
+De Matama a Pocosol
+Tiempo de viaje: 1 unidades
+Ruta: Matama -> Pocosol
+
+De Matama a Sarchí Norte
+Tiempo de viaje: 1 unidades
+Ruta: Matama -> Sarchí Norte
+
+De Labrador a Pavón
+Tiempo de viaje: 1 unidades
+Ruta: Labrador -> Pavón
+
+De Labrador a San Juan Grande
+Tiempo de viaje: 1 unidades
+Ruta: Labrador -> San Juan Grande
+
+De Labrador a Concepción Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Labrador -> Concepción Arriba
+
+De Cuajiniquil a Peñas Blancas
+Tiempo de viaje: 1 unidades
+Ruta: Cuajiniquil -> Peñas Blancas
+
+De Cuajiniquil a Santa Rosa Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Cuajiniquil -> Santa Rosa Nuevo
+
+De Cuajiniquil a Monterrey Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Cuajiniquil -> Monterrey Abajo
+
+De Cuajiniquil a Escazú
+Tiempo de viaje: 1 unidades
+Ruta: Cuajiniquil -> Escazú
+
+De Cuajiniquil a San Lorenzo
+Tiempo de viaje: 1 unidades
+Ruta: Cuajiniquil -> San Lorenzo
+
+De Cuajiniquil a Pittier
+Tiempo de viaje: 1 unidades
+Ruta: Cuajiniquil -> Pittier
+
+De Santa Isabel a San Rafael Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Santa Isabel -> San Rafael Viejo
+
+De Santa Isabel a Puerto Carrillo
+Tiempo de viaje: 1 unidades
+Ruta: Santa Isabel -> Puerto Carrillo
+
+De Santa Isabel a El Ángel
+Tiempo de viaje: 1 unidades
+Ruta: Santa Isabel -> El Ángel
+
+De Santa Isabel a San Pedro Antiguo
+Tiempo de viaje: 1 unidades
+Ruta: Santa Isabel -> San Pedro Antiguo
+
+De Santa Isabel a La Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: Santa Isabel -> La Buenavista
+
+De Santa Isabel a Aguabuena
+Tiempo de viaje: 1 unidades
+Ruta: Santa Isabel -> Aguabuena
+
+De Santa Isabel a Florencia
+Tiempo de viaje: 1 unidades
+Ruta: Santa Isabel -> Florencia
+
+De Santa Isabel a Sabanillal
+Tiempo de viaje: 1 unidades
+Ruta: Santa Isabel -> Sabanillal
+
+De Pejibayes a Jesús Piedad
+Tiempo de viaje: 1 unidades
+Ruta: Pejibayes -> Jesús Piedad
+
+De Pejibayes a La Trinidad
+Tiempo de viaje: 1 unidades
+Ruta: Pejibayes -> La Trinidad
+
+De Pejibayes a Canalete
+Tiempo de viaje: 1 unidades
+Ruta: Pejibayes -> Canalete
+
+De Pejibayes a Cuajiniquil
+Tiempo de viaje: 1 unidades
+Ruta: Pejibayes -> Cuajiniquil
+
+De Pejibayes a San Juan Grande
+Tiempo de viaje: 1 unidades
+Ruta: Pejibayes -> San Juan Grande
+
+De Pejibayes a Monterrey Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Pejibayes -> Monterrey Arriba
+
+De San Rafael Nuevo a Quebrada Honda
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Nuevo -> Quebrada Honda
+
+De San Rafael Nuevo a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Nuevo -> Santa Rosa Viejo
+
+De San Rafael Nuevo a Santa Rosa Abajo
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Nuevo -> Santa Rosa Abajo
+
+De San Rafael Nuevo a Palmares
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Nuevo -> Palmares
+
+De San Rafael Nuevo a Cuajiniquil
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Nuevo -> Cuajiniquil
+
+De Liberia a San Miguel Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Liberia -> San Miguel Viejo
+
+De Liberia a Limoncito
+Tiempo de viaje: 1 unidades
+Ruta: Liberia -> Limoncito
+
+De Liberia a San Francisco Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Liberia -> San Francisco Arriba
+
+De Liberia a Sabanillal
+Tiempo de viaje: 1 unidades
+Ruta: Liberia -> Sabanillal
+
+De Barbacoas a Bahía Ballena
+Tiempo de viaje: 1 unidades
+Ruta: Barbacoas -> Bahía Ballena
+
+De Barbacoas a Los Guido
+Tiempo de viaje: 1 unidades
+Ruta: Barbacoas -> Los Guido
+
+De Barbacoas a Puerto Carrillo
+Tiempo de viaje: 1 unidades
+Ruta: Barbacoas -> Puerto Carrillo
+
+De Barbacoas a Palmiralito
+Tiempo de viaje: 1 unidades
+Ruta: Barbacoas -> Palmiralito
+
+De Barbacoas a Mercedes Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Barbacoas -> Mercedes Abajo
+
+De Barbacoas a San José Este
+Tiempo de viaje: 1 unidades
+Ruta: Barbacoas -> San José Este
+
+De Barbacoas a Zapote Norte
+Tiempo de viaje: 1 unidades
+Ruta: Barbacoas -> Zapote Norte
+
+De Barbacoas a Puerto Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: Barbacoas -> Puerto Jiménez
+
+De Barbacoas a Puerto Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Barbacoas -> Puerto Viejo
+
+De San José Este a Germania
+Tiempo de viaje: 1 unidades
+Ruta: San José Este -> Germania
+
+De San José Este a Chira
+Tiempo de viaje: 1 unidades
+Ruta: San José Este -> Chira
+
+De San José Este a Tuis
+Tiempo de viaje: 1 unidades
+Ruta: San José Este -> Tuis
+
+De Quesada a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Quesada -> Santa Rosa Viejo
+
+De Quesada a Esquipulas
+Tiempo de viaje: 1 unidades
+Ruta: Quesada -> Esquipulas
+
+De Quesada a Matama
+Tiempo de viaje: 1 unidades
+Ruta: Quesada -> Matama
+
+De Quesada a San Lorenzo
+Tiempo de viaje: 1 unidades
+Ruta: Quesada -> San Lorenzo
+
+De Legua a Cartagena
+Tiempo de viaje: 1 unidades
+Ruta: Legua -> Cartagena
+
+De Legua a Dulce Nombre de Jesús
+Tiempo de viaje: 1 unidades
+Ruta: Legua -> Dulce Nombre de Jesús
+
+De Legua a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Legua -> San Pablo Arriba
+
+De Legua a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Legua -> Dulce Nombre Oeste
+
+De Legua a Oriental
+Tiempo de viaje: 1 unidades
+Ruta: Legua -> Oriental
+
+De Legua a Savegre
+Tiempo de viaje: 1 unidades
+Ruta: Legua -> Savegre
+
+De Buenos Aires a Garita
+Tiempo de viaje: 1 unidades
+Ruta: Buenos Aires -> Garita
+
+De Buenos Aires a San Jerónimo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Buenos Aires -> San Jerónimo Arriba
+
+De Buenos Aires a Capellades
+Tiempo de viaje: 1 unidades
+Ruta: Buenos Aires -> Capellades
+
+De Buenos Aires a Naranjo
+Tiempo de viaje: 1 unidades
+Ruta: Buenos Aires -> Naranjo
+
+De Buenos Aires a Tucurrique
+Tiempo de viaje: 1 unidades
+Ruta: Buenos Aires -> Tucurrique
+
+De Buenos Aires a Rivas
+Tiempo de viaje: 1 unidades
+Ruta: Buenos Aires -> Rivas
+
+De Buenos Aires a La Cuesta
+Tiempo de viaje: 1 unidades
+Ruta: Buenos Aires -> La Cuesta
+
+De Buenos Aires a La Colonia
+Tiempo de viaje: 1 unidades
+Ruta: Buenos Aires -> La Colonia
+
+De Turrialba a Veintisiete de Abril
+Tiempo de viaje: 1 unidades
+Ruta: Turrialba -> Veintisiete de Abril
+
+De Turrialba a Puerto Carrillo
+Tiempo de viaje: 1 unidades
+Ruta: Turrialba -> Puerto Carrillo
+
+De Turrialba a La Victoria
+Tiempo de viaje: 1 unidades
+Ruta: Turrialba -> La Victoria
+
+De Turrialba a Piedades Norte
+Tiempo de viaje: 1 unidades
+Ruta: Turrialba -> Piedades Norte
+
+De San Vicente Norte a Turrúcares
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente Norte -> Turrúcares
+
+De San Vicente Norte a Tres Equis
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente Norte -> Tres Equis
+
+De San Vicente Norte a Palmira
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente Norte -> Palmira
+
+De San Vicente Norte a Roxana
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente Norte -> Roxana
+
+De San Vicente Norte a Chira
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente Norte -> Chira
+
+De San Vicente Norte a Tucurrique
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente Norte -> Tucurrique
+
+De San Vicente Norte a Uruca
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente Norte -> Uruca
+
+De San Nicolás a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: San Nicolás -> Santa Rosa Viejo
+
+De San Nicolás a Palmitos
+Tiempo de viaje: 1 unidades
+Ruta: San Nicolás -> Palmitos
+
+De San Nicolás a San Isidro de El General
+Tiempo de viaje: 1 unidades
+Ruta: San Nicolás -> San Isidro de El General
+
+De San Nicolás a Cartagena
+Tiempo de viaje: 1 unidades
+Ruta: San Nicolás -> Cartagena
+
+De San Nicolás a Tempate
+Tiempo de viaje: 1 unidades
+Ruta: San Nicolás -> Tempate
+
+De San Nicolás a Los Chiles
+Tiempo de viaje: 1 unidades
+Ruta: San Nicolás -> Los Chiles
+
+De San Nicolás a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: San Nicolás -> Dulce Nombre Oeste
+
+De San Nicolás a Paquera
+Tiempo de viaje: 1 unidades
+Ruta: San Nicolás -> Paquera
+
+De San Nicolás a Caldera
+Tiempo de viaje: 1 unidades
+Ruta: San Nicolás -> Caldera
+
+De San Nicolás a San Francisco Arriba
+Tiempo de viaje: 1 unidades
+Ruta: San Nicolás -> San Francisco Arriba
+
+De La Buenavista a Dos Ríos
+Tiempo de viaje: 1 unidades
+Ruta: La Buenavista -> Dos Ríos
+
+De La Buenavista a Atenas
+Tiempo de viaje: 1 unidades
+Ruta: La Buenavista -> Atenas
+
+De La Buenavista a Sabalito
+Tiempo de viaje: 1 unidades
+Ruta: La Buenavista -> Sabalito
+
+De La Buenavista a Mayorga
+Tiempo de viaje: 1 unidades
+Ruta: La Buenavista -> Mayorga
+
+De La Buenavista a Sabana Redonda
+Tiempo de viaje: 1 unidades
+Ruta: La Buenavista -> Sabana Redonda
+
+De La Asunción a Catedral
+Tiempo de viaje: 1 unidades
+Ruta: La Asunción -> Catedral
+
+De La Asunción a Santa Rosa Abajo
+Tiempo de viaje: 1 unidades
+Ruta: La Asunción -> Santa Rosa Abajo
+
+De La Asunción a Dulce Nombre de Jesús
+Tiempo de viaje: 1 unidades
+Ruta: La Asunción -> Dulce Nombre de Jesús
+
+De La Asunción a Mercedes Abajo
+Tiempo de viaje: 1 unidades
+Ruta: La Asunción -> Mercedes Abajo
+
+De San Ignacio a Cañas Dulces
+Tiempo de viaje: 1 unidades
+Ruta: San Ignacio -> Cañas Dulces
+
+De San Ignacio a Lagunillas
+Tiempo de viaje: 1 unidades
+Ruta: San Ignacio -> Lagunillas
+
+De San Ignacio a Santiago Puriscal
+Tiempo de viaje: 1 unidades
+Ruta: San Ignacio -> Santiago Puriscal
+
+De San Ignacio a Pitahaya
+Tiempo de viaje: 1 unidades
+Ruta: San Ignacio -> Pitahaya
+
+De San Ignacio a Los Ángeles
+Tiempo de viaje: 1 unidades
+Ruta: San Ignacio -> Los Ángeles
+
+De San Ignacio a San Sebastián
+Tiempo de viaje: 1 unidades
+Ruta: San Ignacio -> San Sebastián
+
+De Guadalupe Este a Turrúcares
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Este -> Turrúcares
+
+De Guadalupe Este a Rancho Redondo
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Este -> Rancho Redondo
+
+De Guadalupe Este a Garita
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Este -> Garita
+
+De Guadalupe Este a Santiago Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Este -> Santiago Nuevo
+
+De Guadalupe Este a Bebedero
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Este -> Bebedero
+
+De Guadalupe Este a Peñas Blancas
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Este -> Peñas Blancas
+
+De Guadalupe Este a La Trinidad
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Este -> La Trinidad
+
+De Guadalupe Este a Telire
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Este -> Telire
+
+De Guadalupe Este a Paquera
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Este -> Paquera
+
+De Guadalupe Este a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Este -> San Nicolás
+
+De Guadalupe Este a La Cuesta
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Este -> La Cuesta
+
+De Chires a Bolsón
+Tiempo de viaje: 1 unidades
+Ruta: Chires -> Bolsón
+
+De Chires a Garita
+Tiempo de viaje: 1 unidades
+Ruta: Chires -> Garita
+
+De Chires a Río Cuarto
+Tiempo de viaje: 1 unidades
+Ruta: Chires -> Río Cuarto
+
+De Chires a Santa Rosa Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Chires -> Santa Rosa Nuevo
+
+De Chires a San Pablo Este
+Tiempo de viaje: 1 unidades
+Ruta: Chires -> San Pablo Este
+
+De Chires a Caldera
+Tiempo de viaje: 1 unidades
+Ruta: Chires -> Caldera
+
+De Chires a Santa Cruz Sur
+Tiempo de viaje: 1 unidades
+Ruta: Chires -> Santa Cruz Sur
+
+De Pacuarito a Acapulco
+Tiempo de viaje: 1 unidades
+Ruta: Pacuarito -> Acapulco
+
+De Pacuarito a Santiago Poás
+Tiempo de viaje: 1 unidades
+Ruta: Pacuarito -> Santiago Poás
+
+De Pacuarito a Santiago Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Pacuarito -> Santiago Nuevo
+
+De Pacuarito a San Jerónimo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Pacuarito -> San Jerónimo Arriba
+
+De Pacuarito a Roxana
+Tiempo de viaje: 1 unidades
+Ruta: Pacuarito -> Roxana
+
+De Pacuarito a Tabarcia
+Tiempo de viaje: 1 unidades
+Ruta: Pacuarito -> Tabarcia
+
+De Pacuarito a Birrisito
+Tiempo de viaje: 1 unidades
+Ruta: Pacuarito -> Birrisito
+
+De Pacuarito a Zapote
+Tiempo de viaje: 1 unidades
+Ruta: Pacuarito -> Zapote
+
+De Pacuarito a Aguacaliente
+Tiempo de viaje: 1 unidades
+Ruta: Pacuarito -> Aguacaliente
+
+De Birrisito a Granadilla
+Tiempo de viaje: 1 unidades
+Ruta: Birrisito -> Granadilla
+
+De Birrisito a Los Ángeles
+Tiempo de viaje: 1 unidades
+Ruta: Birrisito -> Los Ángeles
+
+De Birrisito a Picagres
+Tiempo de viaje: 1 unidades
+Ruta: Birrisito -> Picagres
+
+De Birrisito a Savegre
+Tiempo de viaje: 1 unidades
+Ruta: Birrisito -> Savegre
+
+De Birrisito a Esquipulas
+Tiempo de viaje: 1 unidades
+Ruta: Birrisito -> Esquipulas
+
+De Birrisito a Mayorga
+Tiempo de viaje: 1 unidades
+Ruta: Birrisito -> Mayorga
+
+De Birrisito a Uruca
+Tiempo de viaje: 1 unidades
+Ruta: Birrisito -> Uruca
+
+De Birrisito a San Rafael Norte
+Tiempo de viaje: 1 unidades
+Ruta: Birrisito -> San Rafael Norte
+
+De Birrisito a Pocosol
+Tiempo de viaje: 1 unidades
+Ruta: Birrisito -> Pocosol
+
+De San Juan Norte a San José Norte
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Norte -> San José Norte
+
+De San Juan Norte a Bebedero
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Norte -> Bebedero
+
+De San Juan Norte a Volcán
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Norte -> Volcán
+
+De San Juan Norte a Naranjo
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Norte -> Naranjo
+
+De San Juan Norte a Tirrases
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Norte -> Tirrases
+
+De San Juan Norte a Tucurrique
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Norte -> Tucurrique
+
+De San Juan Norte a Santa Isabel
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Norte -> Santa Isabel
+
+De Uruca a Zapotal
+Tiempo de viaje: 1 unidades
+Ruta: Uruca -> Zapotal
+
+De Uruca a Palmitos
+Tiempo de viaje: 1 unidades
+Ruta: Uruca -> Palmitos
+
+De Uruca a San Isidro Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Uruca -> San Isidro Abajo
+
+De Uruca a Chira
+Tiempo de viaje: 1 unidades
+Ruta: Uruca -> Chira
+
+De Uruca a Caldera
+Tiempo de viaje: 1 unidades
+Ruta: Uruca -> Caldera
+
+De Uruca a Yolillal
+Tiempo de viaje: 1 unidades
+Ruta: Uruca -> Yolillal
+
+De Uruca a Concepción Este
+Tiempo de viaje: 1 unidades
+Ruta: Uruca -> Concepción Este
+
+De Uruca a Florencia
+Tiempo de viaje: 1 unidades
+Ruta: Uruca -> Florencia
+
+De Zapote a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Zapote -> San Pablo Arriba
+
+De Zapote a Pittier
+Tiempo de viaje: 1 unidades
+Ruta: Zapote -> Pittier
+
+De Zapote a Río Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: Zapote -> Río Jiménez
+
+De Zapote a Tarbaca
+Tiempo de viaje: 1 unidades
+Ruta: Zapote -> Tarbaca
+
+De San Francisco de Dos Ríos a Cañas Dulces
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco de Dos Ríos -> Cañas Dulces
+
+De San Francisco de Dos Ríos a Isla del Coco
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco de Dos Ríos -> Isla del Coco
+
+De San Francisco de Dos Ríos a Sarapiquí
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco de Dos Ríos -> Sarapiquí
+
+De San Francisco de Dos Ríos a Bijagua
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco de Dos Ríos -> Bijagua
+
+De San Francisco de Dos Ríos a Guácimo
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco de Dos Ríos -> Guácimo
+
+De San Francisco de Dos Ríos a Barbacoas
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco de Dos Ríos -> Barbacoas
+
+De San Francisco de Dos Ríos a Paracito
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco de Dos Ríos -> Paracito
+
+De San Francisco de Dos Ríos a Laurel
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco de Dos Ríos -> Laurel
+
+De San Francisco de Dos Ríos a Sabanillal
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco de Dos Ríos -> Sabanillal
+
+De Escazú a Los Guido
+Tiempo de viaje: 1 unidades
+Ruta: Escazú -> Los Guido
+
+De Escazú a Palmitos
+Tiempo de viaje: 1 unidades
+Ruta: Escazú -> Palmitos
+
+De Escazú a Germania
+Tiempo de viaje: 1 unidades
+Ruta: Escazú -> Germania
+
+De Escazú a Pavón
+Tiempo de viaje: 1 unidades
+Ruta: Escazú -> Pavón
+
+De Escazú a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: Escazú -> San Nicolás
+
+De Aserrí a Bahía Ballena
+Tiempo de viaje: 1 unidades
+Ruta: Aserrí -> Bahía Ballena
+
+De Aserrí a Jesús Piedad
+Tiempo de viaje: 1 unidades
+Ruta: Aserrí -> Jesús Piedad
+
+De Aserrí a Daniel Flores
+Tiempo de viaje: 1 unidades
+Ruta: Aserrí -> Daniel Flores
+
+De Aserrí a Guacimal
+Tiempo de viaje: 1 unidades
+Ruta: Aserrí -> Guacimal
+
+De Aserrí a Liberia
+Tiempo de viaje: 1 unidades
+Ruta: Aserrí -> Liberia
+
+De San Lorenzo a Patio de Agua
+Tiempo de viaje: 1 unidades
+Ruta: San Lorenzo -> Patio de Agua
+
+De San Lorenzo a Llanuras del Gaspar
+Tiempo de viaje: 1 unidades
+Ruta: San Lorenzo -> Llanuras del Gaspar
+
+De San Lorenzo a Manzanillo
+Tiempo de viaje: 1 unidades
+Ruta: San Lorenzo -> Manzanillo
+
+De San Lorenzo a Santiago Puriscal
+Tiempo de viaje: 1 unidades
+Ruta: San Lorenzo -> Santiago Puriscal
+
+De San Lorenzo a La Trinidad
+Tiempo de viaje: 1 unidades
+Ruta: San Lorenzo -> La Trinidad
+
+De San Lorenzo a Desamparados Sur
+Tiempo de viaje: 1 unidades
+Ruta: San Lorenzo -> Desamparados Sur
+
+De San Lorenzo a Aguabuena
+Tiempo de viaje: 1 unidades
+Ruta: San Lorenzo -> Aguabuena
+
+De San Lorenzo a San Rafael Sur
+Tiempo de viaje: 1 unidades
+Ruta: San Lorenzo -> San Rafael Sur
+
+De San Lorenzo a San Vicente
+Tiempo de viaje: 1 unidades
+Ruta: San Lorenzo -> San Vicente
+
+De San Lorenzo a Sarchí Norte
+Tiempo de viaje: 1 unidades
+Ruta: San Lorenzo -> Sarchí Norte
+
+De San Lorenzo a Tacares
+Tiempo de viaje: 1 unidades
+Ruta: San Lorenzo -> Tacares
+
+De Sabana Redonda a Piedras Negras
+Tiempo de viaje: 1 unidades
+Ruta: Sabana Redonda -> Piedras Negras
+
+De Sabana Redonda a Guacimal
+Tiempo de viaje: 1 unidades
+Ruta: Sabana Redonda -> Guacimal
+
+De Sabana Redonda a Tirrases
+Tiempo de viaje: 1 unidades
+Ruta: Sabana Redonda -> Tirrases
+
+De Sabana Redonda a Chires
+Tiempo de viaje: 1 unidades
+Ruta: Sabana Redonda -> Chires
+
+De Sabana Redonda a San Rafael Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Sabana Redonda -> San Rafael Abajo
+
+De Paracito a Daniel Flores
+Tiempo de viaje: 1 unidades
+Ruta: Paracito -> Daniel Flores
+
+De Paracito a Palmitos
+Tiempo de viaje: 1 unidades
+Ruta: Paracito -> Palmitos
+
+De Paracito a La Unión
+Tiempo de viaje: 1 unidades
+Ruta: Paracito -> La Unión
+
+De Paracito a El Ángel
+Tiempo de viaje: 1 unidades
+Ruta: Paracito -> El Ángel
+
+De Paracito a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Paracito -> Dulce Nombre Oeste
+
+De Paracito a San Pablo Este
+Tiempo de viaje: 1 unidades
+Ruta: Paracito -> San Pablo Este
+
+De Paracito a El Roble
+Tiempo de viaje: 1 unidades
+Ruta: Paracito -> El Roble
+
+De Paracito a Monterrey Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Paracito -> Monterrey Abajo
+
+De Paracito a Santa Bárbara
+Tiempo de viaje: 1 unidades
+Ruta: Paracito -> Santa Bárbara
+
+De Paracito a San Francisco Norte
+Tiempo de viaje: 1 unidades
+Ruta: Paracito -> San Francisco Norte
+
+De Santa Bárbara a Daniel Flores
+Tiempo de viaje: 1 unidades
+Ruta: Santa Bárbara -> Daniel Flores
+
+De Santa Bárbara a Las Horquetas
+Tiempo de viaje: 1 unidades
+Ruta: Santa Bárbara -> Las Horquetas
+
+De Santa Bárbara a Juan Viñas
+Tiempo de viaje: 1 unidades
+Ruta: Santa Bárbara -> Juan Viñas
+
+De Santa Bárbara a Chira
+Tiempo de viaje: 1 unidades
+Ruta: Santa Bárbara -> Chira
+
+De Santa Bárbara a San Juan Norte
+Tiempo de viaje: 1 unidades
+Ruta: Santa Bárbara -> San Juan Norte
+
+De Santa Bárbara a Zapote Norte
+Tiempo de viaje: 1 unidades
+Ruta: Santa Bárbara -> Zapote Norte
+
+De Santa Bárbara a Siquirres
+Tiempo de viaje: 1 unidades
+Ruta: Santa Bárbara -> Siquirres
+
+De Zapote Norte a Jesús María
+Tiempo de viaje: 1 unidades
+Ruta: Zapote Norte -> Jesús María
+
+De Zapote Norte a Concepción Este
+Tiempo de viaje: 1 unidades
+Ruta: Zapote Norte -> Concepción Este
+
+De Pittier a Grifo Alto
+Tiempo de viaje: 1 unidades
+Ruta: Pittier -> Grifo Alto
+
+De Pittier a Nosara
+Tiempo de viaje: 1 unidades
+Ruta: Pittier -> Nosara
+
+De Pittier a Cutris
+Tiempo de viaje: 1 unidades
+Ruta: Pittier -> Cutris
+
+De Pittier a San Pedro Sur
+Tiempo de viaje: 1 unidades
+Ruta: Pittier -> San Pedro Sur
+
+De Pittier a San Carlos
+Tiempo de viaje: 1 unidades
+Ruta: Pittier -> San Carlos
+
+De Pittier a San Lorenzo
+Tiempo de viaje: 1 unidades
+Ruta: Pittier -> San Lorenzo
+
+De Pittier a Santo Tomás
+Tiempo de viaje: 1 unidades
+Ruta: Pittier -> Santo Tomás
+
+De Pittier a Brisas
+Tiempo de viaje: 1 unidades
+Ruta: Pittier -> Brisas
+
+De Pittier a Diriá
+Tiempo de viaje: 1 unidades
+Ruta: Pittier -> Diriá
+
+De La Victoria a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: La Victoria -> Santa Rosa Viejo
+
+De La Victoria a Daniel Flores
+Tiempo de viaje: 1 unidades
+Ruta: La Victoria -> Daniel Flores
+
+De La Victoria a Puerto Carrillo
+Tiempo de viaje: 1 unidades
+Ruta: La Victoria -> Puerto Carrillo
+
+De La Victoria a Salitral
+Tiempo de viaje: 1 unidades
+Ruta: La Victoria -> Salitral
+
+De La Victoria a Aguas Zarcas
+Tiempo de viaje: 1 unidades
+Ruta: La Victoria -> Aguas Zarcas
+
+De La Victoria a San Vicente
+Tiempo de viaje: 1 unidades
+Ruta: La Victoria -> San Vicente
+
+De La Victoria a Pocosol
+Tiempo de viaje: 1 unidades
+Ruta: La Victoria -> Pocosol
+
+De Río Jiménez a Monte Romo
+Tiempo de viaje: 1 unidades
+Ruta: Río Jiménez -> Monte Romo
+
+De Río Jiménez a Guacimal
+Tiempo de viaje: 1 unidades
+Ruta: Río Jiménez -> Guacimal
+
+De Río Jiménez a San Marcos
+Tiempo de viaje: 1 unidades
+Ruta: Río Jiménez -> San Marcos
+
+De Río Jiménez a Pacuarito
+Tiempo de viaje: 1 unidades
+Ruta: Río Jiménez -> Pacuarito
+
+De Río Jiménez a Puerto Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: Río Jiménez -> Puerto Jiménez
+
+De Río Jiménez a Rita
+Tiempo de viaje: 1 unidades
+Ruta: Río Jiménez -> Rita
+
+De Sierpe a Tobosi
+Tiempo de viaje: 1 unidades
+Ruta: Sierpe -> Tobosi
+
+De Sierpe a Los Chiles
+Tiempo de viaje: 1 unidades
+Ruta: Sierpe -> Los Chiles
+
+De Sierpe a Heredia
+Tiempo de viaje: 1 unidades
+Ruta: Sierpe -> Heredia
+
+De Sierpe a Barranca
+Tiempo de viaje: 1 unidades
+Ruta: Sierpe -> Barranca
+
+De Sierpe a Carrillos
+Tiempo de viaje: 1 unidades
+Ruta: Sierpe -> Carrillos
+
+De Sierpe a Barbacoas
+Tiempo de viaje: 1 unidades
+Ruta: Sierpe -> Barbacoas
+
+De Sierpe a Tarbaca
+Tiempo de viaje: 1 unidades
+Ruta: Sierpe -> Tarbaca
+
+De Sierpe a Cinco Esquinas
+Tiempo de viaje: 1 unidades
+Ruta: Sierpe -> Cinco Esquinas
+
+De Sierpe a Dulce Nombre Este
+Tiempo de viaje: 1 unidades
+Ruta: Sierpe -> Dulce Nombre Este
+
+De Sierpe a San Rafael Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Sierpe -> San Rafael Abajo
+
+De Sierpe a Aguacaliente
+Tiempo de viaje: 1 unidades
+Ruta: Sierpe -> Aguacaliente
+
+De Sierpe a Piedades Norte
+Tiempo de viaje: 1 unidades
+Ruta: Sierpe -> Piedades Norte
+
+De San Sebastián a Río Blanco
+Tiempo de viaje: 1 unidades
+Ruta: San Sebastián -> Río Blanco
+
+De San Sebastián a Cirrí Sur
+Tiempo de viaje: 1 unidades
+Ruta: San Sebastián -> Cirrí Sur
+
+De San Sebastián a Oriental
+Tiempo de viaje: 1 unidades
+Ruta: San Sebastián -> Oriental
+
+De San Sebastián a Candelarita
+Tiempo de viaje: 1 unidades
+Ruta: San Sebastián -> Candelarita
+
+De San Sebastián a Jesús
+Tiempo de viaje: 1 unidades
+Ruta: San Sebastián -> Jesús
+
+De San Sebastián a Santa Cruz Sur
+Tiempo de viaje: 1 unidades
+Ruta: San Sebastián -> Santa Cruz Sur
+
+De San Sebastián a San Rafael Abajo
+Tiempo de viaje: 1 unidades
+Ruta: San Sebastián -> San Rafael Abajo
+
+De San Sebastián a Sabanillal
+Tiempo de viaje: 1 unidades
+Ruta: San Sebastián -> Sabanillal
+
+De San Sebastián a Pocosol
+Tiempo de viaje: 1 unidades
+Ruta: San Sebastián -> Pocosol
+
+De Jesús a Patio de Agua
+Tiempo de viaje: 1 unidades
+Ruta: Jesús -> Patio de Agua
+
+De Jesús a San Isidro Labrador
+Tiempo de viaje: 1 unidades
+Ruta: Jesús -> San Isidro Labrador
+
+De Jesús a Aguas Claras
+Tiempo de viaje: 1 unidades
+Ruta: Jesús -> Aguas Claras
+
+De Jesús a Palmar
+Tiempo de viaje: 1 unidades
+Ruta: Jesús -> Palmar
+
+De Jesús a San José Este
+Tiempo de viaje: 1 unidades
+Ruta: Jesús -> San José Este
+
+De Jesús a San Rafael Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Jesús -> San Rafael Oeste
+
+De Jesús María a Tures
+Tiempo de viaje: 1 unidades
+Ruta: Jesús María -> Tures
+
+De Jesús María a Ulloa
+Tiempo de viaje: 1 unidades
+Ruta: Jesús María -> Ulloa
+
+De Jesús María a San Lorenzo
+Tiempo de viaje: 1 unidades
+Ruta: Jesús María -> San Lorenzo
+
+De Jesús María a Santiago Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Jesús María -> Santiago Oeste
+
+De Jesús María a Monte Verde
+Tiempo de viaje: 1 unidades
+Ruta: Jesús María -> Monte Verde
+
+De Jesús María a Rincón de Sabanilla
+Tiempo de viaje: 1 unidades
+Ruta: Jesús María -> Rincón de Sabanilla
+
+De Limoncito a Quebrada Honda
+Tiempo de viaje: 1 unidades
+Ruta: Limoncito -> Quebrada Honda
+
+De Limoncito a Bijagua
+Tiempo de viaje: 1 unidades
+Ruta: Limoncito -> Bijagua
+
+De Limoncito a Veintisiete de Abril
+Tiempo de viaje: 1 unidades
+Ruta: Limoncito -> Veintisiete de Abril
+
+De Limoncito a Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: Limoncito -> Buenavista
+
+De Limoncito a Juan Viñas
+Tiempo de viaje: 1 unidades
+Ruta: Limoncito -> Juan Viñas
+
+De Limoncito a Palmira
+Tiempo de viaje: 1 unidades
+Ruta: Limoncito -> Palmira
+
+De Limoncito a Barranca
+Tiempo de viaje: 1 unidades
+Ruta: Limoncito -> Barranca
+
+De Limoncito a San Roque
+Tiempo de viaje: 1 unidades
+Ruta: Limoncito -> San Roque
+
+De Limoncito a Guadalupe Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Limoncito -> Guadalupe Oeste
+
+De Tarbaca a Hacienda Vieja
+Tiempo de viaje: 1 unidades
+Ruta: Tarbaca -> Hacienda Vieja
+
+De Tarbaca a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Tarbaca -> San Pablo Arriba
+
+De Tarbaca a San Carlos
+Tiempo de viaje: 1 unidades
+Ruta: Tarbaca -> San Carlos
+
+De Tarbaca a Chires
+Tiempo de viaje: 1 unidades
+Ruta: Tarbaca -> Chires
+
+De Tarbaca a Rivas
+Tiempo de viaje: 1 unidades
+Ruta: Tarbaca -> Rivas
+
+De Tarbaca a Santiago Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Tarbaca -> Santiago Oeste
+
+De Salitral a Monte Romo
+Tiempo de viaje: 1 unidades
+Ruta: Salitral -> Monte Romo
+
+De Salitral a Rancho Redondo
+Tiempo de viaje: 1 unidades
+Ruta: Salitral -> Rancho Redondo
+
+De Salitral a Quebrada Honda
+Tiempo de viaje: 1 unidades
+Ruta: Salitral -> Quebrada Honda
+
+De Salitral a Patarrá
+Tiempo de viaje: 1 unidades
+Ruta: Salitral -> Patarrá
+
+De Salitral a Capellades
+Tiempo de viaje: 1 unidades
+Ruta: Salitral -> Capellades
+
+De Salitral a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: Salitral -> San Nicolás
+
+De Salitral a Pittier
+Tiempo de viaje: 1 unidades
+Ruta: Salitral -> Pittier
+
+De Salitral a Aguacaliente
+Tiempo de viaje: 1 unidades
+Ruta: Salitral -> Aguacaliente
+
+De Santa Cruz Sur a Chomes
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz Sur -> Chomes
+
+De Santa Cruz Sur a Las Horquetas
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz Sur -> Las Horquetas
+
+De Santa Cruz Sur a Santa Cruz
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz Sur -> Santa Cruz
+
+De Santa Cruz Sur a Picagres
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz Sur -> Picagres
+
+De Santa Cruz Sur a Santo Domingo
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz Sur -> Santo Domingo
+
+De Santa Cruz Sur a Zaragoza
+Tiempo de viaje: 1 unidades
+Ruta: Santa Cruz Sur -> Zaragoza
+
+De San Rafael Oeste a San Isidro Labrador
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Oeste -> San Isidro Labrador
+
+De San Rafael Oeste a Volcán
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Oeste -> Volcán
+
+De San Rafael Oeste a Río Cuarto
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Oeste -> Río Cuarto
+
+De San Rafael Oeste a Picagres
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Oeste -> Picagres
+
+De San Rafael Oeste a Savegre
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Oeste -> Savegre
+
+De Santa Elena a Guacimal
+Tiempo de viaje: 1 unidades
+Ruta: Santa Elena -> Guacimal
+
+De Santa Elena a San Jerónimo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Santa Elena -> San Jerónimo Arriba
+
+De Santa Elena a San Juan Norte
+Tiempo de viaje: 1 unidades
+Ruta: Santa Elena -> San Juan Norte
+
+De Santa Elena a Aguas Zarcas
+Tiempo de viaje: 1 unidades
+Ruta: Santa Elena -> Aguas Zarcas
+
+De Santo Tomás a Patarrá
+Tiempo de viaje: 1 unidades
+Ruta: Santo Tomás -> Patarrá
+
+De Santo Tomás a Veintisiete de Abril
+Tiempo de viaje: 1 unidades
+Ruta: Santo Tomás -> Veintisiete de Abril
+
+De Santo Tomás a San Rafael Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Santo Tomás -> San Rafael Viejo
+
+De Santo Tomás a San Marcos
+Tiempo de viaje: 1 unidades
+Ruta: Santo Tomás -> San Marcos
+
+De Santo Tomás a Desamparados Sur
+Tiempo de viaje: 1 unidades
+Ruta: Santo Tomás -> Desamparados Sur
+
+De Santo Tomás a Labrador
+Tiempo de viaje: 1 unidades
+Ruta: Santo Tomás -> Labrador
+
+De Santo Tomás a Aserrí
+Tiempo de viaje: 1 unidades
+Ruta: Santo Tomás -> Aserrí
+
+De Venado a San Rafael Piedades
+Tiempo de viaje: 1 unidades
+Ruta: Venado -> San Rafael Piedades
+
+De Venado a Patarrá
+Tiempo de viaje: 1 unidades
+Ruta: Venado -> Patarrá
+
+De Venado a Quepos
+Tiempo de viaje: 1 unidades
+Ruta: Venado -> Quepos
+
+De Venado a Pilas
+Tiempo de viaje: 1 unidades
+Ruta: Venado -> Pilas
+
+De Venado a Turrialba
+Tiempo de viaje: 1 unidades
+Ruta: Venado -> Turrialba
+
+De Rivas a Patarrá
+Tiempo de viaje: 1 unidades
+Ruta: Rivas -> Patarrá
+
+De Rivas a Pavón
+Tiempo de viaje: 1 unidades
+Ruta: Rivas -> Pavón
+
+De Rivas a San Vicente Norte
+Tiempo de viaje: 1 unidades
+Ruta: Rivas -> San Vicente Norte
+
+De Rivas a Río Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: Rivas -> Río Jiménez
+
+De Rivas a San Rafael Sur
+Tiempo de viaje: 1 unidades
+Ruta: Rivas -> San Rafael Sur
+
+De San Isidro Este a Turrúcares
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Este -> Turrúcares
+
+De San Isidro Este a Bolsón
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Este -> Bolsón
+
+De San Isidro Este a Los Ángeles
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Este -> Los Ángeles
+
+De San Isidro Este a Canalete
+Tiempo de viaje: 1 unidades
+Ruta: San Isidro Este -> Canalete
+
+De San Juan Grande a San Jerónimo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Grande -> San Jerónimo Arriba
+
+De San Juan Grande a La Unión
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Grande -> La Unión
+
+De San Juan Grande a Ulloa
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Grande -> Ulloa
+
+De San Juan Grande a Santo Tomás
+Tiempo de viaje: 1 unidades
+Ruta: San Juan Grande -> Santo Tomás
+
+De Concepción Este a Veintisiete de Abril
+Tiempo de viaje: 1 unidades
+Ruta: Concepción Este -> Veintisiete de Abril
+
+De Concepción Este a Aguas Claras
+Tiempo de viaje: 1 unidades
+Ruta: Concepción Este -> Aguas Claras
+
+De Concepción Este a San Francisco Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Concepción Este -> San Francisco Abajo
+
+De Concepción Este a Pará
+Tiempo de viaje: 1 unidades
+Ruta: Concepción Este -> Pará
+
+De Concepción Este a Tucurrique
+Tiempo de viaje: 1 unidades
+Ruta: Concepción Este -> Tucurrique
+
+De San Rafael Norte a Cabeceras
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Norte -> Cabeceras
+
+De San Rafael Norte a San Pedro Antiguo
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Norte -> San Pedro Antiguo
+
+De San Rafael Norte a Canalete
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Norte -> Canalete
+
+De Batán a Monte Romo
+Tiempo de viaje: 1 unidades
+Ruta: Batán -> Monte Romo
+
+De Batán a Germania
+Tiempo de viaje: 1 unidades
+Ruta: Batán -> Germania
+
+De Batán a Zapote
+Tiempo de viaje: 1 unidades
+Ruta: Batán -> Zapote
+
+De Batán a Santa Elena
+Tiempo de viaje: 1 unidades
+Ruta: Batán -> Santa Elena
+
+De Batán a Monte Verde
+Tiempo de viaje: 1 unidades
+Ruta: Batán -> Monte Verde
+
+De San Francisco Arriba a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Arriba -> San Pablo Arriba
+
+De San Francisco Arriba a Naranjo
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Arriba -> Naranjo
+
+De Cinco Esquinas a Patalillo
+Tiempo de viaje: 1 unidades
+Ruta: Cinco Esquinas -> Patalillo
+
+De Cinco Esquinas a Juan Viñas
+Tiempo de viaje: 1 unidades
+Ruta: Cinco Esquinas -> Juan Viñas
+
+De Cinco Esquinas a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Cinco Esquinas -> San Pablo Arriba
+
+De Cinco Esquinas a Río Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: Cinco Esquinas -> Río Jiménez
+
+De Cinco Esquinas a Aguabuena
+Tiempo de viaje: 1 unidades
+Ruta: Cinco Esquinas -> Aguabuena
+
+De Cinco Esquinas a Corralillo
+Tiempo de viaje: 1 unidades
+Ruta: Cinco Esquinas -> Corralillo
+
+De Aguas Zarcas a Chomes
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Zarcas -> Chomes
+
+De Aguas Zarcas a Jesús Piedad
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Zarcas -> Jesús Piedad
+
+De Aguas Zarcas a Matambú
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Zarcas -> Matambú
+
+De Aguas Zarcas a Llanuras del Gaspar
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Zarcas -> Llanuras del Gaspar
+
+De Aguas Zarcas a Volcán
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Zarcas -> Volcán
+
+De Aguas Zarcas a San Pablo Este
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Zarcas -> San Pablo Este
+
+De Aguas Zarcas a El Roble
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Zarcas -> El Roble
+
+De Aguas Zarcas a San Francisco de Dos Ríos
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Zarcas -> San Francisco de Dos Ríos
+
+De Aguas Zarcas a La Cuesta
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Zarcas -> La Cuesta
+
+De Aguas Zarcas a San Rafael Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Aguas Zarcas -> San Rafael Arriba
+
+De Puerto Jiménez a Nosara
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Jiménez -> Nosara
+
+De Puerto Jiménez a Chirripó
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Jiménez -> Chirripó
+
+De Puerto Jiménez a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Jiménez -> San Pablo Arriba
+
+De Puerto Jiménez a San Felipe
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Jiménez -> San Felipe
+
+De Puerto Jiménez a Zapote Norte
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Jiménez -> Zapote Norte
+
+De Puerto Jiménez a Puerto Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Jiménez -> Puerto Viejo
+
+De Aguabuena a Sarapiquí
+Tiempo de viaje: 1 unidades
+Ruta: Aguabuena -> Sarapiquí
+
+De Aguabuena a Santiago Poás
+Tiempo de viaje: 1 unidades
+Ruta: Aguabuena -> Santiago Poás
+
+De Aguabuena a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Aguabuena -> Santa Rosa Viejo
+
+De Aguabuena a Matambú
+Tiempo de viaje: 1 unidades
+Ruta: Aguabuena -> Matambú
+
+De Aguabuena a La Suiza
+Tiempo de viaje: 1 unidades
+Ruta: Aguabuena -> La Suiza
+
+De Aguabuena a Cutris
+Tiempo de viaje: 1 unidades
+Ruta: Aguabuena -> Cutris
+
+De Aguabuena a San Pedro Antiguo
+Tiempo de viaje: 1 unidades
+Ruta: Aguabuena -> San Pedro Antiguo
+
+De Aguabuena a San Rafael Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Aguabuena -> San Rafael Arriba
+
+De Laurel a San Rafael Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> San Rafael Viejo
+
+De Laurel a Matambú
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> Matambú
+
+De Laurel a Las Horquetas
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> Las Horquetas
+
+De Laurel a Guácimo
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> Guácimo
+
+De Laurel a San Rafael Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> San Rafael Nuevo
+
+De Laurel a Quesada
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> Quesada
+
+De Laurel a Legua
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> Legua
+
+De Laurel a Zapote
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> Zapote
+
+De Laurel a Santa Cruz Sur
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> Santa Cruz Sur
+
+De Laurel a Venado
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> Venado
+
+De Laurel a Batán
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> Batán
+
+De Laurel a Puerto Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> Puerto Jiménez
+
+De Laurel a Brisas
+Tiempo de viaje: 1 unidades
+Ruta: Laurel -> Brisas
+
+De Florencia a Dos Ríos
+Tiempo de viaje: 1 unidades
+Ruta: Florencia -> Dos Ríos
+
+De Florencia a San Pedro Sur
+Tiempo de viaje: 1 unidades
+Ruta: Florencia -> San Pedro Sur
+
+De Florencia a Roxana
+Tiempo de viaje: 1 unidades
+Ruta: Florencia -> Roxana
+
+De Florencia a Concepción Este
+Tiempo de viaje: 1 unidades
+Ruta: Florencia -> Concepción Este
+
+De Florencia a Monte Verde
+Tiempo de viaje: 1 unidades
+Ruta: Florencia -> Monte Verde
+
+De Dulce Nombre Este a Sarapiquí
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Este -> Sarapiquí
+
+De Dulce Nombre Este a Peñas Blancas
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Este -> Peñas Blancas
+
+De Dulce Nombre Este a Cuajiniquil
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Este -> Cuajiniquil
+
+De Dulce Nombre Este a Puerto Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Este -> Puerto Viejo
+
+De Dulce Nombre Este a San Francisco Norte
+Tiempo de viaje: 1 unidades
+Ruta: Dulce Nombre Este -> San Francisco Norte
+
+De Brisas a Cartagena
+Tiempo de viaje: 1 unidades
+Ruta: Brisas -> Cartagena
+
+De Brisas a San Francisco Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Brisas -> San Francisco Abajo
+
+De Brisas a Tures
+Tiempo de viaje: 1 unidades
+Ruta: Brisas -> Tures
+
+De Brisas a Ulloa
+Tiempo de viaje: 1 unidades
+Ruta: Brisas -> Ulloa
+
+De Brisas a Liberia
+Tiempo de viaje: 1 unidades
+Ruta: Brisas -> Liberia
+
+De Brisas a Santo Tomás
+Tiempo de viaje: 1 unidades
+Ruta: Brisas -> Santo Tomás
+
+De Siquirres a Santa Rosa Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Siquirres -> Santa Rosa Abajo
+
+De Siquirres a Bebedero
+Tiempo de viaje: 1 unidades
+Ruta: Siquirres -> Bebedero
+
+De Siquirres a Cutris
+Tiempo de viaje: 1 unidades
+Ruta: Siquirres -> Cutris
+
+De Siquirres a Aserrí
+Tiempo de viaje: 1 unidades
+Ruta: Siquirres -> Aserrí
+
+De Siquirres a Laurel
+Tiempo de viaje: 1 unidades
+Ruta: Siquirres -> Laurel
+
+De Tuis a Bahía Ballena
+Tiempo de viaje: 1 unidades
+Ruta: Tuis -> Bahía Ballena
+
+De Tuis a Guacimal
+Tiempo de viaje: 1 unidades
+Ruta: Tuis -> Guacimal
+
+De Tuis a Zapote
+Tiempo de viaje: 1 unidades
+Ruta: Tuis -> Zapote
+
+De Tuis a San José Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Tuis -> San José Abajo
+
+De Rita a Santiago Poás
+Tiempo de viaje: 1 unidades
+Ruta: Rita -> Santiago Poás
+
+De Rita a San Jerónimo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Rita -> San Jerónimo Arriba
+
+De Rita a Pilas
+Tiempo de viaje: 1 unidades
+Ruta: Rita -> Pilas
+
+De Rita a Corralillo
+Tiempo de viaje: 1 unidades
+Ruta: Rita -> Corralillo
+
+De Rita a Concepción Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Rita -> Concepción Arriba
+
+De San Rafael Abajo a Florida
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Abajo -> Florida
+
+De San Rafael Abajo a Palmitos
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Abajo -> Palmitos
+
+De San Rafael Abajo a Bolívar
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Abajo -> Bolívar
+
+De San Rafael Abajo a El Roble
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Abajo -> El Roble
+
+De San Rafael Abajo a Limoncito
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Abajo -> Limoncito
+
+De San Rafael Abajo a Salitral
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Abajo -> Salitral
+
+De San Rafael Abajo a Brisas
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Abajo -> Brisas
+
+De San Rafael Abajo a Tuis
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Abajo -> Tuis
+
+De San Rafael Abajo a Aguacaliente
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Abajo -> Aguacaliente
+
+De La Cuesta a San Rafael Piedades
+Tiempo de viaje: 1 unidades
+Ruta: La Cuesta -> San Rafael Piedades
+
+De La Cuesta a Zapotal
+Tiempo de viaje: 1 unidades
+Ruta: La Cuesta -> Zapotal
+
+De La Cuesta a Reventazón
+Tiempo de viaje: 1 unidades
+Ruta: La Cuesta -> Reventazón
+
+De La Cuesta a Heredia
+Tiempo de viaje: 1 unidades
+Ruta: La Cuesta -> Heredia
+
+De La Cuesta a Buenos Aires
+Tiempo de viaje: 1 unidades
+Ruta: La Cuesta -> Buenos Aires
+
+De La Cuesta a Concepción Este
+Tiempo de viaje: 1 unidades
+Ruta: La Cuesta -> Concepción Este
+
+De Corralillo a Patarrá
+Tiempo de viaje: 1 unidades
+Ruta: Corralillo -> Patarrá
+
+De Corralillo a Catedral
+Tiempo de viaje: 1 unidades
+Ruta: Corralillo -> Catedral
+
+De Corralillo a Daniel Flores
+Tiempo de viaje: 1 unidades
+Ruta: Corralillo -> Daniel Flores
+
+De Corralillo a Reventazón
+Tiempo de viaje: 1 unidades
+Ruta: Corralillo -> Reventazón
+
+De Corralillo a San Francisco Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Corralillo -> San Francisco Abajo
+
+De Corralillo a Juan Viñas
+Tiempo de viaje: 1 unidades
+Ruta: Corralillo -> Juan Viñas
+
+De Corralillo a Los Ángeles
+Tiempo de viaje: 1 unidades
+Ruta: Corralillo -> Los Ángeles
+
+De Corralillo a Picagres
+Tiempo de viaje: 1 unidades
+Ruta: Corralillo -> Picagres
+
+De Corralillo a Tucurrique
+Tiempo de viaje: 1 unidades
+Ruta: Corralillo -> Tucurrique
+
+De Corralillo a Piedades Norte
+Tiempo de viaje: 1 unidades
+Ruta: Corralillo -> Piedades Norte
+
+De Concepción Arriba a San Isidro Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Concepción Arriba -> San Isidro Abajo
+
+De Concepción Arriba a Oriental
+Tiempo de viaje: 1 unidades
+Ruta: Concepción Arriba -> Oriental
+
+De Concepción Arriba a San Vicente
+Tiempo de viaje: 1 unidades
+Ruta: Concepción Arriba -> San Vicente
+
+De Guadalupe Oeste a Patio de Agua
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Oeste -> Patio de Agua
+
+De Guadalupe Oeste a Pavas
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Oeste -> Pavas
+
+De Guadalupe Oeste a Garita
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Oeste -> Garita
+
+De Guadalupe Oeste a Canalete
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Oeste -> Canalete
+
+De Guadalupe Oeste a Monterrey Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Oeste -> Monterrey Abajo
+
+De Guadalupe Oeste a Tarbaca
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Oeste -> Tarbaca
+
+De Guadalupe Oeste a La Cuesta
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Oeste -> La Cuesta
+
+De Guadalupe Oeste a Pocosol
+Tiempo de viaje: 1 unidades
+Ruta: Guadalupe Oeste -> Pocosol
+
+De Sabanillal a Santa Rosa Viejo
+Tiempo de viaje: 1 unidades
+Ruta: Sabanillal -> Santa Rosa Viejo
+
+De Sabanillal a San Isidro de El General
+Tiempo de viaje: 1 unidades
+Ruta: Sabanillal -> San Isidro de El General
+
+De Sabanillal a Pitahaya
+Tiempo de viaje: 1 unidades
+Ruta: Sabanillal -> Pitahaya
+
+De Sabanillal a Pilas
+Tiempo de viaje: 1 unidades
+Ruta: Sabanillal -> Pilas
+
+De Sabanillal a San José Este
+Tiempo de viaje: 1 unidades
+Ruta: Sabanillal -> San José Este
+
+De Sabanillal a Guadalupe Este
+Tiempo de viaje: 1 unidades
+Ruta: Sabanillal -> Guadalupe Este
+
+De Sabanillal a San Juan Grande
+Tiempo de viaje: 1 unidades
+Ruta: Sabanillal -> San Juan Grande
+
+De Diriá a Turrúcares
+Tiempo de viaje: 1 unidades
+Ruta: Diriá -> Turrúcares
+
+De Diriá a Los Chiles
+Tiempo de viaje: 1 unidades
+Ruta: Diriá -> Los Chiles
+
+De Diriá a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Diriá -> San Pablo Arriba
+
+De Diriá a Barranca
+Tiempo de viaje: 1 unidades
+Ruta: Diriá -> Barranca
+
+De Diriá a Delicias
+Tiempo de viaje: 1 unidades
+Ruta: Diriá -> Delicias
+
+De Diriá a Cinco Esquinas
+Tiempo de viaje: 1 unidades
+Ruta: Diriá -> Cinco Esquinas
+
+De Diriá a Laurel
+Tiempo de viaje: 1 unidades
+Ruta: Diriá -> Laurel
+
+De Santiago Oeste a Bahía Ballena
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Oeste -> Bahía Ballena
+
+De Santiago Oeste a Santiago Puriscal
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Oeste -> Santiago Puriscal
+
+De Santiago Oeste a San Pablo Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Oeste -> San Pablo Arriba
+
+De Santiago Oeste a Paquera
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Oeste -> Paquera
+
+De Santiago Oeste a Mayorga
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Oeste -> Mayorga
+
+De Santiago Oeste a Paracito
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Oeste -> Paracito
+
+De Santiago Oeste a Río Jiménez
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Oeste -> Río Jiménez
+
+De Santiago Oeste a Santa Elena
+Tiempo de viaje: 1 unidades
+Ruta: Santiago Oeste -> Santa Elena
+
+De Puerto Viejo a Patarrá
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Viejo -> Patarrá
+
+De Puerto Viejo a Cutris
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Viejo -> Cutris
+
+De Puerto Viejo a Carrillos
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Viejo -> Carrillos
+
+De Puerto Viejo a Yolillal
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Viejo -> Yolillal
+
+De Puerto Viejo a Labrador
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Viejo -> Labrador
+
+De Puerto Viejo a Turrialba
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Viejo -> Turrialba
+
+De Puerto Viejo a Santo Tomás
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Viejo -> Santo Tomás
+
+De Puerto Viejo a Concepción Arriba
+Tiempo de viaje: 1 unidades
+Ruta: Puerto Viejo -> Concepción Arriba
+
+De Aguacaliente a Tirrases
+Tiempo de viaje: 1 unidades
+Ruta: Aguacaliente -> Tirrases
+
+De Aguacaliente a Santo Domingo
+Tiempo de viaje: 1 unidades
+Ruta: Aguacaliente -> Santo Domingo
+
+De Aguacaliente a Porvenir
+Tiempo de viaje: 1 unidades
+Ruta: Aguacaliente -> Porvenir
+
+De Aguacaliente a Santo Tomás
+Tiempo de viaje: 1 unidades
+Ruta: Aguacaliente -> Santo Tomás
+
+De Aguacaliente a Tacares
+Tiempo de viaje: 1 unidades
+Ruta: Aguacaliente -> Tacares
+
+De San Rafael Sur a Monte Romo
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Sur -> Monte Romo
+
+De San Rafael Sur a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Sur -> San Nicolás
+
+De Piedades Norte a San Francisco Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Piedades Norte -> San Francisco Abajo
+
+De Piedades Norte a San Pedro Sur
+Tiempo de viaje: 1 unidades
+Ruta: Piedades Norte -> San Pedro Sur
+
+De Piedades Norte a La Trinidad
+Tiempo de viaje: 1 unidades
+Ruta: Piedades Norte -> La Trinidad
+
+De Piedades Norte a La Asunción
+Tiempo de viaje: 1 unidades
+Ruta: Piedades Norte -> La Asunción
+
+De Piedades Norte a San Juan Norte
+Tiempo de viaje: 1 unidades
+Ruta: Piedades Norte -> San Juan Norte
+
+De Piedades Norte a Aserrí
+Tiempo de viaje: 1 unidades
+Ruta: Piedades Norte -> Aserrí
+
+De Piedades Norte a Santa Bárbara
+Tiempo de viaje: 1 unidades
+Ruta: Piedades Norte -> Santa Bárbara
+
+De Piedades Norte a San Isidro Este
+Tiempo de viaje: 1 unidades
+Ruta: Piedades Norte -> San Isidro Este
+
+De San Vicente a Puerto Carrillo
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente -> Puerto Carrillo
+
+De San Vicente a Cutris
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente -> Cutris
+
+De San Vicente a Reventazón
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente -> Reventazón
+
+De San Vicente a Santo Tomás
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente -> Santo Tomás
+
+De San Vicente a Rivas
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente -> Rivas
+
+De San Vicente a Diriá
+Tiempo de viaje: 1 unidades
+Ruta: San Vicente -> Diriá
+
+De Zaragoza a San Pedro Sur
+Tiempo de viaje: 1 unidades
+Ruta: Zaragoza -> San Pedro Sur
+
+De Zaragoza a Monterrey Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Zaragoza -> Monterrey Abajo
+
+De Pocosol a Pavas
+Tiempo de viaje: 1 unidades
+Ruta: Pocosol -> Pavas
+
+De Pocosol a Cartagena
+Tiempo de viaje: 1 unidades
+Ruta: Pocosol -> Cartagena
+
+De Pocosol a Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: Pocosol -> Buenavista
+
+De Pocosol a Tempate
+Tiempo de viaje: 1 unidades
+Ruta: Pocosol -> Tempate
+
+De Pocosol a San Isidro Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Pocosol -> San Isidro Abajo
+
+De Pocosol a Cuajiniquil
+Tiempo de viaje: 1 unidades
+Ruta: Pocosol -> Cuajiniquil
+
+De Pocosol a San Vicente
+Tiempo de viaje: 1 unidades
+Ruta: Pocosol -> San Vicente
+
+De Sarchí Norte a Veintisiete de Abril
+Tiempo de viaje: 1 unidades
+Ruta: Sarchí Norte -> Veintisiete de Abril
+
+De Sarchí Norte a Bebedero
+Tiempo de viaje: 1 unidades
+Ruta: Sarchí Norte -> Bebedero
+
+De Sarchí Norte a Candelarita
+Tiempo de viaje: 1 unidades
+Ruta: Sarchí Norte -> Candelarita
+
+De Sarchí Norte a Diriá
+Tiempo de viaje: 1 unidades
+Ruta: Sarchí Norte -> Diriá
+
+De Sarchí Norte a San Rafael Sur
+Tiempo de viaje: 1 unidades
+Ruta: Sarchí Norte -> San Rafael Sur
+
+De San Rafael Arriba a San Miguel Viejo
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Arriba -> San Miguel Viejo
+
+De San Rafael Arriba a Dos Ríos
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Arriba -> Dos Ríos
+
+De San Rafael Arriba a Limón
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Arriba -> Limón
+
+De San Rafael Arriba a Santiago
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Arriba -> Santiago
+
+De San Rafael Arriba a La Suiza
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Arriba -> La Suiza
+
+De San Rafael Arriba a Tres Equis
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Arriba -> Tres Equis
+
+De San Rafael Arriba a San Vicente Norte
+Tiempo de viaje: 1 unidades
+Ruta: San Rafael Arriba -> San Vicente Norte
+
+De Monte Verde a Bahía Ballena
+Tiempo de viaje: 1 unidades
+Ruta: Monte Verde -> Bahía Ballena
+
+De Monte Verde a Santa Rosa Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Monte Verde -> Santa Rosa Abajo
+
+De Monte Verde a Matambú
+Tiempo de viaje: 1 unidades
+Ruta: Monte Verde -> Matambú
+
+De Monte Verde a Cabo Velas
+Tiempo de viaje: 1 unidades
+Ruta: Monte Verde -> Cabo Velas
+
+De Monte Verde a Laguna
+Tiempo de viaje: 1 unidades
+Ruta: Monte Verde -> Laguna
+
+De Monte Verde a Tirrases
+Tiempo de viaje: 1 unidades
+Ruta: Monte Verde -> Tirrases
+
+De Monte Verde a San Pablo Este
+Tiempo de viaje: 1 unidades
+Ruta: Monte Verde -> San Pablo Este
+
+De Monte Verde a Liberia
+Tiempo de viaje: 1 unidades
+Ruta: Monte Verde -> Liberia
+
+De Monte Verde a San Nicolás
+Tiempo de viaje: 1 unidades
+Ruta: Monte Verde -> San Nicolás
+
+De Monte Verde a San Rafael Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Monte Verde -> San Rafael Oeste
+
+De Monte Verde a El Mastate
+Tiempo de viaje: 1 unidades
+Ruta: Monte Verde -> El Mastate
+
+De Monte Verde a Tacares
+Tiempo de viaje: 1 unidades
+Ruta: Monte Verde -> Tacares
+
+De La Colonia a Nosara
+Tiempo de viaje: 1 unidades
+Ruta: La Colonia -> Nosara
+
+De La Colonia a Llanuras del Gaspar
+Tiempo de viaje: 1 unidades
+Ruta: La Colonia -> Llanuras del Gaspar
+
+De La Colonia a Santiago Nuevo
+Tiempo de viaje: 1 unidades
+Ruta: La Colonia -> Santiago Nuevo
+
+De La Colonia a Río Azul
+Tiempo de viaje: 1 unidades
+Ruta: La Colonia -> Río Azul
+
+De La Colonia a Telire
+Tiempo de viaje: 1 unidades
+Ruta: La Colonia -> Telire
+
+De San Francisco Norte a Patio de Agua
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Norte -> Patio de Agua
+
+De San Francisco Norte a La Unión
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Norte -> La Unión
+
+De San Francisco Norte a Dulce Nombre Oeste
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Norte -> Dulce Nombre Oeste
+
+De San Francisco Norte a Varablanca
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Norte -> Varablanca
+
+De San Francisco Norte a Birrisito
+Tiempo de viaje: 1 unidades
+Ruta: San Francisco Norte -> Birrisito
+
+De El Mastate a Patalillo
+Tiempo de viaje: 1 unidades
+Ruta: El Mastate -> Patalillo
+
+De El Mastate a La Trinidad
+Tiempo de viaje: 1 unidades
+Ruta: El Mastate -> La Trinidad
+
+De El Mastate a San Pedro Antiguo
+Tiempo de viaje: 1 unidades
+Ruta: El Mastate -> San Pedro Antiguo
+
+De El Mastate a Savegre
+Tiempo de viaje: 1 unidades
+Ruta: El Mastate -> Savegre
+
+De El Mastate a Santa Isabel
+Tiempo de viaje: 1 unidades
+Ruta: El Mastate -> Santa Isabel
+
+De El Mastate a Aserrí
+Tiempo de viaje: 1 unidades
+Ruta: El Mastate -> Aserrí
+
+De El Mastate a San Lorenzo
+Tiempo de viaje: 1 unidades
+Ruta: El Mastate -> San Lorenzo
+
+De El Mastate a Santa Elena
+Tiempo de viaje: 1 unidades
+Ruta: El Mastate -> Santa Elena
+
+De Rincón de Sabanilla a Dos Ríos
+Tiempo de viaje: 1 unidades
+Ruta: Rincón de Sabanilla -> Dos Ríos
+
+De Rincón de Sabanilla a San Isidro de El General
+Tiempo de viaje: 1 unidades
+Ruta: Rincón de Sabanilla -> San Isidro de El General
+
+De Rincón de Sabanilla a San Francisco Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Rincón de Sabanilla -> San Francisco Abajo
+
+De Rincón de Sabanilla a Los Chiles
+Tiempo de viaje: 1 unidades
+Ruta: Rincón de Sabanilla -> Los Chiles
+
+De Rincón de Sabanilla a La Trinidad
+Tiempo de viaje: 1 unidades
+Ruta: Rincón de Sabanilla -> La Trinidad
+
+De Rincón de Sabanilla a Picagres
+Tiempo de viaje: 1 unidades
+Ruta: Rincón de Sabanilla -> Picagres
+
+De Rincón de Sabanilla a Pavón
+Tiempo de viaje: 1 unidades
+Ruta: Rincón de Sabanilla -> Pavón
+
+De Rincón de Sabanilla a San Vicente Norte
+Tiempo de viaje: 1 unidades
+Ruta: Rincón de Sabanilla -> San Vicente Norte
+
+De Rincón de Sabanilla a Salitral
+Tiempo de viaje: 1 unidades
+Ruta: Rincón de Sabanilla -> Salitral
+
+De Monterrey Arriba a Hacienda Vieja
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Arriba -> Hacienda Vieja
+
+De Monterrey Arriba a Guacimal
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Arriba -> Guacimal
+
+De Monterrey Arriba a Río Azul
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Arriba -> Río Azul
+
+De Monterrey Arriba a Cutris
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Arriba -> Cutris
+
+De Monterrey Arriba a San Gabriel
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Arriba -> San Gabriel
+
+De Monterrey Arriba a San Vicente Norte
+Tiempo de viaje: 1 unidades
+Ruta: Monterrey Arriba -> San Vicente Norte
+
+De San José Abajo a Granadilla
+Tiempo de viaje: 1 unidades
+Ruta: San José Abajo -> Granadilla
+
+De San José Abajo a Daniel Flores
+Tiempo de viaje: 1 unidades
+Ruta: San José Abajo -> Daniel Flores
+
+De San José Abajo a Llanuras del Gaspar
+Tiempo de viaje: 1 unidades
+Ruta: San José Abajo -> Llanuras del Gaspar
+
+De San José Abajo a Buenavista
+Tiempo de viaje: 1 unidades
+Ruta: San José Abajo -> Buenavista
+
+De San José Abajo a Pilas
+Tiempo de viaje: 1 unidades
+Ruta: San José Abajo -> Pilas
+
+De Tacares a Chomes
+Tiempo de viaje: 1 unidades
+Ruta: Tacares -> Chomes
+
+De Tacares a Liberia
+Tiempo de viaje: 1 unidades
+Ruta: Tacares -> Liberia
+
+De Tacares a San Rafael Abajo
+Tiempo de viaje: 1 unidades
+Ruta: Tacares -> San Rafael Abajo
+
+De Tacares a Santiago Oeste
+Tiempo de viaje: 1 unidades
+Ruta: Tacares -> Santiago Oeste
+
+Seleccione una opción:
+[1] Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo.
+[2] Ciudad más efectiva para despachar mayor capacidad de equipo.
+[3] Par de ciudades más distantes.
+[4] Par de ciudades menos distantes.
+[5] Ciudades ordenadas por tiempo de viaje promedio.
+[X] Regresar.
+Ciudades ordenadas por tiempo de viaje promedio (orden creciente):
+
+1. Paquera
+   Tiempo promedio de viaje: 2.51 unidades
+
+2. Río Azul
+   Tiempo promedio de viaje: 2.63 unidades
+
+3. San Isidro Labrador
+   Tiempo promedio de viaje: 2.64 unidades
+
+4. Monte Verde
+   Tiempo promedio de viaje: 2.68 unidades
+
+5. Santa Rosa Abajo
+   Tiempo promedio de viaje: 2.69 unidades
+
+6. Cabeceras
+   Tiempo promedio de viaje: 2.69 unidades
+
+7. Duacarí
+   Tiempo promedio de viaje: 2.70 unidades
+
+8. Aguas Zarcas
+   Tiempo promedio de viaje: 2.70 unidades
+
+9. Guadalupe Este
+   Tiempo promedio de viaje: 2.70 unidades
+
+10. San Sebastián
+   Tiempo promedio de viaje: 2.70 unidades
+
+11. Llanuras del Gaspar
+   Tiempo promedio de viaje: 2.71 unidades
+
+12. La Trinidad
+   Tiempo promedio de viaje: 2.72 unidades
+
+13. San Francisco de Dos Ríos
+   Tiempo promedio de viaje: 2.72 unidades
+
+14. Sierpe
+   Tiempo promedio de viaje: 2.72 unidades
+
+15. Turrúcares
+   Tiempo promedio de viaje: 2.72 unidades
+
+16. Laurel
+   Tiempo promedio de viaje: 2.73 unidades
+
+17. Santa Cruz
+   Tiempo promedio de viaje: 2.74 unidades
+
+18. Buenavista
+   Tiempo promedio de viaje: 2.74 unidades
+
+19. San Nicolás
+   Tiempo promedio de viaje: 2.74 unidades
+
+20. Oriental
+   Tiempo promedio de viaje: 2.75 unidades
+
+21. San Jerónimo Arriba
+   Tiempo promedio de viaje: 2.76 unidades
+
+22. Colorado
+   Tiempo promedio de viaje: 2.76 unidades
+
+23. Sarapiquí
+   Tiempo promedio de viaje: 2.76 unidades
+
+24. Guacimal
+   Tiempo promedio de viaje: 2.76 unidades
+
+25. Nosara
+   Tiempo promedio de viaje: 2.77 unidades
+
+26. Santa Rosa Viejo
+   Tiempo promedio de viaje: 2.78 unidades
+
+27. San Carlos
+   Tiempo promedio de viaje: 2.79 unidades
+
+28. Chira
+   Tiempo promedio de viaje: 2.79 unidades
+
+29. San Lorenzo
+   Tiempo promedio de viaje: 2.79 unidades
+
+30. Pittier
+   Tiempo promedio de viaje: 2.79 unidades
+
+31. San Rafael Parrita
+   Tiempo promedio de viaje: 2.79 unidades
+
+32. Cutris
+   Tiempo promedio de viaje: 2.79 unidades
+
+33. Santa Rosa Nuevo
+   Tiempo promedio de viaje: 2.79 unidades
+
+34. Rincón de Sabanilla
+   Tiempo promedio de viaje: 2.80 unidades
+
+35. Yolillal
+   Tiempo promedio de viaje: 2.80 unidades
+
+36. Volcán
+   Tiempo promedio de viaje: 2.81 unidades
+
+37. Matama
+   Tiempo promedio de viaje: 2.81 unidades
+
+38. San Francisco Abajo
+   Tiempo promedio de viaje: 2.81 unidades
+
+39. Pilas
+   Tiempo promedio de viaje: 2.81 unidades
+
+40. Limoncito
+   Tiempo promedio de viaje: 2.81 unidades
+
+41. San Miguel Viejo
+   Tiempo promedio de viaje: 2.82 unidades
+
+42. San Juan Arriba
+   Tiempo promedio de viaje: 2.82 unidades
+
+43. Hojancha
+   Tiempo promedio de viaje: 2.83 unidades
+
+44. Tabarcia
+   Tiempo promedio de viaje: 2.83 unidades
+
+45. Río Blanco
+   Tiempo promedio de viaje: 2.84 unidades
+
+46. San Marcos
+   Tiempo promedio de viaje: 2.84 unidades
+
+47. Santiago Poás
+   Tiempo promedio de viaje: 2.84 unidades
+
+48. Dulce Nombre Oeste
+   Tiempo promedio de viaje: 2.84 unidades
+
+49. Aguabuena
+   Tiempo promedio de viaje: 2.84 unidades
+
+50. Florida
+   Tiempo promedio de viaje: 2.85 unidades
+
+51. Santiago Nuevo
+   Tiempo promedio de viaje: 2.85 unidades
+
+52. Corralillo
+   Tiempo promedio de viaje: 2.85 unidades
+
+53. El Mastate
+   Tiempo promedio de viaje: 2.85 unidades
+
+54. Caldera
+   Tiempo promedio de viaje: 2.86 unidades
+
+55. Pacuarito
+   Tiempo promedio de viaje: 2.86 unidades
+
+56. San Rafael Abajo
+   Tiempo promedio de viaje: 2.86 unidades
+
+57. Paracito
+   Tiempo promedio de viaje: 2.86 unidades
+
+58. Sabanillal
+   Tiempo promedio de viaje: 2.87 unidades
+
+59. Diriá
+   Tiempo promedio de viaje: 2.87 unidades
+
+60. La Victoria
+   Tiempo promedio de viaje: 2.87 unidades
+
+61. Monterrey Arriba
+   Tiempo promedio de viaje: 2.87 unidades
+
+62. Candelaria
+   Tiempo promedio de viaje: 2.88 unidades
+
+63. Monterrey Abajo
+   Tiempo promedio de viaje: 2.88 unidades
+
+64. Santa Isabel
+   Tiempo promedio de viaje: 2.88 unidades
+
+65. Santiago Oeste
+   Tiempo promedio de viaje: 2.88 unidades
+
+66. Guácimo
+   Tiempo promedio de viaje: 2.88 unidades
+
+67. Dos Ríos
+   Tiempo promedio de viaje: 2.88 unidades
+
+68. Salitral
+   Tiempo promedio de viaje: 2.89 unidades
+
+69. Palmiralito
+   Tiempo promedio de viaje: 2.89 unidades
+
+70. Mercedes Abajo
+   Tiempo promedio de viaje: 2.89 unidades
+
+71. Pocora
+   Tiempo promedio de viaje: 2.90 unidades
+
+72. San Vicente Norte
+   Tiempo promedio de viaje: 2.90 unidades
+
+73. Cirrí Sur
+   Tiempo promedio de viaje: 2.90 unidades
+
+74. Uruca
+   Tiempo promedio de viaje: 2.90 unidades
+
+75. Río Jiménez
+   Tiempo promedio de viaje: 2.90 unidades
+
+76. San José Norte
+   Tiempo promedio de viaje: 2.91 unidades
+
+77. Zapotal
+   Tiempo promedio de viaje: 2.91 unidades
+
+78. El Ángel
+   Tiempo promedio de viaje: 2.91 unidades
+
+79. San Pedro Antiguo
+   Tiempo promedio de viaje: 2.91 unidades
+
+80. Quepos
+   Tiempo promedio de viaje: 2.91 unidades
+
+81. Barbacoas
+   Tiempo promedio de viaje: 2.91 unidades
+
+82. Buenos Aires
+   Tiempo promedio de viaje: 2.91 unidades
+
+83. Puerto Viejo
+   Tiempo promedio de viaje: 2.91 unidades
+
+84. Limón
+   Tiempo promedio de viaje: 2.91 unidades
+
+85. Biolley
+   Tiempo promedio de viaje: 2.91 unidades
+
+86. Tirrases
+   Tiempo promedio de viaje: 2.91 unidades
+
+87. Birrisito
+   Tiempo promedio de viaje: 2.91 unidades
+
+88. Cañas Dulces
+   Tiempo promedio de viaje: 2.92 unidades
+
+89. Monte Romo
+   Tiempo promedio de viaje: 2.92 unidades
+
+90. Bijagua
+   Tiempo promedio de viaje: 2.92 unidades
+
+91. San Pablo Arriba
+   Tiempo promedio de viaje: 2.92 unidades
+
+92. Palmira
+   Tiempo promedio de viaje: 2.92 unidades
+
+93. Jesús María
+   Tiempo promedio de viaje: 2.93 unidades
+
+94. La Colonia
+   Tiempo promedio de viaje: 2.93 unidades
+
+95. Capellades
+   Tiempo promedio de viaje: 2.93 unidades
+
+96. Esquipulas
+   Tiempo promedio de viaje: 2.93 unidades
+
+97. Hacienda Vieja
+   Tiempo promedio de viaje: 2.94 unidades
+
+98. San Isidro de El General
+   Tiempo promedio de viaje: 2.94 unidades
+
+99. Carrillos
+   Tiempo promedio de viaje: 2.94 unidades
+
+100. Ulloa
+   Tiempo promedio de viaje: 2.95 unidades
+
+101. Piedades Norte
+   Tiempo promedio de viaje: 2.95 unidades
+
+102. Pocosol
+   Tiempo promedio de viaje: 2.95 unidades
+
+103. Chirripó
+   Tiempo promedio de viaje: 2.95 unidades
+
+104. Los Chiles
+   Tiempo promedio de viaje: 2.95 unidades
+
+105. San Rafael Arriba
+   Tiempo promedio de viaje: 2.95 unidades
+
+106. Palmar
+   Tiempo promedio de viaje: 2.96 unidades
+
+107. Chires
+   Tiempo promedio de viaje: 2.96 unidades
+
+108. Patalillo
+   Tiempo promedio de viaje: 2.96 unidades
+
+109. Santiago
+   Tiempo promedio de viaje: 2.96 unidades
+
+110. Mata Redonda
+   Tiempo promedio de viaje: 2.96 unidades
+
+111. Bahía Ballena
+   Tiempo promedio de viaje: 2.97 unidades
+
+112. San Rafael Piedades
+   Tiempo promedio de viaje: 2.97 unidades
+
+113. Aguas Claras
+   Tiempo promedio de viaje: 2.97 unidades
+
+114. Río Cuarto
+   Tiempo promedio de viaje: 2.97 unidades
+
+115. Naranjo
+   Tiempo promedio de viaje: 2.97 unidades
+
+116. San Pablo Este
+   Tiempo promedio de viaje: 2.98 unidades
+
+117. Cuajiniquil
+   Tiempo promedio de viaje: 2.98 unidades
+
+118. San Juan Norte
+   Tiempo promedio de viaje: 2.98 unidades
+
+119. Santa Bárbara
+   Tiempo promedio de viaje: 2.98 unidades
+
+120. Guadalupe Oeste
+   Tiempo promedio de viaje: 2.98 unidades
+
+121. Tambor
+   Tiempo promedio de viaje: 2.98 unidades
+
+122. Veintisiete de Abril
+   Tiempo promedio de viaje: 2.98 unidades
+
+123. Cinco Esquinas
+   Tiempo promedio de viaje: 2.98 unidades
+
+124. Chomes
+   Tiempo promedio de viaje: 2.99 unidades
+
+125. Rita
+   Tiempo promedio de viaje: 2.99 unidades
+
+126. Tres Equis
+   Tiempo promedio de viaje: 3.00 unidades
+
+127. Tarbaca
+   Tiempo promedio de viaje: 3.00 unidades
+
+128. Aserrí
+   Tiempo promedio de viaje: 3.00 unidades
+
+129. Santo Tomás
+   Tiempo promedio de viaje: 3.00 unidades
+
+130. Siquirres
+   Tiempo promedio de viaje: 3.01 unidades
+
+131. Pejibayes
+   Tiempo promedio de viaje: 3.01 unidades
+
+132. San Rafael Oeste
+   Tiempo promedio de viaje: 3.01 unidades
+
+133. Santa Elena
+   Tiempo promedio de viaje: 3.01 unidades
+
+134. Pitahaya
+   Tiempo promedio de viaje: 3.02 unidades
+
+135. Candelarita
+   Tiempo promedio de viaje: 3.02 unidades
+
+136. Concepción Este
+   Tiempo promedio de viaje: 3.02 unidades
+
+137. Puerto Jiménez
+   Tiempo promedio de viaje: 3.02 unidades
+
+138. Brisas
+   Tiempo promedio de viaje: 3.02 unidades
+
+139. La Unión
+   Tiempo promedio de viaje: 3.03 unidades
+
+140. San Ignacio
+   Tiempo promedio de viaje: 3.03 unidades
+
+141. San Gabriel
+   Tiempo promedio de viaje: 3.04 unidades
+
+142. Pavón
+   Tiempo promedio de viaje: 3.04 unidades
+
+143. Sabana Redonda
+   Tiempo promedio de viaje: 3.04 unidades
+
+144. San José Abajo
+   Tiempo promedio de viaje: 3.04 unidades
+
+145. San Rafael Viejo
+   Tiempo promedio de viaje: 3.04 unidades
+
+146. Bolívar
+   Tiempo promedio de viaje: 3.04 unidades
+
+147. Isla del Coco
+   Tiempo promedio de viaje: 3.05 unidades
+
+148. Laguna
+   Tiempo promedio de viaje: 3.05 unidades
+
+149. Los Ángeles
+   Tiempo promedio de viaje: 3.05 unidades
+
+150. San Vicente
+   Tiempo promedio de viaje: 3.05 unidades
+
+151. Cartagena
+   Tiempo promedio de viaje: 3.05 unidades
+
+152. Aguacaliente
+   Tiempo promedio de viaje: 3.05 unidades
+
+153. Daniel Flores
+   Tiempo promedio de viaje: 3.05 unidades
+
+154. Peñas Blancas
+   Tiempo promedio de viaje: 3.05 unidades
+
+155. Juan Viñas
+   Tiempo promedio de viaje: 3.05 unidades
+
+156. El Roble
+   Tiempo promedio de viaje: 3.05 unidades
+
+157. Batán
+   Tiempo promedio de viaje: 3.06 unidades
+
+158. La Cuesta
+   Tiempo promedio de viaje: 3.06 unidades
+
+159. Santiago Puriscal
+   Tiempo promedio de viaje: 3.06 unidades
+
+160. Legua
+   Tiempo promedio de viaje: 3.06 unidades
+
+161. Matambú
+   Tiempo promedio de viaje: 3.07 unidades
+
+162. Pará
+   Tiempo promedio de viaje: 3.07 unidades
+
+163. Telire
+   Tiempo promedio de viaje: 3.07 unidades
+
+164. San Francisco Norte
+   Tiempo promedio de viaje: 3.07 unidades
+
+165. Piedras Negras
+   Tiempo promedio de viaje: 3.07 unidades
+
+166. Savegre
+   Tiempo promedio de viaje: 3.07 unidades
+
+167. Santa Cruz Sur
+   Tiempo promedio de viaje: 3.07 unidades
+
+168. Florencia
+   Tiempo promedio de viaje: 3.07 unidades
+
+169. Frailes
+   Tiempo promedio de viaje: 3.08 unidades
+
+170. Canalete
+   Tiempo promedio de viaje: 3.08 unidades
+
+171. Quesada
+   Tiempo promedio de viaje: 3.08 unidades
+
+172. San Isidro Abajo
+   Tiempo promedio de viaje: 3.09 unidades
+
+173. Dulce Nombre Este
+   Tiempo promedio de viaje: 3.09 unidades
+
+174. San Rafael Nuevo
+   Tiempo promedio de viaje: 3.09 unidades
+
+175. Escazú
+   Tiempo promedio de viaje: 3.09 unidades
+
+176. Jesús
+   Tiempo promedio de viaje: 3.09 unidades
+
+177. Rancho Redondo
+   Tiempo promedio de viaje: 3.09 unidades
+
+178. Bolsón
+   Tiempo promedio de viaje: 3.10 unidades
+
+179. Garita
+   Tiempo promedio de viaje: 3.10 unidades
+
+180. Germania
+   Tiempo promedio de viaje: 3.10 unidades
+
+181. Tures
+   Tiempo promedio de viaje: 3.10 unidades
+
+182. San Roque
+   Tiempo promedio de viaje: 3.10 unidades
+
+183. San Juan Grande
+   Tiempo promedio de viaje: 3.11 unidades
+
+184. Los Guido
+   Tiempo promedio de viaje: 3.11 unidades
+
+185. Liberia
+   Tiempo promedio de viaje: 3.11 unidades
+
+186. Venado
+   Tiempo promedio de viaje: 3.11 unidades
+
+187. La Suiza
+   Tiempo promedio de viaje: 3.12 unidades
+
+188. San Felipe
+   Tiempo promedio de viaje: 3.12 unidades
+
+189. Rivas
+   Tiempo promedio de viaje: 3.12 unidades
+
+190. Tobosi
+   Tiempo promedio de viaje: 3.12 unidades
+
+191. Mayorga
+   Tiempo promedio de viaje: 3.12 unidades
+
+192. Tuis
+   Tiempo promedio de viaje: 3.12 unidades
+
+193. Sabalito
+   Tiempo promedio de viaje: 3.12 unidades
+
+194. Las Horquetas
+   Tiempo promedio de viaje: 3.13 unidades
+
+195. Porvenir
+   Tiempo promedio de viaje: 3.13 unidades
+
+196. Sarchí Norte
+   Tiempo promedio de viaje: 3.13 unidades
+
+197. Varablanca
+   Tiempo promedio de viaje: 3.14 unidades
+
+198. Picagres
+   Tiempo promedio de viaje: 3.14 unidades
+
+199. Tempate
+   Tiempo promedio de viaje: 3.15 unidades
+
+200. Puntarenas
+   Tiempo promedio de viaje: 3.15 unidades
+
+201. Turrialba
+   Tiempo promedio de viaje: 3.16 unidades
+
+202. Atenas
+   Tiempo promedio de viaje: 3.16 unidades
+
+203. Reventazón
+   Tiempo promedio de viaje: 3.16 unidades
+
+204. Zapote
+   Tiempo promedio de viaje: 3.16 unidades
+
+205. La Asunción
+   Tiempo promedio de viaje: 3.17 unidades
+
+206. Tacares
+   Tiempo promedio de viaje: 3.17 unidades
+
+207. Cabo Velas
+   Tiempo promedio de viaje: 3.18 unidades
+
+208. Puerto Carrillo
+   Tiempo promedio de viaje: 3.18 unidades
+
+209. Roxana
+   Tiempo promedio de viaje: 3.18 unidades
+
+210. El Cairo
+   Tiempo promedio de viaje: 3.19 unidades
+
+211. Catedral
+   Tiempo promedio de viaje: 3.20 unidades
+
+212. Barranca
+   Tiempo promedio de viaje: 3.21 unidades
+
+213. Jesús Piedad
+   Tiempo promedio de viaje: 3.21 unidades
+
+214. Grifo Alto
+   Tiempo promedio de viaje: 3.21 unidades
+
+215. Pavas
+   Tiempo promedio de viaje: 3.21 unidades
+
+216. San Isidro Este
+   Tiempo promedio de viaje: 3.21 unidades
+
+217. Golfito
+   Tiempo promedio de viaje: 3.22 unidades
+
+218. Concepción Arriba
+   Tiempo promedio de viaje: 3.22 unidades
+
+219. Santo Domingo
+   Tiempo promedio de viaje: 3.23 unidades
+
+220. Acapulco
+   Tiempo promedio de viaje: 3.23 unidades
+
+221. La Buenavista
+   Tiempo promedio de viaje: 3.23 unidades
+
+222. Tucurrique
+   Tiempo promedio de viaje: 3.24 unidades
+
+223. Granadilla
+   Tiempo promedio de viaje: 3.27 unidades
+
+224. Patarrá
+   Tiempo promedio de viaje: 3.27 unidades
+
+225. San Rafael Norte
+   Tiempo promedio de viaje: 3.27 unidades
+
+226. Bebedero
+   Tiempo promedio de viaje: 3.28 unidades
+
+227. Lagunillas
+   Tiempo promedio de viaje: 3.28 unidades
+
+228. Palmares
+   Tiempo promedio de viaje: 3.30 unidades
+
+229. Dulce Nombre de Jesús
+   Tiempo promedio de viaje: 3.31 unidades
+
+230. Manzanillo
+   Tiempo promedio de viaje: 3.33 unidades
+
+231. Palmitos
+   Tiempo promedio de viaje: 3.35 unidades
+
+232. San José Este
+   Tiempo promedio de viaje: 3.37 unidades
+
+233. Desamparados Sur
+   Tiempo promedio de viaje: 3.38 unidades
+
+234. Heredia
+   Tiempo promedio de viaje: 3.42 unidades
+
+235. Zapote Norte
+   Tiempo promedio de viaje: 3.42 unidades
+
+236. Patio de Agua
+   Tiempo promedio de viaje: 3.43 unidades
+
+237. Zaragoza
+   Tiempo promedio de viaje: 3.45 unidades
+
+238. San Rafael Sur
+   Tiempo promedio de viaje: 3.46 unidades
+
+239. Delicias
+   Tiempo promedio de viaje: 3.47 unidades
+
+240. San Pedro Sur
+   Tiempo promedio de viaje: 3.49 unidades
+
+241. San Francisco Arriba
+   Tiempo promedio de viaje: 3.49 unidades
+
+242. Labrador
+   Tiempo promedio de viaje: 3.51 unidades
+
+243. Quebrada Honda
+   Tiempo promedio de viaje: 3.67 unidades
+
+244. Matina
+   Tiempo promedio de viaje: 10.81 unidades
+
+Seleccione una opción:
+[1] Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo.
+[2] Ciudad más efectiva para despachar mayor capacidad de equipo.
+[3] Par de ciudades más distantes.
+[4] Par de ciudades menos distantes.
+[5] Ciudades ordenadas por tiempo de viaje promedio.
+[X] Regresar.
+Elija el archivo CSV que contiene el grafo a consultar:
+[1] input_small.csv
+[2] input_medium.csv
+[3] input_large.csv
+[4] Ingrese uno personalizado.
+[X] Salir.
+¡Gracias por usar el sistema de consultas del SiNTiEmPo!
+Liqing Yosery Zheng Lu C38680

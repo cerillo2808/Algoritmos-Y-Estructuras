@@ -1,0 +1,127 @@
+¡Bienvenid@ al sistema de consultas del SiNTiEmPo!
+Elija el archivo CSV que contiene el grafo a consultar:
+[1] input_small.csv
+[2] input_medium.csv
+[3] input_large.csv
+[4] Ingrese uno personalizado.
+[X] Salir.
+Grafo analizado exitosamente en 0 milisegundos.
+Seleccione una opción:
+[1] Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo.
+[2] Ciudad más efectiva para despachar mayor capacidad de equipo.
+[3] Par de ciudades más distantes.
+[4] Par de ciudades menos distantes.
+[5] Ciudades ordenadas por tiempo de viaje promedio.
+[X] Regresar.
+Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo:
+- San Juan de Dios
+Tiempo total mínimo: 87 unidades.
+Seleccione una opción:
+[1] Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo.
+[2] Ciudad más efectiva para despachar mayor capacidad de equipo.
+[3] Par de ciudades más distantes.
+[4] Par de ciudades menos distantes.
+[5] Ciudades ordenadas por tiempo de viaje promedio.
+[X] Regresar.
+Ciudades disponibles:
+[0] Zapotal
+[1] Quebradilla
+[2] Valle La Estrella
+[3] Venado
+[4] Jaris
+[5] Puerto Carrillo
+[6] San Juan de Dios
+[7] Mata Redonda
+[8] Los Guido
+[9] Parrita
+Ingrese el número de la ciudad destino o el nombre: Mejor(es) ciudad(es) para despachar hacia Zapotal:
+- Mata Redonda
+  Tiempo: 13 unidades
+  Ruta: Mata Redonda -> Zapotal
+
+Seleccione una opción:
+[1] Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo.
+[2] Ciudad más efectiva para despachar mayor capacidad de equipo.
+[3] Par de ciudades más distantes.
+[4] Par de ciudades menos distantes.
+[5] Ciudades ordenadas por tiempo de viaje promedio.
+[X] Regresar.
+Par(es) de ciudades más distantes:
+Distancia máxima: 42 unidades
+
+De Parrita a Zapotal
+Tiempo de viaje: 42 unidades
+Ruta: Parrita -> Quebradilla -> Puerto Carrillo -> San Juan de Dios -> Mata Redonda -> Zapotal
+
+Seleccione una opción:
+[1] Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo.
+[2] Ciudad más efectiva para despachar mayor capacidad de equipo.
+[3] Par de ciudades más distantes.
+[4] Par de ciudades menos distantes.
+[5] Ciudades ordenadas por tiempo de viaje promedio.
+[X] Regresar.
+Par(es) de ciudades menos distantes:
+Distancia mínima: 2 unidades
+
+De San Juan de Dios a Quebradilla
+Tiempo de viaje: 2 unidades
+Ruta: San Juan de Dios -> Quebradilla
+
+De San Juan de Dios a Mata Redonda
+Tiempo de viaje: 2 unidades
+Ruta: San Juan de Dios -> Mata Redonda
+
+Seleccione una opción:
+[1] Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo.
+[2] Ciudad más efectiva para despachar mayor capacidad de equipo.
+[3] Par de ciudades más distantes.
+[4] Par de ciudades menos distantes.
+[5] Ciudades ordenadas por tiempo de viaje promedio.
+[X] Regresar.
+Ciudades ordenadas por tiempo de viaje promedio (orden creciente):
+
+1. San Juan de Dios
+   Tiempo promedio de viaje: 9.67 unidades
+
+2. Mata Redonda
+   Tiempo promedio de viaje: 11.33 unidades
+
+3. Puerto Carrillo
+   Tiempo promedio de viaje: 11.67 unidades
+
+4. Los Guido
+   Tiempo promedio de viaje: 12.00 unidades
+
+5. Venado
+   Tiempo promedio de viaje: 14.22 unidades
+
+6. Zapotal
+   Tiempo promedio de viaje: 15.33 unidades
+
+7. Jaris
+   Tiempo promedio de viaje: 15.44 unidades
+
+8. Valle La Estrella
+   Tiempo promedio de viaje: 18.56 unidades
+
+9. Quebradilla
+   Tiempo promedio de viaje: 21.56 unidades
+
+10. Parrita
+   Tiempo promedio de viaje: 25.33 unidades
+
+Seleccione una opción:
+[1] Ciudad(es) más efectiva(s) para colocar mayor capacidad de equipo.
+[2] Ciudad más efectiva para despachar mayor capacidad de equipo.
+[3] Par de ciudades más distantes.
+[4] Par de ciudades menos distantes.
+[5] Ciudades ordenadas por tiempo de viaje promedio.
+[X] Regresar.
+Elija el archivo CSV que contiene el grafo a consultar:
+[1] input_small.csv
+[2] input_medium.csv
+[3] input_large.csv
+[4] Ingrese uno personalizado.
+[X] Salir.
+¡Gracias por usar el sistema de consultas del SiNTiEmPo!
+Liqing Yosery Zheng Lu C38680
